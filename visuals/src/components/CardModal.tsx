@@ -1,0 +1,165 @@
+/**
+ * <CardModal> — a focused, at-a-glance view of one card: the animated card beside its meaning &
+ * imagery, with a compact coordinate table (Suit · Rank · Virtue · Composition) at the bottom.
+ * Closes on click-outside, the X, or Escape.
+ */
+import { useEffect } from "react";
+import { createPortal } from "react-dom";
+import { TarotCard } from "./TarotCard";
+import { Glyph, RANK_NAME, SUIT_LABEL } from "./cardMeta";
+import type { CardData, CardSketch } from "@/runtime/types";
+import type { DeckDataFile } from "@/decks/types";
+
+type Meaning = { upright: string[]; inverted: string[] };
+type StationInfo = { name: string; description?: string; meaning: Meaning };
+type AxisInfo = { name: string };
+
+/** Compact prime/composite character of the card number. */
+function composition(numStr: string): string {
+  const n = parseInt(numStr, 10);
+  if (Number.isNaN(n)) return numStr;
+  if (n <= 1) return `identity · ${n}`;
+  const f: number[] = [];
+  let m = n;
+  for (let d = 2; d * d <= m; d++) while (m % d === 0) { f.push(d); m /= d; }
+  if (m > 1) f.push(m);
+  return f.length === 1 ? `prime · ${n}` : `composite · ${n} = ${f.join(" × ")}`;
+}
+
+/** Interpolate a suit's name into a rank's generic phrasing ("the suit" / "SUIT"). */
+function suitInterp(text: string, suitName: string): string {
+  return text
+    .replace(/\bthe suit's\b/gi, `${suitName}'`)
+    .replace(/\bthe suit\b/gi, suitName)
+    .replace(/\bSUIT\b/g, suitName);
+}
+
+/** Pull the leading question from a rank's description, if it has one (numbered ranks do; faces don't). */
+function rankQuestion(desc: string | undefined, suitName: string): string | null {
+  if (!desc) return null;
+  const m = desc.match(/^[^?]*\?/);
+  return m ? suitInterp(m[0].trim(), suitName) : null;
+}
+
+/** Derive a concise singular label for the transversal axis, e.g. "The Eight Virtues" -> "Virtue". */
+function axisLabel(name: string | undefined): string {
+  if (!name) return "Axis";
+  let s = name.replace(/^the\s+/i, "").replace(/^(one|two|three|four|five|six|seven|eight|nine|ten|twelve)\s+/i, "");
+  if (/s$/i.test(s) && !/ss$/i.test(s)) s = s.replace(/s$/i, "");
+  return s;
+}
+
+export interface CardModalProps {
+  card: CardData;
+  sketch: CardSketch;
+  deck?: DeckDataFile;
+  onClose: () => void;
+}
+
+export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { window.removeEventListener("keydown", onKey); document.body.style.overflow = prev; };
+  }, [onClose]);
+
+  const transversal = deck?.transversal as { name?: string; stations?: Record<string, StationInfo> } | undefined;
+  const station = transversal?.stations?.[card.station_slug];
+  const suit = card.suit_slug ? (deck?.suits as Record<string, AxisInfo> | undefined)?.[card.suit_slug] : undefined;
+  const rank = card.rank_slug ? (deck?.ranks as Record<string, AxisInfo & { description?: string }> | undefined)?.[card.rank_slug] : undefined;
+
+  const isMajor = card.arcana === "major";
+  const suitGlyph = isMajor ? "major" : (card.suit_slug ?? "major");
+  const suitName = isMajor ? "Major Arcana" : (suit?.name ?? SUIT_LABEL[card.suit_slug ?? ""] ?? card.suit_slug ?? "—");
+  const rankName = isMajor ? "—" : (RANK_NAME[card.rank_slug ?? ""] ?? "—");
+  const rankQ = isMajor ? null : rankQuestion(rank?.description, suitName);
+  const virtueName = station?.name ?? card.station_slug;
+  const virtueDesc = station?.description ?? station?.meaning.upright.slice(0, 3).join(", ");
+
+  const subtitle = isMajor ? `Major Arcana · ${card.number}` : `${rankName} of ${suitName}`;
+
+  return createPortal(
+    <div
+      onClick={onClose}
+      style={{
+        position: "fixed", inset: 0, zIndex: 1000,
+        background: "rgba(4,4,10,0.74)", backdropFilter: "blur(4px)",
+        display: "grid", placeItems: "center", padding: "3vh 16px", overflowY: "auto",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          position: "relative", width: "min(640px, 100%)",
+          background: "#12121d", color: "#e9dcc0",
+          border: "1px solid rgba(255,255,255,0.1)", borderRadius: 16,
+          boxShadow: "0 20px 70px rgba(0,0,0,0.6)", padding: "18px 22px 20px",
+        }}
+      >
+        <button aria-label="Close" onClick={onClose} style={closeBtn}>✕</button>
+
+        <h2 style={{ font: "600 22px/1.15 ui-serif, Georgia, serif", margin: "2px 30px 0 0" }}>{card.name}</h2>
+        <div style={subStyle}>{subtitle}</div>
+
+        {/* card + meaning/imagery, side by side */}
+        <div style={{ display: "flex", gap: 18, marginTop: 14, flexWrap: "wrap" }}>
+          <div style={{ position: "relative", width: 184, flex: "0 0 184px", aspectRatio: "0.66", borderRadius: 12, overflow: "hidden", background: "#0a0a14", border: "1px solid rgba(255,255,255,0.08)" }}>
+            <TarotCard card={card} sketch={sketch} mode="live" style={{ position: "absolute", inset: 0 }} />
+          </div>
+
+          <div style={{ flex: "1 1 260px", minWidth: 240 }}>
+            <Heading>Meaning</Heading>
+            <p style={meaningP}><span style={tag}>Upright. </span><span style={{ color: "#d8cfb6" }}>{card.meaning.upright}</span></p>
+            <p style={meaningP}><span style={tag}>Reversed. </span><span style={{ color: "#d8cfb6" }}>{card.meaning.inverted}</span></p>
+
+            <Heading style={{ marginTop: 14 }}>Imagery</Heading>
+            <p style={{ margin: "5px 0 0", color: "#c7c2b2", font: "400 13.5px/1.5 ui-sans-serif, system-ui" }}>
+              {card.visuals.detailed_description}
+            </p>
+          </div>
+        </div>
+
+        {/* coordinate table, at the very bottom */}
+        <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid rgba(255,255,255,0.09)", display: "grid", gridTemplateColumns: "88px 1fr", rowGap: 8, columnGap: 14, alignItems: "baseline" }}>
+          <Row label="Suit">
+            <Glyph which={suitGlyph} size={15} /> <span style={{ marginLeft: 6 }}>{suitName}</span>
+          </Row>
+          <Row label="Rank">
+            <span style={{ fontWeight: 600 }}>{rankName}</span>
+            {rankQ && <span style={{ color: "#9aa0b0" }}> — {rankQ}</span>}
+          </Row>
+          <Row label={axisLabel(transversal?.name)}>
+            <span style={{ fontWeight: 600 }}>{virtueName}</span>
+            {virtueDesc && <span style={{ color: "#9aa0b0" }}> — {virtueDesc}</span>}
+          </Row>
+          <Row label="Composition"><span>{composition(card.number)}</span></Row>
+        </div>
+      </div>
+    </div>,
+    document.body,
+  );
+}
+
+function Row({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <>
+      <div style={{ color: "#7c8295", font: "600 11px/1.5 ui-sans-serif, system-ui", letterSpacing: "0.08em", textTransform: "uppercase" }}>{label}</div>
+      <div style={{ font: "400 14px/1.4 ui-serif, Georgia, serif", display: "flex", alignItems: "baseline", flexWrap: "wrap" }}>{children}</div>
+    </>
+  );
+}
+
+function Heading({ children, style }: { children: React.ReactNode; style?: React.CSSProperties }) {
+  return <h3 style={{ margin: 0, font: "600 11px/1 ui-sans-serif, system-ui", letterSpacing: "0.1em", textTransform: "uppercase", color: "#9aa0b0", ...style }}>{children}</h3>;
+}
+
+const closeBtn: React.CSSProperties = {
+  position: "absolute", top: 12, right: 12, width: 30, height: 30, display: "grid", placeItems: "center",
+  cursor: "pointer", background: "rgba(255,255,255,0.06)", color: "#e9dcc0",
+  border: "1px solid rgba(255,255,255,0.12)", borderRadius: 8, font: "400 16px/1 ui-sans-serif, system-ui",
+};
+const subStyle: React.CSSProperties = { marginTop: 3, color: "#9aa0b0", font: "400 12px/1.3 ui-sans-serif, system-ui", letterSpacing: "0.05em", textTransform: "uppercase" };
+const meaningP: React.CSSProperties = { margin: "6px 0 0", font: "400 14px/1.5 ui-sans-serif, system-ui" };
+const tag: React.CSSProperties = { color: "#c9a44a", fontWeight: 600 };

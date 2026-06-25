@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+*.tsbuildinfo
+
+# local tooling / editor
+.claude/
+.vite/
+.vscode/
+.idea/
+
+# logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# os
+.DS_Store
+Thumbs.db

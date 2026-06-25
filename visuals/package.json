@@ -1,0 +1,34 @@
+{
+  "name": "arcana-deck-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A static deck browser & reading composer for custom tarot decks (animated p5.js cards as React components). Bundles the Ultima Tarot deck.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "p5": "^1.11.0"
+  },
+  "devDependencies": {
+    "@types/p5": "^1.7.6",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  },
+  "notes": {
+    "p5": "Used in INSTANCE mode only (never the global build). The deck browser loads the npm package once; every card shares it. Do not add the p5 <script> CDN tag — that creates a global p5 and breaks instance isolation.",
+    "react": "Declared as a peer dependency so the host app controls the single React copy. Components are client-only (p5 touches window); render under a client boundary / dynamic import with ssr disabled if using a framework like Next.js."
+  }
+}
