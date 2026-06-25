@@ -6,6 +6,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { TarotCard } from "./TarotCard";
+import { CardPlaceholder } from "./CardPlaceholder";
 import { Glyph, RANK_NAME, SUIT_LABEL } from "./cardMeta";
 import type { CardData, CardSketch } from "@/runtime/types";
 import type { DeckDataFile } from "@/decks/types";
@@ -51,7 +52,7 @@ function axisLabel(name: string | undefined): string {
 
 export interface CardModalProps {
   card: CardData;
-  sketch: CardSketch;
+  sketch?: CardSketch;
   deck?: DeckDataFile;
   onClose: () => void;
 }
@@ -106,7 +107,9 @@ export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
         {/* card + meaning/imagery, side by side */}
         <div style={{ display: "flex", gap: 18, marginTop: 14, flexWrap: "wrap" }}>
           <div style={{ position: "relative", width: 184, flex: "0 0 184px", aspectRatio: "0.66", borderRadius: 12, overflow: "hidden", background: "#0a0a14", border: "1px solid rgba(255,255,255,0.08)" }}>
-            <TarotCard card={card} sketch={sketch} mode="live" style={{ position: "absolute", inset: 0 }} />
+            {sketch
+              ? <TarotCard card={card} sketch={sketch} mode="live" style={{ position: "absolute", inset: 0 }} />
+              : <CardPlaceholder card={card} />}
           </div>
 
           <div style={{ flex: "1 1 260px", minWidth: 240 }}>

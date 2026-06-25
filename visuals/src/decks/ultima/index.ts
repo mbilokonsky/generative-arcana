@@ -17,4 +17,17 @@ export const ultimaDeck: DeckModule = registerDeck({
   tagline: "The Avatar's quest, from Stranger to Codex.",
   data,
   cards: Object.values(data.cards) as CardData[],
+  spreads: [
+    {
+      id: "three-principles",
+      name: "The Three Principles",
+      description: "Britannia's three roots of virtue — Truth, Love, and Courage — read the matter.",
+      deckId: "ultima",
+      positions: [
+        { name: "Truth", prompt: "what is honestly so; what must be seen clearly" },
+        { name: "Love", prompt: "where compassion and connection lie" },
+        { name: "Courage", prompt: "what valor the situation asks of you" },
+      ],
+    },
+  ],
 });

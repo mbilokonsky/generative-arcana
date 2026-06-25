@@ -9,11 +9,14 @@
 import { type CSSProperties, useState } from "react";
 import { TarotCard, type TarotCardProps } from "./TarotCard";
 import { CardModal } from "./CardModal";
+import { CardPlaceholder } from "./CardPlaceholder";
 import { Glyph, RANK_ROMAN, SUIT_LABEL } from "./cardMeta";
 import type { CardData } from "../runtime/types";
 import type { DeckDataFile } from "@/decks/types";
 
-export interface CardFrameProps extends Omit<TarotCardProps, "className" | "style"> {
+export interface CardFrameProps extends Omit<TarotCardProps, "className" | "style" | "sketch"> {
+  /** the card's p5 sketch; if absent, a static placeholder face is shown. */
+  sketch?: TarotCardProps["sketch"];
   showBanner?: boolean;
   /** aspect ratio width/height; tarot ~ 0.66. */
   aspect?: number;
@@ -31,7 +34,7 @@ function cornerText(card: CardData): { glyph: string; label: string } {
   return { glyph: card.suit_slug ?? "major", label: r };
 }
 
-export function CardFrame({ card, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
+export function CardFrame({ card, sketch, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
   const [hovered, setHovered] = useState(false);
   const [open, setOpen] = useState(false);
   const { glyph, label } = cornerText(card);
@@ -60,7 +63,9 @@ export function CardFrame({ card, showBanner = true, aspect = 0.66, expandable =
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <TarotCard card={card} {...cardProps} style={{ position: "absolute", inset: 0 }} />
+      {sketch
+        ? <TarotCard card={card} sketch={sketch} {...cardProps} style={{ position: "absolute", inset: 0 }} />
+        : <CardPlaceholder card={card} />}
 
       {showBanner && (
         <>
@@ -114,8 +119,8 @@ export function CardFrame({ card, showBanner = true, aspect = 0.66, expandable =
         </button>
       )}
 
-      {open && cardProps.sketch && (
-        <CardModal card={card} sketch={cardProps.sketch} deck={deck} onClose={() => setOpen(false)} />
+      {open && (
+        <CardModal card={card} sketch={sketch} deck={deck} onClose={() => setOpen(false)} />
       )}
     </div>
   );

@@ -1,4 +1,5 @@
 import type { CardData } from "@/runtime/types";
+import type { Spread } from "./spreads";
 
 /** The raw shape of a deck's deck.json (as emitted by the generative-arcana skill). */
 export interface DeckDataFile {
@@ -27,5 +28,8 @@ export interface DeckModule {
   data: DeckDataFile;
   /** ordered card list for the browser (majors first, then minors by suit/rank). */
   cards: CardData[];
-  // spreads?: SpreadDef[];   // arrives with the reading system
+  /** spreads native to this deck, offered alongside the generic ones. */
+  spreads?: Spread[];
+  /** true for decks loaded from pasted JSON (not bundled). */
+  custom?: boolean;
 }
