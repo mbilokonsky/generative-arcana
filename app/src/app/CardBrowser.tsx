@@ -1,9 +1,10 @@
 import { useMemo, useState } from "react";
 import { getDeck } from "@/decks";
-import { isIllustrated } from "@/runtime/defineCard";
+import { isIllustrated, listPacks } from "@/runtime/defineCard";
 import { DeckGrid } from "@/components/DeckGrid";
 import { DeckTabs } from "./DeckTabs";
 import { navigate } from "./router";
+import { getPackId, setPackId } from "./packPref";
 import type { CardData } from "@/runtime/types";
 
 type Named = { slug?: string; name: string; index?: number };
@@ -35,6 +36,10 @@ export function CardBrowser({ deckId }: { deckId: string }) {
   const [virtue, setVirtue] = useState("");
   const [comp, setComp] = useState("");
   const [illustratedOnly, setIllustratedOnly] = useState(false);
+
+  const packs = listPacks(deckId);
+  const [pack, setPack] = useState(() => getPackId(deckId, packs[0]?.id ?? ""));
+  const prefer = (packs.find((p) => p.id === pack) ?? packs[0])?.kind;
 
   const opts = useMemo(() => {
     if (!deck) return { suits: [], ranks: [], virtues: [] as Named[] };
@@ -79,11 +84,25 @@ export function CardBrowser({ deckId }: { deckId: string }) {
           <label style={{ display: "flex", alignItems: "center", gap: 6, color: "#c7c2b2", font: "400 13px/1 ui-sans-serif, system-ui", cursor: "pointer" }}>
             <input type="checkbox" checked={illustratedOnly} onChange={(e) => setIllustratedOnly(e.target.checked)} /> Illustrated only
           </label>
-          <span style={{ color: "#6b7080", font: "400 12px/1 ui-sans-serif, system-ui", marginLeft: "auto" }}>{filtered.length} of {deck.cards.length}</span>
+          {packs.length > 1 && (
+            <div role="group" aria-label="Visual pack" style={{ display: "flex", marginLeft: "auto", border: "1px solid rgba(255,255,255,0.14)", borderRadius: 8, overflow: "hidden" }}>
+              {packs.map((p) => {
+                const on = p.id === pack;
+                return (
+                  <button key={p.id} onClick={() => { setPack(p.id); setPackId(deckId, p.id); }}
+                    style={{ all: "unset", cursor: "pointer", padding: "7px 11px", font: "600 12px/1 ui-sans-serif, system-ui",
+                      background: on ? "#e9dcc0" : "transparent", color: on ? "#0b0b14" : "#c7c2b2" }}>
+                    {p.label}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+          <span style={{ color: "#6b7080", font: "400 12px/1 ui-sans-serif, system-ui", marginLeft: packs.length > 1 ? 0 : "auto" }}>{filtered.length} of {deck.cards.length}</span>
         </div>
 
         {filtered.length ? (
-          <DeckGrid cards={filtered} deck={deck.data} deckId={deckId} />
+          <DeckGrid cards={filtered} deck={deck.data} deckId={deckId} prefer={prefer} />
         ) : (
           <p style={{ color: "#9aa0b0", padding: "40px 0", textAlign: "center" }}>No cards match those filters.</p>
         )}

@@ -7,7 +7,7 @@
  * (`structures-0`, `major-0`), so we strip the pad to pair them. Vite hashes the assets and rewrites
  * the URLs for the deployed base path via the `?url` glob import.
  */
-import { registerImagePack } from "@/runtime/defineCard";
+import { registerImagePack, registerPack } from "@/runtime/defineCard";
 
 const files = import.meta.glob("./cards/*.png", { eager: true, query: "?url", import: "default" }) as Record<string, string>;
 
@@ -20,3 +20,4 @@ for (const [path, url] of Object.entries(files)) {
 }
 
 registerImagePack("byrne", urls);
+registerPack("byrne", { id: "illustrated", label: "Illustrated", kind: "image" });

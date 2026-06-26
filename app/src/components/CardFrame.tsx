@@ -12,10 +12,13 @@ import { CardModal } from "./CardModal";
 import { CardArt } from "./CardArt";
 import { AxisGlyph, rankBadge, rankLabel, suitLabel } from "./cardMeta";
 import type { DeckDataFile } from "@/decks/types";
+import type { PackKind } from "@/runtime/defineCard";
 
 export interface CardFrameProps extends Omit<TarotCardProps, "className" | "style" | "sketch"> {
   /** registry id of the deck — resolves which visual pack (if any) draws this card. */
   deckId?: string;
+  /** selected pack kind, preferred when resolving the card's visual. */
+  prefer?: PackKind;
   showBanner?: boolean;
   /** aspect ratio width/height; tarot ~ 0.66. */
   aspect?: number;
@@ -27,7 +30,7 @@ export interface CardFrameProps extends Omit<TarotCardProps, "className" | "styl
   style?: CSSProperties;
 }
 
-export function CardFrame({ card, deckId, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
+export function CardFrame({ card, deckId, prefer, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
   const [hovered, setHovered] = useState(false);
   const [open, setOpen] = useState(false);
   const isMajor = card.arcana === "major";
@@ -56,7 +59,7 @@ export function CardFrame({ card, deckId, showBanner = true, aspect = 0.66, expa
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <CardArt card={card} deckId={deckId} deck={deck} {...cardProps} />
+      <CardArt card={card} deckId={deckId} deck={deck} prefer={prefer} {...cardProps} />
 
       {showBanner && (
         <>
@@ -111,7 +114,7 @@ export function CardFrame({ card, deckId, showBanner = true, aspect = 0.66, expa
       )}
 
       {open && (
-        <CardModal card={card} deckId={deckId} deck={deck} onClose={() => setOpen(false)} />
+        <CardModal card={card} deckId={deckId} deck={deck} prefer={prefer} onClose={() => setOpen(false)} />
       )}
     </div>
   );

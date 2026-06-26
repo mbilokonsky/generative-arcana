@@ -91,3 +91,39 @@ export function hasCardImage(deckId: string, slug: string): boolean {
 export function isIllustrated(deckId: string, slug: string): boolean {
   return hasCardSketch(deckId, slug) || hasRawSketch(deckId, slug) || hasCardImage(deckId, slug);
 }
+
+// ── Selectable visual packs ──────────────────────────────────────────────────
+// A deck can offer more than one art treatment (e.g. Ulysses: animated p5 + a pixel "Vico" set).
+// A pack is just a label over one of the three content kinds above; the content lives in the
+// per-kind registries (one pack per kind per deck, which is all any deck needs today). The first
+// registered pack is the default. <CardArt> renders the selected pack, falling back per-card to any
+// other pack that has the card — so a partial pack (e.g. pixel majors only) degrades gracefully.
+export type PackKind = "kit" | "p5" | "image";
+export interface VisualPack { id: string; label: string; kind: PackKind }
+
+const PACK_LISTS = new Map<string, VisualPack[]>();
+
+export function registerPack(deckId: string, pack: VisualPack): void {
+  const list = PACK_LISTS.get(deckId) ?? [];
+  if (!list.some((p) => p.id === pack.id)) list.push(pack);
+  PACK_LISTS.set(deckId, list);
+}
+
+export function listPacks(deckId: string): VisualPack[] {
+  return PACK_LISTS.get(deckId) ?? [];
+}
+
+/** Resolve which content kind to draw for a card: prefer `kind`, else fall back to whatever exists. */
+export function resolveKind(deckId: string, slug: string, prefer?: PackKind): PackKind | null {
+  const order: PackKind[] = [];
+  const add = (k: PackKind) => { if (!order.includes(k)) order.push(k); };
+  if (prefer) add(prefer);
+  for (const p of listPacks(deckId)) add(p.kind);
+  (["kit", "p5", "image"] as PackKind[]).forEach(add);
+  for (const k of order) {
+    if (k === "kit" && hasCardSketch(deckId, slug)) return "kit";
+    if (k === "p5" && hasRawSketch(deckId, slug)) return "p5";
+    if (k === "image" && hasCardImage(deckId, slug)) return "image";
+  }
+  return null;
+}

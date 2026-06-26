@@ -7,6 +7,7 @@ import { CardFrame } from "./CardFrame";
 import { isIllustrated } from "../runtime/defineCard";
 import type { CardData } from "../runtime/types";
 import type { DeckDataFile } from "@/decks/types";
+import type { PackKind } from "@/runtime/defineCard";
 
 export interface DeckGridProps {
   cards: CardData[];
@@ -14,11 +15,13 @@ export interface DeckGridProps {
   deck?: DeckDataFile;
   /** registry id of the deck, used to resolve its (namespaced) card sketches. */
   deckId?: string;
+  /** selected pack kind, preferred when resolving each card's visual. */
+  prefer?: PackKind;
   minColPx?: number;
   onSignal?: (slug: string, name: string, detail?: unknown) => void;
 }
 
-export function DeckGrid({ cards, deck, deckId, minColPx = 200, onSignal }: DeckGridProps) {
+export function DeckGrid({ cards, deck, deckId, prefer, minColPx = 200, onSignal }: DeckGridProps) {
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
 
   return (
@@ -44,6 +47,7 @@ export function DeckGrid({ cards, deck, deckId, minColPx = 200, onSignal }: Deck
             <CardFrame
               card={card}
               deckId={deckId}
+              prefer={prefer}
               deck={deck}
               expandable
               mode={live ? "live" : "poster"}

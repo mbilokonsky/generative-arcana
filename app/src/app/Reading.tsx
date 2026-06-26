@@ -9,6 +9,8 @@ import type { DealtCard } from "@/reading/types";
 import type { DeckModule } from "@/decks/types";
 import { DeckTabs } from "./DeckTabs";
 import { navigate } from "./router";
+import { getPackId } from "./packPref";
+import { listPacks } from "@/runtime/defineCard";
 
 export function Reading({ deckId, token }: { deckId: string; token?: string }) {
   const deck = getDeck(deckId);
@@ -85,6 +87,8 @@ function ReadingResult({ deck, token }: { deck: DeckModule; token: string }) {
 
   const dealt: DealtCard[] = tokenToDealt(decoded);
   const prompt = buildPrompt(deck, spread, dealt, decoded.q);
+  const packs = listPacks(deck.id);
+  const prefer = (packs.find((p) => p.id === getPackId(deck.id, packs[0]?.id ?? "")) ?? packs[0])?.kind;
 
   function copy(text: string, which: string) {
     navigator.clipboard?.writeText(text).then(() => { setCopied(which); setTimeout(() => setCopied(null), 1800); });
@@ -111,7 +115,7 @@ function ReadingResult({ deck, token }: { deck: DeckModule; token: string }) {
               <div style={{ color: "#c9a44a", font: "600 12px/1.2 ui-sans-serif, system-ui", letterSpacing: "0.04em", textTransform: "uppercase" }}>{i + 1}. {pos.name}</div>
               <div style={{ color: "#6b7080", font: "400 11px/1.3 ui-sans-serif, system-ui", margin: "2px 0 8px" }}>{pos.prompt}</div>
               <div style={{ transform: dc.reversed ? "rotate(180deg)" : "none" }}>
-                <CardFrame card={card} deckId={deck.id} deck={deck.data} showBanner={false} mode="poster" />
+                <CardFrame card={card} deckId={deck.id} prefer={prefer} deck={deck.data} showBanner={false} mode="poster" />
               </div>
               <div style={{ marginTop: 8, font: "600 14px/1.25 ui-serif, Georgia, serif" }}>
                 {card.name} {dc.reversed && <span style={{ color: "#e0506a", font: "600 11px/1 ui-sans-serif, system-ui" }}>· Reversed</span>}

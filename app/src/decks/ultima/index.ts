@@ -10,10 +10,11 @@ import deckJson from "@decks/ultima/deck.json";
 import { registerDeck } from "../registry";
 import type { DeckDataFile, DeckModule } from "../types";
 import type { CardData } from "@/runtime/types";
-import { claimSketchesFor } from "@/runtime/defineCard";
+import { claimSketchesFor, registerPack } from "@/runtime/defineCard";
 import "./cards"; // side effect: registers this deck's sketches into the PENDING bucket
 
 claimSketchesFor("ultima"); // move those registrations under the "ultima" namespace
+registerPack("ultima", { id: "animated", label: "Animated", kind: "kit" });
 
 const data = deckJson as unknown as DeckDataFile;
 

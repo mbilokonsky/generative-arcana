@@ -1,16 +1,14 @@
 /**
- * <CardArt> — resolves and renders a card's visual for a given deck, picking the right kind:
- *   1. a typed CardSketch (Ultima's SketchKit pack)        -> <TarotCard>
- *   2. a raw p5 source string (Ulysses's migrated pack)    -> <RawP5Card>
- *   3. nothing registered                                   -> <CardPlaceholder>
- *
- * Centralizing the choice keeps every host (CardFrame, CardModal, readings) agnostic to how a deck's
- * art is authored — and is the seam a future visual-pack *selector* would hook into.
+ * <CardArt> — resolves and renders a card's visual for a given deck and selected pack.
+ * `prefer` is the selected pack's kind; resolveKind() honors it but falls back per-card to any other
+ * pack that has this card (so a partial pack degrades gracefully), or a placeholder if none does.
+ *   kit -> <TarotCard>  ·  p5 -> <RawP5Card>  ·  image -> <img>  ·  none -> <CardPlaceholder>
  */
 import { TarotCard } from "./TarotCard";
 import { RawP5Card } from "./RawP5Card";
 import { CardPlaceholder } from "./CardPlaceholder";
-import { getCardSketch, getRawSketch, getCardImage } from "@/runtime/defineCard";
+import { getCardSketch, getRawSketch, getCardImage, resolveKind } from "@/runtime/defineCard";
+import type { PackKind } from "@/runtime/defineCard";
 import type { CardData } from "@/runtime/types";
 import type { DeckDataFile } from "@/decks/types";
 
@@ -22,23 +20,24 @@ export interface CardArtProps {
   deckId?: string;
   /** deck data, for the placeholder's glyph/labels when there's no art. */
   deck?: DeckDataFile;
+  /** the selected pack's kind, preferred during resolution. */
+  prefer?: PackKind;
   mode?: "live" | "poster";
   paused?: boolean;
   onSignal?: (name: string, detail?: unknown) => void;
 }
 
-export function CardArt({ card, deckId, deck, mode = "live", paused, onSignal }: CardArtProps) {
-  const sketch = deckId ? getCardSketch(deckId, card.slug) : undefined;
-  if (sketch) {
-    return <TarotCard card={card} sketch={sketch} mode={mode} paused={paused} onSignal={onSignal} style={FILL} />;
+export function CardArt({ card, deckId, deck, prefer, mode = "live", paused, onSignal }: CardArtProps) {
+  const kind = deckId ? resolveKind(deckId, card.slug, prefer) : null;
+
+  if (kind === "kit") {
+    return <TarotCard card={card} sketch={getCardSketch(deckId!, card.slug)!} mode={mode} paused={paused} onSignal={onSignal} style={FILL} />;
   }
-  const raw = deckId ? getRawSketch(deckId, card.slug) : undefined;
-  if (raw) {
-    return <RawP5Card slug={card.slug} code={raw} mode={mode} paused={paused} style={FILL} />;
+  if (kind === "p5") {
+    return <RawP5Card slug={card.slug} code={getRawSketch(deckId!, card.slug)!} mode={mode} paused={paused} style={FILL} />;
   }
-  const img = deckId ? getCardImage(deckId, card.slug) : undefined;
-  if (img) {
-    return <img src={img} alt={card.name} loading="lazy" draggable={false}
+  if (kind === "image") {
+    return <img src={getCardImage(deckId!, card.slug)!} alt={card.name} loading="lazy" draggable={false}
       style={{ ...FILL, width: "100%", height: "100%", objectFit: "cover", display: "block" }} />;
   }
   return <CardPlaceholder card={card} deck={deck} />;
