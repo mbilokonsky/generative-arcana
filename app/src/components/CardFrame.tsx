@@ -11,15 +11,14 @@ import type { TarotCardProps } from "./TarotCard";
 import { CardArt } from "./CardArt";
 import { AxisGlyph, rankBadge, suitLabel, stationName, omega, facVar, facWord } from "./cardMeta";
 import type { DeckDataFile } from "@/decks/types";
-import type { PackKind } from "@/runtime/defineCard";
 
 const SHADOW = "0 1px 3px rgba(0,0,0,0.6)";
 
 export interface CardFrameProps extends Omit<TarotCardProps, "className" | "style" | "sketch"> {
   /** registry id of the deck — resolves which visual pack (if any) draws this card. */
   deckId?: string;
-  /** selected pack kind, preferred when resolving the card's visual. */
-  prefer?: PackKind;
+  /** selected pack id, preferred when resolving the card's visual. */
+  prefer?: string;
   showBanner?: boolean;
   /** aspect ratio width/height; tarot ~ 0.66. */
   aspect?: number;

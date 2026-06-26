@@ -8,7 +8,6 @@ import { CardModal } from "./CardModal";
 import { isIllustrated } from "../runtime/defineCard";
 import type { CardData } from "../runtime/types";
 import type { DeckDataFile } from "@/decks/types";
-import type { PackKind } from "@/runtime/defineCard";
 
 export interface DeckGridProps {
   cards: CardData[];
@@ -16,8 +15,8 @@ export interface DeckGridProps {
   deck?: DeckDataFile;
   /** registry id of the deck, used to resolve its (namespaced) card sketches. */
   deckId?: string;
-  /** selected pack kind, preferred when resolving each card's visual. */
-  prefer?: PackKind;
+  /** selected pack id, preferred when resolving each card's visual. */
+  prefer?: string;
   minColPx?: number;
   /** a short note shown in the modal's nav strip, e.g. "filtered" — so prev/next reads as scoped. */
   contextLabel?: string;

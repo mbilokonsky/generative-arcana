@@ -10,7 +10,6 @@ import { CardArt } from "./CardArt";
 import { AxisGlyph, rankLabel, suitLabel, omega, facVar } from "./cardMeta";
 import type { CardData } from "@/runtime/types";
 import type { DeckDataFile } from "@/decks/types";
-import type { PackKind } from "@/runtime/defineCard";
 
 type Meaning = { upright: string[]; inverted: string[] };
 type StationInfo = { name: string; description?: string; meaning: Meaning };
@@ -71,7 +70,8 @@ export interface CardModalProps {
   /** a short, subtle note on what sequence you're walking ("filtered", a spread name, …). */
   contextLabel?: string;
   deckId?: string;
-  prefer?: PackKind;
+  /** selected pack id, preferred when resolving the preview's visual. */
+  prefer?: string;
   deck?: DeckDataFile;
 }
 

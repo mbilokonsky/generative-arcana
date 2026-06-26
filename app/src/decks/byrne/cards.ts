@@ -19,5 +19,5 @@ for (const [path, url] of Object.entries(files)) {
   urls[slug] = url;
 }
 
-registerImagePack("byrne", urls);
-registerPack("byrne", { id: "illustrated", label: "Illustrated", kind: "image" });
+registerImagePack("byrne", "illustrated", urls);
+registerPack("byrne", { id: "illustrated", label: "Illustrated", kind: "image", medium: "static" });

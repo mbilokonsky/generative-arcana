@@ -115,7 +115,7 @@ function ReadingResult({ deck, token }: { deck: DeckModule; token: string }) {
   const seqCards = dealt.map((dc) => deck.cards[dc.index]); // aligned 1:1 with the dealt order
   const prompt = buildPrompt(deck, spread, dealt, decoded.q);
   const packs = listPacks(deck.id);
-  const prefer = (packs.find((p) => p.id === getPackId(deck.id, packs[0]?.id ?? "")) ?? packs[0])?.kind;
+  const prefer = (packs.find((p) => p.id === getPackId(deck.id, packs[0]?.id ?? "")) ?? packs[0])?.id;
 
   function copy(text: string, which: string) {
     navigator.clipboard?.writeText(text).then(() => { setCopied(which); setTimeout(() => setCopied(null), 1600); });

@@ -38,7 +38,7 @@ export function CardBrowser({ deckId }: { deckId: string }) {
 
   const packs = listPacks(deckId);
   const [pack, setPack] = useState(() => getPackId(deckId, packs[0]?.id ?? ""));
-  const prefer = (packs.find((p) => p.id === pack) ?? packs[0])?.kind;
+  const prefer = (packs.find((p) => p.id === pack) ?? packs[0])?.id;
 
   const opts = useMemo(() => {
     if (!deck) return { suits: [], ranks: [], virtues: [] as Named[] };
@@ -118,24 +118,34 @@ export function CardBrowser({ deckId }: { deckId: string }) {
           <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--ink-3)" }}>
             {filtered.length} of {deck.cards.length} cards
           </span>
-          {packs.length > 1 && (
-            <div role="group" aria-label="Visual pack" style={segWrap}>
-              {packs.map((p) => {
-                const on = p.id === pack;
-                return (
-                  <button
-                    key={p.id}
-                    type="button"
-                    onClick={() => { setPack(p.id); setPackId(deckId, p.id); }}
-                    aria-pressed={on}
-                    style={segBtn(on)}
-                  >
-                    {p.label}
-                  </button>
-                );
-              })}
-            </div>
-          )}
+          {packs.length > 1 && (() => {
+            const active = packs.find((p) => p.id === pack) ?? packs[0];
+            const caption = [active.medium, active.description].filter(Boolean).join(" · ");
+            return (
+              <div style={{ display: "flex", alignItems: "center", gap: "var(--s-2)", flexWrap: "wrap", justifyContent: "flex-end" }}>
+                <span style={skinLabel}>Skin</span>
+                <div role="radiogroup" aria-label="Visual skin" style={segWrap}>
+                  {packs.map((p) => {
+                    const on = p.id === pack;
+                    return (
+                      <button
+                        key={p.id}
+                        type="button"
+                        role="radio"
+                        aria-checked={on}
+                        title={[p.medium, p.description].filter(Boolean).join(" · ") || p.label}
+                        onClick={() => { setPack(p.id); setPackId(deckId, p.id); }}
+                        style={segBtn(on)}
+                      >
+                        {p.label}
+                      </button>
+                    );
+                  })}
+                </div>
+                {caption && <span style={skinCaption}>{caption}</span>}
+              </div>
+            );
+          })()}
         </div>
       </div>
 
@@ -215,6 +225,15 @@ const illusBtn = (on: boolean): React.CSSProperties => ({
   background: on ? "var(--accent-wash)" : "var(--paper-2)",
   color: on ? "var(--accent)" : "var(--ink-2)",
 });
+
+const skinLabel: React.CSSProperties = {
+  fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: ".13em", textTransform: "uppercase", color: "var(--ink-3)",
+};
+
+const skinCaption: React.CSSProperties = {
+  flexBasis: "100%", textAlign: "right",
+  fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: ".02em", color: "var(--ink-3)", fontStyle: "italic",
+};
 
 const segWrap: React.CSSProperties = {
   display: "inline-flex",
