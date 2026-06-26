@@ -24,6 +24,14 @@ For each suit, per `references/schema.md` → `Suit`:
 - **meaning** — 3–6 upright senses (a palette) and 3–6 chiral inverted (`references/integration.md`).
 - **visual_style** — the declared aesthetic: colors, perspective, art movement, composition.
 
+## 2b. Record the dialectic on the deck
+
+Because the suits ARE a cross-product, capture it as first-class data so consumers can lay them out as
+a labeled 2×2 (don't make them re-derive it from prose). Emit a deck-level `dialectic` per
+`references/schema.md` → `SuitDialectic`: the two named **axes** (each `{ name, poles: [thesis, antithesis] }`)
+and a **cells** map placing every suit (`{ [suit_slug]: [poleOfAxis0, poleOfAxis1] }`). Only the
+`dialectical` strategy emits this; `manual` suits omit `Deck.dialectic` entirely.
+
 ## 3. Intra-suit coherence
 
 Decide how alike the four styles are — small controlled variations (a shared world) vs. wildly divergent visual languages. A deliberate choice, not a default.
