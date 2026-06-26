@@ -16,7 +16,7 @@ import { Svg, omega, facVar, facWord } from "@/components/cardMeta";
 import type { DeckDataFile } from "@/decks/types";
 
 type Meaning = { upright?: string[]; inverted?: string[] };
-type Suit = { index: number; name: string; slug: string; description: string; symbol?: { svg?: string }; meaning?: Meaning; visual_style?: string };
+type Suit = { index: number; name: string; slug: string; description: string; symbol?: { svg?: string }; meaning?: Meaning; visual_style?: string; dialectic?: [string, string] };
 type Rank = { index: number; numeric_value: number; name: string; symbol?: string; description?: string; question?: string };
 type Station = { index: number; slug: string; name: string; description?: string; meaning?: Meaning; visual_motif?: string };
 type Transversal = { name: string; description: string; ordering_rationale?: string; suit_stride?: number; stations: Record<string, Station> };
@@ -98,22 +98,22 @@ function Means({ m }: { m?: Meaning }) {
 }
 
 // ── Axis 1: Suits ─────────────────────────────────────────────────────────────
-type DialecticData = { rows: string[]; cols: string[]; cells: Record<string, [string, string]> };
+type DialecticView = { rows: string[]; cols: string[]; cells: Suit[][]; rowAxis?: string; colAxis?: string };
 
-/** The suit 2×2, if the deck has one. Prefers explicit `suit_dialectic` metadata; falls back to
- *  parsing a leading "A x B." in each suit description (older decks encode it that way). */
-function dialectic(deck: DeckDataFile, suits: Suit[]) {
-  const explicit = (deck as { suit_dialectic?: DialecticData }).suit_dialectic;
-  if (explicit?.rows?.length === 2 && explicit.cols?.length === 2 && explicit.cells) {
-    const cells = explicit.rows.map((r) =>
-      explicit.cols.map((c) => suits.find((s) => {
-        const cell = explicit.cells[s.slug];
-        return cell && cell[0] === r && cell[1] === c;
-      })),
+/** The suit 2×2, if the deck has one. Prefers the first-class `deck.dialectic` axes + each suit's
+ *  `dialectic` coordinates; falls back to parsing a leading "A x B." in each description (old decks). */
+function dialectic(deck: DeckDataFile, suits: Suit[]): DialecticView | null {
+  const dx = deck.dialectic;
+  if (dx?.axes?.length === 2 && dx.axes[0].poles?.length === 2 && dx.axes[1].poles?.length === 2) {
+    const [a0, a1] = dx.axes;
+    const cells = a0.poles.map((r) =>
+      a1.poles.map((c) => suits.find((s) => s.dialectic && s.dialectic[0] === r && s.dialectic[1] === c)),
     );
-    if (!cells.flat().some((x) => !x)) return { rows: explicit.rows, cols: explicit.cols, cells: cells as Suit[][] };
+    if (!cells.flat().some((x) => !x)) {
+      return { rows: a0.poles, cols: a1.poles, cells: cells as Suit[][], rowAxis: a0.name, colAxis: a1.name };
+    }
   }
-  // fallback: parse "A x B." prefix
+  // fallback: parse "A x B." prefix from descriptions
   const parsed = suits.map((s) => {
     const m = s.description.match(/^\s*([A-Za-z]+)\s*[x×]\s*([A-Za-z]+)\b/);
     return m ? { s, a: m[1], b: m[2] } : null;
@@ -151,7 +151,7 @@ function SuitsPanel({ deck }: { deck: DeckDataFile }) {
       <Lead>
         The first grid axis. Each suit is a quadrant of the deck's space, <strong>declared</strong> in line
         and color — it stamps its glyph on every minor card and lends a palette of meanings.
-        {di && <> Here the four form a true cross-product: <strong>{di.rows.join(" / ")}</strong> against <strong>{di.cols.join(" / ")}</strong>.</>}
+        {di && <> Here the four form a true cross-product: <strong>{di.rowAxis ? `${di.rowAxis} (${di.rows.join(" / ")})` : di.rows.join(" / ")}</strong> against <strong>{di.colAxis ? `${di.colAxis} (${di.cols.join(" / ")})` : di.cols.join(" / ")}</strong>.</>}
       </Lead>
 
       {di && !narrow ? (

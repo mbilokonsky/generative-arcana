@@ -40,7 +40,11 @@
         ]
       },
       "visual_style": "Angular and vertical. Sharp edges, dramatic contrasts, upward movement. Architecture of ambition - spires, ascents, precipices. Colors lean toward stark blacks and whites, cold blues, the monochrome of intellectual abstraction. Think Martello towers, medieval fortifications, Babel, Stephen's sharp profile against the sky.",
-      "index": 0
+      "index": 0,
+      "dialectic": [
+        "Mythic",
+        "Resistance"
+      ]
     },
     "keys": {
       "name": "Keys",
@@ -74,7 +78,11 @@
         ]
       },
       "visual_style": "Circular and flowing. Curved lines, cycles, spirals, mandalas. The geometric patterns of ancient wisdom - labyrinths, Celtic knots, circular journeys. Warm golds, deep blues, earth tones. Think Bloom's circular route through Dublin, the sun's circuit, ouroboros, the eternal return made peaceful.",
-      "index": 1
+      "index": 1,
+      "dialectic": [
+        "Mythic",
+        "Acceptance"
+      ]
     },
     "nets": {
       "name": "Nets",
@@ -108,7 +116,11 @@
         ]
       },
       "visual_style": "Tangled and claustrophobic. Irregular patterns, overlapping lines, compressed spaces, angles that trap the eye. The texture of discomfort - twisted sheets, crowded streets, grey skies. Muddy greens, dingy browns, the hung-over palette of morning-after Dublin. Think Stephen's unwashed body, dirty ashplants, tangled theological arguments.",
-      "index": 2
+      "index": 2,
+      "dialectic": [
+        "Mundane",
+        "Resistance"
+      ]
     },
     "kidneys": {
       "name": "Kidneys",
@@ -144,7 +156,11 @@
         ]
       },
       "visual_style": "Organic and rounded. Soft curves, gentle textures, domestic spaces, bodily forms. The warmth of inhabited life - kitchen interiors, soft fabrics, flesh tones, food, beds. Warm browns, soft pinks, buttery yellows, the palette of comfort. Think Bloom's kidney breakfast, his bath, his sandwich, the cat's mew, Molly's warmth.",
-      "index": 3
+      "index": 3,
+      "dialectic": [
+        "Mundane",
+        "Acceptance"
+      ]
     }
   },
   "ranks": {
@@ -1833,32 +1849,22 @@
       }
     }
   },
-  "suit_dialectic": {
-    "rows": [
-      "Mythic",
-      "Mundane"
-    ],
-    "cols": [
-      "Resistance",
-      "Acceptance"
-    ],
-    "cells": {
-      "towers": [
-        "Mythic",
-        "Resistance"
-      ],
-      "keys": [
-        "Mythic",
-        "Acceptance"
-      ],
-      "nets": [
-        "Mundane",
-        "Resistance"
-      ],
-      "kidneys": [
-        "Mundane",
-        "Acceptance"
-      ]
-    }
+  "dialectic": {
+    "axes": [
+      {
+        "name": "Register",
+        "poles": [
+          "Mythic",
+          "Mundane"
+        ]
+      },
+      {
+        "name": "Stance",
+        "poles": [
+          "Resistance",
+          "Acceptance"
+        ]
+      }
+    ]
   }
 }

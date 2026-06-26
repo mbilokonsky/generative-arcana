@@ -34,6 +34,11 @@ interface Suit {
   symbol: { name: string; description: string; svg: string }  // glyph, stamped on the card
   meaning: { upright: string[]; inverted: string[] }          // 3–6 each; a generative palette
   visual_style: string                           // colors, perspective, art movement, composition
+  dialectic?: [string, string]                   // OPTIONAL: when the four suits are a cross-product of two
+                                                 //   dialectics (the `suits/dialectical` strategy), this suit's
+                                                 //   pole on axis 0 and axis 1 — e.g. ["World","Throne"]. Each
+                                                 //   pole must be one of Deck.dialectic.axes[i].poles. Omit for
+                                                 //   non-dialectical suit sets (e.g. `suits/manual`).
 }
 
 // RANK — grid axis. DECLARE. 14 MINOR ranks (majors have no rank layer).
@@ -128,6 +133,16 @@ interface MajorArcanaCard extends Card {
   // slug = `major-${number}`  (no suit_slug, no rank_slug)
 }
 
+// Optional: present when the four suits were built as a cross-product of two dialectics
+// (the `suits/dialectical` strategy). Names the two axes so a consumer can lay the suits out as a
+// labeled 2×2; each Suit then carries its `dialectic` coordinates. Omit for manual suit sets.
+interface SuitDialectic {
+  axes: [
+    { name: string; poles: [string, string] },   // axis 0 — e.g. { name: "Realm",  poles: ["World","Soul"] }
+    { name: string; poles: [string, string] },    // axis 1 — e.g. { name: "Way",    poles: ["Throne","Road"] }
+  ]
+}
+
 interface Deck {
   name: string                                   // theme name + " Tarot"
   slug: string
@@ -137,6 +152,7 @@ interface Deck {
   ranks: { [rank_slug: string]: Rank }           // exactly 14 (minor)
   transversal: Transversal                       // REQUIRED
   major_arcana: MajorArcana
+  dialectic?: SuitDialectic                      // OPTIONAL: the suit cross-product axes (see SuitDialectic)
   cards: { [card_slug: string]: MinorArcanaCard | MajorArcanaCard }  // 78: 22 major, then minors by suit then rank
 }
 ```
