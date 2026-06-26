@@ -10,7 +10,7 @@
 import { TarotCard } from "./TarotCard";
 import { RawP5Card } from "./RawP5Card";
 import { CardPlaceholder } from "./CardPlaceholder";
-import { getCardSketch, getRawSketch } from "@/runtime/defineCard";
+import { getCardSketch, getRawSketch, getCardImage } from "@/runtime/defineCard";
 import type { CardData } from "@/runtime/types";
 import type { DeckDataFile } from "@/decks/types";
 
@@ -35,6 +35,11 @@ export function CardArt({ card, deckId, deck, mode = "live", paused, onSignal }:
   const raw = deckId ? getRawSketch(deckId, card.slug) : undefined;
   if (raw) {
     return <RawP5Card slug={card.slug} code={raw} mode={mode} paused={paused} style={FILL} />;
+  }
+  const img = deckId ? getCardImage(deckId, card.slug) : undefined;
+  if (img) {
+    return <img src={img} alt={card.name} loading="lazy" draggable={false}
+      style={{ ...FILL, width: "100%", height: "100%", objectFit: "cover", display: "block" }} />;
   }
   return <CardPlaceholder card={card} deck={deck} />;
 }

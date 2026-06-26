@@ -9,6 +9,7 @@ import deckJson from "@decks/byrne/deck.json";
 import { registerDeck } from "../registry";
 import type { DeckDataFile, DeckModule } from "../types";
 import type { CardData } from "@/runtime/types";
+import "./cards"; // side effect: registers the migrated PNG image pack under "byrne"
 
 const data = deckJson as unknown as DeckDataFile;
 

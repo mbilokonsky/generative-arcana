@@ -66,7 +66,28 @@ export function hasRawSketch(deckId: string, slug: string): boolean {
   return RAW_PACKS.get(deckId)?.has(slug) ?? false;
 }
 
-/** True if a card has ANY visual (typed kit sketch or raw p5) — for "illustrated" counts/affordances. */
+// ── Image packs ──────────────────────────────────────────────────────────────
+// A third visual kind: pre-rendered static images (one URL per slug), as migrated from decks whose
+// art shipped as raster files (e.g. Byrne's PNGs). Rendered by <CardArt> as a plain <img>.
+
+/** deckId → (slug → image URL). */
+const IMAGE_PACKS = new Map<string, Map<string, string>>();
+
+export function registerImagePack(deckId: string, urls: Record<string, string>): void {
+  const pack = IMAGE_PACKS.get(deckId) ?? new Map<string, string>();
+  for (const [slug, url] of Object.entries(urls)) pack.set(slug, url);
+  IMAGE_PACKS.set(deckId, pack);
+}
+
+export function getCardImage(deckId: string, slug: string): string | undefined {
+  return IMAGE_PACKS.get(deckId)?.get(slug);
+}
+
+export function hasCardImage(deckId: string, slug: string): boolean {
+  return IMAGE_PACKS.get(deckId)?.has(slug) ?? false;
+}
+
+/** True if a card has ANY visual (kit sketch, raw p5, or image) — for "illustrated" counts/affordances. */
 export function isIllustrated(deckId: string, slug: string): boolean {
-  return hasCardSketch(deckId, slug) || hasRawSketch(deckId, slug);
+  return hasCardSketch(deckId, slug) || hasRawSketch(deckId, slug) || hasCardImage(deckId, slug);
 }
