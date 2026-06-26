@@ -13,7 +13,7 @@ import { registerRawPack, registerImagePack, registerPack } from "@/runtime/defi
 
 // 1. animated p5 pack
 registerRawPack("ulysses", "animated", codes as Record<string, string>);
-registerPack("ulysses", { id: "animated", label: "Animated", kind: "p5", medium: "animated", description: "the original migrated p5 sketches" });
+registerPack("ulysses", { id: "animated", label: "Animated", description: "the original migrated p5 sketches" });
 
 // 2. pixel "Vico" pack — filenames are bare card slugs (major-0.png, towers-3.png …)
 const pixelFiles = import.meta.glob("./pixel/*.png", { eager: true, query: "?url", import: "default" }) as Record<string, string>;
@@ -23,4 +23,4 @@ for (const [path, url] of Object.entries(pixelFiles)) {
   pixelUrls[slug] = url;
 }
 registerImagePack("ulysses", "pixel", pixelUrls);
-registerPack("ulysses", { id: "pixel", label: "Pixel · Vico", kind: "image", medium: "static", description: "pixel art keyed to each card's Vico age" });
+registerPack("ulysses", { id: "pixel", label: "Pixel · Vico", description: "pixel art keyed to each card's Vico age" });

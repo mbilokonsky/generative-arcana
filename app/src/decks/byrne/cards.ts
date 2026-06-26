@@ -20,4 +20,4 @@ for (const [path, url] of Object.entries(files)) {
 }
 
 registerImagePack("byrne", "illustrated", urls);
-registerPack("byrne", { id: "illustrated", label: "Illustrated", kind: "image", medium: "static" });
+registerPack("byrne", { id: "illustrated", label: "Illustrated", description: "the original rendered illustrations" });

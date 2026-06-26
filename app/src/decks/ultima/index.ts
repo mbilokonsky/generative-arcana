@@ -14,7 +14,7 @@ import { claimSketchesFor, registerPack } from "@/runtime/defineCard";
 import "./cards"; // side effect: registers this deck's sketches into the PENDING bucket
 
 claimSketchesFor("ultima", "animated"); // move those registrations under the "ultima"/"animated" pack
-registerPack("ultima", { id: "animated", label: "Animated", kind: "kit", medium: "animated" });
+registerPack("ultima", { id: "animated", label: "Animated", description: "kinetic generative sketches" });
 
 const data = deckJson as unknown as DeckDataFile;
 

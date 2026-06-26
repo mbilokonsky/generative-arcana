@@ -120,7 +120,7 @@ export function CardBrowser({ deckId }: { deckId: string }) {
           </span>
           {packs.length > 1 && (() => {
             const active = packs.find((p) => p.id === pack) ?? packs[0];
-            const caption = [active.medium, active.description].filter(Boolean).join(" · ");
+            const caption = active.description ?? "";
             return (
               <div style={{ display: "flex", alignItems: "center", gap: "var(--s-2)", flexWrap: "wrap", justifyContent: "flex-end" }}>
                 <span style={skinLabel}>Skin</span>
@@ -133,7 +133,7 @@ export function CardBrowser({ deckId }: { deckId: string }) {
                         type="button"
                         role="radio"
                         aria-checked={on}
-                        title={[p.medium, p.description].filter(Boolean).join(" · ") || p.label}
+                        title={p.description || p.label}
                         onClick={() => { setPack(p.id); setPackId(deckId, p.id); }}
                         style={segBtn(on)}
                       >
