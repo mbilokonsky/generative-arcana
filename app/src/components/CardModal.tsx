@@ -112,15 +112,17 @@ export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
         <h2 style={{ font: "600 22px/1.15 ui-serif, Georgia, serif", margin: "2px 30px 0 0" }}>{card.name}</h2>
         <div style={subStyle}>{subtitle}</div>
 
-        {/* card + meaning/imagery, side by side */}
-        <div style={{ display: "flex", gap: 18, marginTop: 14, flexWrap: "wrap" }}>
+        {/* card + meaning/imagery, side by side. The card keeps its fixed aspect (alignItems:
+            flex-start, so a long card can't stretch it), and the text column scrolls within the
+            card's height — so the modal stays a constant size no matter how much prose a card has. */}
+        <div style={{ display: "flex", gap: 18, marginTop: 14, flexWrap: "wrap", alignItems: "flex-start" }}>
           <div style={{ position: "relative", width: 184, flex: "0 0 184px", aspectRatio: "0.66", borderRadius: 12, overflow: "hidden", background: "#0a0a14", border: "1px solid rgba(255,255,255,0.08)" }}>
             {sketch
               ? <TarotCard card={card} sketch={sketch} mode="live" style={{ position: "absolute", inset: 0 }} />
               : <CardPlaceholder card={card} deck={deck} />}
           </div>
 
-          <div style={{ flex: "1 1 260px", minWidth: 240 }}>
+          <div style={{ flex: "1 1 260px", minWidth: 240, maxHeight: 288, overflowY: "auto", paddingRight: 8 }}>
             <Heading>Meaning</Heading>
             <p style={meaningP}><span style={tag}>Upright. </span><span style={{ color: "#d8cfb6" }}>{card.meaning.upright}</span></p>
             <p style={meaningP}><span style={tag}>Reversed. </span><span style={{ color: "#d8cfb6" }}>{card.meaning.inverted}</span></p>
