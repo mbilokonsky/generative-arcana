@@ -140,7 +140,7 @@ export function CardBrowser({ deckId }: { deckId: string }) {
       </div>
 
       {filtered.length ? (
-        <DeckGrid cards={filtered} deck={deck.data} deckId={deckId} prefer={prefer} minColPx={150} />
+        <DeckGrid cards={filtered} deck={deck.data} deckId={deckId} prefer={prefer} minColPx={150} contextLabel={hasFilters ? "filtered" : "deck order"} />
       ) : (
         <div style={{ textAlign: "center", padding: "80px 20px", color: "var(--ink-3)" }}>
           <div style={{ fontFamily: "var(--font-display)", fontSize: 24, color: "var(--ink-2)", marginBottom: "var(--s-2)" }}>No cards match</div>

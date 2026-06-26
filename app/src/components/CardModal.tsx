@@ -1,7 +1,8 @@
 /**
- * <CardModal> — a focused, at-a-glance view of one card: the animated card beside its meaning &
- * imagery, with a compact coordinate table (Suit · Rank · Virtue · Composition) at the bottom.
- * Closes on click-outside, the X, or Escape.
+ * <CardModal> — a focused, at-a-glance view of one card within a SEQUENCE: the live card beside its
+ * meaning & imagery, a coordinate footer (Suit · Rank · Transversal · Composition), and subtle
+ * prev/next navigation that walks the ordered list the modal was opened from (the filtered browser
+ * list, or a dealt spread's order). Arrow keys navigate; Esc / ✕ / backdrop close.
  */
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
@@ -15,6 +16,9 @@ type Meaning = { upright: string[]; inverted: string[] };
 type StationInfo = { name: string; description?: string; meaning: Meaning };
 type AxisInfo = { name: string };
 
+const CARD_W = 240;
+const CARD_H = Math.round(CARD_W / 0.66); // ≈ 364 — text column matches this so the modal is constant-height
+
 /** Compact prime/composite character of the card number. */
 function composition(numStr: string): string {
   const n = parseInt(numStr, 10);
@@ -27,9 +31,7 @@ function composition(numStr: string): string {
   return f.length === 1 ? `prime · ${n}` : `composite · ${n} = ${f.join(" × ")}`;
 }
 
-/** Interpolate a suit's name into a rank's generic phrasing ("{suit}" / "the suit" / "SUIT").
- *  Possessive forms (`{suit}'s` / "the suit's") render grammatically: a bare apostrophe when the
- *  suit name already ends in -s (e.g. "Crowns'"), otherwise "'s". */
+/** Interpolate a suit name into a rank's generic phrasing; possessives stay grammatical. */
 function suitInterp(text: string, suitName: string): string {
   const possessive = /s$/i.test(suitName) ? `${suitName}'` : `${suitName}'s`;
   return text
@@ -40,7 +42,6 @@ function suitInterp(text: string, suitName: string): string {
     .replace(/\bSUIT\b/g, suitName);
 }
 
-/** The rank's question, suit-interpolated. Prefers the v2 `question` field; falls back to parsing the description. */
 function rankQuestion(rank: { question?: string; description?: string } | undefined, suitName: string): string | null {
   if (!rank) return null;
   if (rank.question) return suitInterp(rank.question.trim(), suitName);
@@ -60,23 +61,38 @@ function axisLabel(name: string | undefined): string {
 }
 
 export interface CardModalProps {
-  card: CardData;
-  /** registry id of the deck — resolves which visual pack draws the preview. */
+  /** the ordered card list of the view that opened the modal (filtered browser list, or a spread). */
+  cards: CardData[];
+  /** index of the shown card within `cards`. */
+  index: number;
+  /** move to another card in the sequence. */
+  onNavigate: (index: number) => void;
+  onClose: () => void;
+  /** a short, subtle note on what sequence you're walking ("filtered", a spread name, …). */
+  contextLabel?: string;
   deckId?: string;
-  /** selected pack kind, preferred when resolving the preview's visual. */
   prefer?: PackKind;
   deck?: DeckDataFile;
-  onClose: () => void;
 }
 
-export function CardModal({ card, deckId, prefer, deck, onClose }: CardModalProps) {
+export function CardModal({ cards, index, onNavigate, onClose, contextLabel, deckId, prefer, deck }: CardModalProps) {
+  const card = cards[index];
+  const canPrev = index > 0;
+  const canNext = index < cards.length - 1;
+
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      else if (e.key === "ArrowLeft" && index > 0) onNavigate(index - 1);
+      else if (e.key === "ArrowRight" && index < cards.length - 1) onNavigate(index + 1);
+    };
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => { window.removeEventListener("keydown", onKey); document.body.style.overflow = prev; };
-  }, [onClose]);
+  }, [index, cards.length, onClose, onNavigate]);
+
+  if (!card) return null;
 
   const transversal = deck?.transversal as { name?: string; stations?: Record<string, StationInfo> } | undefined;
   const station = transversal?.stations?.[card.station_slug];
@@ -89,7 +105,6 @@ export function CardModal({ card, deckId, prefer, deck, onClose }: CardModalProp
   const rankQ = isMajor ? null : rankQuestion(rank, suitName);
   const virtueName = station?.name ?? card.station_slug;
   const virtueDesc = station?.description ?? station?.meaning.upright.slice(0, 3).join(", ");
-
   const subtitle = isMajor ? `Major Arcana · ${card.number}` : `${rankName} of ${suitName}`;
   const o = omega(parseInt(card.number, 10));
 
@@ -106,36 +121,36 @@ export function CardModal({ card, deckId, prefer, deck, onClose }: CardModalProp
       <div
         onClick={(e) => e.stopPropagation()}
         style={{
-          position: "relative", width: "min(780px, 100%)",
+          position: "relative", width: "min(960px, 96vw)",
           background: "var(--raise)", color: "var(--ink)",
           border: "1px solid var(--line)", borderRadius: "var(--r-3)",
-          boxShadow: "var(--e-3)", padding: "18px 22px 20px",
+          boxShadow: "var(--e-3)", padding: "20px 24px 18px",
         }}
       >
         <button aria-label="Close" onClick={onClose} style={closeBtn}>✕</button>
 
-        <h2 style={{ font: "400 26px/1.12 var(--font-display)", margin: "2px 30px 0 0", color: "var(--ink)" }}>{card.name}</h2>
+        <h2 style={{ font: "400 30px/1.1 var(--font-display)", margin: "2px 36px 0 0", color: "var(--ink)" }}>{card.name}</h2>
         <div style={subStyle}>{subtitle}</div>
 
-        {/* card + meaning/imagery side by side; card holds its 2:3, the text column scrolls so the
-            modal stays a constant size regardless of how much prose a card has. */}
-        <div style={{ display: "flex", gap: 18, marginTop: 14, flexWrap: "wrap", alignItems: "flex-start" }}>
-          <div style={{ position: "relative", width: 200, flex: "0 0 200px", aspectRatio: "0.66", borderRadius: "var(--r-2)", overflow: "hidden", background: "var(--paper-2)", border: "1px solid var(--line)" }}>
-            <CardArt card={card} deckId={deckId} deck={deck} prefer={prefer} mode="live" />
+        {/* card preview + meaning/imagery; card holds its 2:3, the text column scrolls so the modal
+            stays constant-height regardless of how much prose a card has. */}
+        <div style={{ display: "flex", gap: 22, marginTop: 16, flexWrap: "wrap", alignItems: "flex-start" }}>
+          <div style={{ position: "relative", width: CARD_W, flex: `0 0 ${CARD_W}px`, aspectRatio: "0.66", borderRadius: "var(--r-2)", overflow: "hidden", background: "var(--paper-2)", border: "1px solid var(--line)" }}>
+            <CardArt key={card.slug} card={card} deckId={deckId} deck={deck} prefer={prefer} mode="live" />
           </div>
 
-          <div style={{ flex: "1 1 260px", minWidth: 240, maxHeight: 300, overflowY: "auto", paddingRight: 8 }}>
+          <div style={{ flex: "1 1 300px", minWidth: 260, maxHeight: CARD_H, overflowY: "auto", paddingRight: 10 }}>
             <Heading>Upright</Heading>
             <p style={meaningP}>{card.meaning.upright}</p>
-            <Heading style={{ marginTop: 14 }}>Reversed</Heading>
+            <Heading style={{ marginTop: 16 }}>Reversed</Heading>
             <p style={meaningP}>{card.meaning.inverted}</p>
-            <Heading style={{ marginTop: 14 }}>Imagery</Heading>
+            <Heading style={{ marginTop: 16 }}>Imagery</Heading>
             <p style={{ ...meaningP, color: "var(--ink-2)" }}>{card.visuals.detailed_description}</p>
           </div>
         </div>
 
         {/* coordinate footer */}
-        <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid var(--line)", display: "grid", gridTemplateColumns: "92px 1fr", rowGap: 8, columnGap: 14, alignItems: "baseline" }}>
+        <div style={{ marginTop: 18, paddingTop: 14, borderTop: "1px solid var(--line)", display: "grid", gridTemplateColumns: "92px 1fr", rowGap: 8, columnGap: 14, alignItems: "baseline" }}>
           <Row label="Suit">
             <AxisGlyph deck={deck} card={card} size={15} /> <span style={{ marginLeft: 6 }}>{suitName}</span>
           </Row>
@@ -159,6 +174,17 @@ export function CardModal({ card, deckId, prefer, deck, onClose }: CardModalProp
             )}
           </Row>
         </div>
+
+        {/* subtle sequence navigation — walks the list this modal was opened from */}
+        {cards.length > 1 && (
+          <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px solid var(--line)", display: "flex", alignItems: "center", justifyContent: "center", gap: 14 }}>
+            <button aria-label="Previous card" disabled={!canPrev} onClick={() => canPrev && onNavigate(index - 1)} style={navBtn(canPrev)}>‹</button>
+            <span style={{ font: "400 11px/1 var(--font-mono)", letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-3)" }}>
+              {index + 1} / {cards.length}{contextLabel ? ` · ${contextLabel}` : ""}
+            </span>
+            <button aria-label="Next card" disabled={!canNext} onClick={() => canNext && onNavigate(index + 1)} style={navBtn(canNext)}>›</button>
+          </div>
+        )}
       </div>
     </div>,
     document.body,
@@ -178,8 +204,17 @@ function Heading({ children, style }: { children: React.ReactNode; style?: React
   return <h3 style={{ margin: 0, font: "400 11px/1 var(--font-mono)", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--accent)", ...style }}>{children}</h3>;
 }
 
+function navBtn(enabled: boolean): React.CSSProperties {
+  return {
+    all: "unset", cursor: enabled ? "pointer" : "default",
+    display: "grid", placeItems: "center", width: 34, height: 34, borderRadius: "var(--r-2)",
+    font: "400 20px/1 var(--font-body)", color: enabled ? "var(--ink-2)" : "var(--ink-3)",
+    opacity: enabled ? 1 : 0.35, border: "1px solid var(--line)",
+  };
+}
+
 const closeBtn: React.CSSProperties = {
-  position: "absolute", top: 12, right: 12, width: 30, height: 30, display: "grid", placeItems: "center",
+  position: "absolute", top: 14, right: 14, width: 30, height: 30, display: "grid", placeItems: "center",
   cursor: "pointer", background: "var(--paper-2)", color: "var(--ink-2)",
   border: "1px solid var(--line)", borderRadius: "var(--r-1)", font: "400 16px/1 var(--font-body)",
 };

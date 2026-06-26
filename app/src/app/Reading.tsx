@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { getDeck } from "@/decks";
 import { spreadsForDeck, resolveSpread, type Spread } from "@/decks/spreads";
 import { CardFrame } from "@/components/CardFrame";
+import { CardModal } from "@/components/CardModal";
 import { deal } from "@/reading/deal";
 import { encodeReading, decodeReading, tokenToDealt } from "@/reading/encode";
 import { buildPrompt } from "@/reading/prompt";
@@ -101,14 +102,17 @@ function ReadingComposer({ deck }: { deck: DeckModule }) {
 function ReadingResult({ deck, token }: { deck: DeckModule; token: string }) {
   const decoded = useMemo(() => decodeReading(token), [token]);
   const [copied, setCopied] = useState<string | null>(null);
+  // modal walks the dealt order, so prev/next moves through the spread itself.
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  useEffect(() => { setCopied(null); }, [token]);
+  useEffect(() => { setCopied(null); setOpenIndex(null); }, [token]);
 
   if (!decoded) return <p style={errorText}>This reading link is malformed.</p>;
   const spread: Spread | undefined = resolveSpread(decoded.s, deck.spreads);
   if (!spread) return <p style={errorText}>Unknown spread in this reading.</p>;
 
   const dealt: DealtCard[] = tokenToDealt(decoded);
+  const seqCards = dealt.map((dc) => deck.cards[dc.index]); // aligned 1:1 with the dealt order
   const prompt = buildPrompt(deck, spread, dealt, decoded.q);
   const packs = listPacks(deck.id);
   const prefer = (packs.find((p) => p.id === getPackId(deck.id, packs[0]?.id ?? "")) ?? packs[0])?.kind;
@@ -138,7 +142,7 @@ function ReadingResult({ deck, token }: { deck: DeckModule; token: string }) {
               <div style={positionLabel}>{i + 1}. {pos.name}</div>
               <div style={{ color: "var(--ink-2)", font: "italic 400 11.5px/1.35 var(--font-body)", margin: "var(--s-1) 0 var(--s-2)" }}>{pos.prompt}</div>
               <div style={{ transform: dc.reversed ? "rotate(180deg)" : "none" }}>
-                <CardFrame card={card} deckId={deck.id} prefer={prefer} deck={deck.data} showBanner={false} mode="poster" />
+                <CardFrame card={card} deckId={deck.id} prefer={prefer} deck={deck.data} showBanner={false} mode="poster" onOpen={() => setOpenIndex(i)} />
               </div>
               <div style={{ marginTop: "var(--s-2)", font: "400 16px/1.25 var(--font-display)", color: "var(--ink)" }}>
                 {card.name}{" "}
@@ -177,6 +181,19 @@ function ReadingResult({ deck, token }: { deck: DeckModule; token: string }) {
           }}>{prompt}</pre>
         </div>
       </section>
+
+      {openIndex !== null && (
+        <CardModal
+          cards={seqCards}
+          index={openIndex}
+          onNavigate={setOpenIndex}
+          onClose={() => setOpenIndex(null)}
+          contextLabel={spread.name}
+          deckId={deck.id}
+          prefer={prefer}
+          deck={deck.data}
+        />
+      )}
     </div>
   );
 }

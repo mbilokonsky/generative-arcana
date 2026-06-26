@@ -4,6 +4,7 @@
  */
 import { useState } from "react";
 import { CardFrame } from "./CardFrame";
+import { CardModal } from "./CardModal";
 import { isIllustrated } from "../runtime/defineCard";
 import type { CardData } from "../runtime/types";
 import type { DeckDataFile } from "@/decks/types";
@@ -18,11 +19,15 @@ export interface DeckGridProps {
   /** selected pack kind, preferred when resolving each card's visual. */
   prefer?: PackKind;
   minColPx?: number;
+  /** a short note shown in the modal's nav strip, e.g. "filtered" — so prev/next reads as scoped. */
+  contextLabel?: string;
   onSignal?: (slug: string, name: string, detail?: unknown) => void;
 }
 
-export function DeckGrid({ cards, deck, deckId, prefer, minColPx = 200, onSignal }: DeckGridProps) {
+export function DeckGrid({ cards, deck, deckId, prefer, minColPx = 200, contextLabel, onSignal }: DeckGridProps) {
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
+  // modal lives here (not in CardFrame) so prev/next can walk THIS list, in this order.
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <div
@@ -32,7 +37,7 @@ export function DeckGrid({ cards, deck, deckId, prefer, minColPx = 200, onSignal
         gap: 16,
       }}
     >
-      {cards.map((card) => {
+      {cards.map((card, i) => {
         const live = activeSlug === card.slug;
         const lift = live && !!deckId && isIllustrated(deckId, card.slug);
         return (
@@ -55,13 +60,26 @@ export function DeckGrid({ cards, deck, deckId, prefer, minColPx = 200, onSignal
               deckId={deckId}
               prefer={prefer}
               deck={deck}
-              expandable
+              onOpen={() => setOpenIndex(i)}
               mode={live ? "live" : "poster"}
               onSignal={(name, detail) => onSignal?.(card.slug, name, detail)}
             />
           </div>
         );
       })}
+
+      {openIndex !== null && (
+        <CardModal
+          cards={cards}
+          index={openIndex}
+          onNavigate={setOpenIndex}
+          onClose={() => setOpenIndex(null)}
+          contextLabel={contextLabel}
+          deckId={deckId}
+          prefer={prefer}
+          deck={deck}
+        />
+      )}
     </div>
   );
 }

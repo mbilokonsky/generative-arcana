@@ -6,9 +6,8 @@
  * every visual is driven by CSS custom properties (override via `style` or a class) and the
  * banner can be turned off, restyled, or replaced wholesale without touching a single sketch.
  */
-import { type CSSProperties, useState } from "react";
+import { type CSSProperties } from "react";
 import type { TarotCardProps } from "./TarotCard";
-import { CardModal } from "./CardModal";
 import { CardArt } from "./CardArt";
 import { AxisGlyph, rankBadge, suitLabel, stationName, omega, facVar, facWord } from "./cardMeta";
 import type { DeckDataFile } from "@/decks/types";
@@ -24,16 +23,16 @@ export interface CardFrameProps extends Omit<TarotCardProps, "className" | "styl
   showBanner?: boolean;
   /** aspect ratio width/height; tarot ~ 0.66. */
   aspect?: number;
-  /** show a hover-reveal info button that opens the full card modal. */
-  expandable?: boolean;
-  /** deck data, so the banner/modal can resolve suit/rank/virtue meanings. */
+  /** when set, a full-bleed overlay button invites a click and calls this (the host opens the modal,
+   *  so prev/next can walk the host's ordered list). */
+  onOpen?: () => void;
+  /** deck data, so the banner can resolve suit/rank/virtue meanings. */
   deck?: DeckDataFile;
   className?: string;
   style?: CSSProperties;
 }
 
-export function CardFrame({ card, deckId, prefer, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
-  const [open, setOpen] = useState(false);
+export function CardFrame({ card, deckId, prefer, showBanner = true, aspect = 0.66, onOpen, deck, className, style, ...cardProps }: CardFrameProps) {
   const isMajor = card.arcana === "major";
   const label = isMajor ? card.number : rankBadge(deck, card.rank_slug, card.number);
   const station = stationName(deck, card.station_slug);
@@ -76,13 +75,9 @@ export function CardFrame({ card, deckId, prefer, showBanner = true, aspect = 0.
         </>
       )}
 
-      {expandable && (
-        <button aria-label={`Open ${card.name}`} onClick={() => setOpen(true)}
+      {onOpen && (
+        <button aria-label={`Open ${card.name}`} onClick={onOpen}
           style={{ all: "unset", position: "absolute", inset: 0, cursor: "pointer" }} />
-      )}
-
-      {open && (
-        <CardModal card={card} deckId={deckId} deck={deck} prefer={prefer} onClose={() => setOpen(false)} />
       )}
     </div>
   );
