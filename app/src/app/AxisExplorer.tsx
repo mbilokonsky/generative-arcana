@@ -12,7 +12,7 @@
  * Built mobile-first and keyboard-accessible (roles tablist/tab/tabpanel, arrow-key nav).
  */
 import { useState, useEffect, useRef, Fragment } from "react";
-import { Svg } from "@/components/cardMeta";
+import { Svg, omega, facVar, facWord } from "@/components/cardMeta";
 import type { DeckDataFile } from "@/decks/types";
 
 type Meaning = { upright?: string[]; inverted?: string[] };
@@ -23,7 +23,7 @@ type Transversal = { name: string; description: string; ordering_rationale?: str
 type MajorArcana = { story?: string; visual_style?: string; symbol?: { svg?: string } };
 type Card = { arcana: string; number: string; name: string };
 
-const GOLD = "#c9a44a", TEXT = "#c7c2b2", MUTE = "#9aa0b0", PANEL = "#13131f", LINE = "rgba(255,255,255,0.08)";
+const GOLD = "var(--accent)", TEXT = "var(--ink-2)", MUTE = "var(--ink-3)", PANEL = "var(--card)", LINE = "var(--line)";
 
 function useNarrow(bp = 680) {
   const [n, setN] = useState(typeof window !== "undefined" && window.innerWidth < bp);
@@ -60,13 +60,14 @@ export function AxisExplorer({ deck }: { deck: DeckDataFile }) {
             <button key={i} role="tab" id={`axis-tab-${i}`} aria-selected={on} aria-controls={`axis-panel-${i}`}
               tabIndex={on ? 0 : -1} ref={(el) => (refs.current[i] = el)} onClick={() => setActive(i)}
               style={{
-                all: "unset", cursor: "pointer", whiteSpace: "nowrap", padding: "10px 14px", borderRadius: 9,
-                font: "600 13px/1.1 ui-sans-serif, system-ui", outlineOffset: 2,
-                background: on ? "#e9dcc0" : "rgba(255,255,255,0.04)", color: on ? "#0b0b14" : TEXT,
-                border: `1px solid ${on ? "transparent" : LINE}`,
+                all: "unset", cursor: "pointer", whiteSpace: "nowrap", padding: "10px 4px", marginRight: 12,
+                font: `${on ? 600 : 400} 13px/1.1 var(--font-body)`, outlineOffset: 2,
+                color: on ? "var(--ink)" : "var(--ink-3)",
+                boxShadow: on ? "inset 0 -2px 0 var(--accent)" : "none",
+                transition: "color var(--t-fast) var(--ease)",
               }}>
-              <span style={{ opacity: 0.5, fontWeight: 700 }}>{i + 1}</span>
-              <span style={{ margin: "0 7px", opacity: 0.35 }}>·</span>{label}
+              <span style={{ font: "400 11px/1 var(--font-mono)", color: "var(--ink-3)" }}>{i + 1}</span>
+              <span style={{ margin: "0 7px", color: "var(--ink-3)" }}>·</span>{label}
             </button>
           );
         })}
@@ -89,9 +90,9 @@ function Lead({ children }: { children: React.ReactNode }) {
 function Means({ m }: { m?: Meaning }) {
   if (!m?.upright?.length && !m?.inverted?.length) return null;
   return (
-    <div style={{ marginTop: 8, font: "400 12px/1.55 ui-sans-serif, system-ui" }}>
+    <div style={{ marginTop: 8, font: "400 12px/1.55 var(--font-body)" }}>
       {m.upright?.length ? <div><span style={{ color: GOLD, fontWeight: 600 }}>Upright </span><span style={{ color: TEXT }}>{m.upright.join(" · ")}</span></div> : null}
-      {m.inverted?.length ? <div><span style={{ color: "#8a7f6e", fontWeight: 600 }}>Shadow </span><span style={{ color: MUTE }}>{m.inverted.join(" · ")}</span></div> : null}
+      {m.inverted?.length ? <div><span style={{ color: "var(--ink-3)", fontWeight: 600 }}>Shadow </span><span style={{ color: MUTE }}>{m.inverted.join(" · ")}</span></div> : null}
     </div>
   );
 }
@@ -115,8 +116,8 @@ function SuitCard({ s }: { s: Suit }) {
   return (
     <div style={panel}>
       <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-        {s.symbol?.svg && <span style={{ color: "#d8b24a" }}><Svg svg={s.symbol.svg} size={24} /></span>}
-        <span style={{ font: "600 16px/1 ui-serif, Georgia, serif" }}>{s.name}</span>
+        {s.symbol?.svg && <span style={{ color: "var(--accent)" }}><Svg svg={s.symbol.svg} size={24} /></span>}
+        <span style={{ font: "400 18px/1 var(--font-display)", color: "var(--ink)" }}>{s.name}</span>
       </div>
       <p style={{ ...body, margin: "9px 0 0" }}>{s.description}</p>
       <Means m={s.meaning} />
@@ -154,11 +155,11 @@ function SuitsPanel({ deck }: { deck: DeckDataFile }) {
       )}
 
       {/* The Major Arcana — no suit, yet functions as one */}
-      <div style={{ ...panel, marginTop: 14, borderColor: "rgba(201,164,74,0.28)" }}>
+      <div style={{ ...panel, marginTop: 14, borderColor: "var(--accent)", background: "var(--accent-wash)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-          {ma?.symbol?.svg && <span style={{ color: "#d8b24a" }}><Svg svg={ma.symbol.svg} size={24} /></span>}
-          <span style={{ font: "600 16px/1 ui-serif, Georgia, serif" }}>The Major Arcana</span>
-          <span style={{ font: "600 10px/1 ui-sans-serif, system-ui", color: GOLD, letterSpacing: "0.08em", textTransform: "uppercase", border: `1px solid ${LINE}`, borderRadius: 5, padding: "3px 6px" }}>no suit</span>
+          {ma?.symbol?.svg && <span style={{ color: "var(--accent)" }}><Svg svg={ma.symbol.svg} size={24} /></span>}
+          <span style={{ font: "400 18px/1 var(--font-display)", color: "var(--ink)" }}>The Major Arcana</span>
+          <span style={{ font: "400 10px/1 var(--font-mono)", color: GOLD, letterSpacing: "0.13em", textTransform: "uppercase", border: "1px solid var(--accent)", borderRadius: "var(--r-1)", padding: "3px 6px" }}>no suit</span>
         </div>
         <p style={{ ...body, margin: "9px 0 0" }}>
           The 22 trumps carry no suit and no rank — yet the Major Arcana <em>functions</em> as a fifth suit:
@@ -172,7 +173,7 @@ function SuitsPanel({ deck }: { deck: DeckDataFile }) {
 }
 function AxisLabel({ text, vertical }: { text: string; vertical?: boolean }) {
   return (
-    <div style={{ display: "grid", placeItems: "center", color: GOLD, font: "700 11px/1 ui-sans-serif, system-ui", letterSpacing: "0.12em", textTransform: "uppercase", writingMode: vertical ? "vertical-rl" : undefined, transform: vertical ? "rotate(180deg)" : undefined, padding: vertical ? 0 : "0 0 4px" }}>{text}</div>
+    <div style={{ display: "grid", placeItems: "center", color: GOLD, font: "400 11px/1 var(--font-mono)", letterSpacing: "0.13em", textTransform: "uppercase", writingMode: vertical ? "vertical-rl" : undefined, transform: vertical ? "rotate(180deg)" : undefined, padding: vertical ? 0 : "0 0 4px" }}>{text}</div>
   );
 }
 
@@ -196,12 +197,12 @@ function RanksPanel({ deck }: { deck: DeckDataFile }) {
       <div style={{ display: "flex", flexDirection: "column", marginBottom: 26 }}>
         {ranks.map((r) => (
           <div key={r.index} style={{ display: "flex", gap: 14, padding: "11px 0", borderTop: `1px solid ${LINE}` }}>
-            <div style={{ flex: "0 0 40px", textAlign: "center" }}>
-              <div style={{ font: "700 19px/1 ui-serif, Georgia, serif", color: GOLD }}>{r.symbol || r.numeric_value}</div>
-              <div style={{ font: "400 10px/1.4 ui-sans-serif, system-ui", color: MUTE }}>{r.numeric_value}</div>
+            <div style={{ flex: "0 0 56px", textAlign: "right" }}>
+              <div style={{ font: "400 20px/1 var(--font-display)", color: GOLD }}>{r.symbol || r.numeric_value}</div>
+              <div style={{ font: "400 10px/1.4 var(--font-mono)", color: MUTE }}>{r.numeric_value}</div>
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ font: "600 15px/1.2 ui-serif, Georgia, serif", color: "#e9dcc0" }}>{r.name}</div>
+              <div style={{ font: "400 16px/1.2 var(--font-display)", color: "var(--ink)" }}>{r.name}</div>
               {r.question && <div style={{ ...body, color: GOLD, fontStyle: "italic", margin: "3px 0 0", fontSize: 13 }}>{r.question.replace(/\{suit\}/g, "the suit")}</div>}
               {r.description && <p style={{ ...body, margin: "4px 0 0" }}>{r.description}</p>}
             </div>
@@ -215,8 +216,8 @@ function RanksPanel({ deck }: { deck: DeckDataFile }) {
       </p>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: "4px 16px" }}>
         {majors.map((m) => (
-          <div key={m.n} style={{ display: "flex", gap: 9, padding: "5px 0", font: "400 13px/1.4 ui-sans-serif, system-ui" }}>
-            <span style={{ flex: "0 0 22px", textAlign: "right", color: GOLD, fontWeight: 700 }}>{m.n}</span>
+          <div key={m.n} style={{ display: "flex", gap: 9, padding: "5px 0", font: "400 13px/1.4 var(--font-body)" }}>
+            <span style={{ flex: "0 0 22px", textAlign: "right", color: GOLD, font: "400 13px/1.4 var(--font-mono)" }}>{m.n}</span>
             <span style={{ color: TEXT }}>{m.name}</span>
           </div>
         ))}
@@ -238,8 +239,11 @@ function TransversalPanel({ tx, suitCount }: { tx: Transversal; suitCount: numbe
         never declared — it's <strong>sublimated</strong> into each card's palette, light and mood. This
         deck's choice is <strong style={{ color: GOLD }}>{tx.name}</strong>.
       </Lead>
+      <h3 style={{ font: "400 26px/1.1 var(--font-display)", color: "var(--ink)", margin: "0 0 10px" }}>{tx.name}</h3>
       <p style={{ ...body, margin: "0 0 12px" }}>{tx.description}</p>
-      {tx.ordering_rationale && <p style={{ ...mutedItalic, maxWidth: 720, margin: "0 0 14px" }}>{tx.ordering_rationale}</p>}
+      {tx.ordering_rationale && (
+        <p style={{ ...mutedItalic, maxWidth: 720, margin: "0 0 14px", paddingLeft: 14, borderLeft: "2px solid var(--accent)" }}>{tx.ordering_rationale}</p>
+      )}
       <p style={{ ...body, color: MUTE, margin: "0 0 16px", fontSize: 13 }}>
         {stations.length} stations; each card lands on one by a fixed walk (suit stride {k}{k === 1 ? ", the cleanest diagonal" : ""}),
         so a station recurs across suits and ranks — binding cross-cutting families of cards.
@@ -249,7 +253,7 @@ function TransversalPanel({ tx, suitCount }: { tx: Transversal; suitCount: numbe
       <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 6, marginBottom: 18 }}>
         {stations.map((st, i) => (
           <Fragment key={st.slug}>
-            <span style={{ font: "600 12px/1 ui-sans-serif, system-ui", color: GOLD, background: "rgba(201,164,74,0.12)", border: "1px solid rgba(201,164,74,0.3)", borderRadius: 20, padding: "5px 10px" }}>{st.index}. {st.name}</span>
+            <span style={{ font: "400 12px/1 var(--font-mono)", color: GOLD, background: "var(--accent-wash)", border: "1px solid var(--accent)", borderRadius: 20, padding: "5px 10px" }}>{st.index}. {st.name}</span>
             <span style={{ color: MUTE }} aria-hidden>{i < stations.length - 1 ? "→" : "↺"}</span>
           </Fragment>
         ))}
@@ -259,8 +263,8 @@ function TransversalPanel({ tx, suitCount }: { tx: Transversal; suitCount: numbe
         {stations.map((st) => (
           <div key={st.slug} style={panel}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-              <span style={{ font: "700 13px/1 ui-sans-serif, system-ui", color: MUTE }}>{st.index}</span>
-              <span style={{ font: "600 15px/1 ui-serif, Georgia, serif" }}>{st.name}</span>
+              <span style={{ font: "400 13px/1 var(--font-mono)", color: MUTE }}>{st.index}</span>
+              <span style={{ font: "400 16px/1 var(--font-display)", color: "var(--ink)" }}>{st.name}</span>
             </div>
             {st.description && <p style={{ ...body, margin: "7px 0 0" }}>{st.description}</p>}
             {st.visual_motif && <p style={{ ...mutedItalic, margin: "7px 0 0" }}>{st.visual_motif}</p>}
@@ -273,22 +277,25 @@ function TransversalPanel({ tx, suitCount }: { tx: Transversal; suitCount: numbe
 }
 
 // ── Axis 4: Prime Factorization ───────────────────────────────────────────────
-function factorize(n: number): { character: "identity" | "prime" | "composite"; factors: number[] } {
-  if (n <= 1) return { character: "identity", factors: [] };
+// Ω, the count of prime factors with multiplicity, is the one invariant axis: its
+// color ramp (--fac-*) never re-themes. Source omega/facVar/facWord from cardMeta.
+function primeFactors(n: number): number[] {
+  if (n <= 1) return [];
   let m = n; const f: number[] = [];
   for (let d = 2; d * d <= m; d++) while (m % d === 0) { f.push(d); m /= d; }
   if (m > 1) f.push(m);
-  return { character: f.length === 1 ? "prime" : "composite", factors: f };
+  return f;
 }
-const CHAR_COLOR = { identity: "#7c8295", prime: GOLD, composite: "#6f8fbf" } as const;
 
 function NumCell({ n }: { n: number }) {
-  const { character, factors } = factorize(n);
+  const o = omega(n);
+  const factors = primeFactors(n);
+  const col = `var(${facVar(o)})`;
   return (
-    <div title={`${n} — ${character}${factors.length > 1 ? ` (${factors.join("×")})` : ""}`}
-      style={{ display: "grid", placeItems: "center", width: 34, height: 34, borderRadius: 7, background: "rgba(255,255,255,0.03)", border: `1px solid ${CHAR_COLOR[character]}55` }}>
-      <span style={{ font: "700 14px/1 ui-serif, Georgia, serif", color: CHAR_COLOR[character] }}>{n}</span>
-      {factors.length > 1 && <span style={{ font: "400 8px/1 ui-sans-serif, system-ui", color: MUTE }}>{factors.join("·")}</span>}
+    <div title={`${n} — Ω${o} ${facWord(o)}${factors.length > 1 ? ` (${factors.join("×")})` : ""}`}
+      style={{ display: "grid", placeItems: "center", width: 34, height: 34, borderRadius: "var(--r-2)", background: "var(--paper-2)", border: `1px solid ${col}` }}>
+      <span style={{ font: "400 14px/1 var(--font-mono)", color: col }}>{n}</span>
+      {factors.length > 1 && <span style={{ font: "400 8px/1 var(--font-mono)", color: MUTE }}>{factors.join("·")}</span>}
     </div>
   );
 }
@@ -302,9 +309,9 @@ function PrimePanel({ deck }: { deck: DeckDataFile }) {
       <Lead>
         The fourth axis isn't woven into the deck's space — it's <strong>intrinsic</strong> to each card's
         number, and the same in every deck. Every number has a factorization, giving the card a character:
-        an <strong style={{ color: CHAR_COLOR.identity }}>identity</strong> (0 the void, 1 the unit of
-        agency), a <strong style={{ color: CHAR_COLOR.prime }}>prime</strong> (irreducible — it simply{" "}
-        <em>is</em>), or a <strong style={{ color: CHAR_COLOR.composite }}>composite</strong> (derived from
+        an <strong style={{ color: "var(--fac-identity)" }}>identity</strong> (0 the void, 1 the unit of
+        agency), a <strong style={{ color: "var(--fac-prime)" }}>prime</strong> (irreducible — it simply{" "}
+        <em>is</em>), or a <strong style={{ color: "var(--fac-c2)" }}>composite</strong> (derived from
         its factors). Powers intensify (x² stabilizes, x³ masters or overreaches); products combine two
         energies. It rides under every card as a quiet undertone — the fourth quantum number.
       </Lead>
@@ -315,16 +322,25 @@ function PrimePanel({ deck }: { deck: DeckDataFile }) {
   );
 }
 function Legend() {
-  const items: [keyof typeof CHAR_COLOR, string][] = [["identity", "0, 1 — the void & the unit"], ["prime", "irreducible"], ["composite", "a product of primes"]];
+  const items: [number, string, string][] = [
+    [0, "Ω0 identity", "0, 1 — the void & the unit"],
+    [1, "Ω1 prime", "irreducible"],
+    [2, "Ω2 composite", "two prime factors"],
+    [3, "Ω3 composite", "three prime factors"],
+    [4, "Ω4+ composite", "four or more"],
+  ];
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: 14, margin: "0 0 18px" }}>
-      {items.map(([k, label]) => (
-        <span key={k} style={{ display: "flex", alignItems: "center", gap: 6, font: "400 12px/1 ui-sans-serif, system-ui", color: TEXT }}>
-          <span style={{ width: 10, height: 10, borderRadius: 3, background: CHAR_COLOR[k] }} />
-          <strong style={{ color: CHAR_COLOR[k], textTransform: "capitalize" }}>{k}</strong>
-          <span style={{ color: MUTE }}>· {label}</span>
-        </span>
-      ))}
+      {items.map(([o, name, label]) => {
+        const col = `var(${facVar(o)})`;
+        return (
+          <span key={o} style={{ display: "flex", alignItems: "center", gap: 6, font: "400 12px/1 var(--font-body)", color: TEXT }}>
+            <span style={{ width: 10, height: 10, borderRadius: 3, background: col }} />
+            <strong style={{ color: col }}>{name}</strong>
+            <span style={{ color: MUTE }}>· {label}</span>
+          </span>
+        );
+      })}
     </div>
   );
 }
@@ -338,10 +354,10 @@ function Group({ title, subtitle, children }: { title: string; subtitle: string;
 }
 
 function SubHead({ children }: { children: React.ReactNode }) {
-  return <h3 style={{ font: "600 11px/1 ui-sans-serif, system-ui", letterSpacing: "0.1em", textTransform: "uppercase", color: MUTE, margin: "0 0 10px" }}>{children}</h3>;
+  return <h3 style={{ font: "400 11px/1 var(--font-mono)", letterSpacing: "0.13em", textTransform: "uppercase", color: MUTE, margin: "0 0 10px" }}>{children}</h3>;
 }
 
-const body: React.CSSProperties = { font: "400 14px/1.6 ui-sans-serif, system-ui", color: TEXT };
-const mutedItalic: React.CSSProperties = { font: "400 12.5px/1.5 ui-sans-serif, system-ui", color: MUTE, fontStyle: "italic" };
-const panel: React.CSSProperties = { padding: 14, borderRadius: 12, background: PANEL, border: `1px solid ${LINE}` };
+const body: React.CSSProperties = { font: "400 14px/1.6 var(--font-body)", color: TEXT };
+const mutedItalic: React.CSSProperties = { font: "400 12.5px/1.5 var(--font-body)", color: MUTE, fontStyle: "italic" };
+const panel: React.CSSProperties = { padding: 14, borderRadius: "var(--r-3)", background: PANEL, border: `1px solid ${LINE}`, boxShadow: "var(--e-1)" };
 const grid = (min: number): React.CSSProperties => ({ display: "grid", gridTemplateColumns: `repeat(auto-fit, minmax(min(${min}px, 100%), 1fr))`, gap: 12 });

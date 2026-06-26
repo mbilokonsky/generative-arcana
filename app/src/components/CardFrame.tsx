@@ -10,9 +10,11 @@ import { type CSSProperties, useState } from "react";
 import type { TarotCardProps } from "./TarotCard";
 import { CardModal } from "./CardModal";
 import { CardArt } from "./CardArt";
-import { AxisGlyph, rankBadge, rankLabel, suitLabel } from "./cardMeta";
+import { AxisGlyph, rankBadge, suitLabel, stationName, omega, facVar, facWord } from "./cardMeta";
 import type { DeckDataFile } from "@/decks/types";
 import type { PackKind } from "@/runtime/defineCard";
+
+const SHADOW = "0 1px 3px rgba(0,0,0,0.6)";
 
 export interface CardFrameProps extends Omit<TarotCardProps, "className" | "style" | "sketch"> {
   /** registry id of the deck — resolves which visual pack (if any) draws this card. */
@@ -31,86 +33,52 @@ export interface CardFrameProps extends Omit<TarotCardProps, "className" | "styl
 }
 
 export function CardFrame({ card, deckId, prefer, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
-  const [hovered, setHovered] = useState(false);
   const [open, setOpen] = useState(false);
   const isMajor = card.arcana === "major";
   const label = isMajor ? card.number : rankBadge(deck, card.rank_slug, card.number);
+  const station = stationName(deck, card.station_slug);
   const subtitle = isMajor
-    ? `Major Arcana · ${card.number}`
-    : `${rankLabel(deck, card.rank_slug)} of ${suitLabel(deck, card.suit_slug)}`;
+    ? "Major Arcana"
+    : [suitLabel(deck, card.suit_slug), station].filter(Boolean).join(" · ");
+  const o = omega(parseInt(card.number, 10));
 
   const frameStyle: CSSProperties = {
-    position: "relative",
-    aspectRatio: String(aspect),
-    width: "100%",
-    borderRadius: "var(--card-radius, 14px)",
-    overflow: "hidden",
-    background: "var(--card-bg, #0a0a14)",
-    boxShadow: "var(--card-shadow, 0 6px 24px rgba(0,0,0,0.45))",
-    border: "var(--card-border, 1px solid rgba(255,255,255,0.08))",
-    color: "var(--banner-fg, #f3ead0)",
-    ...style,
+    position: "relative", aspectRatio: String(aspect), width: "100%",
+    borderRadius: "var(--r-2)", overflow: "hidden",
+    background: "var(--card)", boxShadow: "var(--e-1)", border: "1px solid var(--line)",
+    color: "var(--banner-fg)", ...style,
   };
 
   return (
-    <div
-      className={className}
-      style={frameStyle}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
+    <div className={className} style={frameStyle}>
       <CardArt card={card} deckId={deckId} deck={deck} prefer={prefer} {...cardProps} />
 
       {showBanner && (
         <>
-          {/* corner badge: Suit/Major glyph + Rank/number */}
-          <div
-            style={{
-              position: "absolute", top: 0, right: 0, display: "flex", alignItems: "center", gap: 6,
-              padding: "6px 9px", margin: 8, borderRadius: "var(--banner-radius, 10px)",
-              background: "var(--banner-badge-bg, rgba(8,8,18,0.5))",
-              backdropFilter: "var(--banner-blur, blur(3px))",
-              font: "var(--banner-badge-font, 600 13px/1 ui-serif, Georgia, serif)",
-              letterSpacing: "0.04em",
-            }}
-          >
-            <AxisGlyph deck={deck} card={card} size={16} />
-            <span>{label}</span>
+          <div style={{ position: "absolute", inset: "0 0 auto 0", height: "38%", background: "linear-gradient(to bottom, var(--scrim-soft), transparent)", pointerEvents: "none" }} />
+          <div style={{ position: "absolute", inset: "auto 0 0 0", height: "56%", background: "linear-gradient(to top, var(--scrim), transparent)", pointerEvents: "none" }} />
+
+          {/* top-left: suit/major glyph + number */}
+          <div style={{ position: "absolute", top: 0, left: 0, margin: 9, display: "flex", alignItems: "center", gap: 5, color: "#fff", pointerEvents: "none" }}>
+            <AxisGlyph deck={deck} card={card} size={15} />
+            <span style={{ font: "600 12px/1 var(--font-mono)", textShadow: SHADOW }}>{label}</span>
           </div>
 
-          {/* title bar */}
-          <div
-            style={{
-              position: "absolute", left: 0, right: 0, bottom: 0,
-              padding: "14px 14px 12px",
-              background: "var(--banner-title-bg, linear-gradient(to top, rgba(6,6,14,0.78), rgba(6,6,14,0)))",
-              pointerEvents: "none",
-            }}
-          >
-            <div style={{ font: "var(--banner-name-font, 600 18px/1.15 ui-serif, Georgia, serif)" }}>{card.name}</div>
-            <div style={{ marginTop: 3, opacity: 0.72, font: "var(--banner-sub-font, 400 11px/1.2 ui-sans-serif, system-ui)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-              {subtitle}
-            </div>
+          {/* top-right: the Ω composition dot */}
+          <span aria-hidden title={`${card.number} · ${facWord(o)} (Ω${o})`}
+            style={{ position: "absolute", top: 0, right: 0, margin: 11, width: 9, height: 9, borderRadius: "50%", background: `var(${facVar(o)})`, boxShadow: "0 0 0 2px var(--scrim-soft)", pointerEvents: "none" }} />
+
+          {/* bottom: title bar */}
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "14px 13px 11px", pointerEvents: "none" }}>
+            <div style={{ font: "400 17px/1.12 var(--font-display)", color: "#fff", textShadow: SHADOW }}>{card.name}</div>
+            <div style={{ marginTop: 3, font: "400 10px/1.2 var(--font-mono)", letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.82)", textShadow: SHADOW }}>{subtitle}</div>
           </div>
         </>
       )}
 
       {expandable && (
-        <button
-          aria-label="Card details"
-          onClick={() => setOpen(true)}
-          style={{
-            position: "absolute", top: 0, left: 0, margin: 8, width: 30, height: 30,
-            display: "grid", placeItems: "center", cursor: "pointer",
-            background: "var(--info-btn-bg, rgba(8,8,18,0.55))", color: "inherit",
-            border: "1px solid rgba(255,255,255,0.16)", borderRadius: 9,
-            backdropFilter: "blur(3px)", font: "600 14px/1 ui-serif, Georgia, serif",
-            opacity: hovered ? 1 : 0, pointerEvents: hovered ? "auto" : "none",
-            transition: "opacity 160ms ease",
-          }}
-        >
-          ⤢
-        </button>
+        <button aria-label={`Open ${card.name}`} onClick={() => setOpen(true)}
+          style={{ all: "unset", position: "absolute", inset: 0, cursor: "pointer" }} />
       )}
 
       {open && (

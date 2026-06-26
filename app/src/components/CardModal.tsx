@@ -6,7 +6,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { CardArt } from "./CardArt";
-import { AxisGlyph, rankLabel, suitLabel } from "./cardMeta";
+import { AxisGlyph, rankLabel, suitLabel, omega, facVar } from "./cardMeta";
 import type { CardData } from "@/runtime/types";
 import type { DeckDataFile } from "@/decks/types";
 import type { PackKind } from "@/runtime/defineCard";
@@ -91,67 +91,69 @@ export function CardModal({ card, deckId, prefer, deck, onClose }: CardModalProp
   const virtueDesc = station?.description ?? station?.meaning.upright.slice(0, 3).join(", ");
 
   const subtitle = isMajor ? `Major Arcana · ${card.number}` : `${rankName} of ${suitName}`;
+  const o = omega(parseInt(card.number, 10));
 
   return createPortal(
     <div
       onClick={onClose}
+      role="dialog" aria-modal="true" aria-label={card.name}
       style={{
         position: "fixed", inset: 0, zIndex: 1000,
-        background: "rgba(4,4,10,0.74)", backdropFilter: "blur(4px)",
+        background: "var(--scrim)", backdropFilter: "blur(4px)",
         display: "grid", placeItems: "center", padding: "3vh 16px", overflowY: "auto",
       }}
     >
       <div
         onClick={(e) => e.stopPropagation()}
         style={{
-          position: "relative", width: "min(640px, 100%)",
-          background: "#12121d", color: "#e9dcc0",
-          border: "1px solid rgba(255,255,255,0.1)", borderRadius: 16,
-          boxShadow: "0 20px 70px rgba(0,0,0,0.6)", padding: "18px 22px 20px",
+          position: "relative", width: "min(780px, 100%)",
+          background: "var(--raise)", color: "var(--ink)",
+          border: "1px solid var(--line)", borderRadius: "var(--r-3)",
+          boxShadow: "var(--e-3)", padding: "18px 22px 20px",
         }}
       >
         <button aria-label="Close" onClick={onClose} style={closeBtn}>✕</button>
 
-        <h2 style={{ font: "600 22px/1.15 ui-serif, Georgia, serif", margin: "2px 30px 0 0" }}>{card.name}</h2>
+        <h2 style={{ font: "400 26px/1.12 var(--font-display)", margin: "2px 30px 0 0", color: "var(--ink)" }}>{card.name}</h2>
         <div style={subStyle}>{subtitle}</div>
 
-        {/* card + meaning/imagery, side by side. The card keeps its fixed aspect (alignItems:
-            flex-start, so a long card can't stretch it), and the text column scrolls within the
-            card's height — so the modal stays a constant size no matter how much prose a card has. */}
+        {/* card + meaning/imagery side by side; card holds its 2:3, the text column scrolls so the
+            modal stays a constant size regardless of how much prose a card has. */}
         <div style={{ display: "flex", gap: 18, marginTop: 14, flexWrap: "wrap", alignItems: "flex-start" }}>
-          <div style={{ position: "relative", width: 184, flex: "0 0 184px", aspectRatio: "0.66", borderRadius: 12, overflow: "hidden", background: "#0a0a14", border: "1px solid rgba(255,255,255,0.08)" }}>
+          <div style={{ position: "relative", width: 200, flex: "0 0 200px", aspectRatio: "0.66", borderRadius: "var(--r-2)", overflow: "hidden", background: "var(--paper-2)", border: "1px solid var(--line)" }}>
             <CardArt card={card} deckId={deckId} deck={deck} prefer={prefer} mode="live" />
           </div>
 
-          <div style={{ flex: "1 1 260px", minWidth: 240, maxHeight: 288, overflowY: "auto", paddingRight: 8 }}>
-            <Heading>Meaning</Heading>
-            <p style={meaningP}><span style={tag}>Upright. </span><span style={{ color: "#d8cfb6" }}>{card.meaning.upright}</span></p>
-            <p style={meaningP}><span style={tag}>Reversed. </span><span style={{ color: "#d8cfb6" }}>{card.meaning.inverted}</span></p>
-
+          <div style={{ flex: "1 1 260px", minWidth: 240, maxHeight: 300, overflowY: "auto", paddingRight: 8 }}>
+            <Heading>Upright</Heading>
+            <p style={meaningP}>{card.meaning.upright}</p>
+            <Heading style={{ marginTop: 14 }}>Reversed</Heading>
+            <p style={meaningP}>{card.meaning.inverted}</p>
             <Heading style={{ marginTop: 14 }}>Imagery</Heading>
-            <p style={{ margin: "5px 0 0", color: "#c7c2b2", font: "400 13.5px/1.5 ui-sans-serif, system-ui" }}>
-              {card.visuals.detailed_description}
-            </p>
+            <p style={{ ...meaningP, color: "var(--ink-2)" }}>{card.visuals.detailed_description}</p>
           </div>
         </div>
 
-        {/* coordinate table, at the very bottom */}
-        <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid rgba(255,255,255,0.09)", display: "grid", gridTemplateColumns: "88px 1fr", rowGap: 8, columnGap: 14, alignItems: "baseline" }}>
+        {/* coordinate footer */}
+        <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid var(--line)", display: "grid", gridTemplateColumns: "92px 1fr", rowGap: 8, columnGap: 14, alignItems: "baseline" }}>
           <Row label="Suit">
             <AxisGlyph deck={deck} card={card} size={15} /> <span style={{ marginLeft: 6 }}>{suitName}</span>
           </Row>
           <Row label="Rank">
             <span style={{ fontWeight: 600 }}>{rankName}</span>
-            {rankQ && <span style={{ color: "#9aa0b0" }}> — {rankQ}</span>}
+            {rankQ && <span style={{ color: "var(--ink-2)" }}> — {rankQ}</span>}
           </Row>
           <Row label={axisLabel(transversal?.name)}>
             <span style={{ fontWeight: 600 }}>{virtueName}</span>
-            {virtueDesc && <span style={{ color: "#9aa0b0" }}> — {virtueDesc}</span>}
+            {virtueDesc && <span style={{ color: "var(--ink-2)" }}> — {virtueDesc}</span>}
           </Row>
           <Row label="Composition">
-            <span>{composition(card.number)}</span>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: 7 }}>
+              <span aria-hidden style={{ width: 9, height: 9, borderRadius: "50%", background: `var(${facVar(o)})` }} />
+              <span>{composition(card.number)}</span>
+            </span>
             {card.factorization?.gloss && (
-              <span style={{ flexBasis: "100%", marginTop: 4, color: "#9aa0b0", fontWeight: 400, font: "400 13px/1.5 ui-sans-serif, system-ui" }}>
+              <span style={{ flexBasis: "100%", marginTop: 4, color: "var(--ink-2)", font: "400 13px/1.5 var(--font-body)" }}>
                 {card.factorization.gloss}
               </span>
             )}
@@ -166,21 +168,20 @@ export function CardModal({ card, deckId, prefer, deck, onClose }: CardModalProp
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <>
-      <div style={{ color: "#7c8295", font: "600 11px/1.5 ui-sans-serif, system-ui", letterSpacing: "0.08em", textTransform: "uppercase" }}>{label}</div>
-      <div style={{ font: "400 14px/1.4 ui-serif, Georgia, serif", display: "flex", alignItems: "baseline", flexWrap: "wrap" }}>{children}</div>
+      <div style={{ color: "var(--ink-3)", font: "400 11px/1.5 var(--font-mono)", letterSpacing: "0.08em", textTransform: "uppercase" }}>{label}</div>
+      <div style={{ font: "400 14px/1.4 var(--font-body)", color: "var(--ink)", display: "flex", alignItems: "baseline", flexWrap: "wrap" }}>{children}</div>
     </>
   );
 }
 
 function Heading({ children, style }: { children: React.ReactNode; style?: React.CSSProperties }) {
-  return <h3 style={{ margin: 0, font: "600 11px/1 ui-sans-serif, system-ui", letterSpacing: "0.1em", textTransform: "uppercase", color: "#9aa0b0", ...style }}>{children}</h3>;
+  return <h3 style={{ margin: 0, font: "400 11px/1 var(--font-mono)", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--accent)", ...style }}>{children}</h3>;
 }
 
 const closeBtn: React.CSSProperties = {
   position: "absolute", top: 12, right: 12, width: 30, height: 30, display: "grid", placeItems: "center",
-  cursor: "pointer", background: "rgba(255,255,255,0.06)", color: "#e9dcc0",
-  border: "1px solid rgba(255,255,255,0.12)", borderRadius: 8, font: "400 16px/1 ui-sans-serif, system-ui",
+  cursor: "pointer", background: "var(--paper-2)", color: "var(--ink-2)",
+  border: "1px solid var(--line)", borderRadius: "var(--r-1)", font: "400 16px/1 var(--font-body)",
 };
-const subStyle: React.CSSProperties = { marginTop: 3, color: "#9aa0b0", font: "400 12px/1.3 ui-sans-serif, system-ui", letterSpacing: "0.05em", textTransform: "uppercase" };
-const meaningP: React.CSSProperties = { margin: "6px 0 0", font: "400 14px/1.5 ui-sans-serif, system-ui" };
-const tag: React.CSSProperties = { color: "#c9a44a", fontWeight: 600 };
+const subStyle: React.CSSProperties = { marginTop: 4, color: "var(--ink-3)", font: "400 12px/1.3 var(--font-mono)", letterSpacing: "0.05em", textTransform: "uppercase" };
+const meaningP: React.CSSProperties = { margin: "5px 0 0", font: "400 14px/1.55 var(--font-body)", color: "var(--ink)" };

@@ -1,0 +1,144 @@
+/* ============================================================================
+   Generative Arcana — Design Tokens
+   ----------------------------------------------------------------------------
+   Drop-in CSS custom properties for the "Vitrine" design system.
+
+   USAGE
+   -----
+   1. Import once at the app root (e.g. in main.tsx or a global stylesheet).
+   2. The base token set lives on `:root` (the neutral "Vitrine" frame).
+   3. Stepping into a deck = set `data-theme="<deckId>"` on a wrapping element
+      (the deck-level shell, or <html>/<body>). Every descendant re-resolves.
+      Landing / gallery uses no data-theme (or data-theme="core").
+   4. All chrome reads from var(--token). The card frame's existing hooks
+      (--card-bg, --banner-fg, --banner-title-bg) should be re-expressed as
+      aliases of these tokens (see bottom of file).
+
+   The ONLY axis that never re-themes is factorization (Ω): --fac-* is fixed
+   across every world because the prime/composite character is invariant.
+   ============================================================================ */
+
+:root,
+[data-theme="core"] {
+  /* grounds & surfaces */
+  --paper:      #FAFAF7;   /* app background            */
+  --paper-2:    #F1F0EA;   /* sunken wells / filter bar */
+  --card:       #FFFFFF;   /* panels, tiles             */
+  --raise:      #FFFFFF;   /* modals, popovers          */
+
+  /* ink tiers */
+  --ink:        #16150E;   /* primary text   */
+  --ink-2:      #5B5A50;   /* secondary text */
+  --ink-3:      #94938A;   /* tertiary / mono labels */
+
+  /* lines */
+  --line:       rgba(22,21,14,.10);
+  --line-2:     rgba(22,21,14,.20);
+
+  /* accent (the per-deck signal; neutral cobalt in the core frame) */
+  --accent:      #1F39D8;
+  --accent-2:    #1730B8;          /* hover / pressed */
+  --accent-ink:  #FFFFFF;          /* text on accent  */
+  --accent-wash: rgba(31,57,216,.08); /* active fills, tinted washes */
+
+  /* semantic */
+  --error: #D6455F;
+  --ok:    #1F8A5B;
+
+  /* scrims — sit behind chrome over arbitrary card art (always dark) */
+  --scrim:      rgba(10,9,16,.62);
+  --scrim-soft: rgba(10,9,16,.34);
+
+  /* typography */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'Archivo', system-ui, sans-serif;
+  --font-mono:    'Space Mono', ui-monospace, monospace;
+
+  /* radius */
+  --r-1: 3px;
+  --r-2: 7px;
+  --r-3: 14px;
+
+  /* elevation */
+  --e-1: 0 1px 2px rgba(18,17,10,.06);
+  --e-2: 0 6px 22px rgba(18,17,10,.10);
+  --e-3: 0 22px 60px rgba(18,17,10,.22);
+
+  /* spacing scale (4-based): use for gap/padding — 4 8 14 24 40 64 */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 14px;
+  --s-4: 24px;
+  --s-5: 40px;
+  --s-6: 64px;
+
+  /* motion */
+  --t-fast:  120ms;
+  --t-base:  200ms;
+  --t-modal: 280ms;
+  --ease: cubic-bezier(.2,.7,.2,1);
+
+  /* ---- INVARIANT axis 4: factorization Ω ramp (same in EVERY theme) ---- */
+  --fac-identity: #7C89A8;  /* Ω0 — 0, 1            */
+  --fac-prime:    #D6A93E;  /* Ω1 — irreducible     */
+  --fac-c2:       #E3A579;  /* Ω2 — 2 prime factors */
+  --fac-c3:       #CF6B4A;  /* Ω3 — 3 prime factors */
+  --fac-c4:       #A8442B;  /* Ω4 — 4+ prime factors*/
+}
+
+/* ============ ULTIMA · heroic fantasy — gold leaf on royal-blue night ====== */
+[data-theme="ultima"] {
+  --paper:#0D1224; --paper-2:#111733; --card:#161D3A; --raise:#1B2342;
+  --ink:#EFE4C6; --ink-2:#B7AE8E; --ink-3:#827B64;
+  --line:rgba(201,164,74,.20); --line-2:rgba(201,164,74,.36);
+  --accent:#C9A44A; --accent-2:#D8B24A; --accent-ink:#15120A; --accent-wash:rgba(201,164,74,.12);
+  --error:#D98A6A; --ok:#9DBE6A;
+  --scrim:rgba(4,6,16,.66); --scrim-soft:rgba(4,6,16,.36);
+  --font-display:'DM Serif Display', Georgia, serif;
+  --font-body:'Spectral', Georgia, serif;          /* literary body for this world */
+  --font-mono:'Space Mono', ui-monospace, monospace;
+}
+
+/* ============ BYRNE · documentary mid-century — warm cream, teal ink ======= */
+[data-theme="byrne"] {
+  --paper:#E8E1CF; --paper-2:#F1EBDB; --card:#FBF6EA; --raise:#FFFFFF;
+  --ink:#211E18; --ink-2:#5E574A; --ink-3:#938A77;
+  --line:rgba(33,30,24,.15); --line-2:rgba(33,30,24,.26);
+  --accent:#15786B; --accent-2:#0F5E54; --accent-ink:#FBF6EA; --accent-wash:rgba(21,120,107,.10);
+  --error:#C0492E; --ok:#15786B;
+  --scrim:rgba(20,16,8,.58); --scrim-soft:rgba(20,16,8,.30);
+  --font-display:'Archivo', system-ui, sans-serif; /* clean graphic display, no didone */
+  --font-body:'Archivo', system-ui, sans-serif;
+  --font-mono:'Space Mono', ui-monospace, monospace;
+}
+
+/* ============ ULYSSES · modernist austere — near-black indigo, phosphor ===== */
+[data-theme="ulysses"] {
+  --paper:#0B0D18; --paper-2:#10121F; --card:#13162A; --raise:#181B30;
+  --ink:#C7CAD7; --ink-2:#878BA0; --ink-3:#5A5E73;
+  --line:rgba(199,202,215,.12); --line-2:rgba(199,202,215,.24);
+  --accent:#6E79CE; --accent-2:#828CDA; --accent-ink:#0B0D18; --accent-wash:rgba(110,121,206,.14);
+  --error:#D2737B; --ok:#6FB59A;
+  --scrim:rgba(2,3,9,.62); --scrim-soft:rgba(2,3,9,.34);
+  --font-display:'Space Mono', ui-monospace, monospace; /* typewriter-modernist display */
+  --font-body:'Archivo', system-ui, sans-serif;
+  --font-mono:'Space Mono', ui-monospace, monospace;
+}
+
+/* ----------------------------------------------------------------------------
+   CARD FRAME COMPATIBILITY ALIASES
+   The existing <CardFrame> reads --card-bg / --banner-fg / --banner-title-bg.
+   Re-express them in terms of the token set so the frame themes centrally.
+   The banner sits OVER art, so its fg is always white on a scrim — not --ink.
+   ---------------------------------------------------------------------------- */
+:root {
+  --card-bg: var(--card);
+  --banner-fg: #FFFFFF;                 /* over-art chrome is white on scrim */
+  --banner-title-bg: var(--scrim);      /* bottom title-bar gradient end     */
+  --banner-badge-bg: var(--scrim-soft); /* top badge scrim                   */
+}
+
+/* A new deck supplies values for these to recolor chrome:
+   it really only needs to set --accent (+ optionally --accent-2/-wash),
+   the four ground/ink values, and the three --font-* roles. Everything
+   else cascades. Derive --accent-wash as the accent at ~8–12% alpha. */

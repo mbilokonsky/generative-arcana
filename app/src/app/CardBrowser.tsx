@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import { getDeck } from "@/decks";
 import { isIllustrated, listPacks } from "@/runtime/defineCard";
 import { DeckGrid } from "@/components/DeckGrid";
-import { DeckTabs } from "./DeckTabs";
 import { navigate } from "./router";
 import { getPackId, setPackId } from "./packPref";
 import type { CardData } from "@/runtime/types";
@@ -67,59 +66,190 @@ export function CardBrowser({ deckId }: { deckId: string }) {
   }, [deck, q, arcana, suit, rank, virtue, comp, illustratedOnly]);
 
   if (!deck) {
-    return <div style={{ padding: 40 }}><p>Unknown deck “{deckId}”.</p><button onClick={() => navigate("/")} style={linkBtn}>← all decks</button></div>;
+    return (
+      <div style={{ padding: "var(--s-5)" }}>
+        <p style={{ fontFamily: "var(--font-body)", color: "var(--ink)" }}>Unknown deck “{deckId}”.</p>
+        <button onClick={() => navigate("/")} style={linkBtn}>← all decks</button>
+      </div>
+    );
   }
 
+  const stationLabel = axisLabel((deck.data.transversal as { name?: string } | undefined)?.name);
+  const hasFilters = !!(q || arcana || suit || rank || virtue || comp || illustratedOnly);
+  const clearFilters = () => { setQ(""); setArcana(""); setSuit(""); setRank(""); setVirtue(""); setComp(""); setIllustratedOnly(false); };
+
   return (
-    <div>
-      <DeckTabs deckId={deckId} deckName={deck.name} active="browse" />
-      <div style={{ maxWidth: 1120, margin: "0 auto", padding: "18px 18px 50px" }}>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center", marginBottom: 16 }}>
-          <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search name…" style={input} />
+    <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 var(--s-4) 110px" }}>
+      {/* compact deck header (the page no longer renders DeckTabs) */}
+      <div style={{ padding: "var(--s-4) 0 var(--s-3)" }}>
+        <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, letterSpacing: ".13em", textTransform: "uppercase", color: "var(--ink-3)" }}>
+          Browse the deck
+        </div>
+        <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 4vw, 44px)", lineHeight: 1.05, color: "var(--ink)", margin: "var(--s-1) 0 0" }}>
+          {deck.name}
+        </h1>
+      </div>
+
+      {/* sticky filter bar */}
+      <div style={stickyBar}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "var(--s-2)", alignItems: "center" }}>
+          <input
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="Search cards…"
+            style={input}
+          />
           <Select value={arcana} onChange={setArcana} label="Arcana" options={[["major", "Major"], ["minor", "Minor"]]} />
           <Select value={suit} onChange={setSuit} label="Suit" options={opts.suits.map((s) => [s.slug!, s.name])} />
           <Select value={rank} onChange={setRank} label="Rank" options={opts.ranks.map((r) => [r.slug!, r.name])} />
-          <Select value={virtue} onChange={setVirtue} label={axisLabel((deck.data.transversal as { name?: string } | undefined)?.name)} options={opts.virtues.map((v) => [v.slug!, v.name])} />
+          <Select value={virtue} onChange={setVirtue} label={stationLabel} options={opts.virtues.map((v) => [v.slug!, v.name])} style={{ maxWidth: 180 }} />
           <Select value={comp} onChange={setComp} label="Number" options={[["identity", "Identity"], ["prime", "Prime"], ["composite", "Composite"]]} />
-          <label style={{ display: "flex", alignItems: "center", gap: 6, color: "#c7c2b2", font: "400 13px/1 ui-sans-serif, system-ui", cursor: "pointer" }}>
-            <input type="checkbox" checked={illustratedOnly} onChange={(e) => setIllustratedOnly(e.target.checked)} /> Illustrated only
-          </label>
+          <button
+            type="button"
+            onClick={() => setIllustratedOnly((v) => !v)}
+            aria-pressed={illustratedOnly}
+            style={illusBtn(illustratedOnly)}
+          >
+            Illustrated
+          </button>
+        </div>
+
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "var(--s-3)", alignItems: "center", justifyContent: "space-between", marginTop: "var(--s-3)" }}>
+          <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--ink-3)" }}>
+            {filtered.length} of {deck.cards.length} cards
+          </span>
           {packs.length > 1 && (
-            <div role="group" aria-label="Visual pack" style={{ display: "flex", marginLeft: "auto", border: "1px solid rgba(255,255,255,0.14)", borderRadius: 8, overflow: "hidden" }}>
+            <div role="group" aria-label="Visual pack" style={segWrap}>
               {packs.map((p) => {
                 const on = p.id === pack;
                 return (
-                  <button key={p.id} onClick={() => { setPack(p.id); setPackId(deckId, p.id); }}
-                    style={{ all: "unset", cursor: "pointer", padding: "7px 11px", font: "600 12px/1 ui-sans-serif, system-ui",
-                      background: on ? "#e9dcc0" : "transparent", color: on ? "#0b0b14" : "#c7c2b2" }}>
+                  <button
+                    key={p.id}
+                    type="button"
+                    onClick={() => { setPack(p.id); setPackId(deckId, p.id); }}
+                    aria-pressed={on}
+                    style={segBtn(on)}
+                  >
                     {p.label}
                   </button>
                 );
               })}
             </div>
           )}
-          <span style={{ color: "#6b7080", font: "400 12px/1 ui-sans-serif, system-ui", marginLeft: packs.length > 1 ? 0 : "auto" }}>{filtered.length} of {deck.cards.length}</span>
         </div>
-
-        {filtered.length ? (
-          <DeckGrid cards={filtered} deck={deck.data} deckId={deckId} prefer={prefer} />
-        ) : (
-          <p style={{ color: "#9aa0b0", padding: "40px 0", textAlign: "center" }}>No cards match those filters.</p>
-        )}
       </div>
+
+      {filtered.length ? (
+        <DeckGrid cards={filtered} deck={deck.data} deckId={deckId} prefer={prefer} minColPx={150} />
+      ) : (
+        <div style={{ textAlign: "center", padding: "80px 20px", color: "var(--ink-3)" }}>
+          <div style={{ fontFamily: "var(--font-display)", fontSize: 24, color: "var(--ink-2)", marginBottom: "var(--s-2)" }}>No cards match</div>
+          <div style={{ fontFamily: "var(--font-body)", fontSize: 14, marginBottom: "var(--s-4)" }}>Try loosening a filter.</div>
+          {hasFilters && (
+            <button type="button" onClick={clearFilters} style={clearBtn}>Clear all filters</button>
+          )}
+        </div>
+      )}
     </div>
   );
 }
 
-function Select({ value, onChange, label, options }: { value: string; onChange: (v: string) => void; label: string; options: [string, string][] }) {
+function Select({ value, onChange, label, options, style }: { value: string; onChange: (v: string) => void; label: string; options: [string, string][]; style?: React.CSSProperties }) {
   return (
-    <select value={value} onChange={(e) => onChange(e.target.value)} style={selectStyle} aria-label={label}>
+    <select value={value} onChange={(e) => onChange(e.target.value)} style={{ ...selectStyle, ...style }} aria-label={label}>
       <option value="">{label}: Any</option>
       {options.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
     </select>
   );
 }
 
-const input: React.CSSProperties = { background: "#0c0c16", color: "#e9dcc0", border: "1px solid rgba(255,255,255,0.14)", borderRadius: 8, padding: "8px 10px", font: "400 13px/1 ui-sans-serif, system-ui", minWidth: 150 };
-const selectStyle: React.CSSProperties = { ...input, cursor: "pointer", minWidth: 0 };
-const linkBtn: React.CSSProperties = { all: "unset", cursor: "pointer", color: "#9aa0b0", font: "400 13px/1 ui-sans-serif, system-ui" };
+const stickyBar: React.CSSProperties = {
+  position: "sticky",
+  top: 53,
+  zIndex: 30,
+  background: "color-mix(in srgb, var(--paper) 85%, transparent)",
+  backdropFilter: "blur(10px)",
+  WebkitBackdropFilter: "blur(10px)",
+  padding: "var(--s-3) 0",
+  marginBottom: "var(--s-4)",
+  borderBottom: "1px solid var(--line)",
+};
+
+const input: React.CSSProperties = {
+  flex: "1 1 150px",
+  minWidth: 150,
+  minHeight: 42,
+  padding: "0 13px",
+  background: "var(--paper-2)",
+  color: "var(--ink)",
+  border: "1px solid var(--line)",
+  borderRadius: "var(--r-2)",
+  fontFamily: "var(--font-body)",
+  fontSize: 14,
+  outline: "none",
+};
+
+const selectStyle: React.CSSProperties = {
+  minHeight: 42,
+  padding: "0 12px",
+  background: "var(--paper-2)",
+  color: "var(--ink)",
+  border: "1px solid var(--line)",
+  borderRadius: "var(--r-2)",
+  fontFamily: "var(--font-body)",
+  fontSize: 13.5,
+  cursor: "pointer",
+  outline: "none",
+  minWidth: 0,
+};
+
+const illusBtn = (on: boolean): React.CSSProperties => ({
+  minHeight: 42,
+  padding: "0 15px",
+  borderRadius: "var(--r-2)",
+  cursor: "pointer",
+  fontFamily: "var(--font-body)",
+  fontSize: 13.5,
+  fontWeight: on ? 600 : 500,
+  border: `1px solid ${on ? "var(--accent)" : "var(--line)"}`,
+  background: on ? "var(--accent-wash)" : "var(--paper-2)",
+  color: on ? "var(--accent)" : "var(--ink-2)",
+});
+
+const segWrap: React.CSSProperties = {
+  display: "inline-flex",
+  padding: 3,
+  gap: 3,
+  background: "var(--paper-2)",
+  border: "1px solid var(--line)",
+  borderRadius: 999,
+};
+
+const segBtn = (on: boolean): React.CSSProperties => ({
+  appearance: "none",
+  border: "none",
+  cursor: "pointer",
+  minHeight: 34,
+  padding: "0 15px",
+  borderRadius: 999,
+  fontFamily: "var(--font-body)",
+  fontSize: 13,
+  fontWeight: on ? 600 : 500,
+  background: on ? "var(--accent)" : "transparent",
+  color: on ? "var(--accent-ink)" : "var(--ink-2)",
+  boxShadow: on ? "var(--e-1)" : "none",
+});
+
+const clearBtn: React.CSSProperties = {
+  minHeight: 42,
+  padding: "0 18px",
+  border: "1px solid var(--line-2)",
+  borderRadius: "var(--r-2)",
+  background: "transparent",
+  color: "var(--ink)",
+  fontFamily: "var(--font-body)",
+  fontSize: 14,
+  cursor: "pointer",
+};
+
+const linkBtn: React.CSSProperties = { all: "unset", cursor: "pointer", color: "var(--ink-2)", fontFamily: "var(--font-body)", fontSize: 13 };

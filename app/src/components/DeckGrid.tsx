@@ -29,7 +29,7 @@ export function DeckGrid({ cards, deck, deckId, prefer, minColPx = 200, onSignal
       style={{
         display: "grid",
         gridTemplateColumns: `repeat(auto-fill, minmax(${minColPx}px, 1fr))`,
-        gap: 18,
+        gap: 16,
       }}
     >
       {cards.map((card) => {
@@ -42,7 +42,13 @@ export function DeckGrid({ cards, deck, deckId, prefer, minColPx = 200, onSignal
             onMouseLeave={() => setActiveSlug((s) => (s === card.slug ? null : s))}
             onFocus={() => setActiveSlug(card.slug)}
             tabIndex={0}
-            style={{ outline: "none", transition: "transform 160ms ease", transform: lift ? "translateY(-3px)" : "none" }}
+            style={{
+              outline: "none",
+              borderRadius: "var(--r-2)",
+              transition: "transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease)",
+              transform: lift ? "translateY(-5px)" : "none",
+              boxShadow: lift ? "var(--e-2)" : "none",
+            }}
           >
             <CardFrame
               card={card}

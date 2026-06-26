@@ -120,3 +120,24 @@ export const RANK_NAME: Record<string, string> = {
 export const SUIT_LABEL: Record<string, string> = {
   crowns: "Crowns", blades: "Blades", runes: "Runes", moongates: "Moongates",
 };
+
+// ── the fourth axis: Ω, the count of prime factors (invariant across every deck) ──
+/** Ω(n): prime factors with multiplicity. 0/1 → 0 (identity); a prime → 1; composites deepen. */
+export function omega(n: number): number {
+  if (!Number.isFinite(n) || n <= 1) return 0;
+  let c = 0, d = 2;
+  while (d * d <= n) { while (n % d === 0) { n /= d; c++; } d++; }
+  if (n > 1) c++;
+  return c;
+}
+const FAC_VARS = ["--fac-identity", "--fac-prime", "--fac-c2", "--fac-c3", "--fac-c4"];
+/** The CSS custom property for a card's Ω band, e.g. `var(facVar(omega(n)))`. */
+export function facVar(o: number): string { return FAC_VARS[Math.min(o, 4)]; }
+export function facWord(o: number): string { return o === 0 ? "identity" : o === 1 ? "prime" : "composite"; }
+
+/** A station's display name from the deck's transversal (falls back to the slug). */
+export function stationName(deck: DeckDataFile | undefined, slug?: string): string {
+  if (!slug) return "";
+  const tx = deck?.transversal as { stations?: Record<string, { name?: string }> } | undefined;
+  return tx?.stations?.[slug]?.name ?? slug;
+}

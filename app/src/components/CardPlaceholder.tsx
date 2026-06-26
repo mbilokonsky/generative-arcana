@@ -1,38 +1,24 @@
-/** A static "face" for cards that have no p5 sketch yet (most of a deck, and pasted decks).
- *  Shows the card's name + axis glyph so the browser and readings still read as complete. */
-import { AxisGlyph, rankBadge, suitLabel } from "./cardMeta";
+/** A static "face" for cards with no shipped art (and pasted decks). In production a card with a live
+ *  p5 sketch renders that instead; this is the graceful fallback. Striped Vitrine well + glyph + name. */
+import { AxisGlyph } from "./cardMeta";
 import type { CardData } from "@/runtime/types";
 import type { DeckDataFile } from "@/decks/types";
 
-const ACCENT: Record<string, string> = {
-  crowns: "#d4a02a", blades: "#9d2b2b", runes: "#e9c75a", moongates: "#e0506a", major: "#d8b24a",
-};
-
 export function CardPlaceholder({ card, deck }: { card: CardData; deck?: DeckDataFile }) {
-  const which = card.arcana === "major" ? "major" : (card.suit_slug ?? "major");
-  const accent = ACCENT[which] ?? "#d8b24a";
-  const subtitle =
-    card.arcana === "major"
-      ? `Major Arcana · ${card.number}`
-      : `${rankBadge(deck, card.rank_slug, card.number)} · ${suitLabel(deck, card.suit_slug)}`;
-
   return (
     <div
       style={{
         position: "absolute", inset: 0, display: "flex", flexDirection: "column",
-        alignItems: "center", justifyContent: "center", gap: 10, padding: 16, textAlign: "center",
-        background: "radial-gradient(120% 90% at 50% 35%, #1b1b2b 0%, #0c0c16 100%)",
-        color: "#e9dcc0",
+        alignItems: "center", justifyContent: "center", gap: 12, padding: 16, textAlign: "center",
+        color: "var(--ink-3)",
+        background:
+          "repeating-linear-gradient(45deg, var(--paper-2) 0 10px, var(--card) 10px 20px)",
       }}
     >
-      <div style={{ color: accent, opacity: 0.85, filter: "drop-shadow(0 0 8px rgba(0,0,0,0.4))" }}>
-        <AxisGlyph deck={deck} card={card} size={46} />
+      <div style={{ color: "var(--ink-2)" }}>
+        <AxisGlyph deck={deck} card={card} size={44} />
       </div>
-      <div style={{ font: "600 16px/1.2 ui-serif, Georgia, serif" }}>{card.name}</div>
-      <div style={{ opacity: 0.55, font: "400 10px/1.2 ui-sans-serif, system-ui", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-        {subtitle}
-      </div>
-      <div style={{ position: "absolute", inset: 6, border: `1px solid ${accent}33`, borderRadius: 10, pointerEvents: "none" }} />
+      <div style={{ font: "400 16px/1.2 var(--font-display)", color: "var(--ink-2)" }}>{card.name}</div>
     </div>
   );
 }

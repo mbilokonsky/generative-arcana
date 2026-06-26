@@ -1,0 +1,39 @@
+/* Base element styles for the Vitrine design system. Tokens come from tokens.css. */
+* { box-sizing: border-box; }
+
+html, body, #root { min-height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* themed grounds shift instantly on data-theme change; do NOT transition var()-fed colors */
+}
+
+/* the deck "world" theme is set on #root via data-theme; fill the viewport with its paper */
+#root { background: var(--paper); }
+
+button { font-family: inherit; color: inherit; }
+
+::selection { background: var(--accent-wash); }
+
+a { color: var(--accent); }
+
+/* a single, consistent focus ring on every control */
+:focus-visible {
+  outline: 3px solid var(--accent-wash);
+  outline-offset: 2px;
+  border-radius: var(--r-1);
+}
+
+/* slim, unobtrusive scrollbars inside scroll areas */
+* { scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
