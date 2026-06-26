@@ -7,27 +7,27 @@
  * banner can be turned off, restyled, or replaced wholesale without touching a single sketch.
  */
 import { type CSSProperties, useState } from "react";
-import { TarotCard, type TarotCardProps } from "./TarotCard";
+import type { TarotCardProps } from "./TarotCard";
 import { CardModal } from "./CardModal";
-import { CardPlaceholder } from "./CardPlaceholder";
+import { CardArt } from "./CardArt";
 import { AxisGlyph, rankBadge, rankLabel, suitLabel } from "./cardMeta";
 import type { DeckDataFile } from "@/decks/types";
 
 export interface CardFrameProps extends Omit<TarotCardProps, "className" | "style" | "sketch"> {
-  /** the card's p5 sketch; if absent, a static placeholder face is shown. */
-  sketch?: TarotCardProps["sketch"];
+  /** registry id of the deck — resolves which visual pack (if any) draws this card. */
+  deckId?: string;
   showBanner?: boolean;
   /** aspect ratio width/height; tarot ~ 0.66. */
   aspect?: number;
   /** show a hover-reveal info button that opens the full card modal. */
   expandable?: boolean;
-  /** deck data, so the modal can resolve suit/rank/virtue meanings. */
+  /** deck data, so the banner/modal can resolve suit/rank/virtue meanings. */
   deck?: DeckDataFile;
   className?: string;
   style?: CSSProperties;
 }
 
-export function CardFrame({ card, sketch, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
+export function CardFrame({ card, deckId, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
   const [hovered, setHovered] = useState(false);
   const [open, setOpen] = useState(false);
   const isMajor = card.arcana === "major";
@@ -56,9 +56,7 @@ export function CardFrame({ card, sketch, showBanner = true, aspect = 0.66, expa
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {sketch
-        ? <TarotCard card={card} sketch={sketch} {...cardProps} style={{ position: "absolute", inset: 0 }} />
-        : <CardPlaceholder card={card} deck={deck} />}
+      <CardArt card={card} deckId={deckId} deck={deck} {...cardProps} />
 
       {showBanner && (
         <>
@@ -113,7 +111,7 @@ export function CardFrame({ card, sketch, showBanner = true, aspect = 0.66, expa
       )}
 
       {open && (
-        <CardModal card={card} sketch={sketch} deck={deck} onClose={() => setOpen(false)} />
+        <CardModal card={card} deckId={deckId} deck={deck} onClose={() => setOpen(false)} />
       )}
     </div>
   );

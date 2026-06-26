@@ -5,10 +5,9 @@
  */
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
-import { TarotCard } from "./TarotCard";
-import { CardPlaceholder } from "./CardPlaceholder";
+import { CardArt } from "./CardArt";
 import { AxisGlyph, rankLabel, suitLabel } from "./cardMeta";
-import type { CardData, CardSketch } from "@/runtime/types";
+import type { CardData } from "@/runtime/types";
 import type { DeckDataFile } from "@/decks/types";
 
 type Meaning = { upright: string[]; inverted: string[] };
@@ -61,12 +60,13 @@ function axisLabel(name: string | undefined): string {
 
 export interface CardModalProps {
   card: CardData;
-  sketch?: CardSketch;
+  /** registry id of the deck — resolves which visual pack draws the preview. */
+  deckId?: string;
   deck?: DeckDataFile;
   onClose: () => void;
 }
 
-export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
+export function CardModal({ card, deckId, deck, onClose }: CardModalProps) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", onKey);
@@ -117,9 +117,7 @@ export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
             card's height — so the modal stays a constant size no matter how much prose a card has. */}
         <div style={{ display: "flex", gap: 18, marginTop: 14, flexWrap: "wrap", alignItems: "flex-start" }}>
           <div style={{ position: "relative", width: 184, flex: "0 0 184px", aspectRatio: "0.66", borderRadius: 12, overflow: "hidden", background: "#0a0a14", border: "1px solid rgba(255,255,255,0.08)" }}>
-            {sketch
-              ? <TarotCard card={card} sketch={sketch} mode="live" style={{ position: "absolute", inset: 0 }} />
-              : <CardPlaceholder card={card} deck={deck} />}
+            <CardArt card={card} deckId={deckId} deck={deck} mode="live" />
           </div>
 
           <div style={{ flex: "1 1 260px", minWidth: 240, maxHeight: 288, overflowY: "auto", paddingRight: 8 }}>

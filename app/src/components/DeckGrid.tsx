@@ -4,7 +4,7 @@
  */
 import { useState } from "react";
 import { CardFrame } from "./CardFrame";
-import { getCardSketch } from "../runtime/defineCard";
+import { isIllustrated } from "../runtime/defineCard";
 import type { CardData } from "../runtime/types";
 import type { DeckDataFile } from "@/decks/types";
 
@@ -30,8 +30,8 @@ export function DeckGrid({ cards, deck, deckId, minColPx = 200, onSignal }: Deck
       }}
     >
       {cards.map((card) => {
-        const sketch = deckId ? getCardSketch(deckId, card.slug) : undefined;
         const live = activeSlug === card.slug;
+        const lift = live && !!deckId && isIllustrated(deckId, card.slug);
         return (
           <div
             key={card.slug}
@@ -39,11 +39,11 @@ export function DeckGrid({ cards, deck, deckId, minColPx = 200, onSignal }: Deck
             onMouseLeave={() => setActiveSlug((s) => (s === card.slug ? null : s))}
             onFocus={() => setActiveSlug(card.slug)}
             tabIndex={0}
-            style={{ outline: "none", transition: "transform 160ms ease", transform: live && sketch ? "translateY(-3px)" : "none" }}
+            style={{ outline: "none", transition: "transform 160ms ease", transform: lift ? "translateY(-3px)" : "none" }}
           >
             <CardFrame
               card={card}
-              sketch={sketch}
+              deckId={deckId}
               deck={deck}
               expandable
               mode={live ? "live" : "poster"}

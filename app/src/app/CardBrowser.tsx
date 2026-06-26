@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { getDeck } from "@/decks";
-import { hasCardSketch } from "@/runtime/defineCard";
+import { isIllustrated } from "@/runtime/defineCard";
 import { DeckGrid } from "@/components/DeckGrid";
 import { DeckTabs } from "./DeckTabs";
 import { navigate } from "./router";
@@ -56,7 +56,7 @@ export function CardBrowser({ deckId }: { deckId: string }) {
       if (rank && c.rank_slug !== rank) return false;
       if (virtue && c.station_slug !== virtue) return false;
       if (comp && numericKind(c.number) !== comp) return false;
-      if (illustratedOnly && !hasCardSketch(deckId, c.slug)) return false;
+      if (illustratedOnly && !isIllustrated(deckId, c.slug)) return false;
       return true;
     });
   }, [deck, q, arcana, suit, rank, virtue, comp, illustratedOnly]);

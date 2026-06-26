@@ -42,3 +42,31 @@ export function hasCardSketch(deckId: string, slug: string): boolean {
 export function registeredSlugsFor(deckId: string): string[] {
   return [...(PACKS.get(deckId)?.keys() ?? [])];
 }
+
+// ── Raw-p5 packs ─────────────────────────────────────────────────────────────
+// A second kind of visual pack: standalone p5 instance-mode sketch *source strings*
+// (`function sketch(p) { p.setup=…; p.draw=… }`), as migrated from decks authored in the prior
+// tool (e.g. Ulysses). They render via <RawP5Card>, which compiles and runs them. Kept separate
+// from the typed CardSketch registry so a deck can ship either kind (or, later, both — selectable).
+
+/** deckId → (slug → p5 source string). */
+const RAW_PACKS = new Map<string, Map<string, string>>();
+
+export function registerRawPack(deckId: string, codes: Record<string, string>): void {
+  const pack = RAW_PACKS.get(deckId) ?? new Map<string, string>();
+  for (const [slug, code] of Object.entries(codes)) pack.set(slug, code);
+  RAW_PACKS.set(deckId, pack);
+}
+
+export function getRawSketch(deckId: string, slug: string): string | undefined {
+  return RAW_PACKS.get(deckId)?.get(slug);
+}
+
+export function hasRawSketch(deckId: string, slug: string): boolean {
+  return RAW_PACKS.get(deckId)?.has(slug) ?? false;
+}
+
+/** True if a card has ANY visual (typed kit sketch or raw p5) — for "illustrated" counts/affordances. */
+export function isIllustrated(deckId: string, slug: string): boolean {
+  return hasCardSketch(deckId, slug) || hasRawSketch(deckId, slug);
+}
