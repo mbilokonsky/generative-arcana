@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { TarotCard } from "./TarotCard";
 import { CardPlaceholder } from "./CardPlaceholder";
-import { Glyph, RANK_NAME, SUIT_LABEL } from "./cardMeta";
+import { AxisGlyph, rankLabel, suitLabel } from "./cardMeta";
 import type { CardData, CardSketch } from "@/runtime/types";
 import type { DeckDataFile } from "@/decks/types";
 
@@ -81,9 +81,8 @@ export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
   const rank = card.rank_slug ? (deck?.ranks as Record<string, AxisInfo & { description?: string; question?: string }> | undefined)?.[card.rank_slug] : undefined;
 
   const isMajor = card.arcana === "major";
-  const suitGlyph = isMajor ? "major" : (card.suit_slug ?? "major");
-  const suitName = isMajor ? "Major Arcana" : (suit?.name ?? SUIT_LABEL[card.suit_slug ?? ""] ?? card.suit_slug ?? "—");
-  const rankName = isMajor ? "—" : (RANK_NAME[card.rank_slug ?? ""] ?? "—");
+  const suitName = isMajor ? "Major Arcana" : (suit?.name ?? suitLabel(deck, card.suit_slug) ?? "—");
+  const rankName = isMajor ? "—" : (rankLabel(deck, card.rank_slug) || "—");
   const rankQ = isMajor ? null : rankQuestion(rank, suitName);
   const virtueName = station?.name ?? card.station_slug;
   const virtueDesc = station?.description ?? station?.meaning.upright.slice(0, 3).join(", ");
@@ -118,7 +117,7 @@ export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
           <div style={{ position: "relative", width: 184, flex: "0 0 184px", aspectRatio: "0.66", borderRadius: 12, overflow: "hidden", background: "#0a0a14", border: "1px solid rgba(255,255,255,0.08)" }}>
             {sketch
               ? <TarotCard card={card} sketch={sketch} mode="live" style={{ position: "absolute", inset: 0 }} />
-              : <CardPlaceholder card={card} />}
+              : <CardPlaceholder card={card} deck={deck} />}
           </div>
 
           <div style={{ flex: "1 1 260px", minWidth: 240 }}>
@@ -136,7 +135,7 @@ export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
         {/* coordinate table, at the very bottom */}
         <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid rgba(255,255,255,0.09)", display: "grid", gridTemplateColumns: "88px 1fr", rowGap: 8, columnGap: 14, alignItems: "baseline" }}>
           <Row label="Suit">
-            <Glyph which={suitGlyph} size={15} /> <span style={{ marginLeft: 6 }}>{suitName}</span>
+            <AxisGlyph deck={deck} card={card} size={15} /> <span style={{ marginLeft: 6 }}>{suitName}</span>
           </Row>
           <Row label="Rank">
             <span style={{ fontWeight: 600 }}>{rankName}</span>

@@ -12,11 +12,13 @@ export interface DeckGridProps {
   cards: CardData[];
   /** deck data so each card's modal can resolve suit/rank/virtue meanings. */
   deck?: DeckDataFile;
+  /** registry id of the deck, used to resolve its (namespaced) card sketches. */
+  deckId?: string;
   minColPx?: number;
   onSignal?: (slug: string, name: string, detail?: unknown) => void;
 }
 
-export function DeckGrid({ cards, deck, minColPx = 200, onSignal }: DeckGridProps) {
+export function DeckGrid({ cards, deck, deckId, minColPx = 200, onSignal }: DeckGridProps) {
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
 
   return (
@@ -28,7 +30,7 @@ export function DeckGrid({ cards, deck, minColPx = 200, onSignal }: DeckGridProp
       }}
     >
       {cards.map((card) => {
-        const sketch = getCardSketch(card.slug);
+        const sketch = deckId ? getCardSketch(deckId, card.slug) : undefined;
         const live = activeSlug === card.slug;
         return (
           <div

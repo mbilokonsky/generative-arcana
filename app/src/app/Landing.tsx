@@ -29,7 +29,7 @@ export function Landing() {
       <h2 style={sectionH}>Decks</h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
         {decks.map((d) => {
-          const illustrated = d.cards.filter((c) => hasCardSketch(c.slug)).length;
+          const illustrated = d.cards.filter((c) => hasCardSketch(d.id, c.slug)).length;
           return (
             <button key={d.id} onClick={() => navigate(`/deck/${d.id}`)} style={deckCard}>
               <div style={{ font: "600 20px/1.2 ui-serif, Georgia, serif" }}>{d.name}</div>

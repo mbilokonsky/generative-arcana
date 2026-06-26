@@ -1,19 +1,20 @@
 /** A static "face" for cards that have no p5 sketch yet (most of a deck, and pasted decks).
  *  Shows the card's name + axis glyph so the browser and readings still read as complete. */
-import { Glyph, RANK_ROMAN, SUIT_LABEL } from "./cardMeta";
+import { AxisGlyph, rankBadge, suitLabel } from "./cardMeta";
 import type { CardData } from "@/runtime/types";
+import type { DeckDataFile } from "@/decks/types";
 
 const ACCENT: Record<string, string> = {
   crowns: "#d4a02a", blades: "#9d2b2b", runes: "#e9c75a", moongates: "#e0506a", major: "#d8b24a",
 };
 
-export function CardPlaceholder({ card }: { card: CardData }) {
+export function CardPlaceholder({ card, deck }: { card: CardData; deck?: DeckDataFile }) {
   const which = card.arcana === "major" ? "major" : (card.suit_slug ?? "major");
   const accent = ACCENT[which] ?? "#d8b24a";
   const subtitle =
     card.arcana === "major"
       ? `Major Arcana · ${card.number}`
-      : `${RANK_ROMAN[card.rank_slug ?? ""] ?? ""} · ${SUIT_LABEL[card.suit_slug ?? ""] ?? ""}`;
+      : `${rankBadge(deck, card.rank_slug, card.number)} · ${suitLabel(deck, card.suit_slug)}`;
 
   return (
     <div
@@ -25,7 +26,7 @@ export function CardPlaceholder({ card }: { card: CardData }) {
       }}
     >
       <div style={{ color: accent, opacity: 0.85, filter: "drop-shadow(0 0 8px rgba(0,0,0,0.4))" }}>
-        <Glyph which={which} size={46} />
+        <AxisGlyph deck={deck} card={card} size={46} />
       </div>
       <div style={{ font: "600 16px/1.2 ui-serif, Georgia, serif" }}>{card.name}</div>
       <div style={{ opacity: 0.55, font: "400 10px/1.2 ui-sans-serif, system-ui", letterSpacing: "0.08em", textTransform: "uppercase" }}>

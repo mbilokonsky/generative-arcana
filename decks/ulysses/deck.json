@@ -1,0 +1,1836 @@
+{
+  "name": "Ulysses Tarot",
+  "slug": "ulysses-tarot",
+  "version": "2.0.0",
+  "theme": {
+    "name": "Ulysses",
+    "description": "Joyce's modernist masterpiece following Leopold Bloom through a single day (June 16, 1904) in Dublin. The novel reimagines Homer's Odyssey as an exploration of ordinary consciousness, transforming epic wandering into mundane perambulation. It examines how the mythic and quotidian interweave, how interior monologue reveals depths beneath banal surfaces, and how perspective rather than circumstance determines suffering or peace. The deck invites querents to see their own daily wanderings as odysseys, recognizing that wisdom lies not in transcending the ordinary but in one's relationship to it.",
+    "creator": "mykola bilokonsky, https://myk.pub"
+  },
+  "suits": {
+    "towers": {
+      "name": "Towers",
+      "slug": "towers",
+      "description": "The heroic struggle, aspiration through opposition, Stephen's artistic ambition, the attempt to transcend through conflict. This suit embodies Mythic Resistance - the vertical thrust against the horizontal world, isolation in pursuit of higher truth, breaking rather than bending.",
+      "symbol": {
+        "name": "Tower on Hill",
+        "description": "A stark, vertical tower with crenellations reaching upward, sitting atop a rounded hill. The tower stands alone, emphasizing both aspiration and fortification.",
+        "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"30\" y=\"10\" width=\"8\" height=\"15\" fill=\"currentColor\"/><rect x=\"46\" y=\"10\" width=\"8\" height=\"15\" fill=\"currentColor\"/><rect x=\"62\" y=\"10\" width=\"8\" height=\"15\" fill=\"currentColor\"/><rect x=\"30\" y=\"25\" width=\"40\" height=\"60\" fill=\"currentColor\"/><ellipse cx=\"50\" cy=\"95\" rx=\"35\" ry=\"12\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "Ambition",
+          "Intellectual struggle",
+          "Artistic aspiration",
+          "Heroic conflict",
+          "Transcendence through opposition",
+          "Isolation in pursuit of higher truth",
+          "The burden of genius",
+          "Breaking rather than bending"
+        ],
+        "inverted": [
+          "Ambition turned destructive",
+          "Intellectual pride blinding wisdom",
+          "Artistic aspiration becoming prison",
+          "Heroic posturing without substance",
+          "Opposition for its own sake",
+          "Isolation from necessary connection",
+          "Genius as excuse for cruelty",
+          "Rigidity that causes breaking"
+        ]
+      },
+      "visual_style": "Angular and vertical. Sharp edges, dramatic contrasts, upward movement. Architecture of ambition - spires, ascents, precipices. Colors lean toward stark blacks and whites, cold blues, the monochrome of intellectual abstraction. Think Martello towers, medieval fortifications, Babel, Stephen's sharp profile against the sky.",
+      "index": 0
+    },
+    "keys": {
+      "name": "Keys",
+      "slug": "keys",
+      "description": "Bloom's Odyssean patience, seeing the archetypal in the everyday, wisdom that flows rather than forces. This suit embodies Mythic Acceptance - unlocking understanding without breaking, recognizing patterns while flowing with them, access through gentle revelation.",
+      "symbol": {
+        "name": "Keys",
+        "description": "Two keys crossed, their necks pointing downward and their teeth facing out.",
+        "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(50,50) rotate(-30) translate(-50,-50)\"><circle cx=\"50\" cy=\"15\" r=\"12\" fill=\"currentColor\"/><rect x=\"48\" y=\"27\" width=\"4\" height=\"68\" fill=\"currentColor\"/><rect x=\"52\" y=\"78\" width=\"7\" height=\"4\" fill=\"currentColor\"/><rect x=\"52\" y=\"84\" width=\"9\" height=\"4\" fill=\"currentColor\"/><rect x=\"52\" y=\"90\" width=\"5\" height=\"4\" fill=\"currentColor\"/></g><g transform=\"translate(50,50) rotate(30) translate(-50,-50)\"><circle cx=\"50\" cy=\"15\" r=\"12\" fill=\"currentColor\"/><rect x=\"48\" y=\"27\" width=\"4\" height=\"68\" fill=\"currentColor\"/><rect x=\"41\" y=\"78\" width=\"7\" height=\"4\" fill=\"currentColor\"/><rect x=\"39\" y=\"84\" width=\"9\" height=\"4\" fill=\"currentColor\"/><rect x=\"43\" y=\"90\" width=\"5\" height=\"4\" fill=\"currentColor\"/></g></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "Wisdom",
+          "Patient understanding",
+          "Unlocking without breaking",
+          "Recognition of patterns",
+          "Flowing with archetypal currents",
+          "Access through acceptance",
+          "Gentle revelation",
+          "The Odyssean virtue"
+        ],
+        "inverted": [
+          "Wisdom becoming passivity",
+          "Patience as avoidance",
+          "Opening doors best left closed",
+          "Pattern recognition turned to fatalism",
+          "Flowing without direction",
+          "Acceptance as resignation",
+          "Revelation without integration",
+          "Odyssean wandering without homecoming"
+        ]
+      },
+      "visual_style": "Circular and flowing. Curved lines, cycles, spirals, mandalas. The geometric patterns of ancient wisdom - labyrinths, Celtic knots, circular journeys. Warm golds, deep blues, earth tones. Think Bloom's circular route through Dublin, the sun's circuit, ouroboros, the eternal return made peaceful.",
+      "index": 1
+    },
+    "nets": {
+      "name": "Nets",
+      "slug": "nets",
+      "description": "Petty resentments, being trapped in the trivial, suffering the small indignities, Stephen's hangovers and guilt. This suit embodies Mundane Resistance - the nets flung at the soul through nationality, language, religion, and all the quotidian entanglements that feel crushing.",
+      "symbol": {
+        "name": "Net",
+        "description": "A tangled net with regular mesh shown straight-on, emphasizing its constraining nature. The weave suggests both utility and entrapment.",
+        "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><defs><mask id=\"webMask\"><rect width=\"100\" height=\"100\" fill=\"white\"/><path d=\"M 50,15 L 50,50 M 75,30 L 50,50 M 85,55 L 50,50 M 70,80 L 50,50 M 45,85 L 50,50 M 20,70 L 50,50 M 15,45 L 50,50 M 35,25 L 50,50\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M 50,32.5 L 62.5,40 L 67.5,52.5 L 60,65 L 47.5,67.5 L 35,60 L 32.5,47.5 L 42.5,37.5 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></mask></defs><path d=\"M 50,15 L 75,30 L 85,55 L 70,80 L 45,85 L 20,70 L 15,45 L 35,25 Z\" fill=\"currentColor\" mask=\"url(#webMask)\"/><circle cx=\"50\" cy=\"15\" r=\"3\" fill=\"currentColor\"/><circle cx=\"75\" cy=\"30\" r=\"3\" fill=\"currentColor\"/><circle cx=\"85\" cy=\"55\" r=\"3\" fill=\"currentColor\"/><circle cx=\"70\" cy=\"80\" r=\"3\" fill=\"currentColor\"/><circle cx=\"45\" cy=\"85\" r=\"3\" fill=\"currentColor\"/><circle cx=\"20\" cy=\"70\" r=\"3\" fill=\"currentColor\"/><circle cx=\"15\" cy=\"45\" r=\"3\" fill=\"currentColor\"/><circle cx=\"35\" cy=\"25\" r=\"3\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"5\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "Entrapment",
+          "Petty resentments",
+          "Guilt",
+          "Trivial obligations that feel crushing",
+          "Being bound by the mundane",
+          "Hangover of the spirit",
+          "Small indignities",
+          "The nets flung at the soul"
+        ],
+        "inverted": [
+          "Entrapment becoming self-imprisonment",
+          "Resentment turned inward",
+          "Guilt as self-indulgence",
+          "Obligations as excuse for inaction",
+          "Mundane concerns elevated to tragedy",
+          "Spiritual hangover without the binge",
+          "Finding dignity in victimhood",
+          "Nets woven by one's own hand"
+        ]
+      },
+      "visual_style": "Tangled and claustrophobic. Irregular patterns, overlapping lines, compressed spaces, angles that trap the eye. The texture of discomfort - twisted sheets, crowded streets, grey skies. Muddy greens, dingy browns, the hung-over palette of morning-after Dublin. Think Stephen's unwashed body, dirty ashplants, tangled theological arguments.",
+      "index": 2
+    },
+    "kidneys": {
+      "name": "Kidneys",
+      "slug": "kidneys",
+      "description": "The art of living well in the day-to-day, Bloom's kidney breakfast, his practical kindness, finding pleasure in the ordinary. This suit embodies Mundane Acceptance - embodied wisdom, the body's needs met with grace, nourishment and sensual pleasure in the everyday.",
+      "symbol": {
+        "name": "Kidney Bean",
+        "description": "A kidney bean shape, organic and curved, suggesting both the literal organ and the warmth of embodied existence. Simple, rounded, comforting.",
+        "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 55,15 C 68,17 78,28 78,45 C 78,55 75,65 68,72 C 62,78 53,82 43,82 C 33,82 25,77 22,68 C 20,62 22,56 26,52 C 28,50 28,48 26,46 C 22,42 20,36 22,30 C 25,20 35,14 45,14 C 48,14 52,14 55,15 Z\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "Embodied wisdom",
+          "Physical comfort",
+          "Practical kindness",
+          "Nourishment",
+          "The art of daily living",
+          "Sensual pleasure",
+          "Accepting the body's needs",
+          "Finding joy in the ordinary",
+          "Grounded presence"
+        ],
+        "inverted": [
+          "Embodiment without consciousness",
+          "Comfort seeking as escape",
+          "Kindness as performance",
+          "Nourishment as excess",
+          "Daily living as mere routine",
+          "Sensual pleasure as distraction",
+          "Body's demands tyrannizing spirit",
+          "Ordinary becoming deadening",
+          "Groundedness as limitation"
+        ]
+      },
+      "visual_style": "Organic and rounded. Soft curves, gentle textures, domestic spaces, bodily forms. The warmth of inhabited life - kitchen interiors, soft fabrics, flesh tones, food, beds. Warm browns, soft pinks, buttery yellows, the palette of comfort. Think Bloom's kidney breakfast, his bath, his sandwich, the cat's mew, Molly's warmth.",
+      "index": 3
+    }
+  },
+  "ranks": {
+    "0": {
+      "index": 0,
+      "arcana": "minor",
+      "numeric_value": 1,
+      "name": "Homecoming",
+      "symbol": "A",
+      "slug": "0",
+      "description": "Homecoming - the return, the arrival, the recognition of where you began. Both Telemachus (Stephen's failed return to the tower) and Ithaca (Bloom's actual homecoming to Eccles Street). The ace contains the whole cycle within it - you arrive only to discover you never left, or you left only to discover you've arrived. The alpha-omega point where beginning and ending merge.",
+      "meaning": {
+        "upright": [
+          "Return and recognition",
+          "The place you started from",
+          "Arrival after journey",
+          "Home as destination and origin",
+          "The cycle's beginning-that-is-ending",
+          "Recognition of pattern"
+        ],
+        "inverted": [
+          "Homecoming as trap",
+          "Return to what was left for good reason",
+          "Arrival that feels like defeat",
+          "Home as prison",
+          "The cycle as curse",
+          "Pattern as predetermination"
+        ]
+      },
+      "visual_content": "A threshold, a door, a key in a lock. Someone arriving or departing - the image should be ambiguous about which. The ace of each suit's symbol prominent, suggesting both seed and completion."
+    },
+    "1": {
+      "index": 1,
+      "arcana": "minor",
+      "numeric_value": 2,
+      "name": "Replacement",
+      "symbol": "II",
+      "slug": "1",
+      "description": "Replacement - Joyce's radical move in Ulysses, abandoning Stephen for Bloom at episode 4. Not duality or partnership but substitution. The younger consciousness supplanted by the older, resistance replaced by acceptance, mind's primacy challenged by body. The two as succession rather than opposition - one protagonist gives way to another, one way of being exchanges for its opposite.",
+      "meaning": {
+        "upright": [
+          "Substitution of perspectives",
+          "The new replacing the old",
+          "Radical change of protagonist",
+          "Body supplanting mind",
+          "Acceptance replacing resistance",
+          "The other consciousness taking center"
+        ],
+        "inverted": [
+          "Replacement as erasure",
+          "The new that fails to improve",
+          "Protagonist abandoned rather than succeeded",
+          "Body tyrannizing mind",
+          "Acceptance as capitulation",
+          "Consciousness fragmented not expanded"
+        ]
+      },
+      "visual_content": "Two figures, one fading as the other solidifies. A young man dissolving into a middle-aged man. A tower giving way to a street. The moment of handoff, succession, substitution."
+    },
+    "2": {
+      "index": 2,
+      "arcana": "minor",
+      "numeric_value": 3,
+      "name": "Trinity",
+      "symbol": "III",
+      "slug": "2",
+      "description": "Trinity - the three-in-one that stabilizes what Replacement threatened. Stephen (mind/son), Bloom (body/father), Molly (flesh/spirit). Joyce's heretical trinity that completes by triangulation. Morning/Day/Night. Resistance/Acceptance/Affirmation. The anxiety of the binary resolved through the third term. Three creates the system of relationships that makes the structure stable.",
+      "meaning": {
+        "upright": [
+          "The stabilizing third term",
+          "Tripartite structure",
+          "Father, Son, and Holy Ghost recast",
+          "Three perspectives creating whole",
+          "System of relationships",
+          "The sacred geometry of three"
+        ],
+        "inverted": [
+          "Trinity as mere collection",
+          "Three that cannot cohere",
+          "Sacred structure profaned",
+          "Perspectives in conflict not concert",
+          "System that traps rather than contains",
+          "Three as crowd"
+        ]
+      },
+      "visual_content": "Three figures arranged in relationship - not a line but a triangle. Morning light, afternoon sun, night darkness. Three spaces: tower, street, bed. The three-in-one made visible."
+    },
+    "3": {
+      "index": 3,
+      "arcana": "minor",
+      "numeric_value": 4,
+      "name": "The City",
+      "symbol": "IV",
+      "slug": "3",
+      "description": "The City - Dublin itself as foundation, bounded space, the stable four-square container for wandering. The Liffey, the bridges, streets as grid, the civic structure. After Trinity comes the space they move through. Four corners, four directions, the city as stage and character. The foundation that grounds the mythic in the mundane, the map that makes wandering legible.",
+      "meaning": {
+        "upright": [
+          "The bounded space",
+          "Civic structure as foundation",
+          "The city as container",
+          "Streets and bridges",
+          "Geographic stability",
+          "The map that orients"
+        ],
+        "inverted": [
+          "The city as maze",
+          "Bounds as prison walls",
+          "Structure as rigidity",
+          "Streets that trap",
+          "Geography as limitation",
+          "The map that confuses"
+        ]
+      },
+      "visual_content": "Dublin from above - the Liffey bisecting, bridges connecting, streets as grid. The four-square city, bounded and mapped. Corners, directions, the stable foundation for all that follows."
+    },
+    "4": {
+      "index": 4,
+      "arcana": "minor",
+      "numeric_value": 5,
+      "name": "The Outsider",
+      "symbol": "V",
+      "slug": "4",
+      "description": "The Outsider - the one who doesn't fit the four-square city. Stephen the autistic intellectual who has no language for why he's always outside. Bloom the Jew-on-father's-side never fully accepted. The disruption in traditional tarot becomes the person who disrupts by existing. The five-pointed star that won't tessellate with the four-square world. Not conflict as action but as being.",
+      "meaning": {
+        "upright": [
+          "Being outside looking in",
+          "Not fitting the structure",
+          "Marked as other",
+          "Disruption by existence",
+          "The one who can't belong",
+          "Seeing from the margin"
+        ],
+        "inverted": [
+          "Outsider as identity prison",
+          "Not fitting as superiority",
+          "Otherness cultivated as badge",
+          "Disruption as only mode",
+          "Exile as chosen rather than imposed",
+          "Margin as center of self-regard"
+        ]
+      },
+      "visual_content": "A figure at the edge, outside the frame, not quite fitting into the scene. The five-pointed star among four-square geometry. Someone marked as different, watching from outside."
+    },
+    "5": {
+      "index": 5,
+      "arcana": "minor",
+      "numeric_value": 6,
+      "name": "Identity",
+      "symbol": "VI",
+      "slug": "5",
+      "description": "Identity - forging in the smithy of the soul what doesn't yet exist. Finding the others - Bloom and Stephen's karass, the recognition that creates the category. Not just discovering you're not alone but discovering what you ARE through recognizing them. Stephen at Portrait's end declaring he'll create his people's uncreated conscience. Identity as made not found, as collective discovery not individual certainty.",
+      "meaning": {
+        "upright": [
+          "Forging identity",
+          "Finding the others",
+          "Recognition that creates category",
+          "Discovering what you are",
+          "The karass revealed",
+          "Making what doesn't exist"
+        ],
+        "inverted": [
+          "Identity as rigid construct",
+          "Finding others who confirm prejudice",
+          "Recognition as limiting label",
+          "Discovery as closure",
+          "Karass as cult",
+          "Making as forcing"
+        ]
+      },
+      "visual_content": "Two people recognizing each other across distance. A forge, a smithy, something being made. The moment of 'oh, there you are' - identity discovered and created simultaneously."
+    },
+    "6": {
+      "index": 6,
+      "arcana": "minor",
+      "numeric_value": 7,
+      "name": "Asymmetry",
+      "symbol": "VII",
+      "slug": "6",
+      "description": "Asymmetry - what cannot be evenly split. Trinity (3) and City (4) in permanent tension, making seven. The realization of being outnumbered. Bloom alone against the Citizen's pub. Stephen in any room. Seven as the unresolvable, the permanent minority, the odd one out. Not the crossroads of traditional tarot but the recognition that the choice was always unequal, the sides never balanced.",
+      "meaning": {
+        "upright": [
+          "Being outnumbered",
+          "Unresolvable tension",
+          "The permanent minority",
+          "Three and four that won't balance",
+          "Recognizing the asymmetry",
+          "The odd one out"
+        ],
+        "inverted": [
+          "Outnumbered as victimhood",
+          "Tension as permanent state",
+          "Minority as identity complete",
+          "Imbalance as excuse",
+          "Asymmetry fetishized",
+          "Oddness as superiority"
+        ]
+      },
+      "visual_content": "An uneven split, an imbalanced scale. One against many. Three plus four making seven - the parts visible, the asymmetry clear. Something that cannot be divided evenly."
+    },
+    "7": {
+      "index": 7,
+      "arcana": "minor",
+      "numeric_value": 8,
+      "name": "History",
+      "symbol": "VIII",
+      "slug": "7",
+      "description": "History - the nightmare Stephen tries to awake from and the ocean that will one day bring him home as he grows into Joyce. The accumulated weight of everything that happened, which is both burden and buoyancy. The inescapable record, the pattern that repeats. 'History is a nightmare' / 'The heaventree of stars' - both true simultaneously. Not movement or mastery but the recognition of all that came before.",
+      "meaning": {
+        "upright": [
+          "The accumulated past",
+          "Nightmare and ocean both",
+          "The inescapable record",
+          "Pattern revealing itself",
+          "What brought you here",
+          "History as context"
+        ],
+        "inverted": [
+          "History as prison",
+          "Past as only nightmare",
+          "Record as accusation",
+          "Pattern as predetermination",
+          "What chains you here",
+          "History as excuse"
+        ]
+      },
+      "visual_content": "Layers of time visible simultaneously. The past pressing into present. A young man struggling against waves that will eventually carry him home. History as both weight and current."
+    },
+    "8": {
+      "index": 8,
+      "arcana": "minor",
+      "numeric_value": 9,
+      "name": "Invitation",
+      "symbol": "IX",
+      "slug": "8",
+      "description": "Invitation - the threshold, the moment just before recognition, the offer extended. Bloom standing in the garden with Stephen under stars. Molly nearly awake, about to speak. The breath before 'yes.' Not fulfillment but the space just before it, the invitation to see what's always been there. The door opened but not yet walked through.",
+      "meaning": {
+        "upright": [
+          "The threshold moment",
+          "Offer extended",
+          "Just before recognition",
+          "The breath before yes",
+          "Door opened",
+          "What's offered, not yet taken"
+        ],
+        "inverted": [
+          "Invitation as trap",
+          "Threshold as barrier",
+          "The moment before refusal",
+          "The breath before no",
+          "Door that should stay closed",
+          "What's offered and rejected"
+        ]
+      },
+      "visual_content": "An open doorway, a threshold. Someone about to speak or step through. The moment of almost, the space of possibility. Stars overhead, an offer in the air."
+    },
+    "9": {
+      "index": 9,
+      "arcana": "minor",
+      "numeric_value": 10,
+      "name": "Recurrence",
+      "symbol": "X",
+      "slug": "9",
+      "description": "Recurrence - not completion that overflows but completion that reveals itself as beginning again. The cycle made explicit. Finishing Ulysses only to want to start again. Molly's 'yes' echoing back to Howth Head. 'Commodius vicus of recirculation.' The ten as the discovery that the ace was always already there, that arrival was departure, that every ending is invitation to begin.",
+      "meaning": {
+        "upright": [
+          "The cycle revealed",
+          "Ending as beginning",
+          "Return to start",
+          "The eternal recurrence",
+          "Completion that invites restart",
+          "Viconian cycle"
+        ],
+        "inverted": [
+          "Cycle as trap",
+          "Ending that cannot end",
+          "Condemned to repeat",
+          "Recurrence as curse",
+          "Restart as failure to progress",
+          "The wheel that crushes"
+        ]
+      },
+      "visual_content": "A spiral, a cycle visible, ouroboros. The end becoming the beginning. Ten symbols arranged in a circle, the last touching the first. Riverrun, the eternal return."
+    },
+    "10": {
+      "index": 10,
+      "arcana": "minor",
+      "numeric_value": 11,
+      "name": "Child",
+      "symbol": "C",
+      "slug": "10",
+      "description": "Child - Stephen, the young, the unformed, the resistant. The artist before creation, the son seeking the father, the intellectual in agony. The one who carries potential but hasn't yet learned to manifest it. All youth, uncertainty, refusal, brilliance turned inward. The child who must grow but doesn't know how.",
+      "meaning": {
+        "upright": [
+          "Youthful potential",
+          "Unformed brilliance",
+          "The seeker",
+          "Intellectual awakening",
+          "Resistance as growth stage",
+          "The son"
+        ],
+        "inverted": [
+          "Youth as arrested development",
+          "Potential wasted",
+          "Seeking without finding",
+          "Intellect as defense",
+          "Resistance as only mode",
+          "The eternal child"
+        ]
+      },
+      "visual_content": "A young man, brilliant but struggling. Books, tower, the sea. Someone at the beginning who doesn't yet know the middle or end. The child in adult form."
+    },
+    "11": {
+      "index": 11,
+      "arcana": "minor",
+      "numeric_value": 12,
+      "name": "Father",
+      "symbol": "F",
+      "slug": "11",
+      "description": "Father - Bloom, the paternal, the one who tends and accepts. The wanderer who has learned patience. The outsider who has made peace with outsiderness. The one who offers shelter, makes cocoa, picks up the fallen. Mature masculine not as dominance but as care, wisdom not as knowing but as witnessing.",
+      "meaning": {
+        "upright": [
+          "Paternal care",
+          "Mature acceptance",
+          "The wanderer returned",
+          "Wisdom through experience",
+          "Tending the young",
+          "The father"
+        ],
+        "inverted": [
+          "Care as burden",
+          "Acceptance as defeat",
+          "Wandering without arriving",
+          "Experience as cynicism",
+          "Tending as enabling",
+          "Father as failed"
+        ]
+      },
+      "visual_content": "A middle-aged man, kind-eyed, weary but patient. Making cocoa, picking someone up, walking through the city. The father who offers what can't be forced."
+    },
+    "12": {
+      "index": 12,
+      "arcana": "minor",
+      "numeric_value": 13,
+      "name": "Mother",
+      "symbol": "M",
+      "slug": "12",
+      "description": "Mother - Molly, the maternal, the body, the keeper of home and truth. The one who sees through everyone's nonsense. Embodied wisdom, sensual honesty, the earth itself. The feminine principle not as passive but as foundational, not as nurturing but as real. The mother who holds the bed and the final word.",
+      "meaning": {
+        "upright": [
+          "Maternal wisdom",
+          "Embodied truth",
+          "Sensual honesty",
+          "Keeper of home",
+          "The earth principle",
+          "The mother"
+        ],
+        "inverted": [
+          "Wisdom as judgement",
+          "Body as only truth",
+          "Honesty as cruelty",
+          "Home as prison",
+          "Earth as limitation",
+          "Mother as devouring"
+        ]
+      },
+      "visual_content": "A woman in bed, conscious and powerful. Not waiting but being. The body's wisdom, flesh made eloquent. The mother who holds everything together by being."
+    },
+    "13": {
+      "index": 13,
+      "arcana": "minor",
+      "numeric_value": 14,
+      "name": "Affirmation",
+      "symbol": "A",
+      "slug": "13",
+      "description": "Affirmation - Yes. The final word, Molly's ultimate acceptance, the culmination of all cycles. Not just agreement but affirmation of existence itself despite everything. The yes that echoes from Howth Head forward and backward through all time. The highest court card because it transcends the personal - it's the universe saying yes to itself.",
+      "meaning": {
+        "upright": [
+          "Yes",
+          "Ultimate acceptance",
+          "Affirmation of existence",
+          "The final word",
+          "Life saying yes to itself",
+          "The cycle affirmed"
+        ],
+        "inverted": [
+          "Yes as resignation",
+          "Acceptance as surrender",
+          "Affirmation without discernment",
+          "The word emptied of meaning",
+          "Life affirmed without living",
+          "Cycle as compulsion"
+        ]
+      },
+      "visual_content": "The word YES visible, large, flowering. Molly on Howth Head, flowers in her hair. The affirmation as both memory and present. The yes that contains everything."
+    }
+  },
+  "transversal": {
+    "name": "Vico's Cycle",
+    "description": "Giambattista Vico's ricorso - history as the eternal recurrence of four ages, the deep structure Joyce wound through Finnegans Wake and let hum beneath Ulysses. Laid across the deck it asks of every card not what hour it is but what age of the world its spirit belongs to: the thunderclap of the Gods, the heroes' monumental dusk, the prose of common men, or the dissolving return that begins it all again. It turns at the pace of epochs, deliberately out of phase with the single Dublin day the cards otherwise inhabit.",
+    "ordering_rationale": "Vico's sequence is fixed and cyclical: the Age of Gods (theocratic, born of terror and thunder) gives way to the Age of Heroes (aristocratic, monumental), then the Age of Men (democratic, prosaic, the language of the marketplace), then the ricorso - a chaotic dissolution that returns the world to the gods and begins the corso again. The order descends from the sacred and primal toward the human and worn, then breaks and recirculates. Four ages laid over a single day put the deck permanently out of phase with its own clock, which is the point.",
+    "suit_stride": 1,
+    "stations": {
+      "gods": {
+        "slug": "gods",
+        "index": 0,
+        "name": "Age of Gods",
+        "description": "The theocratic dawn: the sacred sensed as terror and thunder before it can be understood.",
+        "meaning": {
+          "upright": [
+            "primal awe",
+            "the sacred glimpsed",
+            "creation from chaos",
+            "instinctive faith",
+            "the thunderword"
+          ],
+          "inverted": [
+            "superstition",
+            "terror that paralyzes",
+            "the irrational mistaken for the divine",
+            "dogma without understanding"
+          ]
+        },
+        "visual_motif": "Storm-dark sky split by lightning; vast primal scale, a small figure under an enormous sacred weather, thunder-grey and gold-white; the air charged before meaning, the numinous as both threat and promise."
+      },
+      "heroes": {
+        "slug": "heroes",
+        "index": 1,
+        "name": "Age of Heroes",
+        "description": "The aristocratic dusk: monumental ambition, the great deed and the great name, and the cruelty beneath them.",
+        "meaning": {
+          "upright": [
+            "aspiration",
+            "the noble deed",
+            "monumental will",
+            "honor",
+            "the self made legend"
+          ],
+          "inverted": [
+            "arrogance",
+            "caste cruelty",
+            "posturing without substance",
+            "the hero who cannot bend"
+          ]
+        },
+        "visual_motif": "Monumental forms in burnished bronze and twilight purple; long heroic shadows, statuary stillness, a single figure rendered larger than life against a declining heroic sun; grandeur edged with the chill of pride."
+      },
+      "men": {
+        "slug": "men",
+        "index": 2,
+        "name": "Age of Men",
+        "description": "The democratic daylight: the prose of the marketplace, common speech, the civic and ordinary.",
+        "meaning": {
+          "upright": [
+            "common humanity",
+            "plain speech",
+            "civic life",
+            "the ordinary made enough",
+            "shared ground"
+          ],
+          "inverted": [
+            "mediocrity",
+            "levelling that flattens",
+            "prose without poetry",
+            "the marketplace as the measure of all things"
+          ]
+        },
+        "visual_motif": "Flat even daylight over a crowded ordinary street; muted civic browns and newsprint greys, human scale, many figures and none exalted; the unheroic clarity of a working afternoon."
+      },
+      "ricorso": {
+        "slug": "ricorso",
+        "index": 3,
+        "name": "The Ricorso",
+        "description": "The dissolution and return: collapse into night and dream, the river running back to its source.",
+        "meaning": {
+          "upright": [
+            "dissolution",
+            "return",
+            "the cycle closing and reopening",
+            "dream-logic",
+            "regeneration through collapse"
+          ],
+          "inverted": [
+            "chaos without renewal",
+            "the fall refused",
+            "recurrence as trap",
+            "dissolution mistaken for the end"
+          ]
+        },
+        "visual_motif": "Forms melting into river-fog and dream; deep night-blues bleeding into a faint dawn, dissolving edges, water and reflection; the world coming apart softly to begin again - riverrun, the heaventree, the close that loops to the open."
+      }
+    }
+  },
+  "major_arcana": {
+    "story": "The Major Arcana follows Joyce's literary journey from A Portrait of the Artist as a Young Man through the eighteen episodes of Ulysses on June 16, 1904, concluding with the novel's geographical signature and the promise of Finnegans Wake. It traces Stephen Dedalus's morning of intellectual crisis, Leopold Bloom's odyssey through Dublin as he navigates grief and cuckolding with remarkable equanimity, their convergence in Nighttown, Bloom's return home, and Molly's affirming soliloquy. The journey asks: how do we survive ordinariness? How do consciousness and compassion interact? What is the relationship between mythic pattern and mundane reality?",
+    "visual_style": "The Major Arcana should feel literary and layered, incorporating both the realistic and the experimental. Early cards (Portrait, Stephen's morning) lean modernist and austere - sharp lines, intellectual abstraction, the alienation of consciousness. Bloom's cards are warmer, more embodied, with attention to physical detail and domestic spaces. The middle episodes grow increasingly stylistically experimental - journalistic fragments for Aeolus, musical notation for Sirens, gigantism for Cyclops. Circe explodes into hallucinatory expressionism. The final cards (Eumaeus, Ithaca, Penelope) move through exhaustion toward catechism toward stream-of-consciousness release. Colors throughout should evoke both Joyce's Dublin (grey stone, brown Liffey, green Ireland, the gold of Guinness) and the Mediterranean epic (wine-dark seas, bronze and gold). Each card should feel like it could be a book cover for that episode."
+  },
+  "cards": {
+    "major-0": {
+      "name": "A Portrait of the Artist as a Young Man",
+      "number": "0",
+      "slug": "major-0",
+      "arcana": "major",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Stephen Dedalus before Ulysses - the chrysalis stage, the artist declaring non serviam but untested by the actual day. His childhood, Jesuit education, awakening sexuality and guilt, rejection of church and nation. The determination to forge in the smithy of his soul the uncreated conscience of his race. All potential, unmanifested, the nets not yet fully understood but keenly felt.  Artistic awakening before testing. Rejection of authority as necessary first step. The forge of the soul beginning its work. Potential declaring itself. Independence as beginning not end. The journey about to start.",
+        "inverted": "Ambition as arrogance untested by reality. Rejection as mere negation. The artist who cannot create, only theorize. Forge that produces nothing but declaration. Certainty as delusion. Independence as isolation from what might teach."
+      },
+      "visuals": {
+        "detailed_description": "Stephen Dedalus stands at the edge of a pier, back three-quarters to the viewer, looking out toward a stylized sea that suggests both literal ocean and metaphorical possibility. Behind him, rendered in sharp architectural lines: the spire of a church, the dome of a university, the grey stone of Dublin. These are declining in detail as they recede, becoming more abstract. Before him, the sea is suggested through modernist waves - geometric, almost cubist. In the sky above, faint wing-shapes in cloud or light, not quite formed. Stephen himself is thin, angular, dressed in black, his profile sharp against the grey-green Irish sky. The overall composition suggests threshold, rejection, and untested certainty. A book under one arm. The nets of nationality, language, religion are suggested as actual nets in the architecture behind him, but he doesn't see them yet."
+      }
+    },
+    "major-1": {
+      "name": "Telemachus",
+      "number": "1",
+      "slug": "major-1",
+      "arcana": "major",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "8am at the Martello Tower. Buck Mulligan mocks the mass while shaving, Stephen haunted by his dead mother and his refusal to pray at her deathbed. Living with Mulligan and Haines under sufferance. Stephen surrenders his tower key - the cracked lookingglass of a servant. Dispossession, guilt, morning after excess, intellectual cutting and being cut.  Uneasy cohabitation with those who don't truly see you. Guilt over the dead that cannot be resolved through false consolation. Refusing what would comfort but compromise. The cracked mirror showing truth through its breaking. Dispossession as necessary loss. Morning clarity after night of confusion.",
+        "inverted": "Guilt becoming paralysis rather than insight. Refusal as mere negation without alternative. Art that only reflects brokenness without transformation. Dispossession as identity rather than circumstance. Excess without the learning it might bring. Cutting others to feel something. Martyrdom to pride."
+      },
+      "visuals": {
+        "detailed_description": "The Martello Tower dominates - round, stone, solid, taking up perhaps half the card. At its top, Buck Mulligan in a yellow dressing gown holds a shaving bowl high, his posture mock-priestly, face theatrical, performing. Below on the spiral stairs, Stephen in black descends, thin, haunted, his face showing the 'agenbite of inwit' - perhaps his mother's face reflected in a cracked mirror he carries or in a window. A large old-fashioned key is prominent in the foreground, either in Buck's hand or on the stone. Behind everything, the grey-green Irish Sea, morning light cold and clear. The tower is both fortress and prison. A milk woman might be suggested at the base - Ireland itself, not recognizing her own."
+      }
+    },
+    "major-2": {
+      "name": "Nestor",
+      "number": "2",
+      "slug": "major-2",
+      "arcana": "major",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "10am at Mr. Deasy's school. Stephen teaches history to indifferent boys, receives his wages, endures Deasy's antisemitic commentary. History is a nightmare from which I am trying to awake. Truth is a shout in the street. Teaching without belief, working within the system while rejecting it, the exhaustion of young adulthood.  Teaching what you don't believe to earn what you need. The gap between generations made visible. History as burden pressing down. Confronting prejudice with interior resistance. Truth found not in lecture halls but in the street's spontaneity. Wages earned without dignity but earned nonetheless. The exhaustion that comes from doing necessary work while knowing its limitations.",
+        "inverted": "Teaching as mere performance, the words empty. Wages as chains keeping you in place. History as excuse rather than nightmare to escape. Complicity with prejudice through silence. Generational conflict as permanent identity. Nihilism disguised as sophistication. The system as inevitable, resistance as pose. Exhaustion as permanent condition not temporary state."
+      },
+      "visuals": {
+        "detailed_description": "Interior of a Victorian classroom, all dark wood and oppressive browns. Stephen stands at a blackboard with a history lesson written on it (perhaps something about Pyrrhus, his famous victory), but his face shows disconnection - he's not present to his own teaching. Before him, several boys slouch at desks, bored, restless, looking away. In the foreground, large and dominating, Mr. Deasy sits at a desk counting coins - wages - his face showing satisfaction and prejudice. On the walls: maps of empire, history charts, the accumulated weight of the past. Through a window, bright light and the suggestion of the street outside where real life happens. Perhaps a cat in the window - the 'shout in the street.' The composition emphasizes Stephen trapped between the dead past (Deasy, history) and indifferent future (boys) while truth exists outside."
+      }
+    },
+    "major-3": {
+      "name": "Proteus",
+      "number": "3",
+      "slug": "major-3",
+      "arcana": "major",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "11am on Sandymount Strand. Stephen walks alone testing Berkeley - shut your eyes and see. Memories of Paris, dying mother, failures. Reading the signatures of all things. Philosophy tested by embodied experience - he picks his nose, urinates, writes poetry on torn envelope. Solitary contemplation, the beach as liminal space, reality as protean and mutable.  Solitary contemplation as necessary practice. Reality as mutable, changeable, not fixed. Reading the signatures - seeing the meaning in things. Body and mind intertwined, not separate. The beach as space between, neither land nor sea. Philosophy must be tested by lived experience. Small acts of creation from whatever materials are at hand. Walking as form of thinking.",
+        "inverted": "Contemplation as avoidance of action. Reality dissolved into relativism where nothing is real. Over-reading until meaning disappears into interpretation. Mind severed from body, each denying the other. Liminality as permanent condition, never arriving. Philosophy as excuse for inaction. Creation that remains only fragmentary. Walking in circles without destination."
+      },
+      "visuals": {
+        "detailed_description": "A beach stretches across the card, but nothing is quite stable. The horizon line between sand, sea, and sky wavers or blurs. Stephen walks along the strand, thin figure in black, at one moment his eyes are closed (shut your eyes and see), at another open and looking down. Around him, the beach is dense with signatures - shells, seaweed, a dead dog, tide pools that reflect not just sky but also text or philosophical concepts. In the foreground, a hand (disconnected, Stephen's) writes on a torn envelope with a pencil stub. Behind everything, the sea changes: is it grey? Green? Blue? It shifts. The philosophical concept of 'ineluctable modality of the visible' might be suggested through the visual treatment itself - solid objects that also seem somehow transparent or mutable. A drowned man might be suggested in the waves. Everything is liminal, between states, protean."
+      }
+    },
+    "major-4": {
+      "name": "Calypso",
+      "number": "4",
+      "slug": "major-4",
+      "arcana": "major",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "8am at 7 Eccles Street. Leopold Bloom prepares breakfast, loves the inner organs of beasts and fowls. Buys a kidney, feeds the cat, brings breakfast to Molly in bed. A letter from Blazes Boylan - today is the day - but Bloom proceeds anyway. Reads, defecates, plans his day. Domestic routine as anchor, the body's needs attended to, acceptance of circumstance.  Domestic routine as anchor in uncertainty. The body's needs attended to with care and pleasure. Practical kindness as daily practice. Sensual pleasure in the ordinary - food, warmth, the cat's purr. Knowing what is coming but proceeding anyway with equanimity. Morning rituals that ground the day. Home as imperfect haven. Acceptance not as resignation but as realistic engagement with life.",
+        "inverted": "Routine as anesthetic against feeling. Body's needs as distraction from what must be faced. Kindness as avoidance of necessary confrontation. Pleasure seeking to escape reality. Proceeding despite knowledge as passivity not courage. Ritual as empty repetition without meaning. Home as prison not haven. Acceptance as resignation, giving up rather than taking in."
+      },
+      "visuals": {
+        "detailed_description": "Bloom stands at a stove in a small kitchen, the morning sun streaming through lace curtains. A kidney sizzles in a black pan, rendered in loving detail - you can almost smell it. At his feet, a black cat winds between his legs, its back arched in pleasure, very present and physical. The kitchen is modest but warm: a teapot, bread on a board, butter in a dish, the Agendath Netaim leaflet visible. Through a doorway, we see Molly in bed, her dark hair spread on the pillow, not threatened but substantial, real. The breakfast tray waits to be brought. On her bedside table, a letter with 'Boylan' visible on the envelope. But the mood is not one of dread but of tender acceptance - Bloom knows and proceeds. The color palette is warm browns, yellows, the golden light of morning. Everything is tangible, embodied, real - the opposite of Stephen's abstractions."
+      }
+    },
+    "major-5": {
+      "name": "Lotus Eaters",
+      "number": "5",
+      "slug": "major-5",
+      "arcana": "major",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "10am, Bloom wanders collecting a love letter from Martha Clifford, buying soap, observing church service, ordering Molly's lotion, anticipating his bath. Various lotus-eating narcotics: religion, correspondence, chemistry, bathing. Gentle escapism, small pleasures, drifting through the day, multiple identities held lightly.  Gentle escapism as necessary respite. Small pleasures as sustenance. Drifting through the day with purpose underneath. Multiple identities held lightly without losing the self. Anticipation of comfort as its own pleasure. Observing without harsh judgment. The chemistry of consolation. The bath that awaits.",
+        "inverted": "Escapism as addiction to forgetting. Pleasure as avoidance of necessary pain. Drifting as aimlessness without anchor. Fragmented identity that cannot cohere. Anticipation never fulfilled, always deferred. Observation as disconnection from life. Consolation as replacement for engagement. Drowning in the bath meant for cleansing."
+      },
+      "visuals": {
+        "detailed_description": "The card has a soft, layered quality - perhaps multiple transparent scenes overlapping. Bloom in various poses: reaching for a letter at the post office (addressed to Henry Flower), standing outside a church watching communicants through a doorway, examining a bar of lemon soap in a chemist's, walking past Sweny's pharmacy. In the background or as a large element, an empty bathtub with steam rising, suggesting promised comfort. The letter from Martha visible with purple prose partially readable. Chemistry bottles with flower names as labels. A church interior glimpsed but Bloom always outside it. The overall palette is warm but slightly hazy - the narcotic quality of gentle escape. Everything suggests anticipation, multiplicity, drift without desperation."
+      }
+    },
+    "major-6": {
+      "name": "Hades",
+      "number": "6",
+      "slug": "major-6",
+      "arcana": "major",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "11am at Glasnevin Cemetery. Bloom attends Paddy Dignam's funeral. Death saturates - Bloom's father's suicide, his son Rudy who died at 11 days, Parnell's grave. Contemplating mortality, decomposition, memory. Excluded from the men's conversation, his Jewishness marking him as other. Confronting death, grief carried quietly, the outsider's perspective.  Confronting mortality with clear eyes. Grief carried quietly, with dignity. Exclusion from community as position from which to see truth. The body's inevitable decay acknowledged without horror. Memory as form of resurrection. Sitting with death rather than fleeing. The outsider's perspective as gift. Loss compounding loss met with continued living.",
+        "inverted": "Mortality as obsession that prevents living. Grief as permanent identity. Exclusion as chosen isolation from any community. Morbid fascination replacing healthy acknowledgment. Memory as haunting rather than honoring. Death wish disguised as contemplation. Outsider position as superiority. Loss as excuse for not continuing."
+      },
+      "visuals": {
+        "detailed_description": "The scene is Glasnevin Cemetery under grey Dublin skies. Celtic crosses and stone angels populate the background, rain-darkened and ancient. In the middle ground, a group of men in black stand around an open grave - Paddy Dignam's funeral. Among them but slightly to the side, Bloom stands, observant, excluded from their conversation. His face shows contemplation rather than grief - he's thinking about death itself. Ghosted or suggested in the composition: his father's grave, a tiny coffin (Rudy), Parnell's monument. A funeral carriage with horses. The overall mood is somber but not despairing - Bloom meets death with scientific curiosity and quiet compassion. The stones themselves seem to have presence. Rain beginning to fall or having just fallen, everything wet and grey-green."
+      }
+    },
+    "major-7": {
+      "name": "Aeolus",
+      "number": "7",
+      "slug": "major-7",
+      "arcana": "major",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Noon at the newspaper office. Bloom tries to secure an advertisement, Stephen arrives with Deasy's letter. Journalists pontificate about oratory and rhetoric. Editor Myles Crawford rejects Bloom's pitch. Stephen tells his parable of the plums. Hot air, rhetoric, winds of speech going nowhere. Multiple voices, no consensus, noise masking emptiness.  Rhetoric and hot air recognized as such. The press as organ of opinion, not truth. Multiple voices creating cacophony, preventing consensus. Persuasion attempted with honesty, rejected nonetheless. Words as wind - powerful but insubstantial. Professional disappointment met with resilience. The crowd's judgment as fickle. Noise that, once recognized, can be navigated.",
+        "inverted": "Rhetoric as manipulation without care for truth. The press as propaganda machine. Cacophony as deliberate confusion, preventing clarity. Persuasion as coercion, force disguised as reason. Words as weapons against the vulnerable. Disappointment becoming bitterness and cynicism. Mob rule accepted as democracy. Emptiness embraced, celebrated even."
+      },
+      "visuals": {
+        "detailed_description": "The card is fragmented by newspaper headlines that cut across the image like the episode's structure: SOPHIST WALLOPS HAUGHTY HELEN, SAD, etc. A newspaper office: printing presses in the background, papers everywhere, the machinery of opinion visible. In the foreground, multiple men arguing - journalists with theatrical gestures, Myles Crawford dominating, his finger pointing in dismissal. Bloom stands with his ad pitch, professionally dressed, being rejected. Stephen sits or stands to the side, young and observant, about to tell his parable. Papers blow across the scene as if in a wind. Speech bubbles or text fragments suggest the cacophony. The overall effect is of noise, movement, rhetoric, hot air - lots of talking, nothing said. Moses on Pisgah might be suggested in background imagery."
+      }
+    },
+    "major-8": {
+      "name": "Lestrygonians",
+      "number": "8",
+      "slug": "major-8",
+      "arcana": "major",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "1pm, Bloom wanders hungry toward lunch. Observes people eating, Dublin's denizens as cannibals. Helps a blind boy cross the street. Thinks about Molly, Boylan, food, sex. Avoids Burton's restaurant carnivores, opts for gorgonzola sandwich and burgundy at Davy Byrne's. Hunger both physical and emotional, choosing gentler options, the moderate path.  Hunger both physical and emotional acknowledged. Observing the feeding frenzy without joining its violence. Small acts of kindness in passing. Choosing gentler options when harsher ones available. Body's needs driving consciousness but not tyrannizing it. Memory and appetite intertwined naturally. The moderate path as wisdom not cowardice. Nourishment found that satisfies without excess.",
+        "inverted": "Hunger as all-consuming obsession. Seeing everyone as predator or prey. Kindness as performance for self-regard. Moderation as deprivation, denying legitimate needs. Body's needs tyrannizing mind and spirit. Memory as torment preventing present satisfaction. The middle path as cowardice, refusing to choose. Never satisfied, always hungry."
+      },
+      "visuals": {
+        "detailed_description": "Dublin's lunch hour crowds fill the card. In the foreground, Bloom walks, his face thoughtful, hungry. Around him, people eat - mouths open, food visible, the act of consumption emphasized. One vignette shows him helping a blind boy cross the street, a moment of gentleness. To one side, Burton's restaurant shows men eating like cannibals - messy, violent, carnivorous. In contrast, Davy Byrne's pub glows warmly - civilized, moderate. A gorgonzola sandwich and a glass of burgundy prominent, rendered lovingly. Bloom's thoughts suggested through ghosted imagery: Molly's body, Boylan's swagger, food and sex intermingled. The overall palette is warm - reds, browns, the colors of appetite. The peristaltic process suggested visually somehow - consumption, digestion, incorporation."
+      }
+    },
+    "major-9": {
+      "name": "Scylla and Charybdis",
+      "number": "9",
+      "slug": "major-9",
+      "arcana": "major",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "2pm at the National Library. Stephen presents his Hamlet theory to literary establishment - Shakespeare as Prince Hamlet avenging his dead son through art. Autobiography as key to creation. Stephen navigates between Aristotelian realism and Platonic idealism. Theory rejected but Stephen passes through. Dense literary criticism, dialectical argument, intellectual combat.  Navigating between extremes, between the rock and the whirlpool. Theory and performance as necessary steps toward creation. Art emerging from autobiography, from lived grief. Dead sons and living fathers in dialogue. Intellectual combat as sharpening, not destruction. The artist explaining himself as part of becoming himself. Passing through despite rejection, the navigation itself as victory.",
+        "inverted": "Theory as fortress preventing actual creation. Performance as substitute for genuine work. Autobiography as prison, unable to transcend what happened. The dead instrumentalized for argument. Combat as only mode, destroying connection. Explanation as compensation for what cannot be made. Passing through without learning, unchanged. Paralyzed between options, unable to choose."
+      },
+      "visuals": {
+        "detailed_description": "The National Library's reading room with its shelves and domed ceiling forms the setting. Stephen stands in the center, young, arguing passionately with several older literary men who sit in judgment - AE Russell's mystical face, John Eglinton's skepticism, others. Books are everywhere, stacked, shelved, the accumulated weight of literature. Ghosted or suggested: Shakespeare's face, Hamlet in black, the ghost of Hamlet's father. The theoretical argument is suggested through text fragments or visual representations of the two dangers: on one side, Scylla as a sharp rock formation (Aristotelian realism), on the other side, Charybdis as a whirlpool (Platonic idealism). Stephen navigates between them. Buck Mulligan crashes in from the side, theatrical. The overall mood is of intellectual combat, dense theory, the library as battleground. Despite rejection, Stephen is passing through."
+      }
+    },
+    "major-10": {
+      "name": "Wandering Rocks",
+      "number": "10",
+      "slug": "major-10",
+      "arcana": "major",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "3pm, Dublin as labyrinth. Nineteen vignettes following various characters as paths cross unknowingly. Father Conmee's trip, the viceregal cavalcade, Bloom buying a book for Molly, Stephen browsing, Boylan buying fruit. The city itself as protagonist. Simultaneity, paths crossing, patterns emerging from chaos, community without connection.  The city as system, larger than any individual. Paths crossing unknowingly, connections unseen but real. Everyone wandering their own journey simultaneously. The whole exceeding its parts. Small moments in aggregate creating meaning. Patterns emerging from apparent chaos. Community without requiring conscious connection. The labyrinth as map of life itself.",
+        "inverted": "The city as maze without exit or center. Near-misses as tragedy, connection always missed. Wandering as lost, without purpose or destination. Simultaneity as fragmentation preventing coherence. Moments that don't cohere, remaining disparate. The whole as mere collection without meaning. Chaos unresolved into pattern. Isolation masquerading as proximity."
+      },
+      "visuals": {
+        "detailed_description": "The card shows Dublin as if from above, a map come to life. Streets radiate out like a labyrinth, the Liffey bisecting. Multiple vignettes occur simultaneously: Father Conmee walking and blessing, the viceregal cavalcade processing in pomp, Bloom purchasing Sweets of Sin in a bookshop for Molly, Stephen browsing book carts, Boylan buying fruit for his assignation, and many others moving through their afternoon. Paths cross without the characters knowing - Bloom and Stephen pass near each other but don't meet yet. Clocks visible in different locations all show 3pm. The overall effect is of a living city, an organism, patterns emerging from apparent chaos. The labyrinth is visible in the street layout itself. Everything is in motion, crossing, the wandering rocks of the title suggested through the moving figures who might collide but don't."
+      }
+    },
+    "major-11": {
+      "name": "Sirens",
+      "number": "11",
+      "slug": "major-11",
+      "arcana": "major",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "4pm at the Ormond Hotel bar. Bloom has lunch while Boylan passes by on his way to Molly. Barmaids Lydia Douce and Mina Kennedy sing and flirt. Music everywhere - songs, tapped glasses, tuning fork. Simon Dedalus sings. Bloom writes to Martha. The moment of betrayal approached obliquely through music. Seduction by sound, distraction through beauty, knowing and not quite knowing.  Music as consolation when other comfort fails. Seduction by sound and beauty, gentle and not violent. The moment of betrayal approached obliquely, bearable through indirection. Multiple melodies simultaneous, fugal. Language as music, meaning in sound not just semantics. Distraction through beauty as mercy. Resonance and vibration as forms of truth. Knowing and not quite knowing as sustainable position.",
+        "inverted": "Music as narcotic preventing necessary feeling. Seduction as manipulation through beauty. Betrayal dwelt upon, the wound picked at. Cacophony instead of harmony, noise not music. Language losing meaning entirely in sound. Beauty as cruelty, offering what it cannot deliver. Resonance as dissonance, vibration as pain. Willful ignorance disguised as acceptance."
+      },
+      "visuals": {
+        "detailed_description": "The Ormond Hotel bar glows in bronze and gold. Two barmaids - one bronze-haired (Miss Douce), one gold (Miss Kennedy) - are prominent, singing, their mouths open in song, flirtatious and aware of their power. Music is made visible throughout: actual musical notation floating in the air, sound waves radiating from a tuning fork, the vibration of tapped glass. Bloom sits at a table, writing a letter to Martha, his face showing awareness of what's happening (Boylan and Molly) but choosing the oblique approach. Simon Dedalus stands singing, his voice suggested through visual effects. Outside the window, we see or sense hoofbeats - Boylan passing on his way to 7 Eccles Street. Musical instruments are present - a piano, perhaps. The whole card should feel like synesthesia - sound made visible, the seduction of music palpable. The overture: 'Bronze by gold heard the hoofirons, steelyringing' somehow suggested."
+      }
+    },
+    "major-12": {
+      "name": "Cyclops",
+      "number": "12",
+      "slug": "major-12",
+      "arcana": "major",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "5pm at Barney Kiernan's pub. Bloom encounters Irish nationalists including the violent Citizen. They drink, argue about nationalism, violence, identity. Bloom's reasonable liberalism enrages the Citizen. A biscuit tin thrown at Bloom as he flees. Gigantism, mock-heroic, the Citizen's single-eyed nationalism as blindness.  Confronting violence with reason, courage despite fear. Reasoned response to unreason as moral necessity. The outsider speaking truth to power. Nationalism as blindness, the single eye that cannot see depth. Alcohol fueling rage, revealing what's underneath. Narrow escape as victory of sorts. Standing up when silence would be easier. The cyclops revealed as small despite his size.",
+        "inverted": "Violence as inevitable, reason as provocation deserving attack. Reason itself as cowardice, talking instead of acting. Otherness as permanent exclusion justifying violence. Nationalism as only valid identity, the single eye as purity. Rage as righteous, justified by grievance. Escape as cowardice not wisdom. Speech as futility, words as nothing. Blindness as chosen, preferred to complex vision."
+      },
+      "visuals": {
+        "detailed_description": "The card is split between gigantic parody and squalid reality. The Citizen dominates - enormous, one huge eye, dressed in mock-heroic Irish nationalist garb (green, Celtic symbols), his face purple with rage and drink. He throws a biscuit tin. Around him, men in a pub drinking, listening, the crowd that enables violence. Bloom stands or backs away, small but dignified, reasonable, his face showing both fear and moral certainty. His Jewishness somehow suggested. In the background or overlaid: mock-heroic imagery - Cuchulainn, Finn MacCool, ancient Irish giants and heroes, but rendered in parody. The gap between the epic pretension and the actual violence of throwing a tin at a reasonable man should be stark. A dog (Garryowen) barks. Pint glasses, sawdust, the pub's squalor. The single eye of the Cyclops prominent - nationalism as blindness."
+      }
+    },
+    "major-13": {
+      "name": "Nausicaa",
+      "number": "13",
+      "slug": "major-13",
+      "arcana": "major",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "8pm on Sandymount Strand. Gerty MacDowell sits on rocks with friends, watches church service, thinks in purple prose of romance novels. She displays herself to Bloom, who masturbates watching her. She limps away. Both lonely, seeking connection through distance. Fireworks from the bazaar punctuate. Desire and distance, romantic illusion and physical reality.  Desire and distance as form of connection for the lonely. Loneliness seeking what contact it can find. Romantic illusion and physical reality both valid, both true. Mutual observation, each giving the other something. Tenderness in unlikely places, gentleness in what could be sordid. The limp revealed but not mocked. Fireworks and deflation. Two solitudes briefly touching.",
+        "inverted": "Desire as exploitation of the vulnerable. Loneliness as permanent condition, unable to make real contact. Illusion as delusion preventing authentic connection. Voyeurism without mutuality. Tenderness as sentimentality masking use. The limp as defining flaw, reducing person to disability. Pleasure followed by shame. Solitudes confirmed, made worse by failed attempt."
+      },
+      "visuals": {
+        "detailed_description": "The beach at twilight, divided compositionally. On one side, Gerty MacDowell sits on rocks in a romantically-lit scene - soft focus, pastel colors (especially purple), her pose displayful, her face pretty and dreaming. She watches a church service, Virgin Mary visible in the church. Romance novel aesthetics - everything idealized, sentimental. On the other side, Bloom sits at a distance, watching, his face showing desire but also loneliness and tenderness. The realistic side - harder focus, actual beach textures. Above, fireworks explode from the Mirus bazaar, their light illuminating both. As Gerty walks away in the foreground, her limp is visible - she's lame - but rendered without cruelty. The moment is both: romantic illusion (her view) and physical reality (his view), and both are treated with tenderness. Two lonely people giving each other a moment. The sea between them."
+      }
+    },
+    "major-14": {
+      "name": "Oxen of the Sun",
+      "number": "14",
+      "slug": "major-14",
+      "arcana": "major",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "10pm at the Maternity Hospital. Bloom visits Mina Purefoy in labor. Medical students including Stephen drink and blaspheme. The episode chronicles English prose evolution from Anglo-Saxon through contemporary slang, paralleling nine-month gestation. Birth, creation, language evolution. Bloom the compassionate adult among drunken students.  Gestation and birth as sacred despite irreverence. Evolution of language as evolution of consciousness. Compassion amidst irreverence as moral center. The sacred and profane intertwined, inseparable. Creation's long labor honored. Styles succeeding styles, each valid in its time. Life emerging from pain, worth the wait. The adult in room of children, patient and present.",
+        "inverted": "Gestation as endless without result. Evolution as degradation, each style worse. Compassion as weakness among the cruel. Sacred debased with nothing to replace it. Labor without birth, effort without result. Style as mere pastiche, empty imitation. Life stillborn, suffering pointless. Adult as mere outsider, unable to connect or influence."
+      },
+      "visuals": {
+        "detailed_description": "The card is divided into horizontal bands or evolving sections, each rendered in the visual style of its corresponding prose era. Top/beginning: Anglo-Saxon simplicity - bold outlines, limited colors, medieval manuscript aesthetics. A woman (Mina Purefoy) in labor, suffering and sacred. Middle sections evolve: Gothic illumination, Renaissance perspective, Enlightenment clarity, Victorian sentimentality, each showing the ongoing birth. Throughout, in an adjoining room, medical students drink and blaspheme - rendered in the style of their section. Bloom moves through the styles, always recognizable, compassionate, the adult presence. By the bottom/end: contemporary 1904 realism or even modernist fragmentation, modern slang as text. The birth completes. The Oxen of the Sun (sacred creation) are shown slaughtered in background imagery - profanation of the sacred. Language itself is visible as text fragments evolving across the card. The overall effect: time moving forward, style evolving, life being born through pain and irreverence."
+      }
+    },
+    "major-15": {
+      "name": "Circe",
+      "number": "15",
+      "slug": "major-15",
+      "arcana": "major",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Midnight in Nighttown. Bloom and Stephen meet in Dublin's red-light district. Hallucinatory phantasmagoria - unconscious desires, guilts, fears made manifest. Stephen's dead mother rises. Bloom transforms. Stephen smashes a chandelier, is knocked down by a soldier. Bloom tends him. The unconscious unleashed, transformation and transmutation, nighttown's revelations.  The unconscious unleashed as necessary revelation. Guilt and desire made visible to be acknowledged. Transformation and transmutation as possibilities. The dead accusing the living must be faced. Breaking through to truth even when violent. Meeting in the underworld changes both. Tending the fallen as love's expression. Nighttown reveals what daylight hides.",
+        "inverted": "The unconscious as tyrant, making life impossible. Guilt and desire as prison with no escape. Transformation as degradation only. The dead as unappeasable, accusation eternal. Breaking as only destruction, nothing new created. Meeting without recognition or change. Enabling rather than helping, preventing growth. Revelations as trauma that cannot be integrated."
+      },
+      "visuals": {
+        "detailed_description": "Nighttown explodes across the card in expressionistic chaos. Red light district - brothels, gas lamps casting red light, shadows distorted and threatening. Reality dissolves: Bloom appears multiple times in transformation - as woman in elaborate dress, as lord mayor in regalia, as defendant on trial, faces shifting and morphing. Stephen's dead mother rises from the ground, her face both loving and accusatory, decaying, holding out her hands. Stephen recoils, drunk, anguished. He smashes a chandelier with his ashplant, shards exploding, shouting 'Nothung!' A British soldier punches him down. At the bottom, Bloom kneels beside fallen Stephen, tender, protective - the real action among hallucinations. Throughout: pigs, whores, authority figures, all the unconscious desires and fears made visible. Theatrical stage directions visible as text. The overall effect: overwhelming, hallucinatory, nightmarish but also revelatory. German Expressionist angles and shadows, everything unstable."
+      }
+    },
+    "major-16": {
+      "name": "Eumaeus",
+      "number": "16",
+      "slug": "major-16",
+      "arcana": "major",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "1am at the cabman's shelter. Bloom and Stephen, exhausted after Circe, drink coffee and eat bread. Bloom tries to connect, suggests collaboration. A sailor tells improbable stories. Exhaustion permeates everything including prose. They discuss music, nationalism, identity. Stephen not quite hearing Bloom's wisdom. Failed communion, attempted connection.  Exhaustion after ordeal as honest condition. Attempted connection despite exhaustion's difficulty. Coffee and conversation as what's possible. The wisdom not quite received but offered nonetheless. Stories possibly true, possibly false, but companionship real. Shelter from night literal and metaphorical. The father figure offering help without force. The gap remaining but narrowed.",
+        "inverted": "Exhaustion as defeat, unable to recover. Connection impossible across unbridgeable gaps. Empty conversation, words meaning nothing. Wisdom falling on deaf ears, wasted. Stories certainly false, companionship illusory. Shelter as trap, keeping you from home. Father figure as burden not help. Gap as chasm that grows wider."
+      },
+      "visuals": {
+        "detailed_description": "The shabby interior of a cabman's shelter, all browns and greys, washed out by exhaustion and bad lighting. Bloom and Stephen sit at a stained table with thick coffee cups, bread crusts. Both look exhausted - Stephen drunk and hollow-eyed, Bloom weary but still kind. A sailor, probably named Murphy, sits nearby telling improbable stories about tattooed women and foreign ports - his face both trustworthy and untrustworthy. Other cabmen sleep or sit in background. The image itself should show signs of exhaustion - perhaps elements repeated accidentally, visual clichés (the moon seen through window is a perfect circle, too perfect, stock imagery), blurred edges suggesting tired vision. A newspaper with errors visible. Outside the window, dawn approaches but hasn't arrived - it's that dead hour of early morning. The attempted connection between Bloom and Stephen is visible in their postures - Bloom leaning in, offering, Stephen present but not quite receiving. Failed communion but not cruel failure."
+      }
+    },
+    "major-17": {
+      "name": "Ithaca",
+      "number": "17",
+      "slug": "major-17",
+      "arcana": "major",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "2am, Bloom and Stephen walk to 7 Eccles Street. Bloom makes cocoa. They urinate together under stars. Discuss various topics in catechistic Q&A. Stephen declines to stay. They part. Bloom enters, finds evidence of Boylan, goes to bed beside Molly. Homecoming, catechism of the everyday, questions and answers.  Homecoming as arriving at what was always there. Catechism of the everyday revealing sacred in mundane. Urinating under stars as perfect communion. Offered hospitality declined without offense. Evidence noted and accepted with equanimity. Two men parting as friends almost were. The marriage bed as destination and acceptance. Questions and answers as form of love.",
+        "inverted": "Homecoming as defeat, returning to what wounded you. Catechism as evasion, forms without content. Urination as degradation not communion. Hospitality rejected as judgment. Evidence as wound that cannot heal. Parting as failure, connection missed. The marriage bed as crime scene. Questions without answers, answers without meaning."
+      },
+      "visuals": {
+        "detailed_description": "The card is organized as cold, precise, almost diagrammatic. Two men (Bloom and Stephen) walk through Dublin streets at night, rendered in geometric precision. They arrive at 7 Eccles Street. Interior: Bloom making cocoa, the process shown step-by-step almost instructionally. In the garden, both men stand urinating together under stars - the 'heaventree of stars hung with humid nightblue fruit' rendered as actual astronomical chart or star map, beautiful and distant. A large question mark is prominent - the catechistic structure made visible. They part at the doorway, one entering, one leaving. Bedroom: Molly's warm form in bed (asleep, substantial). Bloom noting evidence of Boylan - perhaps an indent in the bed, a lingering scent suggested visually. But no judgment, just observation. Mathematical equations float in the imagery - distances, measurements, the attempt to understand emotionally complex things through scientific precision. The overall effect: restrained, precise, but the emotion breaking through the cold form. Homecoming achieved."
+      }
+    },
+    "major-18": {
+      "name": "Penelope",
+      "number": "18",
+      "slug": "major-18",
+      "arcana": "major",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Molly Bloom's interior monologue, unpunctuated, flowing. She lies beside Leopold, thinking about Boylan, past lovers, her father, daughter Milly, upcoming tour, Leopold's oddness and kindness, his proposal on Howth Head. Eight enormous sentences. Ends 'yes I said yes I will Yes.' The feminine principle, affirmation despite everything.  The feminine principle as earth and affirmation. Affirmation despite everything that might deny it. Unpunctuated flow as consciousness itself. Sexual honesty without shame. Memory and present merged seamlessly. The body's wisdom speaking. Howth Head proposal remembered with love. Yes as ultimate word, ultimate meaning.",
+        "inverted": "Flow as chaos without form or direction. Affirmation as delusion, denying reality. Unpunctuated as formless, unable to cohere. Sexuality as only truth, nothing else real. Memory as prison, past devouring present. Body without spirit, flesh without meaning. Proposal as trap remembered with bitterness. Yes as resignation not affirmation."
+      },
+      "visuals": {
+        "detailed_description": "Molly lies in bed, substantial and real, her body taking up significant space in the composition. But the boundaries of the image blur and flow - nothing is hard-edged. Her consciousness streams across the card unpunctuated: images of Boylan's body, Leopold's proposal on Howth Head, her father in Gibraltar, her daughter Milly, past lovers, her upcoming concert tour, all bleeding into each other. The body is prominent and honestly rendered - flesh, warmth, the reality of embodiment. Text might flow through the image, all lowercase, no periods: 'yes I said yes I will Yes' appearing multiple times, growing. Howth Head with rhododendrons, the moment of proposal, young Molly saying yes. Present and past merge completely. The overall palette: warm flesh tones, pink, peach, the colors of the body and bed and flowers. Everything flows together - consciousness as river. The final, largest word: YES. Affirmation as ultimate principle."
+      }
+    },
+    "major-19": {
+      "name": "Trieste-Zurich-Paris",
+      "number": "19",
+      "slug": "major-19",
+      "arcana": "major",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "The final words of Ulysses: geographic signature of composition. Joyce writing in exile, 1914-1921, across three cities during World War I. The novel as artifact of specific times and places. The author's signature acknowledging the work's embodied creation. The geographic marker as bookend.  The work completed after years of labor. Exile as creative space making art possible. Geographic signature acknowledging embodied creation. Years of labor honored by marking. The author stepping forward to be counted. Three cities, one work, unified. History and art intersecting. The ending that frames the whole giving perspective.",
+        "inverted": "Completion as abandonment, glad to be done. Exile as wound that cannot heal. Geography as limitation, each city a failure to stay. Labor as burden resented. The author imposing himself, breaking the spell. Fragmentation unresolved, three cities separate not unified. History as interruption of art. Ending that fails to close, leaving loose."
+      },
+      "visuals": {
+        "detailed_description": "A map of Europe, sepia-toned like an archival document, showing three cities highlighted: Trieste, Zurich, Paris. In three vignettes or overlaid: Joyce writing in each city - in Trieste before the war, in Zurich during it (neutral Switzerland), in Paris after. He ages across the scenes, years passing, 1914-1921. War is suggested in the background - trenches, explosions, the Great War as context. Manuscripts pile up, pages accumulate. Finally, prominently at the bottom of the card, as if signed: 'Trieste-Zurich-Paris / 1914-1921' in Joyce's hand. A pen, a signature, three city names. The work is done. The geographic signature as acknowledgment: this is where and when it was made, in exile, through war, across years and cities. Simple, declarative, after all the complexity before it."
+      }
+    },
+    "major-20": {
+      "name": "Riverrun",
+      "number": "20",
+      "slug": "major-20",
+      "arcana": "major",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Opening word of Finnegans Wake: 'riverrun, past Eve and Adam's, from swerve of shore to bend of bay, brings us by a commodius vicus of recirculation back to Howth Castle and Environs.' The Liffey, the cycle, eternal return. The last sentence loops back to first. Language becomes river, dream, night. After Ulysses comes this.  Eternal return, the cycle completing and beginning. The river of language flowing forever. After day comes dream, after waking sleep. Cycle completing invites restart. Everything connected through the river. The wake as both vigil and arising. Past Eve and Adam's, before and after. Beginning again, always beginning.",
+        "inverted": "Return as repetition, condemned to relive. River as drowning, language dissolving into chaos. Dream as nightmare, sleep as death. Cycle as trap with no escape. Connection as confusion, everything merged meaninglessly. Wake as death only, no arising. Before Eden and unable to enter. Beginning that cannot progress, stuck at start."
+      },
+      "visuals": {
+        "detailed_description": "The Liffey flows across the entire card, dominant, the river as protagonist. But the water is made of words, text, letters dissolving and reforming - portmanteau words visible as merged images (bababadalgharaghtakamminarronnkonnbronntonnerronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk spelled out in waves). The river has no clear beginning or end - it loops, suggesting the circular structure where the last sentence becomes the first. Along the river: Eve and Adam's church, Howth Castle in the distance, Dublin landmarks dissolving into dream. It's night - after Ulysses's day comes the Wake's night. The water reflects stars but also contains them, sky and river merged. Languages merge visually - English, Irish, Latin, German, words combining into impossible hybrids. The overall effect: the river flowing eternally, language as river, consciousness as flow, the cycle that never ends. 'riverrun' prominent at both top and bottom of the card, or forming a circle. After day, dream. After Ulysses, this."
+      }
+    },
+    "towers-0": {
+      "name": "Homecoming of Towers",
+      "number": "1",
+      "slug": "towers-0",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "0",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "The artist returns to the tower - but has it ever truly been home? Stephen's failed homecoming to the Martello Tower. The ambition to transcend meets the place you started. Arrival at the tower reveals it was always a fortress against connection, not a home to return to. The heroic struggle confronts the question: what if the place of origin cannot receive what you've become?  Returning to your place of intellectual or artistic origin to find it no longer fits. The recognition that home was always a fortress built by ambition, not a place of genuine belonging. Arrival reveals what departure was: necessary. The tower as beautiful prison. Understanding that transcendence meant leaving, not ascending.",
+        "inverted": "Returning to the tower and convincing yourself it's still home despite all evidence. Ambition's fortress becoming actual prison. The place of origin as identity's entirety - unable to imagine beyond it. Homecoming as trap you walk into knowingly. Arrival as defeat disguised as return."
+      },
+      "visuals": {
+        "detailed_description": "The Martello Tower rises against a grey Irish sky, stone and imposing. A figure (Stephen-like, thin, in black) stands at its threshold with an old-fashioned key in hand - but the posture is ambiguous: arriving or leaving? The tower's crenellations are sharp against clouds. The door is both opening and closing. Inside, barely visible, the cramped round room of intellectual ambition. Outside, the sea and wider world. The key itself is prominent in the foreground, large enough to see detail - it represents both access and what must be surrendered. The overall feeling: this was never truly home, just a tower one climbed. The alpha-omega point reveals itself as departure disguised as return."
+      }
+    },
+    "towers-1": {
+      "name": "Replacement of Towers",
+      "number": "2",
+      "slug": "towers-1",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "1",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "One tower gives way to another. The young artist's tower abandoned for... what? Another form of vertical ambition? The substitution of one intellectual fortress for a different one. Stephen for Bloom means even towers must be replaced - resistance in new forms, new heights to climb.  Recognizing that one form of intellectual ambition must give way to another. The tower you climbed no longer serves - a new tower, different but still vertical, calls. Substitution of resistance styles. Understanding that transcendence itself comes in stages, each requiring its own fortress-to-abandon. The old tower making way for new forms of reaching upward.",
+        "inverted": "Replacing one prison with another, calling it growth. New tower same as old tower with different stones. Substitution without transformation - same ambition, same isolation, different elevation. The endless replacement of fortresses, never questioning why you need them. Mistaking change of tower for change of self."
+      },
+      "visuals": {
+        "detailed_description": "Two towers stand in the composition. The left tower (perhaps Stephen's Martello) fades, becomes translucent, its stones losing solidity. The right tower rises or solidifies - different architecture but still vertical, still fortress-like. A thin figure in black stands between them, in motion, the moment of handoff visible. But both towers share the quality of isolation, of upward striving, of resistance through height. The sky behind them shows transition - dawn or dusk, one light giving way to another. The Tower suit symbol appears on both structures. The message: one form of ambition replaces another, but the vertical thrust continues."
+      }
+    },
+    "towers-2": {
+      "name": "Trinity of Towers",
+      "number": "3",
+      "slug": "towers-2",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "2",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Three towers standing in relation - intellectual ambition requires trinity to stabilize. The tower of mind, the tower of art, the tower of refusal - Stephen's three-in-one. Resistance through triangulation. The sacred geometry of saying no to three different things simultaneously.  Understanding that ambition requires multiple sites of resistance. Three forms of intellectual striving that support each other: rejection of nation, rejection of church, rejection of art-as-received. The trinity that makes resistance stable rather than merely oppositional. Three towers creating a system of upward aspiration.",
+        "inverted": "Three towers as three prisons, each reinforcing the others. Trinity as trap - nationality, language, religion entangling rather than challenging. The three forms of resistance becoming three forms of isolation. Ambition fractured across multiple impossibilities. The towers supporting each other in keeping you from the ground."
+      },
+      "visuals": {
+        "detailed_description": "Three towers form a triangle in the composition. Each tower is distinct: one medieval (church), one modernist (art), one classical (nation) - but all share the vertical ambition, the crenellations, the fortress quality. Lines connect them like ley lines or paths, suggesting they form a system. At the center of the triangle, a figure stands (or struggles, or contemplates) - held in tension by three forms of resistance. The lighting differs on each tower: morning light on one, afternoon on another, night on the third - the three times of day, the three aspects of consciousness. The overall effect: resistance requires multiple sites, trinity stabilizes what replacement threatened."
+      }
+    },
+    "towers-3": {
+      "name": "The City of Towers",
+      "number": "4",
+      "slug": "towers-3",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "3",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Dublin's spires, all its vertical ambitions. The city as collection of towers - churches, monuments, aspirations in stone. The bounded space contains multiple sites of resistance, multiple heights to climb or refuse. The four-square city reveals its towers.  Understanding the city as architecture of ambition. Every spire an aspiration, every tower a resistance. The bounded space contains multitudes of vertical striving. The map of intellectual possibility laid out in stone. Foundation that shows all the ways up and out.",
+        "inverted": "The city as forest of prisons, every tower a trap. Multiple spires as multiple ways to be isolated. Architecture of ambition becoming architecture of confinement. The bounded space as labyrinth of failed transcendences. Every height climbed reveals another wall."
+      },
+      "visuals": {
+        "detailed_description": "Dublin spreads below from an elevated viewpoint - the city as map and reality simultaneously. Every vertical element is emphasized: church spires (many), the Martello Tower at the edge, monuments, tall buildings, all the city's aspirations in stone. The Liffey bisects but doesn't dominate - this is about the vertical not horizontal. Streets form a grid (the four-square city) but the towers break the plane upward. Each tower casts a sharp shadow. A figure (tiny, Stephen-like) walks the streets below, dwarfed by all this vertical ambition. The overall effect: the city as container for resistance, every tower an option for climbing or refusing. The bounded space mapped in heights."
+      }
+    },
+    "towers-4": {
+      "name": "The Outsider of Towers",
+      "number": "5",
+      "slug": "towers-4",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "4",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "The tower that doesn't fit among the city's spires. Stephen's tower stands alone, apart, marked as different. The intellectual outsider building vertical resistance while the city builds its own towers. The five-pointed ambition that won't tessellate with four-square aspiration.  Understanding your tower stands apart from the city's approved spires. Intellectual ambition as outsider status. Building upward in a way the city doesn't recognize or sanction. The disruption of being too vertical, too resistant, too apart. Seeing from the margin because your tower stands outside the grid.",
+        "inverted": "The outsider tower as superiority - your spire higher because you're better. Isolation cultivated as proof of genius. The tower that doesn't fit because you won't fit, choosing alienation. Ambition that defines itself only through opposition to others' towers. Resistance as permanent identity rather than passing phase."
+      },
+      "visuals": {
+        "detailed_description": "The Martello Tower stands at the edge of Dublin, separated from the city's cluster of spires by water or distance. Its round, fortress-like shape doesn't match the city's vertical Gothic spires - it's other, different, marked. A figure stands in its doorway or at its top, looking toward the city or turned away. The city's towers form a four-square pattern, but this tower sits at a fifth point - pentagram geometry, the star that won't fit the grid. The isolation is visible in the composition: space, distance, water between the outsider tower and the city's approved heights. But the tower stands nonetheless, vertical in its own way, resistance through difference."
+      }
+    },
+    "towers-5": {
+      "name": "Identity of Towers",
+      "number": "6",
+      "slug": "towers-5",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "5",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "Forging in the smithy of the soul what tower you will build. Finding others who build towers like yours - recognizing each other across distance. The ambition that creates identity rather than discovering it. I refuse to serve, therefore I am this kind of tower-builder.  Forging your tower-identity through making it. Finding others who resist vertically as you do. Recognition that creates the category: we are tower-builders, artists, those who say non serviam. The smithy of the soul building the tower of the self. Identity as constructed ambition, made not found.",
+        "inverted": "Identity as rigid tower, unable to change. Finding others to confirm your isolation, calling it recognition. The tower you build becoming who you are entirely - unable to imagine being ground-level. Forging as forcing - making yourself into the tower you think you should be. Identity as imprisonment in self-created height."
+      },
+      "visuals": {
+        "detailed_description": "A smithy or forge in the foreground, fire bright in the cold angular world. On an anvil, plans for a tower - or the tower itself being forged in miniature, impossible but symbolic. A figure (Stephen-like) works the forge, creating their own tower-identity. In the middle distance, another tower stands - and the recognition is visible: these towers are alike, their builders recognize each other. Perhaps a line of sight or light connects them. The Tower suit symbol is being hammered into shape on the anvil. Behind everything, the formless materials that could become any shape - but are being made into towers, into vertical resistance. Identity as forged, not found."
+      }
+    },
+    "towers-6": {
+      "name": "Asymmetry of Towers",
+      "number": "7",
+      "slug": "towers-6",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "6",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Seven towers when everyone else builds in multiples of two or four. The uneven number, the tower that makes the group unbalanced. Stephen's intellectual ambition as permanent asymmetry - always the odd tower out, always making the count come out wrong.  Understanding your tower makes the geometry unbalanced. Intellectual ambition that won't fit even numbers. Being the seventh tower when the city wants six. The asymmetry of resistance - you can't be split evenly, averaged out, balanced. Recognizing this is permanent, not temporary.",
+        "inverted": "Asymmetry as identity entire - cultivating oddness as the point. The seventh tower built specifically to unbalance. Using uneven position as excuse for any behavior. Asymmetry fetishized - being different valued more than being anything specific. The odd tower out as only self-definition."
+      },
+      "visuals": {
+        "detailed_description": "Seven towers arranged across the composition: three on one side (the Trinity of earlier cards), four on the other (the City's grid). Between them, a gap - the asymmetry visible and uncomfortable. No way to balance this, no even split possible. A figure associated with one of the seven towers stands in the gap or at the seventh position, creating the imbalance. Scales might be visible, unable to balance. The geometry itself resists harmony - angles that don't quite meet, proportions that feel wrong. The cold angular style of the suit now made deliberately uncomfortable. The message: this can't be made even, can't be balanced, won't resolve."
+      }
+    },
+    "towers-7": {
+      "name": "History of Towers",
+      "number": "8",
+      "slug": "towers-7",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "7",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "All the towers ever built, pressing down. The nightmare of previous ambitions Stephen tries to wake from. But also: the accumulated height of all who climbed before, the ocean that might one day bring him home. Every tower built on ruins of earlier towers.  Understanding your tower stands on foundations of all previous towers. History of intellectual ambition as both burden and buoyancy. The nightmare of dead towers pressing down, but also the accumulation that makes your height possible. What brought you here: all who climbed before. Pattern revealing itself in tower-building across time.",
+        "inverted": "History as crushing weight, all dead towers preventing your ascent. The past as nightmare only, no ocean to carry you. Towers built on ruins without acknowledging what you stand on. Pattern as predetermination - you must build the tower history demands. What chains you: all who climbed before and failed."
+      },
+      "visuals": {
+        "detailed_description": "The composition shows towers through time, layered like geological strata or palimpsest. Ancient round towers, medieval spires, Martello towers, modern buildings - all vertical, all ambition, all shown simultaneously in transparent or overlapping layers. The deepest layers are ruins, foundations, the towers that failed. The newest layer is Stephen's tower, built on all that came before. A young figure struggles against or with waves that represent the ocean of history - the accumulated past as both nightmare dragging down and current that might eventually carry him home. Time is visible as compression: centuries of tower-building happening at once. The weight is palpable but also the foundation - you can only build this high because of all who built before."
+      }
+    },
+    "towers-8": {
+      "name": "Invitation of Towers",
+      "number": "9",
+      "slug": "towers-8",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "8",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "The moment just before the tower becomes something else. An invitation to see that height alone isn't the answer. The threshold between ambition and what ambition might serve. The breath before understanding that towers can be abandoned without falling.  Standing at your tower's highest point and seeing beyond it. The invitation to understand vertical isn't the only direction. Threshold moment - the tower has been climbed, what now? The breath before recognizing that resistance through height might give way to other forms. What's offered: the possibility that towers serve journeys, not replace them.",
+        "inverted": "Invitation as trap - they want you to come down from your tower. Threshold as failure to commit to height. The moment before you refuse to see anything beyond vertical. The breath before doubling down on resistance. What's offered: comfort that would compromise your tower, so you refuse it."
+      },
+      "visuals": {
+        "detailed_description": "At the top of a tower (Martello-style, crenellated), a door stands open. Not the door you enter - the door you might exit through. Beyond it, light and stars and suggestions of ground-level life - what happens beyond the tower's height. A figure stands at the threshold, neither in nor out, the moment of invitation held in suspension. Their posture shows recognition but not yet decision. The cold angular world of the tower meets something else: possibility, other directions than vertical. Stars overhead form a pattern, an offer. The breath before yes or no, before climbing down or refusing to, before the tower becomes what comes after towers."
+      }
+    },
+    "towers-9": {
+      "name": "Recurrence of Towers",
+      "number": "10",
+      "slug": "towers-9",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "9",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "The realization: you will build this tower again. Viconian cycle of resistance - ambition returns, height calls again. Finishing one tower reveals you're at the base of the next. The eternal return of vertical striving. Riverrun past towers built and towers to come.  Understanding the cycle: towers will be built and abandoned and built again. The recurrence not as curse but as pattern recognized. Finishing one form of ambition reveals another calling. The tower climbed becoming the foundation for next tower. Acceptance that resistance returns, height calls eternally, the vertical thrust recurs. The yes to building again.",
+        "inverted": "Condemned to build towers forever, unable to stop. The cycle as trap - must keep climbing, must keep resisting, never finding ground. Recurrence as curse. Each tower built just reveals you're imprisoned in tower-building. The wheel of ambition that crushes rather than carries. The eternal return of isolation."
+      },
+      "visuals": {
+        "detailed_description": "Ten towers arrange themselves in a circle, each slightly different but all vertical, all resistant. The last tower connects to the first - its height becoming the foundation, the cycle explicit. Or alternatively: a spiral of towers ascending, but the highest point reveals itself as the lowest, the top as base. The Viconian cycle made architectural. A figure climbs or stands in this recursive space, understanding dawning: this is not escape, this is the pattern. Towers built, abandoned, built again. The river of time flows past towers that recur. The overall composition should be impossible - M.C. Escher-like - showing the return visually. The end is the beginning is the tower you're building now."
+      }
+    },
+    "towers-10": {
+      "name": "Child of Towers",
+      "number": "11",
+      "slug": "towers-10",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "10",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Stephen as Child of Towers - young, unformed, brilliant but struggling. The artist before creation, all potential for tower-building untested. The son seeking the father but building upward instead. Youth as pure resistance, ambition before wisdom.  Youthful intellectual ambition before testing. The Child of Towers builds high but hasn't yet learned what towers are for. Unformed brilliance seeking height as answer. Resistance as growth stage - necessary but not final. The seeker who builds up because they don't know how else to seek. Pure potential for vertical striving.",
+        "inverted": "Youth arrested in tower-building, never growing beyond resistance. Potential wasted in climbing that goes nowhere. The eternal Child, building towers but never becoming architect. Ambition as defense against maturity. Resistance as only mode because growth is too frightening. The seeker who builds walls."
+      },
+      "visuals": {
+        "detailed_description": "A young man, thin and sharp in black (unmistakably Stephen), stands before or within a tower that's incomplete - scaffolding visible, stones partially laid, the structure ambitious but unfinished. Books are everywhere: stacked as building materials, used as foundation, opened as blueprints. The tower is his intellectual ambition made physical but not yet realized. His face shows brilliance but also struggle, certainty and doubt simultaneously. The Martello Tower visible in background, and this unfinished tower in foreground - the aspiration and the actuality. Tools of tower-building: pen as chisel, books as bricks. The Child of Towers has the ambition but not yet the wisdom to know what towers are for beyond reaching upward."
+      }
+    },
+    "towers-11": {
+      "name": "Father of Towers",
+      "number": "12",
+      "slug": "towers-11",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "11",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "The Father of Towers has built and abandoned towers, learned what they're for and what they're not. Mature ambition that knows height alone doesn't save you. The father who could teach the child but the child won't listen. Wisdom about resistance earned through years of resisting.  Mature understanding of intellectual ambition and its limits. The Father of Towers has climbed high enough to see that height alone isn't wisdom. Patient with those still building, knowing they must learn themselves. Wisdom earned through resistance and its failures. The offer to teach what towers are for, made without force. Paternal care for the young tower-builders.",
+        "inverted": "Father-wisdom as bitterness - 'I climbed and failed, so will you.' Maturity as having given up on towers entirely, unable to remember why height mattered. Patience become passivity, unable to offer what might help. Teaching the wrong lessons about ambition. Father as failed example not guide."
+      },
+      "visuals": {
+        "detailed_description": "A middle-aged man stands in the foreground, kind-eyed, weary but patient. Behind him: towers he has built and abandoned, visible at various stages - some complete, some partial, some ruined. He understands towers now in a way the Child cannot yet. His posture is not defeated but realistic - he knows what height can and cannot do. Perhaps he holds building tools, offering them, or perhaps he's set them down. The angular sharp world of towers is still present but softened by experience and time. He stands at ground level, having descended from heights, able to offer wisdom about climbing and descending both. The Father of Towers who could teach if the child would listen."
+      }
+    },
+    "towers-12": {
+      "name": "Mother of Towers",
+      "number": "13",
+      "slug": "towers-12",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "12",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "The Mother of Towers knows that height is just another form of distance. Maternal wisdom seeing through intellectual ambition's pretensions. She holds the ground the towers are built from and will return to. Towers reach up, but she remains, foundational.  Understanding towers from the ground they're built on. Maternal wisdom that sees intellectual ambition as just another way of being distant, apart, defended. She knows the towers will be built and will fall and the ground remains. Not opposition to height but knowledge of what towers rest on. The mother who could explain foundation but towers don't look down.",
+        "inverted": "Mother-wisdom as judgment - all towers are foolishness, height is delusion. Ground as trap, keeping everyone down, resenting ascent. Foundation become prison. Wisdom that crushes ambition rather than contextualizing it. The mother who devours the tower-builders."
+      },
+      "visuals": {
+        "detailed_description": "A woman, substantial and present, stands or sits at ground level. She is not in the towers but the ground they're built from. Behind and around her, towers rise - sharp, angular, ambitious, reaching for sky. But she remains, foundational, the earth itself. Her face shows wisdom - she knows what towers are, why they're built, and that they'll return to earth eventually. She doesn't oppose them but doesn't need them either. The cold angular aesthetic of towers meets her warmth and solidity. Perhaps her hands are in earth, or she holds the stones towers are made from. The Mother of Towers who holds the ground, patient with height's necessity and temporary nature."
+      }
+    },
+    "towers-13": {
+      "name": "Affirmation of Towers",
+      "number": "14",
+      "slug": "towers-13",
+      "arcana": "minor",
+      "suit_slug": "towers",
+      "rank_slug": "13",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "Yes to towers. Yes to the vertical thrust, the reach upward, the resistance through height. Affirmation of Towers says: the ambition was necessary, the climbing mattered, the resistance through building upward was real. Yes even to towers that fall, to heights reached and abandoned.  The ultimate affirmation: yes, the towers needed building. Yes to intellectual ambition despite its limits. Yes to resistance through height even knowing it's not final answer. The affirmation that transcends personal tower-building - saying yes to the impulse itself, the human drive to build upward, to resist through architecture, to climb. Not 'yes my tower' but 'yes towers,' yes to the endeavor.",
+        "inverted": "Yes as resignation - towers will be built so might as well say yes. Affirmation without understanding, empty agreement. Yes to towers as only option, unable to imagine anything else. The word emptied of meaning, yes repeated until it means nothing. Saying yes to what imprisons you."
+      },
+      "visuals": {
+        "detailed_description": "The word YES dominates the composition, but it's built from towers - the letters themselves are architectural, angular, made of the same stones as Martello towers and spires. Or towers arrange themselves to spell out YES in their positioning. The cold angular aesthetic of the entire suit culminates in this affirmation: yes to the vertical, yes to the resistance, yes to the climb. Behind or through the YES: all the previous towers - the ones built, abandoned, failed, succeeded, recurring. A figure (synthesis of Child and Father and Mother) stands within or before the YES, affirming the tower-impulse itself. The sharpness of intellectual ambition softens just enough to say yes, to affirm, to acknowledge that the reach upward mattered even if it wasn't everything."
+      }
+    },
+    "keys-0": {
+      "name": "Homecoming of Keys",
+      "number": "1",
+      "slug": "keys-0",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "0",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "The key that unlocks home - Bloom's return to 7 Eccles Street. Not forcing entry but recognizing what was always accessible. The wisdom of homecoming: understanding that arrival isn't conquest but recognition. The key turns gently in a lock that was made for it.  Homecoming achieved through patient understanding rather than force. The wisdom that recognizes where you truly belong. Unlocking what was always meant to open for you. Arrival with acceptance - the place receives you because you understand how to enter gently. The key that fits because you've learned the shape of the lock. Return with wisdom earned.",
+        "inverted": "Using the key to break in rather than enter. Forcing homecoming where you're not welcome. The lock that won't turn because you've changed or it has. Wisdom failing at the threshold - knowing how to unlock but finding no home behind the door. Arrival as violation. The key that no longer fits what it once opened."
+      },
+      "visuals": {
+        "detailed_description": "A door at 7 Eccles Street, the number visible. A large old-fashioned key turns gently in the lock - the Key suit symbol prominent, rendered in warm gold. The key fits perfectly, no forcing needed. Through the opening door, warm light spills out - the interior of home visible, welcoming. A figure (Bloom-like, middle-aged, kind-faced) stands at the threshold, key in hand, the moment of gentle entry. The composition is circular - perhaps the keyhole forms a circle we see through, or the key itself creates a mandala pattern. Everything curves and flows. The alpha-omega point made gentle: you arrive because you understand how to enter. The wisdom of homecoming."
+      }
+    },
+    "keys-1": {
+      "name": "Replacement of Keys",
+      "number": "2",
+      "slug": "keys-1",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "1",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "One key succeeds another - the wisdom that recognizes when old keys no longer serve. Not rejection but gentle succession. The Odyssean understanding: different locks require different keys, different phases of journey require different forms of access. Replacing the key that opened yesterday's door.  Wisdom to recognize when old keys no longer unlock what matters. Gentle succession of understanding - one form of access giving way to another. The patience to try new keys rather than forcing old ones. Understanding that replacement isn't failure but evolution. Each phase of journey requires its own form of access. Accepting that what unlocked the past won't open the future.",
+        "inverted": "Discarding keys that still have use. Replacing one key with another that opens nothing better. Succession without wisdom - changing keys compulsively. Unable to recognize which keys still serve. Throwing away access to where you came from. Replacement as avoidance of learning to use what you have."
+      },
+      "visuals": {
+        "detailed_description": "Two keys in the composition - one older, more ornate, fading to translucent gold on the left. One newer, simpler, solidifying in brighter gold on the right. A figure (Bloom-like) holds both, examining them with patient understanding, choosing which unlocks the present moment. Behind them, two doors or two phases of a journey visible. The circular flowing style shows this isn't opposition but succession - the mandala turning, wisdom evolving. One key was right for yesterday, one for today. Both honored, but the choice made with gentle clarity. The replacement achieved through understanding, not force."
+      }
+    },
+    "keys-2": {
+      "name": "Trinity of Keys",
+      "number": "3",
+      "slug": "keys-2",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "2",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Three keys that together unlock understanding - the trinity of Bloom's wisdom. Mind, body, and compassion as three-in-one. The acceptance that stabilizes through triangulation. Three forms of access that create a system of gentle unlocking.  Understanding requires three forms of access working together. The trinity of wisdom: intellectual understanding, embodied knowledge, and compassionate acceptance. Three keys that unlock different aspects of the same truth. The system of gentle access that triangulation creates. Mind seeing patterns, body feeling truth, compassion opening hearts - all three necessary.",
+        "inverted": "Three keys creating confusion rather than clarity. Trinity fractured - each key opening doors that contradict the others. Wisdom divided against itself. Three forms of access that don't integrate. The keys jangling together, unable to work in concert. Triangulation that traps rather than liberates."
+      },
+      "visuals": {
+        "detailed_description": "Three keys form a triangular mandala - one at top, two below. Each key is distinct: one intellectual (ornamented with symbols), one embodied (simple, warm-toned), one compassionate (heart-shaped bow). They connect through flowing circular patterns - Celtic knot-work or labyrinth designs linking them. At the center, a figure (Bloom) or a single lock that all three keys unlock together. The composition shows that wisdom requires all three: understanding (mind), knowing (body), accepting (heart). The trinity that stabilizes what replacement threatened. Warm golds and blues flow between the keys. The sacred geometry gentle, not rigid."
+      }
+    },
+    "keys-3": {
+      "name": "The City of Keys",
+      "number": "4",
+      "slug": "keys-3",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "3",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Dublin as system of locks and keys - every door an access point, every street a path to understanding. The city as mandala of possible entrances. Bloom's circular route reveals the bounded space as place of infinite gentle access. The four-square foundation of doors that open.  Understanding the city as system of access points. Every door can open if you have the right key and the patience to try it. The bounded space reveals infinite ways to enter, connect, unlock. Wisdom of navigation - knowing all the paths and which keys open which doors. The city as friend to those who understand its patterns. Foundation that offers access, not barriers.",
+        "inverted": "The city as locked fortress - keys that open nothing. Doors everywhere but none admit you. The bounded space as prison of locks without keys. Navigation becoming wandering without access. Every path leads to locked doors. The city as hostile, refusing entry. Foundation as barrier not support."
+      },
+      "visuals": {
+        "detailed_description": "Dublin spreads in a circular composition - the city as mandala. The Liffey flows through in a gentle S-curve, and streets radiate out in circular rather than grid patterns. Keys are integrated throughout: door knockers shaped like keys, keyholes in bridges, the city itself as a lock that opens if you understand it. A figure (Bloom) walks his circular route, keys at his belt or in hand, understanding how to access every part. Buildings have visible keyholes, welcoming. The four-square city revealed as place of infinite access for those with wisdom to navigate it. Warm golds and earth tones throughout - this city is friend, not fortress."
+      }
+    },
+    "keys-4": {
+      "name": "The Outsider of Keys",
+      "number": "5",
+      "slug": "keys-4",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "4",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "Bloom the outsider holds keys others don't recognize. His key unlocks doors the city-dwellers don't see. The wisdom of the outsider: seeing access points invisible to those inside. The five-pointed key that opens what four-square locks exclude. Disruption through gentle access.  Outsider wisdom that sees doors others miss. The keys that unlock from outside what insiders can't access from within. Understanding that outsider position grants different forms of access. Your keys work on locks others don't recognize as locks. Disruption through finding entrance where none was thought to exist. The gift of seeing differently.",
+        "inverted": "Outsider with keys that open nothing - marked as other, granted no access. Wisdom that sees doors but cannot enter them. Keys that should work but the locks have been changed against you. Seeing access points but being refused entry. The outsider kept outside regardless of understanding. Keys as markers of difference rather than tools of access."
+      },
+      "visuals": {
+        "detailed_description": "Bloom stands at the edge of Dublin's regular grid, holding a key that's different - five-pointed, unusual design, warm gold against the city's grey stone. Behind him, the city's four-square locks and regular doors. But his key opens something else: a door in a blank wall, an entrance others walk past without seeing, access points invisible to insider eyes. He's marked as different but that difference grants him ways in that others lack. The five-pointed key against four-square city. His outsider wisdom sees what belonging blinds you to. The key glows warm - it works, despite or because of being different."
+      }
+    },
+    "keys-5": {
+      "name": "Identity of Keys",
+      "number": "6",
+      "slug": "keys-5",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "5",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Finding others by the keys they carry - recognizing fellow key-holders across distance. Forging your identity not through what you resist but through what you can gently unlock. The wisdom of recognition: knowing your people by what doors they can open. Identity as shared access.  Recognizing others by the wisdom they carry, the doors they can open. Identity forged through shared understanding of how to unlock what matters. Finding your people: those who hold keys like yours. The karass of the key-holders. Discovering what you are through recognizing what others can gently access. Identity as the doors you know how to open.",
+        "inverted": "Identity as the doors you keep locked. Recognizing others only to exclude them. The keys you carry marking you as part of a closed circle. Finding your people but only to lock others out. Forging identity through what you refuse access to rather than what you open. Recognition becoming gatekeeping."
+      },
+      "visuals": {
+        "detailed_description": "Two figures stand at distance across Dublin streets - Bloom and Stephen, but shown in their wisdom aspects. Each holds a key, and the keys glow with recognition - similar gold light, or patterns that complement each other. Circular mandala patterns connect them across space, showing they share the understanding of how to unlock what matters. Not identical keys but keys that work together, that recognize each other. The moment of identity forged through recognition: you are one who can open these doors, and so am I, and therefore we are kin. The karass revealed through shared access, shared wisdom. The 'finding the others' but gentle, accepting, about opening not closing."
+      }
+    },
+    "keys-6": {
+      "name": "Asymmetry of Keys",
+      "number": "7",
+      "slug": "keys-6",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "6",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Seven keys when perfect symmetry requires six or eight. The understanding that wisdom doesn't balance neatly. Bloom's acceptance that he can't unlock everything for everyone. The asymmetry of access - some doors open for you, some don't, and that's the truth of things.  Understanding that access is inherently uneven. Seven keys that can't be paired or balanced. Wisdom that some doors open for you that won't for others, and vice versa. Accepting asymmetry without bitterness. You can unlock what you can unlock, no more, no less. The odd one out who finds their own entrances. Recognition that trying to balance everything prevents any real access.",
+        "inverted": "Asymmetry as resentment - why can others unlock what I cannot? The seven keys as seven failures to balance. Wisdom soured by uneven access. Using your keys to block others' doors. The odd position cultivated as grievance. Asymmetry as excuse: 'I can't unlock anything because the system is unfair.'"
+      },
+      "visuals": {
+        "detailed_description": "Seven keys arrange themselves in asymmetric mandala - three on one side, four on the other, the imbalance visible but not uncomfortable. Each key glows warm gold but unevenly - some brighter, some dimmer, reflecting that some doors open easier than others. Bloom holds these seven keys with gentle acceptance - this is what he has, this is what he can unlock, trying to force evenness would mean using none of them. The circular flowing patterns try to balance but can't quite, and that's okay. The asymmetry of wisdom: you have access to what you have access to. Some doors remain locked, not from malice but from the nature of things. The seven keys that can't be made six or eight, that won't pair perfectly, but that work for what they work for."
+      }
+    },
+    "keys-7": {
+      "name": "History of Keys",
+      "number": "8",
+      "slug": "keys-7",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "7",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "All the keys ever turned, all the doors ever opened by those who came before. History as accumulated wisdom-of-access. The ocean of understanding that Bloom swims in - all the Odyssean wanderers who found their way home. Keys passed down through generations, wisdom earned by others that unlocks for you.  Understanding built on all who unlocked before you. History as accumulated wisdom - keys that work because others learned which doors they open. The ocean of understanding both burden and support. What brought you here: all the patient key-turners of the past. Pattern of gentle access revealing itself across time. You hold keys others forged, and that's gift not theft.",
+        "inverted": "History as hoard of locked doors. All the keys of the past that no longer fit present locks. Ocean of understanding as drowning in obsolete wisdom. What chains you: trying to use grandfather's keys on today's doors. Pattern as predetermination - these keys worked before so they must work now. Refusing to forge new keys because the old ones should suffice."
+      },
+      "visuals": {
+        "detailed_description": "The composition shows keys through time, layered like the ocean's depth. Ancient keys at the bottom - bronze, simple, worn smooth. Medieval keys middle-depth - elaborate, iron, ornate. Modern keys near surface - Bloom's key, 1904, brass and functional. All flow together in circular patterns suggesting water, current, the ocean of history. Bloom swims through or floats on this ocean of keys - the accumulated wisdom of all who unlocked doors before him. The weight is visible but also the buoyancy: he uses keys others made, stands on understanding others earned. The nightmare of history transformed by patience into the ocean that carries him home. All the Odyssean wanderers who found their way, their keys still turning somewhere in time."
+      }
+    },
+    "keys-8": {
+      "name": "Invitation of Keys",
+      "number": "9",
+      "slug": "keys-8",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "8",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "The key offered but not yet turned. The door ready to open if you'll use the wisdom you have. Bloom and Stephen in the garden under stars - the invitation to unlock what's been locked. The threshold of gentle access, the breath before the key turns and understanding opens.  Standing at the door with key in hand, the moment before opening. Invitation to use the wisdom you've gained. The threshold where understanding becomes action - gentle action, turning not forcing. What's offered: the door will open if you turn the key. The breath before access, the space where choice to unlock or not exists. Door ready, key ready, the invitation extended.",
+        "inverted": "Key in hand but refusing to turn it. Door open but treating it as locked. Invitation to access seen as trap. The threshold as barrier despite having the key. The breath before refusal, the moment of choosing locked over open. What's offered but rejected: the gentle opening you're afraid to allow."
+      },
+      "visuals": {
+        "detailed_description": "In a garden at night, under a sky full of circular star mandalas, a door stands with key inserted in its lock - not yet turned. The key glows warm gold, ready. The lock is willing. Two figures - Bloom and Stephen - stand at this threshold, the invitation between them palpable. Bloom's posture offers: turn the key, see what opens. Stephen's posture considers. The door is neither locked nor open but ready to be opened. Circular patterns in the stars, in the garden plants, in the door's ornamentation all suggest the mandala of potential access. The breath before the key turns. The invitation: use the wisdom you have, unlock what's ready to open, enter gently. The threshold of yes."
+      }
+    },
+    "keys-9": {
+      "name": "Recurrence of Keys",
+      "number": "10",
+      "slug": "keys-9",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "9",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "The understanding: doors will be locked and unlocked and locked again. Wisdom's eternal return - you learn to unlock, the door closes, you learn again. Finishing one opening reveals another lock waiting. The Odyssean cycle of departure and homecoming and departure. Keys that unlock the circle itself.  Understanding the cycle: wisdom unlocks doors that close again, requiring wisdom newly applied. Recurrence not as curse but as pattern recognized. Finishing one access reveals another lock calling. The key that unlocks becomes the key that must unlock again. Acceptance that wisdom is eternal practice, not permanent solution. The yes to turning keys forever. Riverrun past locks and keys.",
+        "inverted": "Condemned to unlock forever, never staying through opened door. The cycle as trap - must keep turning keys, must keep accessing, never arriving. Recurrence as curse: why learn to unlock if it only closes again? Each door opened reveals you're imprisoned in key-turning. The wheel of access that grinds rather than carries. The eternal return of effort without rest."
+      },
+      "visuals": {
+        "detailed_description": "Ten keys arrange themselves in a circle or spiral mandala, each opening a door, each door revealing another lock requiring the next key. The final key opens a door that reveals the first lock again - the cycle explicit, eternal. Or alternatively: a single key shown in spiral repetition, turning in a lock that is also the key, the ouroboros of access and wisdom. A figure (Bloom) stands within this recursive mandala, understanding dawning: this is not frustration but the pattern. Doors open, doors close, keys unlock again. The Viconian cycle made gentle: departure, homecoming, departure, each turn of the key both ending and beginning. The riverrun of wisdom - past locks and keys, flowing back to first understanding. The mandala of eternal return made peaceful through acceptance."
+      }
+    },
+    "keys-10": {
+      "name": "Child of Keys",
+      "number": "11",
+      "slug": "keys-10",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "10",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "The child learning which keys unlock which doors. Young wisdom, unformed but seeking. Trying keys in locks with patient curiosity, not yet knowing the patterns. The seeker who understands access matters but hasn't yet learned all the ways to turn keys gently.  Youthful wisdom beginning to understand access and unlocking. The Child of Keys tries every lock with patient curiosity. Learning which keys work where through gentle experimentation. Wisdom unformed but seeking - the willingness to try, to learn, to accept when doors don't open yet. Pure potential for understanding how to unlock. The seeker at the beginning who knows keys matter.",
+        "inverted": "Youth frustrated by locked doors. Trying keys impatiently, forcing locks. Unformed wisdom demanding immediate access. The child who expects all doors to open for them. Learning blocked by refusal to accept that wisdom takes time. Potential for key-turning wasted in demanding rather than seeking."
+      },
+      "visuals": {
+        "detailed_description": "A young figure - perhaps young Bloom before he learned all his wisdom - stands before an array of doors, holding multiple keys in small hands. They try keys in locks with patient curiosity - one doesn't fit, try another, ah this one turns! The circular mandala patterns are present but looser, less certain, still forming. Some doors stand open (successful unlocking), some remain closed (learning happens here too). The keys glow warm but not as bright as they will - wisdom beginning, not complete. Books about locks and keys scattered around, showing learning. The Child of Keys who understands access matters but hasn't yet learned all the gentle ways to turn wisdom's key. The beginning of the Odyssean journey of patient understanding."
+      }
+    },
+    "keys-11": {
+      "name": "Father of Keys",
+      "number": "12",
+      "slug": "keys-11",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "11",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Bloom as Father of Keys - mature wisdom that knows which keys unlock which doors and when to use them. The father who could teach key-turning but knows teaching happens through offering, not forcing. Patient understanding earned through years of gentle access. Wisdom as paternal care.  Mature understanding of access and unlocking. The Father of Keys knows which doors can open and which cannot, which keys work and which don't, and accepts both. Patient wisdom earned through years of turning keys gently. Offering to teach but never forcing - holding out keys for those ready to learn. The Odyssean virtue fully realized: wisdom through patient journey, homecoming earned. Paternal care for those still learning to unlock.",
+        "inverted": "Father-wisdom as bitterness - 'I unlocked doors and found nothing behind them.' Maturity having given up on keys entirely, doors entirely. Patience become passivity, unable to turn keys anymore. Teaching the wrong lessons about access - 'some doors are better left locked.' Father as failed key-holder, warning others away from wisdom."
+      },
+      "visuals": {
+        "detailed_description": "Bloom, middle-aged, kind-eyed, stands with a ring of keys at his belt. Around him, Dublin's doors in various states - some open (he knows which keys opened them), some closed (he knows which aren't his to open), some ajar (he knows when to push gently). The circular mandala patterns are bright, clear, earned through years of patient turning. He holds a key out - perhaps offering it to the Child of Keys from the previous card, or to Stephen - teaching through offering, never forcing. His face shows the wisdom of the Father of Keys: knowing which locks are worth unlocking, which doors lead where, when to try a key and when to accept a door stays closed. The Odyssean wanderer who made it home and learned all the paths. He could teach if the child would learn."
+      }
+    },
+    "keys-12": {
+      "name": "Mother of Keys",
+      "number": "13",
+      "slug": "keys-12",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "12",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "Molly as Mother of Keys - the wisdom that knows some doors shouldn't be locked at all. Maternal understanding that sees the locks and keys as sometimes unnecessary. She holds the space that doesn't need unlocking because it was never closed. Keys exist, but she is the ground they unlock to.  Understanding that unlocking implies there was locking, and why? Maternal wisdom that questions the need for so many locks. She knows the keys and which open what, but also knows that much of the locking is fear, much of the unlocking is coming home to what was never truly closed. The mother who holds the space beyond the doors - you unlock to reach here. Not opposition to keys but knowledge that the ultimate wisdom is recognizing what needs no key.",
+        "inverted": "Mother-wisdom as rejection of all keys - 'nothing should be locked' becoming 'nothing should be private.' Ground that refuses doors, space that allows no boundaries. Wisdom that crushes the need for any key-turning. The mother who devours key-holders, demanding everything be accessible to her. Space beyond doors becoming void without structure."
+      },
+      "visuals": {
+        "detailed_description": "Molly reclines in the center of a circular mandala composition, in her bed at 7 Eccles Street. Around the edges, keys and locks and doors are visible - the whole city's system of access. But she is the center, the ground, the space all the unlocking leads to. Keys work to reach here, but here doesn't need a key from inside itself. Her face shows wisdom: she knows what keys open what, understands Bloom's patient unlocking, but also knows that much locking is unnecessary fear. She is beyond the door, the home the keys unlock to. Not opposition to keys but transcendence of them - the maternal wisdom that holds the space that was never truly closed, only approached through the symbolism of locks and patient access. The Mother of Keys who is also the space beyond keys."
+      }
+    },
+    "keys-13": {
+      "name": "Affirmation of Keys",
+      "number": "14",
+      "slug": "keys-13",
+      "arcana": "minor",
+      "suit_slug": "keys",
+      "rank_slug": "13",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Yes to keys. Yes to patient unlocking, to gentle access, to wisdom earned through turning keys carefully. Affirmation of Keys says: the seeking mattered, the learning to unlock without forcing was real, the Odyssean journey of finding which keys work was necessary. Yes even to doors that stayed locked. Yes to the wisdom of access.  Ultimate affirmation: yes, the patient unlocking needed doing. Yes to wisdom of access despite doors that stayed closed. Yes to key-turning even knowing some locks won't yield. The affirmation that transcends personal success with keys - saying yes to the endeavor itself, the human practice of seeking gentle access, learning which keys work, accepting which doors aren't yours. Not 'yes my keys' but 'yes keys,' yes to the patient Odyssean wisdom.",
+        "inverted": "Yes as resignation - doors will lock so might as well say yes to it. Affirmation without understanding, empty agreement. Yes to keys as only option, unable to imagine anything else. The word emptied of meaning, yes repeated until it's just more locks. Saying yes to what traps you in eternal key-turning."
+      },
+      "visuals": {
+        "detailed_description": "The word YES dominates the composition, but it's built from keys - the letters themselves are made of key-shapes, or keys arrange themselves in mandala patterns that spell YES. The circular flowing aesthetic of the entire suit culminates in this affirmation: yes to the patient unlocking, yes to the wisdom, yes to the gentle access. Behind or through the YES: all the previous keys - the ones that worked and the ones that didn't, the learning, the patience, the journey. A figure (synthesis of Child, Father, and Mother of Keys) stands within or before the YES, affirming the key-turning itself. The warmth of wisdom, the gold of understanding, the circular patterns of eternal patient return - all saying yes to seeking access gently, to Odyssean wisdom, to coming home through learning which doors open and accepting which stay closed."
+      }
+    },
+    "nets-0": {
+      "name": "Homecoming of Nets",
+      "number": "1",
+      "slug": "nets-0",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "0",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Returning to the place where nets first entangled you. Stephen's failed homecoming to the tower reveals it was always a net disguised as home. Arrival at the place of origin only to find the nets tighter, the obligations more crushing, the guilt more present. Coming home to entanglement.  Recognizing that home is where the nets were first cast. Returning to find the entanglements waiting, unchanged. The place you started from holds all the petty resentments, obligations, guilts you tried to escape. Understanding that homecoming means facing the nets again. Arrival reveals what you fled: the crushing triviality of original entanglement.",
+        "inverted": "Homecoming as walking knowingly back into nets that will destroy you. Arrival as masochism - choosing entanglement over freedom. The place of origin romanticized despite its nets. Convincing yourself the nets are lighter than they are. Homecoming as trap you embrace."
+      },
+      "visuals": {
+        "detailed_description": "The threshold of the Martello Tower, but nets hang in the doorway, web across the stones, tangle in the lock. A figure (Stephen-like, disheveled, hung-over) arrives with a key but the key is wrapped in net, the door is webbed with obligation. Behind him, the sea - escape - but the tower ahead is all entanglement. The alpha-omega point corrupted: you arrive only to find the nets waiting, you left only to discover you brought them with you. The palette is muddy green, dingy brown, grey morning light showing all the dirt and tangle. Nets are irregular, overlapping, compressing the space. The Net suit symbol - tangled mesh - prominent and oppressive. Homecoming as return to first entrapment."
+      }
+    },
+    "nets-1": {
+      "name": "Replacement of Nets",
+      "number": "2",
+      "slug": "nets-1",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "1",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "One net replaced by another - escaping the tower's nets only to find the schoolroom's nets waiting. The substitution isn't freedom but exchange of entanglements. Stephen's morning: leaving one set of petty obligations for another. Different nets, same crushing weight.  Understanding that escaping one net means entering another. Replacement as exchange of entanglements, not liberation. The morning job replaces the morning tower but both are nets. Recognizing that substitution doesn't free you, just tangles you differently. One form of petty obligation giving way to another form equally crushing.",
+        "inverted": "Replacing one net with worse net, calling it progress. New entanglements deeper than old ones. Substitution making things worse. The endless exchange of nets, never questioning why you need any. Mistaking different tangles for actual freedom."
+      },
+      "visuals": {
+        "detailed_description": "Split composition: left side shows the tower's nets fading but still present, right side shows classroom nets tightening. A thin figure in black (Stephen) moves between them - not escaping but exchanging. The nets connect the spaces: nationality, language, religion as threads running from tower to schoolroom. Deasy's coins are caught in net. The students' indifference is a net. The tower's mockery was a net. Both sides equally tangled, just differently. The irregular overlapping lines show no clean transition, no freedom, just replacement of one crushing triviality with another. Muddy greens and browns throughout."
+      }
+    },
+    "nets-2": {
+      "name": "Trinity of Nets",
+      "number": "3",
+      "slug": "nets-2",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "2",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Joyce's trinity of entanglement: nationality, language, religion. The three nets flung at the soul that together make escape nearly impossible. Stephen caught in triangulation - each net reinforcing the others. The sacred geometry of entrapment.  Understanding the three great nets: nationality that demands allegiance, language that shapes thought before thought happens, religion that threatens damnation. Trinity of entanglement that stabilizes your imprisonment. Three forms of petty crushing obligation that support each other. Recognizing how completely caught you are: nation, tongue, faith all binding.",
+        "inverted": "Trinity as excuse - 'I'm too bound to act.' Three nets becoming identity entire - 'I am my entanglements.' The nets you won't release even when you could. Sacred geometry of entrapment embraced, celebrated even. Three forms of resentment that you feed and tend and use to avoid living."
+      },
+      "visuals": {
+        "detailed_description": "Three nets form a triangular prison. The first net (green, irregular) represents nationality - Irish flags, maps, the obligations of nation tangled into mesh. The second net (grey, angular) represents language - Latin text, English grammar, words themselves becoming nets. The third net (black, ecclesiastical) represents religion - rosary beads forming net, church architecture as mesh. All three overlap at center where Stephen stands, maximally entangled. His posture shows struggle but also the impossibility of escape: pulling against one net only tightens the other two. The trinity that was supposed to save instead imprisons. Everything compressed, claustrophobic, the three nets reinforcing each other's hold."
+      }
+    },
+    "nets-3": {
+      "name": "The City of Nets",
+      "number": "4",
+      "slug": "nets-3",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "3",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "Dublin as web of petty entanglements. Every street a net-line, every corner holds obligation. The bounded space that seemed like foundation reveals itself as trap. The four-square city as four-walled prison of triviality. The map of where you cannot go.  Understanding the city as system of nets. Every street obligates, every space entraps. The bounded foundation is also bounded imprisonment. Dublin's grid as web that catches rather than supports. Geographic limitation felt as crushing. The map showing all the ways you're caught.",
+        "inverted": "The city as malicious trap designed to imprison you specifically. Every street as deliberate entanglement. Geographic limitation as conspiracy. The four walls crushing in, paranoia about the city's intentions. The map as evidence of how they've caught you."
+      },
+      "visuals": {
+        "detailed_description": "Dublin from above, but the streets are literal nets - woven mesh where roads should be. Buildings aren't solid but cages, their windows like net-holes. The Liffey flows through as a thick net-rope, binding rather than connecting. The four-square grid is visible but as prison bars, not structure. A tiny figure (Stephen) tries to move through the netted streets, every step tangling further. Church spires are net-posts. Bridges are woven from obligations. The whole city reveals itself as elaborate trap disguised as home. Everything compressed, the city pressing in, the bounded space as bounded imprisonment. Muddy palette throughout."
+      }
+    },
+    "nets-4": {
+      "name": "The Outsider of Nets",
+      "number": "5",
+      "slug": "nets-4",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "4",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "The outsider caught in nets cast specifically for him. Stephen's nets are tighter because he doesn't fit - the nets made for others chafe worse on outsider skin. Disruption by existence means extra nets, extra entanglements, extra crushing weight. The five-pointed caught in four-square net.  Understanding outsider status means more nets, not fewer. The city casts extra nets at those who don't fit. Your difference makes every obligation more crushing, every trivial demand more painful. The nets made for the fitting bind tighter on the non-fitting. Being marked as other means marked for extra entanglement.",
+        "inverted": "Outsider nets as excuse for everything. The extra entanglements cultivated as identity. Using your outsider position to claim all nets are persecution. The crushing weight you won't release because it proves your outsider status. Making nets tighter yourself to maintain difference."
+      },
+      "visuals": {
+        "detailed_description": "Stephen stands wrapped in layer upon layer of nets - more than the other figures in the background who move more freely through the city's single-layer mesh. His nets are denser, more irregular, catching on themselves. Some nets are marked: 'for outsiders only' or 'special obligations for those who won't serve.' His five-pointed otherness (suggested through pentagram geometry) doesn't fit the four-square mesh of the city's nets, so the nets bunch, tangle, bind harder. Others pass through the city's nets with some freedom but he's caught at every step. The palette emphasizes the excess - muddy greens and browns layered thick, the hung-over crushing multiplied. The outsider doesn't escape nets but gets extra ones."
+      }
+    },
+    "nets-5": {
+      "name": "Identity of Nets",
+      "number": "6",
+      "slug": "nets-5",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "5",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Finding others by recognizing their nets - the karass of the entangled. Forging identity through shared crushing triviality. Understanding what you are through recognizing their guilt, their resentments, their petty obligations. We are those who are caught.  Recognizing others by seeing their nets. Identity forged through shared entanglement: we are the guilty, the obligated, the hung-over, the crushed by triviality. Finding your people through their resentments matching yours. The karass revealed as those caught in similar nets. What you are: one who knows these particular petty crushing things.",
+        "inverted": "Identity as only your nets - 'I am my entanglements and nothing else.' Finding others to share misery, making it identity. Recognition becoming competition over who's more entangled. The karass as cult of resentment. Forging identity through nets you won't release because then who would you be?"
+      },
+      "visuals": {
+        "detailed_description": "Two figures (Stephen and perhaps another outsider) stand across tangled Dublin space, both wrapped in nets. Their nets reach toward each other, touch, connect - recognition through shared entanglement. One's guilt-net touches the other's obligation-net. Nationality binds one, language the other, but both are caught and both see it. The moment of 'oh, there you are' but dark: you're entangled like I'm entangled, therefore we're kin. Not beautiful recognition but recognition nonetheless. The karass of the caught. Identity forged in the smithy of resentment and petty crushing things. Irregular tangled lines connect them, not mandala but mesh. Muddy palette, compressed space."
+      }
+    },
+    "nets-6": {
+      "name": "Asymmetry of Nets",
+      "number": "7",
+      "slug": "nets-6",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "6",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Seven nets when balance requires six or eight. The crushing realization that your entanglements are uneven, asymmetric, won't resolve into anything clean. Some obligations heavier than others, some resentments deeper, and no way to balance it. The odd net out that makes everything worse.  Understanding your nets don't balance, can't be made even. Seven obligations that won't pair or cancel. The asymmetry of entanglement: some nets heavier, some tighter, no clean resolution. Recognizing the uneven crushing weight without falling into self-pity. You're entangled asymmetrically and that's truth.",
+        "inverted": "Asymmetry as justification - 'I'm more entangled than anyone, so I can do anything.' The uneven nets as permanent grievance. Using asymmetric obligations to avoid all obligation. The odd position cultivated: 'My nets are special, no one understands.' Asymmetry as excuse for cruelty or inaction."
+      },
+      "visuals": {
+        "detailed_description": "Seven nets bind a figure (Stephen) in asymmetric arrangement. Three nets on one side are tight, cutting: guilt over his mother, obligation to the tower, debt to Mulligan. Four nets on the other side are looser but more numerous: teaching job, students' indifference, Deasy's antisemitism, the whole crushing morning. They don't balance. Three plus four equals seven and seven can't be made even. The figure's posture shows the asymmetry - pulled harder one way but more entangled the other. No way to balance these obligations. The irregular tangled mesh emphasizes: this won't resolve. Muddy palette, compressed space showing the uncomfortable uneven crushing."
+      }
+    },
+    "nets-7": {
+      "name": "History of Nets",
+      "number": "8",
+      "slug": "nets-7",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "7",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "All the nets ever cast, accumulating through time. History is a nightmare from which I am trying to awake - and history is nets layered on nets on nets. Every generation's petty obligations added to the crushing weight. The ocean that drowns rather than carries.  Understanding nets accumulate through history. All the petty obligations, resentments, guilts of those who came before become yours. History as nightmare of entanglement: each generation added nets, none removed them. The crushing weight of inherited triviality. Pattern revealing itself: they were caught, you're caught, everyone will be caught. What brought you here: all who were entangled before you.",
+        "inverted": "History as excuse - 'I'm entangled because of the past, so I can't act now.' The nightmare embraced, wallowed in. Using accumulated nets as reason to never try escape. The ocean of entanglement as identity. Pattern as predetermination - 'they were caught so I must be.' History as justification for remaining netted."
+      },
+      "visuals": {
+        "detailed_description": "The composition shows nets through time, layered like sediment or nightmare. Ancient nets at bottom - Celtic obligations, tribal debts. Medieval nets middle - church obligations, feudal duties. Colonial nets - British rule, poverty, emigration. Modern nets top - teaching job, tower rent, student indifference. All tangling together into one massive crushing mesh. A young figure (Stephen) struggles in this accumulated weight, not swimming but drowning. The nets press down with weight of centuries. History isn't ocean that might carry you home but ocean of nets that drowns. Every generation added to the weight. The nightmare visible and inescapable. Muddy greens and browns layered thick, compressed space showing centuries of crushing triviality accumulated."
+      }
+    },
+    "nets-8": {
+      "name": "Invitation of Nets",
+      "number": "9",
+      "slug": "nets-8",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "8",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "The moment before choosing to enter more nets willingly. Invitation to new obligations, new entanglements, offered as opportunity. The breath before saying yes to what will crush you. The threshold where you could refuse the nets but probably won't.  Standing before new nets being offered. Understanding they're nets but considering entry anyway. The invitation might be genuine - new job, new relationship, new obligation - but nets nonetheless. Threshold moment where you see the entanglement clearly before choosing it. The breath before accepting new crushing triviality. What's offered: more of what has always caught you.",
+        "inverted": "Invitation as trap recognized but entered anyway. The threshold crossed despite knowing it's nets. Self-destructive acceptance of new entanglements. The breath before deliberate self-ensnarement. What's offered and accepted: the crushing weight you claim you don't want but keep choosing."
+      },
+      "visuals": {
+        "detailed_description": "A threshold, door standing open, but the doorway is hung with nets - visible, obvious, undeniable nets. A figure (Stephen or any young person) stands before it, hand reaching out, seeing the nets clearly. This might be a new teaching job, a romantic possibility, a familial obligation - but it's shown as nets. The figure's face shows they know it's nets but are considering entering anyway. Behind them, escape (?) but also isolation. Through the netted doorway, something that might be good but will definitely entangle. The moment of invitation held in suspension: you can see what this is, will you enter? The breath before probably saying yes to new crushing triviality. Muddy palette, compressed space, the nets undeniable."
+      }
+    },
+    "nets-9": {
+      "name": "Recurrence of Nets",
+      "number": "10",
+      "slug": "nets-9",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "9",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "The crushing understanding: nets will catch you again and again. Escaping one net means entering another. Finishing one set of petty obligations reveals another waiting. The Viconian cycle of entanglement - you're caught, you escape (sort of), you're caught again. The eternal return of being tangled.  Understanding the cycle: escape one net, enter another, escape that, enter another. Recurrence as pattern recognized - nets are eternal, you will always be caught. Finishing one entanglement reveals the next waiting. Not wisdom but recognition of nightmare's structure. The cycle of petty obligations that never ends. Accepting that trying to be net-free is itself a net.",
+        "inverted": "Condemned to nets forever, that's your excuse for everything. The cycle as justification for never trying escape. Recurrence embraced: 'I'll always be caught so why struggle?' Using eternal return as reason to make nets tighter. The wheel of entanglement you spin yourself, calling it fate."
+      },
+      "visuals": {
+        "detailed_description": "Ten nets arrange themselves in a circle or spiral of nightmare. Each net represents an entanglement: leaving tower enters teaching net, leaving teaching enters debt net, leaving debt enters guilt net, and so on. The final net - attempted escape from all nets - reveals itself as the first net again: the tower, the obligations, the crushing triviality. The cycle is explicit, eternal. Or alternatively: a single net shown in spiral repetition, escaping one side means entering the other side, the ouroboros of entanglement. A figure moves through this cycle, understanding dawning: this is the pattern. Not individual failures but the structure of nets. You're caught, you'll escape, you'll be caught again. Viconian recirculation of petty crushing obligations. Muddy palette throughout, compressed space, the wheel that crushes rather than carries."
+      }
+    },
+    "nets-10": {
+      "name": "Child of Nets",
+      "number": "11",
+      "slug": "nets-10",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "10",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Young Stephen wrapped in nets from birth. The child learning that everything entangles, everything crushes, everything obligates. Youth experiencing the nets for the first time as crushing - before you learn they're just always there. The child caught in triviality.  Youth experiencing nets as fresh wounds. The Child of Nets feels every obligation as new crushing weight. Learning for first time that family, faith, nation all entangle. Unformed but already caught. Brilliance and sensitivity making nets hurt more. The child who doesn't yet know nets are permanent, still thinks escape is possible through youth and genius.",
+        "inverted": "Youth arrested in net-resentment forever. The eternal child who uses being caught as excuse for all behavior. Unformed not from youth but from refusal to grow past entanglement. Brilliance wasted in cataloging petty obligations. The child who will never be anything but caught because that's identity now."
+      },
+      "visuals": {
+        "detailed_description": "A young thin figure (teenage Stephen) wrapped in nets that are fresh, still tightening, the wounds new. Family nets bind his arms: mother's expectations, father's disappointments, siblings' needs. Religious nets wrap his torso: confession's obligations, mass attendance, theological questions that trap. National nets tangle his legs: Ireland's demands, language's limitations, history's weight. He struggles not because the nets are tighter than adults' nets but because he doesn't yet know they're permanent. His face shows shock, pain, the fresh hurt of discovering everything entangles. Books nearby show his attempt to think his way out. The Child of Nets who believes, still, that genius might mean escape. Muddy palette, compressed space, the nets seeming to tighten as you watch."
+      }
+    },
+    "nets-11": {
+      "name": "Father of Nets",
+      "number": "12",
+      "slug": "nets-11",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "11",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "Simon Dedalus or any father wrapped in nets so long they're invisible to him now. The Father of Nets has been caught so long he doesn't see the nets, just calls it life. Could teach the child about entanglement but is too entangled to recognize it. Nets as permanent condition accepted without question.  Understanding nets so long you don't see them anymore. The Father of Nets is wrapped but calls it normal, obligated but calls it duty, caught but calls it life. Could offer wisdom about entanglement but has none - been netted too long to notice. Not malicious but unable to teach because unable to see what's obvious to the child. The father who would help but is too caught himself.",
+        "inverted": "Father actively casting nets at the child. Entanglement as tradition to be passed down. Teaching the wrong lessons: 'the nets are good, accept them, stop struggling.' The father who uses his own caught state to demand child be caught too. Misery demanding company through generations."
+      },
+      "visuals": {
+        "detailed_description": "A middle-aged man stands wrapped in layer upon layer of nets, but the nets have faded into grey-brown, become almost his skin, invisible to him. Work obligations, family duties, social expectations, debts, resentments - all tangled around him but he no longer struggles because he no longer sees them. He might be reaching toward the Child of Nets, offering advice, unable to recognize he's speaking from within his own entanglement. Behind him, evidence of decades of being caught: unpaid bills as nets, disappointed wife as nets, dead dreams as nets. But his face shows he thinks this is just life, normal, everyone is like this. The Father of Nets who could warn but doesn't know there's anything to warn about. Muddy palette, everything compressed, the nets so thoroughly entangling they're invisible."
+      }
+    },
+    "nets-12": {
+      "name": "Mother of Nets",
+      "number": "13",
+      "slug": "nets-12",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "12",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "May Dedalus dying, the ultimate net cast at Stephen. The mother's nets are guilt and love tangled together, impossible to refuse, impossible to accept. She holds the ground that the nets are staked in. The mother whose love is a net that won't release even in death.  Understanding mother-love as the deepest net. She doesn't cast nets maliciously but her love, her needs, her dying all entangle completely. The guilt that won't release even after death. Ground that nets are staked in: maternal obligation, filial duty, love as crushing weight. She is the center of family nets, not creating them but being them. The mother whose requests are commands, whose love is prison.",
+        "inverted": "Mother as deliberate ensnarer, using love as weapon. Nets cast with full knowledge they'll crush. Guilt wielded consciously. The mother who devours through obligation, who ensures you can never escape because escape would be betrayal. Love perverted entirely into entrapment."
+      },
+      "visuals": {
+        "detailed_description": "A woman (May Dedalus) lies in bed, dying or appears as ghost, and all the nets radiate from her like a spider's web. But she's not the spider - she's the center that the web is built around. Family obligation nets, guilt nets, love nets, all emanate from her suffering body. Stephen stands caught in these nets, his mother's face accusing or pleading (the 'agenbite of inwit' made visual). Her requests haunt: pray at my bedside. Her needs entangle: take care of the family. Her love is the deepest net of all because refusing it means monstrosity. Unlike the father who doesn't see his nets, she might see them but is powerless - her dying itself is a net cast at him. Everything tangled around her, everything radiating from her. The Mother of Nets who holds the ground all nets stake into. Muddy palette, compressed, claustrophobic, the guilt visible and crushing."
+      }
+    },
+    "nets-13": {
+      "name": "Affirmation of Nets",
+      "number": "14",
+      "slug": "nets-13",
+      "arcana": "minor",
+      "suit_slug": "nets",
+      "rank_slug": "13",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Can you say yes to nets? Can you affirm the crushing triviality, the petty obligations, the guilt and resentment and hangover of existence? Affirmation of Nets is the hardest yes - saying yes even to being caught, to the mundane resistance that never ends, to the nets flung at the soul.  The almost-impossible affirmation: yes even to this. Yes to being caught, yes to obligations that crush, yes to petty resentments and guilt. Not celebrating nets but accepting them as part of the pattern. Yes to the struggle against nets knowing you'll be caught anyway. The hardest yes: affirming even what entraps you. Not 'I like being netted' but 'yes, this too is real, this too is life.'",
+        "inverted": "Yes as Stockholm syndrome - learning to love your nets. Affirmation that's really giving up. Yes to nets as surrender to entrapment. The word emptied of meaning, yes repeated in despair not acceptance. Saying yes to what shouldn't be affirmed. Celebrating crushing triviality because that's all you know."
+      },
+      "visuals": {
+        "detailed_description": "The word YES struggles to form in the composition, but it's made of nets - the letters themselves are tangled mesh, or nets arrange themselves to spell YES despite their nature of entanglement. The muddy green-brown palette dominates but the YES tries to glow through it. Behind or through the YES: all the previous nets - family, faith, nation, guilt, obligation, the whole crushing triviality. A figure (synthesis of Child, Father, Mother) stands within or before this tangled YES. The affirmation is visible but barely: can you say yes even to being caught? The hardest affirmation in the deck. Not celebrating nets but accepting that they're real, part of the pattern, something that gets a yes too even though it crushes. The tangled claustrophobic aesthetic of the entire suit forming, against its own nature, into affirmation. Yes even to this."
+      }
+    },
+    "kidneys-0": {
+      "name": "Homecoming of Kidneys",
+      "number": "1",
+      "slug": "kidneys-0",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "0",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Bloom's actual homecoming to 7 Eccles Street. Making cocoa, climbing into bed beside Molly. The body arriving at its place of rest. Homecoming not as grand event but as ordinary comfort - familiar smells, known textures, the warmth of home as physical fact. The kidney breakfast was morning's homecoming, this is night's.  Homecoming as bodily comfort. Arriving where your body can rest, be fed, be warm. The place that receives you not through grand recognition but through ordinary welcome - the bed that fits your shape, the kitchen that knows your habits. Physical arrival at physical home. The body's yes to being where it belongs. Nourishment and rest as forms of homecoming.",
+        "inverted": "Homecoming without comfort - the body in the familiar place but unable to rest. Arrival at a home that no longer nourishes. The bed that fits but brings no sleep. Physical place without physical welcome. Going through homecoming's motions while the body remains uncomfortable, unfed, cold."
+      },
+      "visuals": {
+        "detailed_description": "The warm interior of 7 Eccles Street. In the kitchen, Bloom makes cocoa - the ritual of nourishment visible, steam rising, the kidney-bean shape prominent as the suit symbol. Soft light from a lamp. Through a doorway, the bedroom visible: Molly substantial in bed, the covers rumpled and welcoming, space for his body beside hers. Everything organic and rounded - curved furniture, soft fabrics, flesh tones. The body arriving home not to grand recognition but to comfort: a warm drink, a warm bed, familiar smells. The alpha-omega point made physical: you arrive because your body recognizes this place. Homecoming as the body's relief. Butter yellows and warm browns throughout."
+      }
+    },
+    "kidneys-1": {
+      "name": "Replacement of Kidneys",
+      "number": "2",
+      "slug": "kidneys-1",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "1",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "One bodily comfort succeeds another through the day. Morning's kidney breakfast gives way to lunch's sandwich. Bath replaces walking. Rest succeeds activity. The body's succession of needs met in sequence. Not rejection but rhythmic replacement - this comfort for that comfort, this nourishment for that nourishment.  Understanding the body's rhythms of need and satisfaction. One comfort naturally succeeds another - eating, resting, moving, eating again. Replacement as the body's cycle: activity replaces rest which replaces activity. Not choosing between comforts but letting each have its time. The wisdom of bodily succession: breakfast gives way to lunch gives way to dinner because that's how bodies work.",
+        "inverted": "Replacing one comfort with another compulsively, never satisfied. The succession of needs becoming frantic - eating but still hungry, resting but still tired. Rhythmic replacement becoming addiction to replacement itself. Unable to let any comfort last, always needing the next. Body's natural succession perverted into restless consumption."
+      },
+      "visuals": {
+        "detailed_description": "Split composition showing bodily succession: left side shows morning's comfort - the kidney sizzling, coffee brewing, Bloom's satisfaction in preparing breakfast. Right side shows afternoon's different comfort - a sandwich and burgundy at Davy Byrne's, the satisfaction of lunch, different but equally nourishing. Bloom's body is present in both, his contentment visible but different in each. The transition between them isn't rejection but flow - breakfast ends naturally, lunch begins naturally. The organic curves connect both sides - butter yellow of morning flowing into brown-red of afternoon wine. The body's wisdom: this comfort for now, that comfort for later, succession without anxiety."
+      }
+    },
+    "kidneys-2": {
+      "name": "Trinity of Kidneys",
+      "number": "3",
+      "slug": "kidneys-2",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "2",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "Three forms of bodily wisdom working together: nourishment, rest, and pleasure. Bloom's trinity of mundane acceptance. Food that feeds, sleep that restores, touch that delights. The three-in-one of the body living well in the everyday. Morning, afternoon, night as three forms of physical satisfaction.  Understanding the body needs three kinds of care: feeding, resting, pleasuring. Trinity of bodily wisdom that together creates thriving. Nourishment without rest exhausts. Rest without pleasure dulls. Pleasure without nourishment depletes. The three supporting each other: eat well, sleep well, feel well. Morning's vigor, afternoon's contentment, night's pleasure as three aspects of one good day.",
+        "inverted": "Trinity fractured - feeding without pleasure, pleasure without rest, rest without nourishment. The three at war: eating but not tasting, sleeping but not dreaming, touching but not feeling. Body's needs divided, each denying the others. The attempted satisfaction that never satisfies because parts won't work together."
+      },
+      "visuals": {
+        "detailed_description": "Three vignettes form a triangular composition. Top: morning kitchen, kidney and breakfast, nourishment - butter yellows, the feeding. Lower left: afternoon bath or rest, the body horizontal, restoration - warm browns, the resting. Lower right: evening bed with Molly, touch, pleasure - soft pinks and flesh tones, the delighting. Bloom's body present in all three, satisfied differently in each. Organic curves connect the three: the steam from cooking connects to bath steam connects to breath in bed. The trinity of bodily care that creates a good day: fed, rested, pleasured. Morning-afternoon-night. The three-in-one of living well in the body."
+      }
+    },
+    "kidneys-3": {
+      "name": "The City of Kidneys",
+      "number": "4",
+      "slug": "kidneys-3",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "3",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Dublin as system of bodily comforts. Every pub offers nourishment, every corner has a place to rest, the whole city organized around the body's needs. The bounded space as place of physical satisfaction. The four-square city as four meals, four rests, four pleasures. The map of where your body can be cared for.  Understanding the city as support for bodily life. Every street leads to feeding, resting, pleasuring. The bounded space offers what the body needs. Dublin knows how to care for bodies - pubs for drinking, shops for buying, beds for resting. The city as friend to physical existence. Foundation that nourishes rather than constrains. Geography as network of bodily care.",
+        "inverted": "The city as desert for the body - no nourishment anywhere, no rest possible. Every street hostile to physical needs. The bounded space as starvation, exhaustion, deprivation. Foundation that denies the body what it needs. Geography as map of where you cannot be fed, cannot rest, cannot find pleasure."
+      },
+      "visuals": {
+        "detailed_description": "Dublin spreads in organic curves rather than rigid grid. The Liffey flows through like an artery. The city's structures revealed as organs of bodily care: Dlugacz's butcher shop (nourishment), Davy Byrne's pub (refreshment), the Turkish bath (restoration), number 7 Eccles Street (rest and pleasure). Bloom walks his circular route, his body being cared for at each point - bought kidney here, ate lunch there, considered bath at that corner, home at journey's end. The city isn't hostile or indifferent but organized around bodies needing care. Four-square foundation but soft, supportive. Kidney-bean shapes integrated into the architecture - the suit symbol showing the city knows what bodies need. Warm palette throughout."
+      }
+    },
+    "kidneys-4": {
+      "name": "The Outsider of Kidneys",
+      "number": "5",
+      "slug": "kidneys-4",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "4",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Bloom's body is different - marked as outsider but still needing feeding, rest, pleasure. His outsider position doesn't change his body's needs. Finding bodily comfort despite being marked as other. The five-pointed body that still needs to eat, sleep, feel. Physical existence transcending social exclusion.  Understanding that outsider status doesn't change the body's needs. Your different body still needs feeding, resting, pleasuring. Finding comfort despite exclusion - the kidney breakfast is good regardless of who scorns you. Physical existence as democratic: all bodies need care. The outsider's body still gets hungry, tired, desirous. Bodily wisdom transcending social position.",
+        "inverted": "Outsider body denied basic care. Being marked as other means denied nourishment, rest, pleasure. The different body starved, exhausted, deprived. Social exclusion becoming physical deprivation. Unable to find comfort because marked as outsider. Body's needs used to punish difference."
+      },
+      "visuals": {
+        "detailed_description": "Bloom at breakfast, the kidney prominent, his body being nourished. But visible markers of otherness: perhaps a Star of David subtly present, or others in the background marking him as different. Yet his body is fed regardless - the kidney nourishes Jewish body and Irish body identically. His outsider position (five-pointed star geometry somewhere in composition) doesn't change that his body needs breakfast, needs the bath he anticipates, needs Molly's warmth. The body as great leveler: all bodies need care. Bloom's wisdom: feed your body despite their scorn. Warm palette emphasizing that nourishment works regardless of social position. The outsider whose body is still a body."
+      }
+    },
+    "kidneys-5": {
+      "name": "Identity of Kidneys",
+      "number": "6",
+      "slug": "kidneys-5",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "5",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Finding others through recognizing their bodily care. The karass of those who feed themselves, rest their bodies, take pleasure in physical existence. Identity forged through shared embodied wisdom. We are those who know the body matters, who care for flesh, who find joy in the ordinary physical.  Recognizing others by how they care for their bodies. Identity through shared bodily wisdom: we feed ourselves well, rest properly, take physical pleasure. Finding your people through their embodied care - they eat with attention, sleep without guilt, touch with joy. The karass revealed through mundane acceptance. What you are: one who knows bodies need tending and does the tending.",
+        "inverted": "Identity only as bodily - 'I am my appetites and nothing else.' Finding others to enable excess rather than care. Recognition becoming competition over who eats more, rests more, pleasures more. The karass as cult of indulgence. Forging identity through body without consciousness, flesh without wisdom."
+      },
+      "visuals": {
+        "detailed_description": "Bloom and another figure (perhaps Molly, perhaps Stephen, perhaps any embodied soul) share a meal or rest together. Their recognition isn't intellectual but physical: they both know how to feed the body, how to let it rest, how to take pleasure. Warm food between them, or warm bed holding both, showing the karass of embodied care. Their faces show the recognition: 'oh, you understand that bodies matter too.' Not reducing to only flesh but including flesh fully. Organic curves connect them - steam from shared food, warmth of shared rest, the acknowledgment of shared physical existence. Identity forged in the smithy not of soul alone but of soul-in-body. Finding the others who eat the kidney, who make the cocoa, who climb into bed knowing rest is sacred too."
+      }
+    },
+    "kidneys-6": {
+      "name": "Asymmetry of Kidneys",
+      "number": "7",
+      "slug": "kidneys-6",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "6",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "Seven bodily needs when balance requires six or eight. Sometimes hungrier, sometimes more tired, sometimes needier of touch. The body's asymmetric demands - some days need more feeding, some more rest. Understanding that physical care can't be perfectly balanced, rationed, scheduled. The odd bodily need out.  Understanding the body's needs aren't symmetrical. Seven hungers that won't pair evenly. Some days need more food, some more sleep, some more touch - and that's the body's wisdom, not failure. Accepting asymmetric care without guilt. Feed when hungry even if 'not meal time.' Rest when tired even if 'too early.' The body knows what it needs when it needs it, and seven is fine.",
+        "inverted": "Asymmetry as chaos - the body's needs out of control. Seven demands that tyrannize. Unable to manage uneven physical needs. Feeding, resting, pleasuring without pattern becoming excuse for excess. Asymmetry weaponized: 'my body needs it' justifying anything. The odd need as bottomless pit."
+      },
+      "visuals": {
+        "detailed_description": "Seven kidney-bean shapes arrange themselves in organic asymmetry around Bloom's body through a day. Three are large (substantial meals), four are smaller (snacks, light refreshments) - they don't balance but they nourish. Or seven rests of different lengths - some deep sleep, some brief sitting, some quick pauses. The asymmetry is visible but not problematic: the body knows what it needs when. Bloom's face shows contentment despite the uneven distribution - he ate when hungry even if not 'meal time,' rested when tired even if not 'bed time.' The seven that can't be made six or eight but feed the body fine. Warm palette throughout showing that asymmetric care works if you listen to the body."
+      }
+    },
+    "kidneys-7": {
+      "name": "History of Kidneys",
+      "number": "8",
+      "slug": "kidneys-7",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "7",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "All the bodies ever fed, all the rests ever taken, all the pleasures ever felt. History as accumulated bodily wisdom - how to prepare food, where to sleep, how to touch. The ocean of embodied care that Bloom swims in. Every meal is also every meal that came before. Every rest contains all rests.  Understanding bodily care built on centuries of embodied wisdom. How to cook kidney learned from those who cooked before. How to rest learned through generations of tired bodies. History as support: all who cared for bodies before you teaching you how. The ocean that carries you - accumulated knowledge of feeding, resting, pleasuring. What brought you here: all the embodied souls who learned to care for flesh.",
+        "inverted": "History as weight of all bodies that suffered. Ocean of embodied wisdom becomes ocean of pain - all who starved, all who couldn't rest, all who were denied pleasure. The nightmare of bodily history: generational hunger, exhaustion, deprivation. Past pressing down as reminder of how bodies have been denied care. History as accusation."
+      },
+      "visuals": {
+        "detailed_description": "Bloom prepares breakfast but the composition shows layers through time: ancient hearths behind his modern stove, medieval kitchens, Victorian ranges, all flowing into his 1904 kitchen. Bodies through history preparing food, each learning from the ones before - how long to cook the kidney, how hot the pan. Or Bloom in bed with centuries of beds visible beneath/behind - straw, hay, proper mattresses, each generation learning how to make better rest. The ocean of embodied wisdom as buoyancy: he stands on all who learned to care for bodies before. Not drowning but carried. Warm palette throughout history showing the continuity of mundane acceptance. Kidney shapes recurring through time. The accumulated wisdom of flesh-tending that lets him make his breakfast well."
+      }
+    },
+    "kidneys-8": {
+      "name": "Invitation of Kidneys",
+      "number": "9",
+      "slug": "kidneys-8",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "8",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "The bath awaits. The meal is ready. The bed is warm. The invitation to bodily comfort, to care for your flesh, to take the pleasure that's available. Bloom anticipating his bath all day - the moment before entering the comfort that's been prepared. The threshold of physical satisfaction.  Standing before available bodily comfort. The bath drawn, meal cooked, bed made - ready for you. Invitation to accept physical care, to enter the comfort prepared. The moment before satisfaction: recognizing what's offered (nourishment, rest, pleasure) and choosing to accept it. What's offered: the body's deserved care. The breath before entering the warm water, before the first bite, before climbing into bed.",
+        "inverted": "Bath drawn but refusing to enter. Meal ready but not eating. Bed warm but staying awake. Invitation to bodily comfort rejected - from guilt, from pride, from believing you don't deserve it. The threshold uncrossed. What's offered and refused: the body's care you won't let yourself have."
+      },
+      "visuals": {
+        "detailed_description": "A bathtub fills with warm water, steam rising in organic curves. Or a table set with good food, warm and ready. Or a bed with covers turned down, pillow plumped. Bloom stands at the threshold of this prepared comfort, hand reaching toward it, anticipation on his face. The invitation is clear: enter the bath, eat the meal, climb into bed. The comfort is ready, prepared, waiting for his body to accept it. His face shows the moment before yes - the recognition of what's offered, the decision to accept bodily care. Behind him, the day's walking, working, waiting. Before him, the satisfaction earned and offered. The breath before entering the warm water. The threshold of mundane acceptance where the body gets what it needs."
+      }
+    },
+    "kidneys-9": {
+      "name": "Recurrence of Kidneys",
+      "number": "10",
+      "slug": "kidneys-9",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "9",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "The understanding: the body will need feeding again tomorrow. Rest tonight, wake and need rest again. Pleasure satisfied, desire returns. The eternal return of physical need made beautiful through acceptance. You eat, you hunger, you eat again. You rest, you tire, you rest again. The cycle as gift not curse.  Understanding bodily needs recur eternally - that's their nature. Fed this morning, hungry by noon, fed again. Rested last night, tired today, will rest tonight. The cycle as the body's wisdom: needs return because you're alive. Recurrence not as curse but as confirmation of continuing existence. You eat again because you live to eat again. The eternal return of mundane acceptance: caring for the body forever because the body continues. Yes to feeding again, resting again, pleasuring again.",
+        "inverted": "Condemned to feed forever, never satisfied. Rest that never restores, waking already exhausted. Pleasure that requires immediate repetition. The cycle as compulsion - eat, hunger immediately, eat again in desperation. Recurrence as curse: 'will the body never stop needing?' Eternal return as evidence you're trapped in flesh."
+      },
+      "visuals": {
+        "detailed_description": "Ten kidney-bean shapes arrange in a circle or warm spiral. Each represents a feeding, a resting, a pleasuring - the body's needs met in cycle. Morning kidney breakfast flows into lunch's sandwich flows into dinner flows into night's rest flows into morning's vigor flows back to morning kidney breakfast. The cycle is explicit but not oppressive - warm colors throughout, organic curves showing this is the body's natural rhythm. Bloom moves through this cycle, his body fed-rested-pleasured-fed-rested-pleasured eternally. The understanding visible on his face: this is how bodies work, this is good. Not 'I'm condemned to hunger again' but 'I'm alive so I hunger again, I'll eat again, that's the gift.' The Viconian cycle made bodily: riverrun past breakfasts and baths. The eternal return of mundane care as affirmation of continuing life."
+      }
+    },
+    "kidneys-10": {
+      "name": "Child of Kidneys",
+      "number": "11",
+      "slug": "kidneys-10",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "10",
+      "station_slug": "heroes",
+      "meaning": {
+        "upright": "The child learning to feed their body, rest it, take pleasure in physical existence. Young embodied wisdom. Discovering that the body has needs and meeting them is good. The child who eats when hungry without guilt, sleeps when tired without shame. Pure bodily acceptance unfolding.  Youth learning bodily care naturally. The Child of Kidneys eats with attention, sleeps deeply, takes physical pleasure without shame. Unformed wisdom but already knowing the body matters. Learning which foods satisfy, how much rest is needed, what touches feel good. Pure potential for embodied acceptance. The child who hasn't yet learned to deny the body.",
+        "inverted": "Youth denied bodily care - taught to ignore hunger, resist rest, shame pleasure. Child learning to treat body as enemy from the start. Unformed wisdom blocked by early training in bodily denial. The child who learns guilt with every meal, anxiety with every rest."
+      },
+      "visuals": {
+        "detailed_description": "A young child - perhaps young Bloom, perhaps archetypal - sits eating with complete attention, hunger satisfied naturally. Or sleeps deeply, the body's need for rest met without resistance. Or experiences some simple physical pleasure - warm sun, cool water - with unselfconscious joy. The body is naturally cared for: eating when hungry, resting when tired, feeling without shame. The warm palette shows health. Kidney-bean shape prominent - maybe the child eating actual kidney, or the symbol present as sign of embodied care beginning. No guilt yet, no denial learned. The Child of Kidneys who knows bodies need tending and does it naturally, before anyone teaches them not to."
+      }
+    },
+    "kidneys-11": {
+      "name": "Father of Kidneys",
+      "number": "12",
+      "slug": "kidneys-11",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "11",
+      "station_slug": "men",
+      "meaning": {
+        "upright": "Bloom as Father of Kidneys - mature bodily wisdom that knows how to feed, rest, and pleasure the flesh through decades. The father who could teach embodied care if the child would learn. Patient understanding of the body's needs earned through years of attending to them. Teaching through example, not force.  Mature understanding of bodily care. The Father of Kidneys knows which foods nourish, how much rest suffices, what pleasures satisfy. Decades of attending to the body's needs creating wisdom. Patient with those still learning - offering food, suggesting rest, modeling bodily acceptance. Teaching through his own embodied care: watch how I feed my body, rest it, take pleasure. The father who offers cocoa, offers care.",
+        "inverted": "Father who has given up on bodily care - eating without pleasure, sleeping without rest, touching without feeling. Decades of body-neglect teaching child to neglect their body too. The father who shows deprivation as normal. Unable to teach care because unable to practice it."
+      },
+      "visuals": {
+        "detailed_description": "Bloom, middle-aged, stands in his kitchen preparing the kidney with practiced care. Every movement shows embodied wisdom: he knows exactly how long to cook it, how the smell tells him it's ready, how his body will feel after eating it. His body is well-cared-for - not perfect, but attended to, fed, rested, pleasured through years. Perhaps he offers food to someone (Stephen? a child?) - not forcing but offering, teaching through example: this is how you care for the body. His face shows the Father of Kidneys' understanding: the body is your companion through life, treat it well. Decades of making breakfast, taking baths, climbing into bed beside Molly have taught him. The warm palette shows sustained care. He could teach if others would learn."
+      }
+    },
+    "kidneys-12": {
+      "name": "Mother of Kidneys",
+      "number": "13",
+      "slug": "kidneys-12",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "12",
+      "station_slug": "ricorso",
+      "meaning": {
+        "upright": "Molly as Mother of Kidneys - embodied wisdom that doesn't need teaching, that just is. She is the body's authority. The mother who holds the bed, the flesh, the ground of physical existence. Not teaching embodied care but being it. The body that all other bodies recognize as fully embodied.  Understanding that ultimate bodily wisdom is being fully embodied. Mother of Kidneys doesn't teach care for body, she is body cared for and caring. The ground of physical existence. She knows what the body needs because she is the body knowing. Not method or instruction but full inhabitation. The mother who is flesh affirmed, body accepted completely. What others are learning to do, she simply is.",
+        "inverted": "Embodiment without consciousness - body as only reality, nothing else exists. Mother-wisdom as tyranny of flesh - 'only the body matters.' Ground of physical existence become trap in only physical. The body without spirit, unable to transcend while remaining embodied. Flesh that devours rather than sustains."
+      },
+      "visuals": {
+        "detailed_description": "Molly lies in bed, her body substantial and real, taking up space unapologetically. She is not preparing food or teaching bodily care - she is the body's authority simply by being fully embodied. Her flesh is present without shame or display - just there, real, warm, alive. She knows what the body needs not through study but through being body that knows. The bed holds her, food nourishes her, pleasure satisfies her - all without question or complication. She is the Mother of Kidneys not through teaching embodied acceptance but through being fully embodied and accepted. Others learn to care for body; she is body cared for. The ground beyond the meals and baths and pleasures - she is what they all serve. Warm flesh tones throughout, organic curves, the body as fact and presence."
+      }
+    },
+    "kidneys-13": {
+      "name": "Affirmation of Kidneys",
+      "number": "14",
+      "slug": "kidneys-13",
+      "arcana": "minor",
+      "suit_slug": "kidneys",
+      "rank_slug": "13",
+      "station_slug": "gods",
+      "meaning": {
+        "upright": "Yes to kidneys. Yes to the body's needs, to feeding and resting and pleasuring. Yes to physical existence in all its mundane glory. Affirmation of Kidneys says: the body matters, caring for it is sacred work, mundane acceptance is profound. Yes to the kidney breakfast, the warm bath, the bed beside Molly. Yes to flesh. Yes to the everyday art of living well in the body.  Ultimate affirmation: yes to the body. Yes to feeding it with attention, resting it properly, pleasuring it without guilt. Yes to mundane bodily care as sacred practice. The affirmation that transcends particular meals: saying yes to the endeavor itself, the human practice of attending to the flesh, caring for the physical, finding holiness in the ordinary kidney breakfast. Not 'yes my body' but 'yes bodies,' yes to embodied existence. Yes even to the body's limitations, its needs, its mortality. Yes to living well in the flesh.",
+        "inverted": "Yes as giving up to bodily demands. Affirmation without wisdom - yes to every appetite without consciousness. Yes to bodies meaning no to anything else. The word emptied of meaning, yes repeated in excess. Saying yes to flesh without the spirit that makes embodiment human rather than merely animal. Yes to kidneys as yes to nothing but kidneys."
+      },
+      "visuals": {
+        "detailed_description": "The word YES dominates the composition, but it's made from kidney-bean shapes, or organic bodily curves, or simply glows with warm embodied light. The warm palette of the entire suit - butter yellows, warm browns, soft pinks - flows into this affirmation: yes to feeding the body, yes to resting it, yes to pleasuring it. Behind or through the YES: all the previous mundane acceptances - the kidney breakfasts, the baths, the bed beside Molly, the sandwich at Davy Byrne's, the anticipated comforts, the body cared for through the day and through the years. A figure (synthesis of Child, Father, and Mother of Kidneys) stands within or before the YES, affirming embodied existence itself. The organic curves, the warmth, the nourishment all saying yes to the body as worthy of care, yes to mundane acceptance as sacred practice, yes to the art of living well in the flesh. Molly's yes echoes here: yes to the body, yes to physical existence, yes even to mortality because it's embodied mortality, yes."
+      }
+    }
+  }
+}

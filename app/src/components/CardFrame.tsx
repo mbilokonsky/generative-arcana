@@ -10,8 +10,7 @@ import { type CSSProperties, useState } from "react";
 import { TarotCard, type TarotCardProps } from "./TarotCard";
 import { CardModal } from "./CardModal";
 import { CardPlaceholder } from "./CardPlaceholder";
-import { Glyph, RANK_ROMAN, SUIT_LABEL } from "./cardMeta";
-import type { CardData } from "../runtime/types";
+import { AxisGlyph, rankBadge, rankLabel, suitLabel } from "./cardMeta";
 import type { DeckDataFile } from "@/decks/types";
 
 export interface CardFrameProps extends Omit<TarotCardProps, "className" | "style" | "sketch"> {
@@ -28,20 +27,14 @@ export interface CardFrameProps extends Omit<TarotCardProps, "className" | "styl
   style?: CSSProperties;
 }
 
-function cornerText(card: CardData): { glyph: string; label: string } {
-  if (card.arcana === "major") return { glyph: "major", label: card.number };
-  const r = RANK_ROMAN[card.rank_slug ?? ""] ?? card.number;
-  return { glyph: card.suit_slug ?? "major", label: r };
-}
-
 export function CardFrame({ card, sketch, showBanner = true, aspect = 0.66, expandable = false, deck, className, style, ...cardProps }: CardFrameProps) {
   const [hovered, setHovered] = useState(false);
   const [open, setOpen] = useState(false);
-  const { glyph, label } = cornerText(card);
-  const subtitle =
-    card.arcana === "major"
-      ? `Major Arcana · ${card.number}`
-      : `${RANK_ROMAN[card.rank_slug ?? ""] ?? ""} of ${SUIT_LABEL[card.suit_slug ?? ""] ?? ""}`;
+  const isMajor = card.arcana === "major";
+  const label = isMajor ? card.number : rankBadge(deck, card.rank_slug, card.number);
+  const subtitle = isMajor
+    ? `Major Arcana · ${card.number}`
+    : `${rankLabel(deck, card.rank_slug)} of ${suitLabel(deck, card.suit_slug)}`;
 
   const frameStyle: CSSProperties = {
     position: "relative",
@@ -65,7 +58,7 @@ export function CardFrame({ card, sketch, showBanner = true, aspect = 0.66, expa
     >
       {sketch
         ? <TarotCard card={card} sketch={sketch} {...cardProps} style={{ position: "absolute", inset: 0 }} />
-        : <CardPlaceholder card={card} />}
+        : <CardPlaceholder card={card} deck={deck} />}
 
       {showBanner && (
         <>
@@ -80,7 +73,7 @@ export function CardFrame({ card, sketch, showBanner = true, aspect = 0.66, expa
               letterSpacing: "0.04em",
             }}
           >
-            <Glyph which={glyph} size={16} />
+            <AxisGlyph deck={deck} card={card} size={16} />
             <span>{label}</span>
           </div>
 

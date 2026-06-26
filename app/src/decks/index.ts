@@ -6,3 +6,5 @@ export * from "./registry";
 export type { DeckModule, DeckDataFile } from "./types";
 
 import "./ultima"; // registers the Ultima deck (+ its sketches)
+import "./byrne"; // registers the Byrne Journey Tarot (placeholder visuals)
+import "./ulysses"; // registers the Ulysses Tarot (placeholder visuals)

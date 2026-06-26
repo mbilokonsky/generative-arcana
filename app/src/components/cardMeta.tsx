@@ -1,6 +1,12 @@
-/** Shared card-metadata helpers: suit/major glyphs and rank labels, used by the badge and the modal. */
+/** Shared card-metadata helpers: suit/major glyphs and rank labels, used by the badge and the modal.
+ *
+ * Everything here resolves from the DECK DATA first (so any migrated/custom deck shows its own rank
+ * names, suit names, and glyphs), falling back to the bundled Ultima maps only when a deck supplies
+ * none. That fallback is what keeps a sparse pasted deck legible. */
+import type { DeckDataFile } from "@/decks/types";
+import type { CardData } from "@/runtime/types";
 
-/** The deck's own glyphs, inlined and currentColor-recolorable. */
+/** The Ultima glyphs, inlined and currentColor-recolorable (fallback when a deck supplies no SVG). */
 export const GLYPHS: Record<string, string> = {
   crowns: `<path d="M15 70 L15 35 L35 55 L50 25 L65 55 L85 35 L85 70 Z" fill="currentColor"/><rect x="12" y="74" width="76" height="12" fill="currentColor"/><circle cx="50" cy="20" r="6" fill="currentColor"/><circle cx="15" cy="32" r="5" fill="currentColor"/><circle cx="85" cy="32" r="5" fill="currentColor"/>`,
   blades: `<polygon points="50,8 57,30 57,62 43,62 43,30" fill="currentColor"/><rect x="30" y="62" width="40" height="9" fill="currentColor"/><rect x="45" y="71" width="10" height="18" fill="currentColor"/><rect x="40" y="88" width="20" height="7" fill="currentColor"/>`,
@@ -9,6 +15,7 @@ export const GLYPHS: Record<string, string> = {
   major: `<circle cx="50" cy="26" r="17" fill="none" stroke="currentColor" stroke-width="10"/><rect x="44" y="42" width="12" height="50" fill="currentColor"/><rect x="28" y="56" width="44" height="11" fill="currentColor"/>`,
 };
 
+/** Render a set of inline SVG inner-paths inside a 0 0 100 100 viewBox (Ultima glyph fallback). */
 export function Glyph({ which, size = 16 }: { which: string; size?: number }) {
   const inner = GLYPHS[which] ?? GLYPHS.major;
   return (
@@ -19,6 +26,64 @@ export function Glyph({ which, size = 16 }: { which: string; size?: number }) {
     />
   );
 }
+
+/** Render a deck-supplied FULL <svg> string, sized to `size` and recolored via currentColor. */
+function RawGlyph({ svg, size = 16 }: { svg: string; size?: number }) {
+  const sized = svg
+    .replace(/\s(width|height)="[^"]*"/g, "")
+    .replace(/<svg /, `<svg width="${size}" height="${size}" `);
+  return (
+    <span
+      aria-hidden
+      style={{ display: "inline-flex", width: size, height: size, color: "currentColor", verticalAlign: "-0.15em" }}
+      dangerouslySetInnerHTML={{ __html: sized }}
+    />
+  );
+}
+
+/**
+ * The right glyph for a card: the deck's own suit/major SVG when present, else the Ultima fallback
+ * (suit-keyed for known suits, the ankh for anything else / majors without a symbol).
+ */
+export function AxisGlyph({ deck, card, size = 16 }: { deck?: DeckDataFile; card: CardData; size?: number }) {
+  const isMajor = card.arcana === "major";
+  const raw = isMajor ? majorGlyphSvg(deck) : suitGlyphSvg(deck, card.suit_slug);
+  if (raw) return <RawGlyph svg={raw} size={size} />;
+  return <Glyph which={isMajor ? "major" : card.suit_slug ?? "major"} size={size} />;
+}
+
+// ── deck-data resolvers ──────────────────────────────────────────────────────
+
+type SuitInfo = { name?: string; symbol?: { svg?: string } };
+type RankInfo = { name?: string; symbol?: string };
+
+function suits(deck?: DeckDataFile) { return (deck?.suits ?? {}) as Record<string, SuitInfo>; }
+function ranks(deck?: DeckDataFile) { return (deck?.ranks ?? {}) as Record<string, RankInfo>; }
+
+function suitGlyphSvg(deck: DeckDataFile | undefined, slug?: string): string | undefined {
+  return slug ? suits(deck)[slug]?.symbol?.svg : undefined;
+}
+function majorGlyphSvg(deck?: DeckDataFile): string | undefined {
+  return (deck?.major_arcana as { symbol?: { svg?: string } } | undefined)?.symbol?.svg;
+}
+
+/** Full rank name for prose / detail table (e.g. "Two", "Homecoming"). */
+export function rankLabel(deck: DeckDataFile | undefined, slug?: string): string {
+  if (!slug) return "";
+  return ranks(deck)[slug]?.name ?? RANK_NAME[slug] ?? slug;
+}
+/** Compact rank badge token (e.g. "II", "A"); falls back to the card's number. */
+export function rankBadge(deck: DeckDataFile | undefined, slug?: string, fallback = ""): string {
+  if (!slug) return fallback;
+  return ranks(deck)[slug]?.symbol ?? RANK_ROMAN[slug] ?? fallback ?? slug;
+}
+/** Suit display name (e.g. "Crowns", "Structures"). */
+export function suitLabel(deck: DeckDataFile | undefined, slug?: string): string {
+  if (!slug) return "";
+  return suits(deck)[slug]?.name ?? SUIT_LABEL[slug] ?? slug;
+}
+
+// ── Ultima fallback maps (used only when the deck supplies nothing) ───────────
 
 /** Roman/initial form for the compact corner badge. */
 export const RANK_ROMAN: Record<string, string> = {

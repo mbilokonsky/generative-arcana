@@ -3,7 +3,8 @@
 import type { DeckModule } from "@/decks/types";
 import type { Spread } from "@/decks/spreads";
 import type { DealtCard } from "./types";
-import { RANK_NAME, SUIT_LABEL } from "@/components/cardMeta";
+import { rankLabel, suitLabel } from "@/components/cardMeta";
+import type { DeckDataFile } from "@/decks/types";
 
 type Named = { name: string; description?: string };
 type Station = { name: string; description?: string };
@@ -42,7 +43,7 @@ export function buildPrompt(deck: DeckModule, spread: Spread, dealt: DealtCard[]
     const orient = dc.reversed ? "Reversed" : "Upright";
     const meaning = dc.reversed ? card.meaning.inverted : card.meaning.upright;
     lines.push(`${i + 1}. ${pos.name} — ${pos.prompt}`);
-    lines.push(`   ${card.name} (${orient}) · ${axisSummary(card, stations)}`);
+    lines.push(`   ${card.name} (${orient}) · ${axisSummary(card, stations, data)}`);
     lines.push(`   ${meaning}`);
     if (card.factorization?.gloss) lines.push(`   Number — ${card.factorization.gloss}`);
     lines.push("");
@@ -58,11 +59,11 @@ export function buildPrompt(deck: DeckModule, spread: Spread, dealt: DealtCard[]
   return lines.join("\n");
 }
 
-function axisSummary(card: DeckModule["cards"][number], stations: Record<string, Station>): string {
+function axisSummary(card: DeckModule["cards"][number], stations: Record<string, Station>, data: DeckDataFile): string {
   const virtue = stations[card.station_slug]?.name ?? card.station_slug;
   if (card.arcana === "major") return `Major Arcana ${card.number} · ${virtue}`;
-  const rank = RANK_NAME[card.rank_slug ?? ""] ?? "";
-  const suit = SUIT_LABEL[card.suit_slug ?? ""] ?? card.suit_slug ?? "";
+  const rank = rankLabel(data, card.rank_slug);
+  const suit = suitLabel(data, card.suit_slug);
   return `${rank} of ${suit} · ${virtue}`;
 }
 

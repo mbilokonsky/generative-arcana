@@ -5,4 +5,4 @@ export { buildStationLight, buildStationLightBySlug } from "./lighting";
 export { buildRegister, buildRegisterByKey } from "./registers";
 export { buildFigures } from "./figures";
 export { buildKit, resizeKit, tickKit, registerKeyFor } from "./kit";
-export { defineCard, registerCard, getCardSketch, hasCardSketch, allRegisteredSlugs } from "./defineCard";
+export { defineCard, registerCard, claimSketchesFor, getCardSketch, hasCardSketch, registeredSlugsFor } from "./defineCard";

@@ -8,6 +8,14 @@ import type { CardData } from "@/runtime/types";
 
 type Named = { slug?: string; name: string; index?: number };
 
+/** Concise singular label for a deck's transversal axis, e.g. "The Eight Virtues" -> "Virtue". */
+function axisLabel(name: string | undefined): string {
+  if (!name) return "Axis";
+  let s = name.replace(/^the\s+/i, "").replace(/^(one|two|three|four|five|six|seven|eight|nine|ten|twelve)\s+/i, "");
+  if (/s$/i.test(s) && !/ss$/i.test(s)) s = s.replace(/s$/i, "");
+  return s;
+}
+
 function numericKind(numStr: string): "identity" | "prime" | "composite" {
   const n = parseInt(numStr, 10);
   if (n <= 1) return "identity";
@@ -48,7 +56,7 @@ export function CardBrowser({ deckId }: { deckId: string }) {
       if (rank && c.rank_slug !== rank) return false;
       if (virtue && c.station_slug !== virtue) return false;
       if (comp && numericKind(c.number) !== comp) return false;
-      if (illustratedOnly && !hasCardSketch(c.slug)) return false;
+      if (illustratedOnly && !hasCardSketch(deckId, c.slug)) return false;
       return true;
     });
   }, [deck, q, arcana, suit, rank, virtue, comp, illustratedOnly]);
@@ -66,7 +74,7 @@ export function CardBrowser({ deckId }: { deckId: string }) {
           <Select value={arcana} onChange={setArcana} label="Arcana" options={[["major", "Major"], ["minor", "Minor"]]} />
           <Select value={suit} onChange={setSuit} label="Suit" options={opts.suits.map((s) => [s.slug!, s.name])} />
           <Select value={rank} onChange={setRank} label="Rank" options={opts.ranks.map((r) => [r.slug!, r.name])} />
-          <Select value={virtue} onChange={setVirtue} label="Virtue" options={opts.virtues.map((v) => [v.slug!, v.name])} />
+          <Select value={virtue} onChange={setVirtue} label={axisLabel((deck.data.transversal as { name?: string } | undefined)?.name)} options={opts.virtues.map((v) => [v.slug!, v.name])} />
           <Select value={comp} onChange={setComp} label="Number" options={[["identity", "Identity"], ["prime", "Prime"], ["composite", "Composite"]]} />
           <label style={{ display: "flex", alignItems: "center", gap: 6, color: "#c7c2b2", font: "400 13px/1 ui-sans-serif, system-ui", cursor: "pointer" }}>
             <input type="checkbox" checked={illustratedOnly} onChange={(e) => setIllustratedOnly(e.target.checked)} /> Illustrated only
@@ -75,7 +83,7 @@ export function CardBrowser({ deckId }: { deckId: string }) {
         </div>
 
         {filtered.length ? (
-          <DeckGrid cards={filtered} deck={deck.data} />
+          <DeckGrid cards={filtered} deck={deck.data} deckId={deckId} />
         ) : (
           <p style={{ color: "#9aa0b0", padding: "40px 0", textAlign: "center" }}>No cards match those filters.</p>
         )}

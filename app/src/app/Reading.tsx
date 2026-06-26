@@ -112,7 +112,7 @@ function ReadingResult({ deck, token }: { deck: DeckModule; token: string }) {
               <div style={{ color: "#c9a44a", font: "600 12px/1.2 ui-sans-serif, system-ui", letterSpacing: "0.04em", textTransform: "uppercase" }}>{i + 1}. {pos.name}</div>
               <div style={{ color: "#6b7080", font: "400 11px/1.3 ui-sans-serif, system-ui", margin: "2px 0 8px" }}>{pos.prompt}</div>
               <div style={{ transform: dc.reversed ? "rotate(180deg)" : "none" }}>
-                <CardFrame card={card} sketch={getCardSketch(card.slug)} deck={deck.data} showBanner={false} mode="poster" />
+                <CardFrame card={card} sketch={getCardSketch(deck.id, card.slug)} deck={deck.data} showBanner={false} mode="poster" />
               </div>
               <div style={{ marginTop: 8, font: "600 14px/1.25 ui-serif, Georgia, serif" }}>
                 {card.name} {dc.reversed && <span style={{ color: "#e0506a", font: "600 11px/1 ui-sans-serif, system-ui" }}>· Reversed</span>}
