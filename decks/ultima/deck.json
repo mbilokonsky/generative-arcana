@@ -2011,5 +2011,33 @@
         "detailed_description": "A luminous figure stands within a vast moongate at the meeting of sea and night sky, countless smaller gates haloed around them in diffuse radiant light, two moons and a rising third aligned; the rounded forms culminate, feeling at its complete and weightless height."
       }
     }
+  },
+  "suit_dialectic": {
+    "rows": [
+      "World",
+      "Soul"
+    ],
+    "cols": [
+      "Throne",
+      "Road"
+    ],
+    "cells": {
+      "crowns": [
+        "World",
+        "Throne"
+      ],
+      "blades": [
+        "World",
+        "Road"
+      ],
+      "runes": [
+        "Soul",
+        "Throne"
+      ],
+      "moongates": [
+        "Soul",
+        "Road"
+      ]
+    }
   }
 }

@@ -98,7 +98,22 @@ function Means({ m }: { m?: Meaning }) {
 }
 
 // ── Axis 1: Suits ─────────────────────────────────────────────────────────────
-function dialectic(suits: Suit[]) {
+type DialecticData = { rows: string[]; cols: string[]; cells: Record<string, [string, string]> };
+
+/** The suit 2×2, if the deck has one. Prefers explicit `suit_dialectic` metadata; falls back to
+ *  parsing a leading "A x B." in each suit description (older decks encode it that way). */
+function dialectic(deck: DeckDataFile, suits: Suit[]) {
+  const explicit = (deck as { suit_dialectic?: DialecticData }).suit_dialectic;
+  if (explicit?.rows?.length === 2 && explicit.cols?.length === 2 && explicit.cells) {
+    const cells = explicit.rows.map((r) =>
+      explicit.cols.map((c) => suits.find((s) => {
+        const cell = explicit.cells[s.slug];
+        return cell && cell[0] === r && cell[1] === c;
+      })),
+    );
+    if (!cells.flat().some((x) => !x)) return { rows: explicit.rows, cols: explicit.cols, cells: cells as Suit[][] };
+  }
+  // fallback: parse "A x B." prefix
   const parsed = suits.map((s) => {
     const m = s.description.match(/^\s*([A-Za-z]+)\s*[x×]\s*([A-Za-z]+)\b/);
     return m ? { s, a: m[1], b: m[2] } : null;
@@ -129,7 +144,7 @@ function SuitCard({ s }: { s: Suit }) {
 function SuitsPanel({ deck }: { deck: DeckDataFile }) {
   const suits = (Object.values(deck.suits) as Suit[]).sort((a, b) => a.index - b.index);
   const ma = deck.major_arcana as MajorArcana | undefined;
-  const di = dialectic(suits);
+  const di = dialectic(deck, suits);
   const narrow = useNarrow();
   return (
     <div>

@@ -1832,5 +1832,33 @@
         "detailed_description": "The word YES dominates the composition, but it's made from kidney-bean shapes, or organic bodily curves, or simply glows with warm embodied light. The warm palette of the entire suit - butter yellows, warm browns, soft pinks - flows into this affirmation: yes to feeding the body, yes to resting it, yes to pleasuring it. Behind or through the YES: all the previous mundane acceptances - the kidney breakfasts, the baths, the bed beside Molly, the sandwich at Davy Byrne's, the anticipated comforts, the body cared for through the day and through the years. A figure (synthesis of Child, Father, and Mother of Kidneys) stands within or before the YES, affirming embodied existence itself. The organic curves, the warmth, the nourishment all saying yes to the body as worthy of care, yes to mundane acceptance as sacred practice, yes to the art of living well in the flesh. Molly's yes echoes here: yes to the body, yes to physical existence, yes even to mortality because it's embodied mortality, yes."
       }
     }
+  },
+  "suit_dialectic": {
+    "rows": [
+      "Mythic",
+      "Mundane"
+    ],
+    "cols": [
+      "Resistance",
+      "Acceptance"
+    ],
+    "cells": {
+      "towers": [
+        "Mythic",
+        "Resistance"
+      ],
+      "keys": [
+        "Mythic",
+        "Acceptance"
+      ],
+      "nets": [
+        "Mundane",
+        "Resistance"
+      ],
+      "kidneys": [
+        "Mundane",
+        "Acceptance"
+      ]
+    }
   }
 }
