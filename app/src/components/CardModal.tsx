@@ -27,11 +27,15 @@ function composition(numStr: string): string {
   return f.length === 1 ? `prime · ${n}` : `composite · ${n} = ${f.join(" × ")}`;
 }
 
-/** Interpolate a suit's name into a rank's generic phrasing ("{suit}" / "the suit" / "SUIT"). */
+/** Interpolate a suit's name into a rank's generic phrasing ("{suit}" / "the suit" / "SUIT").
+ *  Possessive forms (`{suit}'s` / "the suit's") render grammatically: a bare apostrophe when the
+ *  suit name already ends in -s (e.g. "Crowns'"), otherwise "'s". */
 function suitInterp(text: string, suitName: string): string {
+  const possessive = /s$/i.test(suitName) ? `${suitName}'` : `${suitName}'s`;
   return text
+    .replace(/\{suit\}'s\b/g, possessive)
     .replace(/\{suit\}/g, suitName)
-    .replace(/\bthe suit's\b/gi, `${suitName}'`)
+    .replace(/\bthe suit's\b/gi, possessive)
     .replace(/\bthe suit\b/gi, suitName)
     .replace(/\bSUIT\b/g, suitName);
 }
