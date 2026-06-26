@@ -3,6 +3,7 @@
  * Everything here resolves from the DECK DATA first (so any migrated/custom deck shows its own rank
  * names, suit names, and glyphs), falling back to the bundled Ultima maps only when a deck supplies
  * none. That fallback is what keeps a sparse pasted deck legible. */
+import { useId } from "react";
 import type { DeckDataFile } from "@/decks/types";
 import type { CardData } from "@/runtime/types";
 
@@ -27,8 +28,26 @@ export function Glyph({ which, size = 16 }: { which: string; size?: number }) {
   );
 }
 
-/** Render a deck-supplied FULL <svg> string, sized to `size` and recolored via currentColor. */
-function RawGlyph({ svg, size = 16 }: { svg: string; size?: number }) {
+const reEsc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/** Per-instance-namespace any internal ids (mask/gradient/clip) so multiple copies of a deck SVG on
+ *  one page don't collide on `url(#id)` (which otherwise resolves to a single, possibly-unmounted node). */
+function namespaceIds(svg: string, uid: string): string {
+  const ids = Array.from(svg.matchAll(/id="([^"]+)"/g), (m) => m[1]);
+  let out = svg;
+  for (const id of ids) {
+    const u = `${id}-${uid}`;
+    out = out
+      .replace(new RegExp(`id="${reEsc(id)}"`, "g"), `id="${u}"`)
+      .replace(new RegExp(`url\\(#${reEsc(id)}\\)`, "g"), `url(#${u})`)
+      .replace(new RegExp(`(xlink:href|href)="#${reEsc(id)}"`, "g"), `$1="#${u}"`);
+  }
+  return out;
+}
+
+/** Render a deck-supplied FULL <svg> string, sized and recolored via currentColor (ids namespaced). */
+export function Svg({ svg, size = 16 }: { svg: string; size?: number }) {
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, "");
   const sized = svg
     .replace(/\s(width|height)="[^"]*"/g, "")
     .replace(/<svg /, `<svg width="${size}" height="${size}" `);
@@ -36,7 +55,7 @@ function RawGlyph({ svg, size = 16 }: { svg: string; size?: number }) {
     <span
       aria-hidden
       style={{ display: "inline-flex", width: size, height: size, color: "currentColor", verticalAlign: "-0.15em" }}
-      dangerouslySetInnerHTML={{ __html: sized }}
+      dangerouslySetInnerHTML={{ __html: namespaceIds(sized, uid) }}
     />
   );
 }
@@ -48,7 +67,7 @@ function RawGlyph({ svg, size = 16 }: { svg: string; size?: number }) {
 export function AxisGlyph({ deck, card, size = 16 }: { deck?: DeckDataFile; card: CardData; size?: number }) {
   const isMajor = card.arcana === "major";
   const raw = isMajor ? majorGlyphSvg(deck) : suitGlyphSvg(deck, card.suit_slug);
-  if (raw) return <RawGlyph svg={raw} size={size} />;
+  if (raw) return <Svg svg={raw} size={size} />;
   return <Glyph which={isMajor ? "major" : card.suit_slug ?? "major"} size={size} />;
 }
 
