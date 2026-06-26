@@ -23,3 +23,6 @@ Thumbs.db
 # python bytecode
 __pycache__/
 *.pyc
+
+# pixel-tooling review artifacts
+tools/pixel/montage*.png

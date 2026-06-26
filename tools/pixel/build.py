@@ -9,23 +9,37 @@ app's image-pack glob pairs them to cards with no zero-pad gymnastics.
 """
 import os
 import sys
-from ulysses_cards import CARDS, W, H
+import importlib
 from pixelkit import Canvas
 
+W, H = 80, 120
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "app", "src", "decks", "ulysses", "pixel")
 SCALE = 5
 
 
-def build():
+def load_cards():
+    """All majors + every suit_*.py module's CARDS, merged."""
+    from ulysses_cards import CARDS as cards
+    merged = dict(cards)
+    here = os.path.dirname(__file__)
+    for fn in sorted(os.listdir(here)):
+        if fn.startswith("suit_") and fn.endswith(".py"):
+            mod = importlib.import_module(fn[:-3])
+            merged.update(getattr(mod, "CARDS", {}))
+    return merged
+
+
+def build(cards, tag="all"):
     os.makedirs(OUT, exist_ok=True)
-    for slug, fn in CARDS.items():
+    for slug, fn in cards.items():
         fn().save(os.path.join(OUT, f"{slug}.png"), scale=SCALE)
-    print(f"rendered {len(CARDS)} cards -> {os.path.relpath(OUT)}")
+    print(f"rendered {len(cards)} cards ({tag}) -> {os.path.relpath(OUT)}")
 
 
-def montage(cols=7):
-    """Contact sheet of every rendered card at logical size, for one-glance review."""
-    slugs = list(CARDS)
+def montage(cards, cols=7, name="montage"):
+    """Contact sheet of the given cards at logical size, for one-glance review."""
+    slugs = list(cards)
+    CARDS = cards
     rows = (len(slugs) + cols - 1) // cols
     pad = 4
     sheet = Canvas((W + pad) * cols + pad, (H + pad) * rows + pad, bg=(20, 20, 24))
@@ -36,12 +50,20 @@ def montage(cols=7):
         for y in range(H):
             for x in range(W):
                 sheet.set(cx + x, cy + y, card.px[y][x])
-    path = os.path.join(os.path.dirname(__file__), "montage.png")
-    sheet.save(path, scale=2)
-    print(f"montage ({len(slugs)} cards) -> {os.path.relpath(path)}")
+    path = os.path.join(os.path.dirname(__file__), f"{name}.png")
+    sheet.save(path, scale=3)
+    print(f"{name} ({len(slugs)} cards) -> {os.path.relpath(path)}")
 
 
 if __name__ == "__main__":
-    build()
-    if "--montage" in sys.argv:
-        montage()
+    if "--suit" in sys.argv:
+        suit = sys.argv[sys.argv.index("--suit") + 1]
+        mod = importlib.import_module(f"suit_{suit}")
+        cards = getattr(mod, "CARDS")
+        build(cards, tag=suit)
+        montage(cards, cols=7, name=f"montage_{suit}")
+    else:
+        cards = load_cards()
+        build(cards)
+        if "--montage" in sys.argv:
+            montage(cards, name="montage")
