@@ -1,7 +1,7 @@
 {
   "name": "The Ultima Tarot",
   "slug": "ultima-tarot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "theme": {
     "name": "Ultima",
     "description": "The Avatar's quest from Stranger to Codex. A deck drawn from the cosmology of Britannia: the moongates and the two moons Trammel and Felucca, the three Principles of Truth, Love and Courage, the eight Virtues and their Shrines, Lord British's settled realm, and the long red shadow of the Guardian. Where the early games slew a dark lord to save a world, Ultima IV turned the quest inward: the goal is no longer to conquer but to become a paragon of virtue. This deck reads that turn as its spine, weaving the outer kingdom against the inner journey.",
@@ -151,7 +151,8 @@
           "a beginning founded on nothing"
         ]
       },
-      "visual_content": "A single emergent emblem of the suit, held or appearing alone, raw and unworked."
+      "visual_content": "A single emergent emblem of the suit, held or appearing alone, raw and unworked.",
+      "question": "Under what conditions does {suit} emerge?"
     },
     "two": {
       "index": 1,
@@ -174,7 +175,8 @@
           "the choice endlessly deferred"
         ]
       },
-      "visual_content": "Two of the suit's emblems held in tension or balance against one another."
+      "visual_content": "Two of the suit's emblems held in tension or balance against one another.",
+      "question": "What is {suit}'s relationship to duality?"
     },
     "three": {
       "index": 2,
@@ -197,7 +199,8 @@
           "form built to deceive"
         ]
       },
-      "visual_content": "Three emblems joining into a first structure, freshly and visibly made."
+      "visual_content": "Three emblems joining into a first structure, freshly and visibly made.",
+      "question": "How does {suit} first take form?"
     },
     "four": {
       "index": 3,
@@ -220,7 +223,8 @@
           "order kept past its purpose"
         ]
       },
-      "visual_content": "Four emblems set as the corners or walls of a stable, foursquare frame."
+      "visual_content": "Four emblems set as the corners or walls of a stable, foursquare frame.",
+      "question": "What stabilizes {suit}?"
     },
     "five": {
       "index": 4,
@@ -243,7 +247,8 @@
           "cruelty under strain"
         ]
       },
-      "visual_content": "Five emblems contending, broken, or scattered under visible stress."
+      "visual_content": "Five emblems contending, broken, or scattered under visible stress.",
+      "question": "What emerges from {suit} under pressure?"
     },
     "six": {
       "index": 5,
@@ -266,7 +271,8 @@
           "reciprocity staged for show"
         ]
       },
-      "visual_content": "Six emblems in a flowing, reciprocal arrangement, a restored circle or exchange."
+      "visual_content": "Six emblems in a flowing, reciprocal arrangement, a restored circle or exchange.",
+      "question": "What harmonizes or restores {suit}?"
     },
     "seven": {
       "index": 6,
@@ -289,7 +295,8 @@
           "choosing by avoidance"
         ]
       },
-      "visual_content": "Seven emblems arrayed as diverging paths, a single figure weighing them."
+      "visual_content": "Seven emblems arrayed as diverging paths, a single figure weighing them.",
+      "question": "What must {suit} choose at the crossroads?"
     },
     "eight": {
       "index": 7,
@@ -312,7 +319,8 @@
           "skill become a cage"
         ]
       },
-      "visual_content": "Eight emblems in disciplined motion, or swarming past control."
+      "visual_content": "Eight emblems in disciplined motion, or swarming past control.",
+      "question": "What is a mastered {suit} capable of, or consumed by?"
     },
     "nine": {
       "index": 8,
@@ -335,7 +343,8 @@
           "plenty closed around itself"
         ]
       },
-      "visual_content": "Nine emblems near-complete and abundant, a figure at the cusp of fullness."
+      "visual_content": "Nine emblems near-complete and abundant, a figure at the cusp of fullness.",
+      "question": "What is the fulfillment of {suit}?"
     },
     "ten": {
       "index": 9,
@@ -358,7 +367,8 @@
           "an inheritance hoarded"
         ]
       },
-      "visual_content": "Ten emblems overflowing, a threshold or handing-over to a new beginning."
+      "visual_content": "Ten emblems overflowing, a threshold or handing-over to a new beginning.",
+      "question": "What does it mean for {suit} to complete and pass on?"
     },
     "seeker": {
       "index": 10,
@@ -661,13 +671,16 @@
       "slug": "major-0",
       "arcana": "major",
       "station_slug": "honesty",
-      "description": "Major Arcana 0: The Stranger.",
       "meaning": {
         "upright": "The soul newly arrived through the moongate, carrying nothing and owing nothing, pure unwritten potential before the first virtue is chosen. Everything is possible precisely because nothing is yet decided.",
         "inverted": "Potential squandered in evasion; the refusal to begin dressed up as keeping one's options open, or a fresh start founded on a lie told to oneself about who one really is."
       },
       "visuals": {
         "detailed_description": "A lone figure in plain traveler's clothes steps out of a shimmering moongate onto an empty Britannian road at high noon, casting almost no shadow; the land stretches utterly legible to the horizon, nothing hidden, an ankh pendant catching the clear flat light."
+      },
+      "factorization": {
+        "character": "identity",
+        "gloss": "The additive identity — zero, the void before any virtue is chosen. The Stranger is the precondition the rest of the deck adds to: nothing yet, and so everything still possible."
       }
     },
     "major-1": {
@@ -676,13 +689,16 @@
       "slug": "major-1",
       "arcana": "major",
       "station_slug": "compassion",
-      "description": "Major Arcana 1: The Initiate.",
       "meaning": {
         "upright": "The moment of taking up agency: the Stranger speaks the first mantra and the world answers, becoming one who can act without distorting what they touch. Raw potential focused into a clean instrument of will.",
         "inverted": "Agency curdled into manipulation; the gift of making things happen turned to small cruelties, or power claimed before the heart is ready to wield it kindly."
       },
       "visuals": {
         "detailed_description": "A young initiate speaks a glowing rune-word over cupped hands in a warm candlelit shrine-cell, a small flame answering from nothing; the light is low and golden and tender, an elder's hand resting unseen-supportive at the edge of the frame."
+      },
+      "factorization": {
+        "character": "identity",
+        "gloss": "The multiplicative identity — one, the transparent operator. The Initiate is pure agency: the unit by which the world begins to answer, changing what it touches without distorting it."
       }
     },
     "major-2": {
@@ -691,13 +707,16 @@
       "slug": "major-2",
       "arcana": "major",
       "station_slug": "valor",
-      "description": "Major Arcana 2: The Two Moons.",
       "meaning": {
         "upright": "Trammel and Felucca wheeling in the same sky, the irreducible fact of duality and of the threshold with its unseen other side. To stand here is to face that every passage demands the nerve to step into what you cannot see beyond.",
         "inverted": "The threshold refused; two moons read as a false either/or that paralyzes, or a reckless plunge through the gate without reckoning the courage it truly asks."
       },
       "visuals": {
         "detailed_description": "Two moons, one silver-pearl and one blood-red, hang over a dark moor where a single shimmering moongate stands open; the air is charged and frontal like the breath before a storm, a lone figure silhouetted at the gate's lip in the act of deciding to cross."
+      },
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime, irreducible. Duality and the threshold are atomic — the two moons cannot be factored into anything simpler; the crossing simply is, or is not."
       }
     },
     "major-3": {
@@ -706,13 +725,16 @@
       "slug": "major-3",
       "arcana": "major",
       "station_slug": "justice",
-      "description": "Major Arcana 3: The Three Principles.",
       "meaning": {
         "upright": "Truth, Love, and Courage standing as the three irreducible roots from which every virtue is generated, the source from which all justice is balanced. An atomic trinity that cannot be reduced further and beneath which there is nothing.",
         "inverted": "A single principle wielded alone as if it were the whole, truth without love or courage without truth, and called righteousness; the root mistaken for the entire tree, generativity rigged to serve one pole."
       },
       "visuals": {
         "detailed_description": "Three luminous pillars - white, rose, and gold - rise from a single root of light in a hall lit evenly from both sides, scales of clear crystal balanced between them; the stillness is that of a verdict about to be spoken, an irreducible thing perfectly poised."
+      },
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime, irreducible — and doubly so on the Justice station. The three Principles are the generative root nothing precedes; Truth, Love, and Courage do not decompose, they generate."
       }
     },
     "major-4": {
@@ -721,13 +743,20 @@
       "slug": "major-4",
       "arcana": "major",
       "station_slug": "sacrifice",
-      "description": "Major Arcana 4: The Castle.",
       "meaning": {
         "upright": "The threshold made permanent: the duality of the moongate frozen into the fixed seat of Lord British's castle, the realm given walls and a throne. Stability and legitimate order, held always at the cost of what its upkeep quietly consumes.",
         "inverted": "Structure that has forgotten its price; the keep hoarding its own permanence, order maintained by sacrifices no longer acknowledged, the throne mistaking its walls for virtue."
       },
       "visuals": {
         "detailed_description": "Lord British's white castle stands four-square and symmetrical above its town, banners still, every gate accounted for; the light is a reddened ember-glow as of hearths burning low to keep the halls warm, something steadily spent to hold it all in place."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2
+        ],
+        "gloss": "The Two Moons (2) squared — the threshold made permanent. Duality, stabilized, hardens into the fixed seat of the realm: a gate frozen into a throne."
       }
     },
     "major-5": {
@@ -736,13 +765,16 @@
       "slug": "major-5",
       "arcana": "major",
       "station_slug": "honor",
-      "description": "Major Arcana 5: The Lord of Britannia.",
       "meaning": {
         "upright": "The sovereign who keeps the realm and its laws: legitimate, traditional authority, the throne that confers meaning on every oath and office. An irreducible center the kingdom orients around, ruling by the dignity of the kept word.",
         "inverted": "Authority hollowed to pageantry; the crown demanding honor it no longer earns, tradition ossified into mere precedence, a sovereign whose word has quietly become worthless."
       },
       "visuals": {
         "detailed_description": "A crowned king in burnished royal blue sits enthroned beneath a raised standard, scepter upright, the composition formal and columnar and lit from straight above; courtiers stand at ceremonial distance, the whole scene grave with the gravity of office."
+      },
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime, irreducible. Sovereignty is atomic — the legitimate center the kingdom orients around cannot be derived from anything below it; it simply holds."
       }
     },
     "major-6": {
@@ -751,13 +783,20 @@
       "slug": "major-6",
       "arcana": "major",
       "station_slug": "spirituality",
-      "description": "Major Arcana 6: The Companions.",
       "meaning": {
         "upright": "Passage meets the generative principles: souls bound to one another by shared virtue, the fellowship of eight, a love that is also alignment of values. The sacred union in which crossing-together and creating-together become one act.",
         "inverted": "Fellowship turned enmeshment; a bond that swallows the self, communion curdled to a clique that mistakes its own warmth for holiness, union demanded rather than freely given."
       },
       "visuals": {
         "detailed_description": "A circle of diverse companions clasp hands beneath an open sky filled with soft sourceless light, two faint moons and three motes of colored radiance hovering over their joined center; the air is weightless and luminous, no shadows, a quiet numinous belonging."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          3
+        ],
+        "gloss": "The Two Moons (2) × The Three Principles (3) — passage meeting the generative root. The first true union of distinct energies: souls bound where crossing-together and creating-together become one act."
       }
     },
     "major-7": {
@@ -766,13 +805,16 @@
       "slug": "major-7",
       "arcana": "major",
       "station_slug": "humility",
-      "description": "Major Arcana 7: The Quest.",
       "meaning": {
         "upright": "Directed will set upon the long road: the journey taken up not for glory but as discipline, the irreducible decision to walk a path whose end cannot be seized by force. Mastery that expresses itself as patient, humble motion.",
         "inverted": "The quest made vanity; the road walked for the story it will tell, will driving so hard it grinds humility underfoot, a journey that has forgotten it was meant to make the traveler smaller."
       },
       "visuals": {
         "detailed_description": "A lone rider on a plain road crests a low hill at dusk, the land settling earthbound and wide around them, a distant goal no more than a notch on the horizon; the figure is small under an enormous dimming sky, ankh-standard furled, set on going anyway."
+      },
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime, irreducible. Directed will set on the long road is an atomic act — the Quest is the decision to walk, and it does not factor into smaller steps."
       }
     },
     "major-8": {
@@ -781,13 +823,21 @@
       "slug": "major-8",
       "arcana": "major",
       "station_slug": "honesty",
-      "description": "Major Arcana 8: The Gatewarden.",
       "meaning": {
         "upright": "One who has crossed so many thresholds that passage itself is mastered, duality lived so long it becomes command of the between. The clear, unflinching authority of someone who knows exactly what every gate costs and conceals none of it.",
         "inverted": "Mastery soured into the soul lost between worlds; the warden who belongs nowhere, using an intimate knowledge of thresholds to mislead others across, the truth of passage twisted into a trap."
       },
       "visuals": {
         "detailed_description": "A weathered keeper stands astride a stone moongate at clear noon, one hand on each pillar, a ring of keys and many small moons etched into the arch behind; the light is flat and total, the warden's face entirely readable, hiding nothing of the toll."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2,
+          2
+        ],
+        "gloss": "The Two Moons (2) cubed — duality lived so long it becomes mastery of the between, or the soul lost in it. Passage compounded past knowing into command."
       }
     },
     "major-9": {
@@ -796,13 +846,20 @@
       "slug": "major-9",
       "arcana": "major",
       "station_slug": "compassion",
-      "description": "Major Arcana 9: The Lantern.",
       "meaning": {
         "upright": "The generative principles complete and turned inward, ripened into a wisdom that must be carried alone and offered as a light. Not abundance reaching outward but understanding that illuminates the path for whoever follows behind.",
         "inverted": "The lantern hooded; wisdom hoarded as superiority, the solitary sage grown cold and contemptuous of seekers, light turned into a tool of judgment rather than welcome."
       },
       "visuals": {
         "detailed_description": "A cloaked hermit on a night road lifts a warm-glowing lantern back toward an unseen traveler, their own face half in gentle shadow; the light pools low and golden and enfolding, the three-fold flame inside the glass burning steady and inward."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          3,
+          3
+        ],
+        "gloss": "The Three Principles (3) squared — generativity fulfilled and turned inward. The principles, complete, stop reaching outward and become the lantern's solitary wisdom."
       }
     },
     "major-10": {
@@ -811,13 +868,20 @@
       "slug": "major-10",
       "arcana": "major",
       "station_slug": "valor",
-      "description": "Major Arcana 10: The Wheel of Ages.",
       "meaning": {
         "upright": "Passage meets sovereignty and the whole realm turns: the great wheel of Britannia's ages - Darkness, Enlightenment, Armageddon - fate as the cycle no throne can stop. To stand here is to need the courage to meet whatever the turning brings.",
         "inverted": "Clinging to a turning wheel; the refusal to let an age end, fate resisted out of fear, grasping the spoke as it rises only to be carried under, mistaking dread of change for prudence."
       },
       "visuals": {
         "detailed_description": "An immense stone wheel rimmed with the sigils of three ages turns against a charged storm-lit sky, two moons and a crowned tower set among its spokes, small figures rising and falling on its rim; the air crackles, frontal and electric, a thing vast and impersonal in motion."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          5
+        ],
+        "gloss": "The Two Moons (2) × The Lord of Britannia (5) — passage meeting sovereignty. Threshold and throne together make the wheel: the realm itself turning through its ages."
       }
     },
     "major-11": {
@@ -826,13 +890,16 @@
       "slug": "major-11",
       "arcana": "major",
       "station_slug": "justice",
-      "description": "Major Arcana 11: The Tamed Wyrm.",
       "meaning": {
         "upright": "Irreducible inner strength: justice turned inward as self-governance, the dragon of one's own nature led not by force but by a steady, gentle hand. An atomic mastery of the self that cannot be broken into technique; it simply is, or is not.",
         "inverted": "The beast loosed or brutalized; self-mastery faked by a repression that festers, or inner force turned to tyrannize the self, the hand on the wyrm become a fist. Strength that has stopped being just."
       },
       "visuals": {
         "detailed_description": "A calm figure rests one open palm on the lowered brow of an enormous wyrm in a hall lit evenly from both sides, the creature's coils settled and unforced; the balance is absolute and still, neither dominates, a poised equilibrium held by gentleness alone."
+      },
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime, irreducible — doubly atomic on the Justice station. Inner strength does not decompose into technique; self-governance, the hand on the wyrm, simply is."
       }
     },
     "major-12": {
@@ -841,13 +908,21 @@
       "slug": "major-12",
       "arcana": "major",
       "station_slug": "sacrifice",
-      "description": "Major Arcana 12: The Offering.",
       "meaning": {
         "upright": "A stable framework of passage that must now surrender to produce: the willing suspension of one's own momentum and will so the principles can be seen from the other side. To give up position is the only way the truth here completes.",
         "inverted": "Sacrifice performed for credit; the offering made loudly to be seen, a surrender that secretly demands return, a martyrdom that hoards moral debt rather than truly letting go."
       },
       "visuals": {
         "detailed_description": "A figure hangs serene and inverted from a living moongate-arch, suspended over a quiet ember-lit pool, coins and a sword falling forgotten from open hands; the warm depleting light gathers around the calm upside-down face, something freely spent, nothing clutched."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2,
+          3
+        ],
+        "gloss": "The structured Two Moons (2²) × The Three Principles (3) — a fixed frame of passage that must now surrender to produce. Stability inverted so the principles can be seen from the other side."
       }
     },
     "major-13": {
@@ -856,13 +931,16 @@
       "slug": "major-13",
       "arcana": "major",
       "station_slug": "honor",
-      "description": "Major Arcana 13: The Black Gate.",
       "meaning": {
         "upright": "The irreducible ending: the great black moongate through which one world dies into another, a transformation that cannot be bargained down or factored into gentler steps. Met with honor, it is a dignified passage rather than a defeat.",
         "inverted": "Transformation refused or perverted; clinging to a dead form past all dignity, or forcing the ending onto others to escape one's own, the black gate opened for conquest, change without honor."
       },
       "visuals": {
         "detailed_description": "A towering gate of black stone stands open on a windswept height at the formal vertical hour, one figure passing through it upright and unbowed while withered banners stream behind; the light is burnished and grave, the threshold absolute, what enters does not return the same."
+      },
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime, irreducible. The ending is atomic — the Black Gate cannot be bargained down or factored into gentler steps; transformation that simply happens, whole."
       }
     },
     "major-14": {
@@ -871,13 +949,20 @@
       "slug": "major-14",
       "arcana": "major",
       "station_slug": "spirituality",
-      "description": "Major Arcana 14: The Tempering.",
       "meaning": {
         "upright": "Passage meets directed will and is balanced: the patient alchemy of holding the hidden flow between two banks, neither drowning in mystery nor charging past it. The reagents mixed in exact measure, sacred moderation as a spiritual act.",
         "inverted": "Balance faked; an endless mixing that never commits, lukewarm moderation mistaken for wisdom, or the alchemist certain they alone hold the true proportion, temperance turned to bypass and quiet pride."
       },
       "visuals": {
         "detailed_description": "A robed figure pours a luminous stream between two vessels, one moon-silver and one sun-gold, the liquid hanging in a perfect unbroken arc; the light is diffuse and sourceless and weightless, two moons faint above, everything held in rarefied suspended balance."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          7
+        ],
+        "gloss": "The Two Moons (2) × The Quest (7) — passage meeting directed will. Neither drowned in the flow nor charging past it: the threshold held in measure, the tempered middle."
       }
     },
     "major-15": {
@@ -886,13 +971,20 @@
       "slug": "major-15",
       "arcana": "major",
       "station_slug": "humility",
-      "description": "Major Arcana 15: The Guardian.",
       "meaning": {
         "upright": "Generativity captured by sovereignty: virtue itself codified into domination, the great red titan who offers perfect order and takes your will in exchange. The seductive false-throne that makes obedience feel like peace.",
         "inverted": "The chain seen for what it is; the spell of the false benefactor cracking, the humbling recognition that the offered order was bondage, pride's grip loosening as you remember you were never truly his."
       },
       "visuals": {
         "detailed_description": "An immense red face fills a darkening sky above a kneeling crowd, its calm gaze almost benevolent, glowing fetters running from its open hands to every bowed neck; the light is low and earthbound and false-warm, one figure alone beginning to look up and see the chains."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          3,
+          5
+        ],
+        "gloss": "The Three Principles (3) × The Lord of Britannia (5) — generativity captured by sovereignty. Virtue itself codified into command: the Guardian is what the Principles become when an unmediated throne owns them — bondage wearing order's face."
       }
     },
     "major-16": {
@@ -901,13 +993,22 @@
       "slug": "major-16",
       "arcana": "major",
       "station_slug": "honesty",
-      "description": "Major Arcana 16: The Cataclysm.",
       "meaning": {
         "upright": "Threshold-energy concentrated past all containment: the gate that shatters, the cataclysm that sinks the old world so the truth it hid can no longer be denied. Sudden, total, clarifying ruin - revelation by demolition.",
         "inverted": "The lesson of the ruin dodged; rebuilding the same lie on cracked ground, reading catastrophe as mere bad luck, clinging to the rubble rather than admit what the collapse made undeniable."
       },
       "visuals": {
         "detailed_description": "A great tower and its moongate split apart in a single white flash at high noon, stone and shattered moons flung outward, figures falling into a merciless clear light; nothing is shadowed, nothing hidden, the explosion lays the whole truth bare at once."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "gloss": "The Two Moons (2) to the fourth — the threshold concentrated past all containment. Duality squared and squared again until the gate cannot hold and shatters into revelation."
       }
     },
     "major-17": {
@@ -916,13 +1017,16 @@
       "slug": "major-17",
       "arcana": "major",
       "station_slug": "compassion",
-      "description": "Major Arcana 17: The Shrine.",
       "meaning": {
         "upright": "An irreducible hope: the quiet shrine where a wounded soul kneels to a mantra and is, simply, renewed. Faith that the light returns - not earned, not explained - an atomic mercy that the world can always be begun again.",
         "inverted": "Hope soured to bitter waiting; the pilgrim who kneels to demand rather than receive, renewal refused out of self-contempt, the shrine's gentle light met with the conviction that one deserves no mercy."
       },
       "visuals": {
         "detailed_description": "A traveler kneels at a low stone shrine under a soft night sky, a single star and two faint moons above, warm golden light welling up from the shrine-stone to wash over them; the air is tender and enfolding, a held breath of grace, wounds easing in the glow."
+      },
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime, irreducible. Hope is atomic — the Shrine's renewal is neither earned nor explained; it is the unfactorable mercy that the world can always begin again."
       }
     },
     "major-18": {
@@ -931,13 +1035,21 @@
       "slug": "major-18",
       "arcana": "major",
       "station_slug": "valor",
-      "description": "Major Arcana 18: The Moonshadow.",
       "meaning": {
         "upright": "The threshold witnessing a fecund, untrustworthy night: everything teeming and growing but seen only by deceptive moonlight, where intuition and fear are indistinguishable. It takes raw courage to keep walking a path you cannot clearly see.",
         "inverted": "Surrender to the illusion; fear dressed as intuition turning you back, the deceptive night believed entirely, the coward's retreat from a road that was only ever shadows and never the monsters dread painted on them."
       },
       "visuals": {
         "detailed_description": "A narrow path winds between two pale standing stones toward a blood-red moon, the moor on either side alive with half-seen shapes that may be beasts or only gorse; the light is charged and uncertain and frontal, a lone walker pressing forward through their own fear."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          3,
+          3
+        ],
+        "gloss": "The Two Moons (2) × the fulfilled Three Principles (3²) — the threshold witnessing a doubled, untrustworthy generativity. Everything teeming, seen only by deceptive moonlight: fecund illusion."
       }
     },
     "major-19": {
@@ -946,13 +1058,16 @@
       "slug": "major-19",
       "arcana": "major",
       "station_slug": "justice",
-      "description": "Major Arcana 19: The Daystar.",
       "meaning": {
         "upright": "Irreducible radiance: clarity and vitality so complete the whole world is lit fair and true, justice expressed not as judgment but as daylight that shows everything as it actually is. An atomic joy that needs no defense; it simply shines.",
         "inverted": "Light without mercy; clarity weaponized into blinding certainty, the daystar so bright it scorches, truth shown so harshly it becomes its own injustice, vitality curdled to glare."
       },
       "visuals": {
         "detailed_description": "A brilliant sun stands at the zenith over a green Britannian valley lit evenly to every corner, two children playing in a field where nothing casts a deceiving shadow; the light is clear and balanced and joyful, the whole scene legible and fair and alive."
+      },
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime, irreducible — doubly atomic on the Justice station. Radiance that needs no defense; the Daystar's clarity is an atomic joy, justice shown simply as daylight."
       }
     },
     "major-20": {
@@ -961,13 +1076,21 @@
       "slug": "major-20",
       "arcana": "major",
       "station_slug": "sacrifice",
-      "description": "Major Arcana 20: The Summoning.",
       "meaning": {
         "upright": "The stable gate sounded by sovereignty: Lord British's call ringing across worlds, the trumpet that wakes a soul to its true name and purpose. Reckoning and rebirth, answered only by those willing to surrender the life they had to become who they are called to be.",
         "inverted": "The call heard and bargained with; answering for what the calling will grant rather than what it asks, or refusing the summons to clutch a smaller life, reckoning evaded, rebirth declined out of grasping."
       },
       "visuals": {
         "detailed_description": "A vast horn sounds from a castle-gate wreathed in ember light, and across a moonlit field figures rise from the earth with faces turned upward toward the call; the warm depleting glow gathers them, each leaving something behind in the soil as they answer and stand."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2,
+          5
+        ],
+        "gloss": "The structured Two Moons (2²) × The Lord of Britannia (5) — the stable gate sounded by sovereignty. The fixed threshold transmitted as a call: Lord British's summons across worlds, reckoning and rebirth."
       }
     },
     "major-21": {
@@ -976,13 +1099,20 @@
       "slug": "major-21",
       "arcana": "major",
       "station_slug": "honor",
-      "description": "Major Arcana 21: The Codex.",
       "meaning": {
         "upright": "Generativity given form and motion: the Codex of Ultimate Wisdom attained, every virtue integrated and the long quest fulfilled into dynamic wholeness. Not a resting place but the complete pattern in motion, the honor of a soul that has become what it sought.",
         "inverted": "Completion claimed too soon; the Codex read but not lived, wholeness worn as a trophy, the integration faked so that the seeker may stop, mastery announced where the work is quietly undone."
       },
       "visuals": {
         "detailed_description": "A radiant book of pure light hovers open above a pedestal at the center of eight pillars, a robed figure standing fulfilled before it crowned in soft burnished light, all four suit-emblems and eight virtue-sigils orbiting in slow integrated motion; the composition is whole, formal, and alive."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          3,
+          7
+        ],
+        "gloss": "The Three Principles (3) × The Quest (7) — generativity given directed form and motion. The Codex is the whole pattern attained: all virtue integrated and moving — the dance that contains all dances."
       }
     },
     "crowns-ace": {
@@ -993,7 +1123,6 @@
       "suit_slug": "crowns",
       "rank_slug": "ace",
       "station_slug": "honesty",
-      "description": "Ace of Crowns.",
       "meaning": {
         "upright": "Governance in its seed: the first clear claim of legitimate stewardship, an authority that emerges only where it can be seen plainly and answered for. Resource and order begin here as an honest offer, with nothing yet hidden in the ledger.",
         "inverted": "A reign begun on a concealed debt; the founding charter with a clause kept secret, stewardship that emerges already lying about whose hands it truly serves."
@@ -1010,7 +1139,6 @@
       "suit_slug": "crowns",
       "rank_slug": "two",
       "station_slug": "compassion",
-      "description": "Two of Crowns.",
       "meaning": {
         "upright": "Governance facing a choice between two claimants or two towns, weighed not by power but by who is cared for. The crown learns its first duality: to rule is to hold two needs in warm balance rather than crush one beneath the other.",
         "inverted": "The merciful choice faked; favoritism dressed as compassion, a ruler splitting the realm to keep both factions fond of them, tenderness used to dodge a fair decision."
@@ -1027,7 +1155,6 @@
       "suit_slug": "crowns",
       "rank_slug": "three",
       "station_slug": "valor",
-      "description": "Three of Crowns.",
       "meaning": {
         "upright": "Governance first takes built form - the founding of a town, three walls raised where there were none - and it takes nerve to commit resources to a thing that does not yet exist. Order made real by the courage to begin building.",
         "inverted": "Bold founding overreaching; a settlement raised faster than it can be defended or fed, structure committed to out of bravado, the brave groundbreaking that becomes a half-built ruin."
@@ -1044,7 +1171,6 @@
       "suit_slug": "crowns",
       "rank_slug": "four",
       "station_slug": "justice",
-      "description": "Four of Crowns.",
       "meaning": {
         "upright": "Governance stabilized into law: the duality of competing claims squared into a fixed, even framework that holds the realm steady. Foundation as fairness, the four-square keep where every subject knows exactly where they stand.",
         "inverted": "Stability hardened into rigid legalism; the framework preserved past its justice, walls that once protected now imprisoning, order maintained by a law that has stopped weighing and only enforces."
@@ -1061,7 +1187,6 @@
       "suit_slug": "crowns",
       "rank_slug": "five",
       "station_slug": "sacrifice",
-      "description": "Five of Crowns.",
       "meaning": {
         "upright": "Governance under pressure reveals what it will spend: famine, war-tax, the year the treasury must be opened and someone must go without. An irreducible test of stewardship - what the realm gives up, and who is asked to give it.",
         "inverted": "Pressure exposing rot; resources bled for vanity while the people starve, the cost of crisis shoved entirely onto the weakest, sacrifice demanded downward and never shared."
@@ -1078,7 +1203,6 @@
       "suit_slug": "crowns",
       "rank_slug": "six",
       "station_slug": "honor",
-      "description": "Six of Crowns.",
       "meaning": {
         "upright": "Governance restored to flow: tribute and care moving freely both ways between throne and town, the duality of ruler-and-ruled reconciled into a reciprocal dignity. A settled generosity where the kept word makes the whole realm move as one.",
         "inverted": "Reciprocity hollowed to display; charity staged for reputation, a court that gives with one hand to be honored while the books are squared by the other, harmony bought to look noble."
@@ -1095,7 +1219,6 @@
       "suit_slug": "crowns",
       "rank_slug": "seven",
       "station_slug": "spirituality",
-      "description": "Seven of Crowns.",
       "meaning": {
         "upright": "Governance at the crossroads must choose its direction not by advantage but by what the realm is for - the irreducible question of purpose that stops a ruler mid-stride. Stewardship measured against something larger than the kingdom itself.",
         "inverted": "The question dodged; a ruler choosing the path of least resistance and calling it providence, worldly calculation masked as higher purpose, the crossroads of the soul paved over with policy."
@@ -1112,7 +1235,6 @@
       "suit_slug": "crowns",
       "rank_slug": "eight",
       "station_slug": "humility",
-      "description": "Eight of Crowns.",
       "meaning": {
         "upright": "A mastered governance: long rule lived so deeply it becomes effortless craft, the realm running well while the ruler wears it lightly, power grown humble through sheer competence. The eight-fold machinery of state turning almost without a hand.",
         "inverted": "Mastery swollen into overreach; the practiced ruler micromanaging every grain, control compounded past need into exhausting empire, competence become the inability to let anything simply be."
@@ -1129,7 +1251,6 @@
       "suit_slug": "crowns",
       "rank_slug": "nine",
       "station_slug": "honesty",
-      "description": "Nine of Crowns.",
       "meaning": {
         "upright": "Governance fulfilled: the realm prosperous, the harvest in, the long stewardship come to ripe and visible plenty that can stand any audit. Abundance as the honest fruit of order kept, wealth one can show in full light without shame.",
         "inverted": "Fulfillment that isolates; the prosperous ruler alone atop a hoard, plenty so complete it has nothing left to strive for, abundance displayed to prove a worth the heart no longer feels."
@@ -1146,7 +1267,6 @@
       "suit_slug": "crowns",
       "rank_slug": "ten",
       "station_slug": "compassion",
-      "description": "Ten of Crowns.",
       "meaning": {
         "upright": "Governance completing its cycle: the crown passed on, the realm handed whole and warm to those who come next, legacy as an act of care rather than possession. The duality of holding and releasing resolved by giving the kingdom away well.",
         "inverted": "The cycle clutched; an aging ruler refusing succession, legacy turned into a burden laid on unwilling heirs, the warmth of inheritance soured into obligation and a grasping at a finished reign."
@@ -1163,7 +1283,6 @@
       "suit_slug": "crowns",
       "rank_slug": "seeker",
       "station_slug": "valor",
-      "description": "Seeker of Crowns.",
       "meaning": {
         "upright": "The newcomer to stewardship watching how a realm is truly held: the page who studies the court, asking how order is made, and finding it takes nerve even to learn to lead. Fresh, unfactorable curiosity about the weight of a crown.",
         "inverted": "A dabbler in power; the student of governance hungry for the title and bored by the duty, observation that is really just impatience for a throne not yet earned."
@@ -1180,7 +1299,6 @@
       "suit_slug": "crowns",
       "rank_slug": "knight",
       "station_slug": "justice",
-      "description": "Knight of Crowns.",
       "meaning": {
         "upright": "Stewardship in active deed: the official who rides out to make the law real in the far towns, enforcing the realm's fairness with their own hands. Structured authority carried into motion - governance that does, not merely decrees.",
         "inverted": "The deed outrunning its justice; an enforcer collecting in the crown's name for their own gain, zeal for order become a heavy-handed circuit, the law's hand turned to a fist on the road."
@@ -1197,7 +1315,6 @@
       "suit_slug": "crowns",
       "rank_slug": "oracle",
       "station_slug": "sacrifice",
-      "description": "Oracle of Crowns.",
       "meaning": {
         "upright": "The internalized wisdom of rule: the elder counselor who has given a whole life to the realm and now sees its needs without being told, governance ripened into quiet, sacrificial knowing. Power held so long it has become pure care.",
         "inverted": "Wisdom withheld or self-consuming; the old steward brooding over the realm's burdens until counsel curdles to martyred silence, a lifetime spent for the kingdom worn as a private wound."
@@ -1214,7 +1331,6 @@
       "suit_slug": "crowns",
       "rank_slug": "paragon",
       "station_slug": "honor",
-      "description": "Paragon of Crowns.",
       "meaning": {
         "upright": "The exemplary sovereign: governance fully embodied, a ruler whose every act is the realm's dignity made flesh, mastery of stewardship that others measure themselves against. The crown worn so rightly it seems part of the wearer.",
         "inverted": "The ideal turned oppressive; a paragon whose perfection brooks no dissent, exemplary rule become a standard that crushes, a rectitude so exacting it has forgotten mercy and made itself a tyranny of virtue."
@@ -1231,7 +1347,6 @@
       "suit_slug": "blades",
       "rank_slug": "ace",
       "station_slug": "justice",
-      "description": "Ace of Blades.",
       "meaning": {
         "upright": "Conflict in its purest seed: the first drawn blade, raw decisive force emerging clean and unblunted, and here it emerges as the righteous cut, severance in the name of what is fair. The sword as truth that acts.",
         "inverted": "Force loosed without warrant; a first strike thrown in partiality dressed as justice, a blade drawn for vengeance and called law, the edge meeting flesh before the cause was ever weighed."
@@ -1248,7 +1363,6 @@
       "suit_slug": "blades",
       "rank_slug": "two",
       "station_slug": "sacrifice",
-      "description": "Two of Blades.",
       "meaning": {
         "upright": "Conflict's first duality: two blades crossed, the standoff where each fighter holds the other's life, and the only way through is what each is willing to give up. A tense balance resolved not by winning but by costly concession.",
         "inverted": "A deadlock fed by greed; two swords locked because neither will yield an inch, the duel prolonged past all sense, each clutching advantage while the shared ground bleeds beneath them."
@@ -1265,7 +1379,6 @@
       "suit_slug": "blades",
       "rank_slug": "three",
       "station_slug": "honor",
-      "description": "Three of Blades.",
       "meaning": {
         "upright": "Conflict first takes structured form: three blades forging a guard, a pact of arms, the war-band given shape, and sworn to a code, it becomes the oath-bound company rather than a mob. Violence organized into something that can keep its word.",
         "inverted": "The martial pact dishonored; three swords sworn together and turned to a vendetta, the formed company become a cabal, a structure built for protection used instead for shame."
@@ -1282,7 +1395,6 @@
       "suit_slug": "blades",
       "rank_slug": "four",
       "station_slug": "spirituality",
-      "description": "Four of Blades.",
       "meaning": {
         "upright": "Conflict stabilized into a held peace: swords laid down in truce, the duality of war squared into a guarded stillness, and here that stillness opens toward something larger, the rest in which a fighter finally hears the quiet. Defense become contemplation.",
         "inverted": "Truce mistaken for transcendence; weapons sheathed but the war only suspended, a brittle calm called peace of mind, the soldier's stillness hiding a refusal to truly disarm."
@@ -1299,7 +1411,6 @@
       "suit_slug": "blades",
       "rank_slug": "five",
       "station_slug": "humility",
-      "description": "Five of Blades.",
       "meaning": {
         "upright": "Conflict under pressure shows its true face: the rout, the field where steel meets steel and the irreducible cost of violence stands bare, and the only lesson it leaves is how little anyone wins clean. Strife stripped to its grim ground.",
         "inverted": "Pressure curdled to cruelty and pride; the victor gloating over a broken foe, needless strife prolonged for dominance, the field's hard lesson refused in favor of a swaggering tally of kills."
@@ -1316,7 +1427,6 @@
       "suit_slug": "blades",
       "rank_slug": "six",
       "station_slug": "honesty",
-      "description": "Six of Blades.",
       "meaning": {
         "upright": "Conflict restored toward flow: the withdrawal, the crossing-away from a war that is over, blades carried but lowered, and seen by clear light it is an honest retreat, the truth admitted that the fight is done. Movement out of strife into open air.",
         "inverted": "Retreat built on a lie; a flight from conflict spun as strategy, the wound carried away unhealed and hidden, the crossing made under a falsehood about who really won."
@@ -1333,7 +1443,6 @@
       "suit_slug": "blades",
       "rank_slug": "seven",
       "station_slug": "compassion",
-      "description": "Seven of Blades.",
       "meaning": {
         "upright": "Conflict at the crossroads asks what is worth the cut: the lone scout choosing which blades to take and which to leave, the irreducible decision of where to aim one's force, and here, tempered by mercy, whom to spare. Strategy weighed by the heart.",
         "inverted": "The choice made in cold contempt; cunning that abandons allies, a strike planned to wound where it hurts most, the crossroads of force turned to calculated cruelty."
@@ -1350,7 +1459,6 @@
       "suit_slug": "blades",
       "rank_slug": "eight",
       "station_slug": "valor",
-      "description": "Eight of Blades.",
       "meaning": {
         "upright": "A mastered conflict: skill lived so long the blade moves like breath, the warrior whose courage and craft have fused into unstoppable disciplined motion. Force compounded into mastery, the eight-fold form executed without a wasted edge.",
         "inverted": "Mastery run to ruin; the fighter trapped in their own skill, bound by the blades they wield, courage compounded past all measure into a reckless berserk momentum that cannot stop."
@@ -1367,7 +1475,6 @@
       "suit_slug": "blades",
       "rank_slug": "nine",
       "station_slug": "justice",
-      "description": "Nine of Blades.",
       "meaning": {
         "upright": "Conflict reaching its teleology: the reckoning night when every blow struck returns to be weighed, the fulfilled accounting of a life of violence laid out for judgment. The cost finally and fully counted, nothing left off the ledger.",
         "inverted": "The reckoning evaded into torment; guilt curdled to sleepless self-persecution, the count of one's wounds and woundings turned to a private cruelty, justice owed but twisted into despair."
@@ -1384,7 +1491,6 @@
       "suit_slug": "blades",
       "rank_slug": "ten",
       "station_slug": "sacrifice",
-      "description": "Ten of Blades.",
       "meaning": {
         "upright": "Conflict completing itself: the final fall, the war that has spent everything, the last blade laid down because there is nothing left to give. An ending that, freely accepted, becomes the ground from which a new and peaceable cycle can begin.",
         "inverted": "The ending clutched and prolonged; a defeat refused, ten wounds nursed as grievance, the cycle of violence dragged on past its death because someone will not stop bleeding for it."
@@ -1401,7 +1507,6 @@
       "suit_slug": "blades",
       "rank_slug": "seeker",
       "station_slug": "honor",
-      "description": "Seeker of Blades.",
       "meaning": {
         "upright": "The newcomer to arms studying the way of the blade: the squire who watches duels and drills, learning that the sword is bound to an oath before it is bound to a hand. Fresh, irreducible eagerness to earn the right to fight well.",
         "inverted": "A reckless apprentice; the would-be warrior in love with the violence and deaf to the honor, observation that is only impatience to draw blood, the oath skipped for the swing."
@@ -1418,7 +1523,6 @@
       "suit_slug": "blades",
       "rank_slug": "knight",
       "station_slug": "spirituality",
-      "description": "Knight of Blades.",
       "meaning": {
         "upright": "Conflict as pure questing deed: the knight-errant charging toward the foe, force structured into a mission larger than the self, and lifted toward something larger than itself, the crusade undertaken as devotion. The blade in motion for a cause it believes holy.",
         "inverted": "The deed unmoored from its cause; a crusader charging at phantoms, zeal become a holy-named rampage, the questing blade tilting at windmills while certain it serves heaven."
@@ -1435,7 +1539,6 @@
       "suit_slug": "blades",
       "rank_slug": "oracle",
       "station_slug": "humility",
-      "description": "Oracle of Blades.",
       "meaning": {
         "upright": "The internalized wisdom of the blade: the old fighter who has seen enough war to know its true weight, whose mastery has gone quiet and humble, who reads a conflict and chooses, often, not to strike. Force understood so deeply it rests.",
         "inverted": "Wisdom soured to weary detachment; the veteran who has seen too much and now withholds aid, hard-won knowing curdled into grim isolation, the sword's lesson hoarded as cynicism."
@@ -1452,7 +1555,6 @@
       "suit_slug": "blades",
       "rank_slug": "paragon",
       "station_slug": "honesty",
-      "description": "Paragon of Blades.",
       "meaning": {
         "upright": "The exemplary warrior: conflict wholly mastered and wholly honest, the blade-bearer whose every cut is clean, true, and answerable, force embodied without a shred of concealment. The standard against which all fighters measure their courage.",
         "inverted": "Mastery turned merciless and bare; a paragon of arms who wields perfect skill without warmth, the truth-of-the-blade become a cold authority that cuts down lesser fighters to prove a point."
@@ -1469,7 +1571,6 @@
       "suit_slug": "runes",
       "rank_slug": "ace",
       "station_slug": "spirituality",
-      "description": "Ace of Runes.",
       "meaning": {
         "upright": "Knowledge in its seed: the first rune inscribed, the word of power emerging raw and luminous, and here it emerges already reaching past itself, the spark of lore that opens toward the numinous. Pure potential of meaning, waiting to be spoken.",
         "inverted": "The first word misused; lore seized for control before it is understood, the emergent rune copied without comprehension, knowledge that begins already serving the ego rather than the light."
@@ -1486,7 +1587,6 @@
       "suit_slug": "runes",
       "rank_slug": "two",
       "station_slug": "humility",
-      "description": "Two of Runes.",
       "meaning": {
         "upright": "Knowledge meets its first duality: two runes that qualify each other, the recognition that no word is true alone, and the lesson is that wisdom begins in admitting one rune needs another. Meaning held open between two terms.",
         "inverted": "The pair forced into false opposition; two doctrines set at war by a scholar too proud to hold both, duality flattened into a side to be won, the open question slammed shut by pride."
@@ -1503,7 +1603,6 @@
       "suit_slug": "runes",
       "rank_slug": "three",
       "station_slug": "honesty",
-      "description": "Three of Runes.",
       "meaning": {
         "upright": "Knowledge first takes form: three runes joined into a true sentence, the first spell that actually works, lore made generative, and by clear light it is honest meaning, a structure that says exactly what it is. The word becoming a working thing.",
         "inverted": "A first formula built to deceive; three runes arranged into a half-truth that functions, the working spell whose real purpose is hidden, knowledge given form already bent toward a lie."
@@ -1520,7 +1619,6 @@
       "suit_slug": "runes",
       "rank_slug": "four",
       "station_slug": "compassion",
-      "description": "Four of Runes.",
       "meaning": {
         "upright": "Knowledge stabilized into doctrine: the duality of competing readings squared into a settled canon, lore given a fixed and teachable frame, and warmed toward shelter, a doctrine meant to guide rather than to rule. Wisdom made a safe house.",
         "inverted": "Doctrine hardened against the heart; canon defended past its kindness, the settled teaching used to gatekeep and exclude, a framework of knowledge that has forgotten the souls it was built to comfort."
@@ -1537,7 +1635,6 @@
       "suit_slug": "runes",
       "rank_slug": "five",
       "station_slug": "valor",
-      "description": "Five of Runes.",
       "meaning": {
         "upright": "Knowledge under pressure: the spell cast in extremity, the irreducible test of whether the word holds when everything depends on it, and it takes nerve to speak a rune you are not sure of into the teeth of danger. Lore tried by fire.",
         "inverted": "Knowledge breaking under strain; the formula that fails at the crucial word, doctrine shattering on contact with reality, panic dressed as power, a spell flung in fear that recoils on the caster."
@@ -1554,7 +1651,6 @@
       "suit_slug": "runes",
       "rank_slug": "six",
       "station_slug": "justice",
-      "description": "Six of Runes.",
       "meaning": {
         "upright": "Knowledge restored to balance: the duality of two doctrines meeting the generative third that reconciles them, lore brought into a true and flowing accord, the gloss that makes opposing texts finally agree. Wisdom as the harmony of many truths held in balance.",
         "inverted": "Harmony imposed by erasure; a synthesis that silences the inconvenient text, reconciliation rigged to favor one school, the balanced gloss secretly weighted, accord bought by quiet injustice to a truth."
@@ -1571,7 +1667,6 @@
       "suit_slug": "runes",
       "rank_slug": "seven",
       "station_slug": "sacrifice",
-      "description": "Seven of Runes.",
       "meaning": {
         "upright": "Knowledge at the crossroads: the scholar who must choose which line of lore to pursue and which to let die, the irreducible question of what wisdom is worth the years it will cost. Some doors of knowing open only if others are given up.",
         "inverted": "The choice refused through hoarding; a scholar grasping at every text and mastering none, the crossroads of study evaded, knowledge accumulated greedily rather than chosen and paid for."
@@ -1588,7 +1683,6 @@
       "suit_slug": "runes",
       "rank_slug": "eight",
       "station_slug": "honor",
-      "description": "Eight of Runes.",
       "meaning": {
         "upright": "A mastered knowledge: lore lived so deeply it becomes effortless craft, the adept who weaves runes as naturally as speech, and bound to keep faith with the word it wields, a power true to its own oath. The eight-fold spell cast clean.",
         "inverted": "Mastery swollen into hubris; the adept compounding spells past wisdom into showpieces, knowledge worked for the glory of working it, the honored craft turned to a vain and dangerous excess."
@@ -1605,7 +1699,6 @@
       "suit_slug": "runes",
       "rank_slug": "nine",
       "station_slug": "spirituality",
-      "description": "Nine of Runes.",
       "meaning": {
         "upright": "Knowledge fulfilled: the generative word complete and turned inward, lore ripened into living wisdom that no longer needs the book, and here it opens fully to the numinous, understanding become communion. The spell that has become the self.",
         "inverted": "Fulfillment turned to barren erudition; the master who knows everything and feels nothing, wisdom so complete it has sealed itself off, the inner light mistaken for self-sufficiency."
@@ -1622,7 +1715,6 @@
       "suit_slug": "runes",
       "rank_slug": "ten",
       "station_slug": "humility",
-      "description": "Ten of Runes.",
       "meaning": {
         "upright": "Knowledge completing its cycle: the full codex finished and handed down, lore passed whole to the next student because wisdom hoarded dies. The overflowing book set humbly into other hands, an ending that seeds a beginning.",
         "inverted": "The cycle clutched; a master refusing to teach, the completed knowledge buried with its keeper, lore turned into a private monument, the inheritance withheld out of a vanity dressed as caution."
@@ -1639,7 +1731,6 @@
       "suit_slug": "runes",
       "rank_slug": "seeker",
       "station_slug": "honesty",
-      "description": "Seeker of Runes.",
       "meaning": {
         "upright": "The newcomer to lore: the novice tracing their first runes, learning that knowledge begins in honestly admitting what one does not know. Fresh, irreducible hunger to understand, met by a clear and unflinching light.",
         "inverted": "A dabbler in mysteries; the novice collecting glamours for show, study that skips the humbling work, curiosity that is really vanity, copying runes whose meaning is faked."
@@ -1656,7 +1747,6 @@
       "suit_slug": "runes",
       "rank_slug": "knight",
       "station_slug": "compassion",
-      "description": "Knight of Runes.",
       "meaning": {
         "upright": "Knowledge in active deed: the spell carried out into the world to heal, the wandering rune-worker who brings lore to where it is needed, structured wisdom set into motion as mercy. The word made an act of care.",
         "inverted": "The deed outrunning the understanding; a zealous caster meddling with half-learned spells, healing forced where it harms, the missionary of lore deaf to whether their gift is even wanted."
@@ -1673,7 +1763,6 @@
       "suit_slug": "runes",
       "rank_slug": "oracle",
       "station_slug": "valor",
-      "description": "Oracle of Runes.",
       "meaning": {
         "upright": "The internalized wisdom of lore: the seer who no longer reads but simply knows, whose long study has become direct vision, and it costs something to speak what one truly sees, unwelcome or strange. Knowledge ripened into fearless sight.",
         "inverted": "Vision withheld in dread; the oracle who sees clearly and dares not say, wisdom curdled to cryptic evasion, the seer hiding behind riddles to avoid the courage that true telling costs."
@@ -1690,7 +1779,6 @@
       "suit_slug": "runes",
       "rank_slug": "paragon",
       "station_slug": "justice",
-      "description": "Paragon of Runes.",
       "meaning": {
         "upright": "The exemplary loremaster: knowledge wholly mastered and wholly even-handed, the sage whose every word is weighed and true, wisdom embodied as the fair measure others bring their questions to. The living standard of what it means to know rightly.",
         "inverted": "Mastery turned to magisterial tyranny; a paragon of lore who wields knowledge to settle every matter their own way, the fair-minded sage become an unanswerable authority, wisdom that has stopped listening."
@@ -1707,7 +1795,6 @@
       "suit_slug": "moongates",
       "rank_slug": "ace",
       "station_slug": "compassion",
-      "description": "Ace of Moongates.",
       "meaning": {
         "upright": "Intuition in its seed: the first moongate opening, a feeling surfacing before any word for it, raw emotional truth emerging luminous, and here it emerges as tenderness, the heart's first warm pull toward another. Pure potential of connection.",
         "inverted": "A feeling mistrusted at its birth; the gate opened and fled, intuition smothered by fear, the first tender impulse curdled into wariness, connection refused before it can form."
@@ -1724,7 +1811,6 @@
       "suit_slug": "moongates",
       "rank_slug": "two",
       "station_slug": "valor",
-      "description": "Two of Moongates.",
       "meaning": {
         "upright": "Intuition's first duality: two moongates open at once, the heart pulled two ways, the choice between paths that can only be felt and not reasoned, and it takes nerve to trust a feeling and step through one. Emotional truth as a brave decision.",
         "inverted": "The heart's choice fled in cowardice; standing frozen between two gates, intuition overridden by dread, a false either/or that paralyzes, the brave feeling abandoned for safe stillness."
@@ -1741,7 +1827,6 @@
       "suit_slug": "moongates",
       "rank_slug": "three",
       "station_slug": "justice",
-      "description": "Three of Moongates.",
       "meaning": {
         "upright": "Intuition first takes form: three moongates aligning into a constellation of feeling, scattered impulses cohering into a known emotional truth, and steadied into balance, a heart that orders its feelings fairly. The first true shape of the inner life.",
         "inverted": "Feeling forced into a false pattern; three gates wrenched into alignment to justify what the heart already wants, intuition rationalized after the fact, an emotional truth rigged to seem fair."
@@ -1758,7 +1843,6 @@
       "suit_slug": "moongates",
       "rank_slug": "four",
       "station_slug": "sacrifice",
-      "description": "Four of Moongates.",
       "meaning": {
         "upright": "Intuition stabilized into a held bond: the duality of two hearts squared into a lasting tie, emotional truth given steady form, and sustained by what each gives up for it, a connection kept alive at a cost. Love made a stable, costly home.",
         "inverted": "A bond hardened into obligation; the tie preserved past its warmth, intimacy maintained by quiet resentment, the home of feeling become a cage that each keeps paying for and neither leaves."
@@ -1775,7 +1859,6 @@
       "suit_slug": "moongates",
       "rank_slug": "five",
       "station_slug": "honor",
-      "description": "Five of Moongates.",
       "meaning": {
         "upright": "Intuition under pressure: the feeling that surfaces in crisis and demands to be honored, the irreducible heartbreak or longing that cannot be reasoned away, and faced squarely, it is grief or love met without flinching. Emotional truth tested to the bone.",
         "inverted": "Feeling flooding past all bearing; emotional truth weaponized as drama, grief performed for sympathy, the heart's pressure discharged onto others, the honor of the feeling lost to its own excess."
@@ -1792,7 +1875,6 @@
       "suit_slug": "moongates",
       "rank_slug": "six",
       "station_slug": "spirituality",
-      "description": "Six of Moongates.",
       "meaning": {
         "upright": "Intuition restored to flow: the duality of two hearts meeting the generative third of shared feeling, emotional truth brought into reciprocal harmony, and opening here toward the numinous, connection that becomes communion. The heart in easy accord.",
         "inverted": "Harmony turned to enmeshment; a reciprocity so total the selves dissolve, shared feeling become a closed circuit no one can leave, communion curdled into the loss of who each once was."
@@ -1809,7 +1891,6 @@
       "suit_slug": "moongates",
       "rank_slug": "seven",
       "station_slug": "humility",
-      "description": "Seven of Moongates.",
       "meaning": {
         "upright": "Intuition at the crossroads: the many gates of possible feeling and the irreducible question of which longing to follow, the heart's direction chosen, and grounded at last, the honest admission of what one actually wants. Emotional truth at the fork.",
         "inverted": "The heart's crossroads lost to illusion; seven gates of fantasy mistaken for real paths, longing chased in circles, intuition drowned in wishful drifting, the choice never honestly made."
@@ -1826,7 +1907,6 @@
       "suit_slug": "moongates",
       "rank_slug": "eight",
       "station_slug": "honesty",
-      "description": "Eight of Moongates.",
       "meaning": {
         "upright": "A mastered intuition: feeling lived so deeply it becomes sure, swift guidance, the heart that reads a room or a road instantly, and clarified into plain sight, an emotional mastery that sees true. Intuition compounded into trustworthy sight.",
         "inverted": "Mastery run to flooding excess; intuition over-trusted into delusion, the heart compounding feeling past all checking, swift knowing become a torrent that drowns reason and others alike."
@@ -1843,7 +1923,6 @@
       "suit_slug": "moongates",
       "rank_slug": "nine",
       "station_slug": "compassion",
-      "description": "Nine of Moongates.",
       "meaning": {
         "upright": "Intuition fulfilled: emotional truth complete and turned inward, the heart ripened into a deep contentment that has everything it longed for, and warmed outward, a fullness that overflows toward others. Feeling come to its tender peak.",
         "inverted": "Fulfillment that isolates; a contentment so complete it no longer reaches out, emotional plenty turned to private self-satisfaction, the full heart closed warmly around only itself."
@@ -1860,7 +1939,6 @@
       "suit_slug": "moongates",
       "rank_slug": "ten",
       "station_slug": "valor",
-      "description": "Ten of Moongates.",
       "meaning": {
         "upright": "Intuition completing its cycle: the great passage made, a whole season of feeling fulfilled and released, the heart ready to begin again on a far shore, and it takes nerve to step through the last gate and let the old life go. Emotional truth come full circle.",
         "inverted": "The passage refused at the threshold; clinging to a completed feeling, the final gate stared at but not entered, a cycle of the heart dragged on past its end out of fear of the crossing."
@@ -1877,7 +1955,6 @@
       "suit_slug": "moongates",
       "rank_slug": "seeker",
       "station_slug": "justice",
-      "description": "Seeker of Moongates.",
       "meaning": {
         "upright": "The newcomer to feeling: the young heart learning to read its own intuition, discovering that emotional truth must be weighed as carefully as any law. Fresh, irreducible openness to the inner life, balanced by a first fairness toward one's own feelings.",
         "inverted": "A dabbler in emotion; the seeker collecting infatuations, mistaking every flutter for fate, intuition indulged without discernment, the heart's study skipped for its thrills."
@@ -1894,7 +1971,6 @@
       "suit_slug": "moongates",
       "rank_slug": "knight",
       "station_slug": "sacrifice",
-      "description": "Knight of Moongates.",
       "meaning": {
         "upright": "Intuition in active deed: the heart that acts on its feeling, the romantic who crosses worlds for love, emotional truth carried into motion as devotion, and paid for in self, a gift made for another. Feeling become a quest.",
         "inverted": "The deed outrunning the feeling; a grand romantic gesture that takes more than it gives, devotion staged for its own beauty, the lover's quest a self-serving drama dressed as sacrifice."
@@ -1911,7 +1987,6 @@
       "suit_slug": "moongates",
       "rank_slug": "oracle",
       "station_slug": "honor",
-      "description": "Oracle of Moongates.",
       "meaning": {
         "upright": "The internalized wisdom of feeling: the empath who no longer reacts but simply understands, whose long emotional life has become a deep, still knowing, and bound to keep faith with what it feels, a knowing that does not betray itself. Intuition ripened into grace.",
         "inverted": "Knowing withheld behind a veil; the empath so practiced at feeling others that they hide their own, wisdom of the heart curdled to melancholy detachment, grace turned to a dignified distance."
@@ -1928,7 +2003,6 @@
       "suit_slug": "moongates",
       "rank_slug": "paragon",
       "station_slug": "spirituality",
-      "description": "Paragon of Moongates.",
       "meaning": {
         "upright": "The exemplary heart: intuition wholly mastered and wholly whole, the soul whose feeling is so true and so generous it becomes a light others steer by, emotional truth embodied, and opening fully here to communion. The standard of a fully felt life.",
         "inverted": "Mastery turned to emotional sovereignty; a paragon of feeling who manages everyone's heart but answers to none, the empathic ideal become a subtle dominion, communion offered as a means of control."

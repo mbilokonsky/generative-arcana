@@ -27,19 +27,24 @@ function composition(numStr: string): string {
   return f.length === 1 ? `prime · ${n}` : `composite · ${n} = ${f.join(" × ")}`;
 }
 
-/** Interpolate a suit's name into a rank's generic phrasing ("the suit" / "SUIT"). */
+/** Interpolate a suit's name into a rank's generic phrasing ("{suit}" / "the suit" / "SUIT"). */
 function suitInterp(text: string, suitName: string): string {
   return text
+    .replace(/\{suit\}/g, suitName)
     .replace(/\bthe suit's\b/gi, `${suitName}'`)
     .replace(/\bthe suit\b/gi, suitName)
     .replace(/\bSUIT\b/g, suitName);
 }
 
-/** Pull the leading question from a rank's description, if it has one (numbered ranks do; faces don't). */
-function rankQuestion(desc: string | undefined, suitName: string): string | null {
-  if (!desc) return null;
-  const m = desc.match(/^[^?]*\?/);
-  return m ? suitInterp(m[0].trim(), suitName) : null;
+/** The rank's question, suit-interpolated. Prefers the v2 `question` field; falls back to parsing the description. */
+function rankQuestion(rank: { question?: string; description?: string } | undefined, suitName: string): string | null {
+  if (!rank) return null;
+  if (rank.question) return suitInterp(rank.question.trim(), suitName);
+  if (rank.description) {
+    const m = rank.description.match(/^[^?]*\?/);
+    if (m) return suitInterp(m[0].trim(), suitName);
+  }
+  return null;
 }
 
 /** Derive a concise singular label for the transversal axis, e.g. "The Eight Virtues" -> "Virtue". */
@@ -69,13 +74,13 @@ export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
   const transversal = deck?.transversal as { name?: string; stations?: Record<string, StationInfo> } | undefined;
   const station = transversal?.stations?.[card.station_slug];
   const suit = card.suit_slug ? (deck?.suits as Record<string, AxisInfo> | undefined)?.[card.suit_slug] : undefined;
-  const rank = card.rank_slug ? (deck?.ranks as Record<string, AxisInfo & { description?: string }> | undefined)?.[card.rank_slug] : undefined;
+  const rank = card.rank_slug ? (deck?.ranks as Record<string, AxisInfo & { description?: string; question?: string }> | undefined)?.[card.rank_slug] : undefined;
 
   const isMajor = card.arcana === "major";
   const suitGlyph = isMajor ? "major" : (card.suit_slug ?? "major");
   const suitName = isMajor ? "Major Arcana" : (suit?.name ?? SUIT_LABEL[card.suit_slug ?? ""] ?? card.suit_slug ?? "—");
   const rankName = isMajor ? "—" : (RANK_NAME[card.rank_slug ?? ""] ?? "—");
-  const rankQ = isMajor ? null : rankQuestion(rank?.description, suitName);
+  const rankQ = isMajor ? null : rankQuestion(rank, suitName);
   const virtueName = station?.name ?? card.station_slug;
   const virtueDesc = station?.description ?? station?.meaning.upright.slice(0, 3).join(", ");
 
@@ -137,7 +142,14 @@ export function CardModal({ card, sketch, deck, onClose }: CardModalProps) {
             <span style={{ fontWeight: 600 }}>{virtueName}</span>
             {virtueDesc && <span style={{ color: "#9aa0b0" }}> — {virtueDesc}</span>}
           </Row>
-          <Row label="Composition"><span>{composition(card.number)}</span></Row>
+          <Row label="Composition">
+            <span>{composition(card.number)}</span>
+            {card.factorization?.gloss && (
+              <span style={{ flexBasis: "100%", marginTop: 4, color: "#9aa0b0", fontWeight: 400, font: "400 13px/1.5 ui-sans-serif, system-ui" }}>
+                {card.factorization.gloss}
+              </span>
+            )}
+          </Row>
         </div>
       </div>
     </div>,

@@ -27,7 +27,8 @@ export interface CardData {
   station_slug: StationSlug;
   suit_slug?: SuitSlug;
   rank_slug?: string;
-  description?: string;
+  /** the prime/composite character; majors carry an authored gloss (v2 schema). */
+  factorization?: { character: "identity" | "prime" | "composite"; factors?: number[]; gloss: string };
   meaning: { upright: string; inverted: string };
   visuals: { detailed_description: string };
 }

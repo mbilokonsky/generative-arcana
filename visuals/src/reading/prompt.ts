@@ -44,6 +44,7 @@ export function buildPrompt(deck: DeckModule, spread: Spread, dealt: DealtCard[]
     lines.push(`${i + 1}. ${pos.name} — ${pos.prompt}`);
     lines.push(`   ${card.name} (${orient}) · ${axisSummary(card, stations)}`);
     lines.push(`   ${meaning}`);
+    if (card.factorization?.gloss) lines.push(`   Number — ${card.factorization.gloss}`);
     lines.push("");
   });
 
