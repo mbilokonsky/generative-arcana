@@ -37,11 +37,7 @@
         ]
       },
       "visual_style": "Clean geometric compositions, architectural drawings, white and cool grays with sparse accent colors, precise lines and grids, measured spaces, the aesthetic of documentation and taxonomy. Images suggest watching from windows, floor plans, organizational charts, the view from outside looking in.",
-      "index": 0,
-      "dialectic": [
-        "Observe",
-        "Mind"
-      ]
+      "index": 0
     },
     "rivers": {
       "name": "Rivers",
@@ -73,11 +69,7 @@
         ]
       },
       "visual_style": "Organic patterns and repetitive structures, loops and spirals, polyrhythmic layering, visual representations of sound waves and traffic flows, warm earth tones with rhythmic color variations. Images suggest systems in motion viewed from above—rivers, crowds, data visualizations, the dance seen but not entered.",
-      "index": 1,
-      "dialectic": [
-        "Observe",
-        "Body"
-      ]
+      "index": 1
     },
     "curiosity": {
       "name": "Curiosity",
@@ -109,11 +101,7 @@
         ]
       },
       "visual_style": "Open, conversational compositions with text and imagery in dialogue, bright optimistic palettes with yellows and sky blues, infographics that invite rather than lecture, collaborative spaces and town halls. Images suggest asking and listening—interviews, public forums, whiteboards mid-discussion, the posture of genuine wondering.",
-      "index": 2,
-      "dialectic": [
-        "Participate",
-        "Mind"
-      ]
+      "index": 2
     },
     "dance": {
       "name": "Dance",
@@ -145,11 +133,7 @@
         ]
       },
       "visual_style": "Dynamic motion blur and vibrant colors, bodies in space together, layered choreographic patterns, warm reds, oranges, and golds with electric accents, energy and heat visible. Images suggest the experience of moving—sweating dancers, bicycle wheels spinning, feet on stages, the view from inside the groove.",
-      "index": 3,
-      "dialectic": [
-        "Participate",
-        "Body"
-      ]
+      "index": 3
     }
   },
   "ranks": {
@@ -1907,6 +1891,24 @@
           "Body"
         ]
       }
-    ]
+    ],
+    "cells": {
+      "structures": [
+        "Observe",
+        "Mind"
+      ],
+      "rivers": [
+        "Observe",
+        "Body"
+      ],
+      "curiosity": [
+        "Participate",
+        "Mind"
+      ],
+      "dance": [
+        "Participate",
+        "Body"
+      ]
+    }
   }
 }

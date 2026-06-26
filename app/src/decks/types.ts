@@ -3,9 +3,12 @@ import type { Spread } from "./spreads";
 
 /** One pole-pair axis of the suit cross-product, e.g. { name: "Realm", poles: ["World","Soul"] }. */
 export interface DialecticAxis { name: string; poles: [string, string] }
-/** Present when the four suits are a cross-product of two dialectics; each Suit carries its
- *  `dialectic: [poleOfAxis0, poleOfAxis1]` coordinates. */
-export interface SuitDialectic { axes: [DialecticAxis, DialecticAxis] }
+/** Optional, deck-level: present only when the suits are a cross-product of two dialectics. Names the
+ *  two axes and places each suit (`cells[suit_slug] = [poleOfAxis0, poleOfAxis1]`). */
+export interface SuitDialectic {
+  axes: [DialecticAxis, DialecticAxis];
+  cells: Record<string, [string, string]>;
+}
 
 /** The raw shape of a deck's deck.json (as emitted by the generative-arcana skill). */
 export interface DeckDataFile {

@@ -34,11 +34,6 @@ interface Suit {
   symbol: { name: string; description: string; svg: string }  // glyph, stamped on the card
   meaning: { upright: string[]; inverted: string[] }          // 3–6 each; a generative palette
   visual_style: string                           // colors, perspective, art movement, composition
-  dialectic?: [string, string]                   // OPTIONAL: when the four suits are a cross-product of two
-                                                 //   dialectics (the `suits/dialectical` strategy), this suit's
-                                                 //   pole on axis 0 and axis 1 — e.g. ["World","Throne"]. Each
-                                                 //   pole must be one of Deck.dialectic.axes[i].poles. Omit for
-                                                 //   non-dialectical suit sets (e.g. `suits/manual`).
 }
 
 // RANK — grid axis. DECLARE. 14 MINOR ranks (majors have no rank layer).
@@ -133,14 +128,17 @@ interface MajorArcanaCard extends Card {
   // slug = `major-${number}`  (no suit_slug, no rank_slug)
 }
 
-// Optional: present when the four suits were built as a cross-product of two dialectics
-// (the `suits/dialectical` strategy). Names the two axes so a consumer can lay the suits out as a
-// labeled 2×2; each Suit then carries its `dialectic` coordinates. Omit for manual suit sets.
+// Optional, deck-level. Present ONLY when the four suits were built as a cross-product of two
+// dialectics (the `suits/dialectical` strategy). Names the two axes and places each suit in the
+// grid, so a consumer can lay the suits out as a labeled 2×2. Omit entirely for other suit
+// strategies (e.g. `suits/manual`) — it is the single switch for "is this deck dialectical?".
 interface SuitDialectic {
   axes: [
-    { name: string; poles: [string, string] },   // axis 0 — e.g. { name: "Realm",  poles: ["World","Soul"] }
-    { name: string; poles: [string, string] },    // axis 1 — e.g. { name: "Way",    poles: ["Throne","Road"] }
+    { name: string; poles: [string, string] },   // axis 0 — e.g. { name: "Realm", poles: ["World","Soul"] }
+    { name: string; poles: [string, string] },   // axis 1 — e.g. { name: "Way",   poles: ["Throne","Road"] }
   ]
+  cells: { [suit_slug: string]: [string, string] }  // each suit's pole on axis 0 and axis 1, e.g.
+                                                 //   { crowns: ["World","Throne"], … } — poles must match axes[].poles
 }
 
 interface Deck {

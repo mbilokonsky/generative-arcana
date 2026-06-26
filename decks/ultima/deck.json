@@ -36,11 +36,7 @@
           "the realm mistaken for the self"
         ]
       },
-      "visual_style": "Heraldic and civic: gold leaf and royal blue over parchment grounds, manuscript-illumination borders, frontal symmetrical compositions like a coin or a seal; the architecture of towns and thrones rendered in warm, ordered light.",
-      "dialectic": [
-        "World",
-        "Throne"
-      ]
+      "visual_style": "Heraldic and civic: gold leaf and royal blue over parchment grounds, manuscript-illumination borders, frontal symmetrical compositions like a coin or a seal; the architecture of towns and thrones rendered in warm, ordered light."
     },
     "blades": {
       "index": 1,
@@ -70,11 +66,7 @@
           "fear armored as aggression"
         ]
       },
-      "visual_style": "Stark and kinetic: iron grays and blood-iron reds against cave-dark or storm skies, high contrast, diagonal motion-lines, the woodcut bite of early game manuals; figures caught mid-strike or mid-flight.",
-      "dialectic": [
-        "World",
-        "Road"
-      ]
+      "visual_style": "Stark and kinetic: iron grays and blood-iron reds against cave-dark or storm skies, high contrast, diagonal motion-lines, the woodcut bite of early game manuals; figures caught mid-strike or mid-flight."
     },
     "runes": {
       "index": 2,
@@ -104,11 +96,7 @@
           "certainty without wisdom"
         ]
       },
-      "visual_style": "Illuminated-manuscript mysticism: deep indigo and gold-ink on vellum, angular runic glyphs glowing in the margins, flattened iconographic space, candle-lit interiors; the aesthetic of a sacred book.",
-      "dialectic": [
-        "Soul",
-        "Throne"
-      ]
+      "visual_style": "Illuminated-manuscript mysticism: deep indigo and gold-ink on vellum, angular runic glyphs glowing in the margins, flattened iconographic space, candle-lit interiors; the aesthetic of a sacred book."
     },
     "moongates": {
       "index": 3,
@@ -138,11 +126,7 @@
           "longing mistaken for love"
         ]
       },
-      "visual_style": "Luminous nocturne: phosphor reds and silver-blue against indigo night, two moons in the sky, soft glows and reflective water, rounded haloed forms; the shimmer of an opening gate.",
-      "dialectic": [
-        "Soul",
-        "Road"
-      ]
+      "visual_style": "Luminous nocturne: phosphor reds and silver-blue against indigo night, two moons in the sky, soft glows and reflective water, rounded haloed forms; the shimmer of an opening gate."
     }
   },
   "ranks": {
@@ -2044,6 +2028,24 @@
           "Road"
         ]
       }
-    ]
+    ],
+    "cells": {
+      "crowns": [
+        "World",
+        "Throne"
+      ],
+      "blades": [
+        "World",
+        "Road"
+      ],
+      "runes": [
+        "Soul",
+        "Throne"
+      ],
+      "moongates": [
+        "Soul",
+        "Road"
+      ]
+    }
   }
 }

@@ -16,7 +16,7 @@ import { Svg, omega, facVar, facWord } from "@/components/cardMeta";
 import type { DeckDataFile } from "@/decks/types";
 
 type Meaning = { upright?: string[]; inverted?: string[] };
-type Suit = { index: number; name: string; slug: string; description: string; symbol?: { svg?: string }; meaning?: Meaning; visual_style?: string; dialectic?: [string, string] };
+type Suit = { index: number; name: string; slug: string; description: string; symbol?: { svg?: string }; meaning?: Meaning; visual_style?: string };
 type Rank = { index: number; numeric_value: number; name: string; symbol?: string; description?: string; question?: string };
 type Station = { index: number; slug: string; name: string; description?: string; meaning?: Meaning; visual_motif?: string };
 type Transversal = { name: string; description: string; ordering_rationale?: string; suit_stride?: number; stations: Record<string, Station> };
@@ -104,10 +104,10 @@ type DialecticView = { rows: string[]; cols: string[]; cells: Suit[][]; rowAxis?
  *  `dialectic` coordinates; falls back to parsing a leading "A x B." in each description (old decks). */
 function dialectic(deck: DeckDataFile, suits: Suit[]): DialecticView | null {
   const dx = deck.dialectic;
-  if (dx?.axes?.length === 2 && dx.axes[0].poles?.length === 2 && dx.axes[1].poles?.length === 2) {
+  if (dx?.axes?.length === 2 && dx.axes[0].poles?.length === 2 && dx.axes[1].poles?.length === 2 && dx.cells) {
     const [a0, a1] = dx.axes;
     const cells = a0.poles.map((r) =>
-      a1.poles.map((c) => suits.find((s) => s.dialectic && s.dialectic[0] === r && s.dialectic[1] === c)),
+      a1.poles.map((c) => suits.find((s) => { const pos = dx.cells[s.slug]; return pos && pos[0] === r && pos[1] === c; })),
     );
     if (!cells.flat().some((x) => !x)) {
       return { rows: a0.poles, cols: a1.poles, cells: cells as Suit[][], rowAxis: a0.name, colAxis: a1.name };
