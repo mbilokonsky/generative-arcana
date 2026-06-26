@@ -1,9 +1,12 @@
 /**
- * The Ultima Tarot deck. Importing this module:
+ * The Ultima Tarot deck — the app's renderer for it. Importing this module:
  *   1. registers all implemented card sketches (side effect of ./cards)
  *   2. registers the deck manifest into the global deck registry
+ *
+ * The canonical DATA lives in the top-level corpus (`/decks/ultima/deck.json`, via `@decks`);
+ * the card sketches here are this app's *visual pack* for that data, paired by deck id.
  */
-import deckJson from "./deck.json";
+import deckJson from "@decks/ultima/deck.json";
 import { registerDeck } from "../registry";
 import type { DeckDataFile, DeckModule } from "../types";
 import type { CardData } from "@/runtime/types";

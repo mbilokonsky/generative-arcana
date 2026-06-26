@@ -12,7 +12,10 @@
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "paths": { "@/*": ["src/*"] }
+    "paths": {
+      "@/*": ["src/*"],
+      "@decks/*": ["../decks/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "../decks/**/*.json"]
 }
