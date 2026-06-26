@@ -1,91 +1,109 @@
 /**
  * <AxisExplorer> — the viewer's peek behind the curtain. Every card sits at the intersection of four
- * axes; this tabbed component lets the reader bounce between them and see, from the deck's own
- * metadata, what each axis contributes and what each point on it means.
+ * axes; this tabbed panel lets the reader bounce between them and see, from the deck's own metadata,
+ * what each axis contributes and what each point on it means.
  *
- *   Axis 1 · Suits             — the grid axis, declared in line & color (a 2×2 if it's dialectical)
- *   Axis 2 · Ranks             — the other grid axis, a linear progression (A = 1 …)
- *   Axis 3 · <transversal>     — the substrate axis: a named cycle laid across the grid
- *   Axis 4 · Prime Factorization — invariant: the character latent in every card's number
+ *   Axis 1 · Suits        — the grid axis (a dialectical 2×2 if the deck encodes one) + the Major
+ *                           Arcana, which carries no suit yet functions as one.
+ *   Axis 2 · Ranks        — two systems: the minor ranks (1–14) and the majors' own numbering (0–21).
+ *   Axis 3 · Transversal  — the substrate axis: a named cycle laid across the grid.
+ *   Axis 4 · Prime Factorization — the invariant character latent in every card's number.
+ *
+ * Built mobile-first and keyboard-accessible (roles tablist/tab/tabpanel, arrow-key nav).
  */
-import { useState, Fragment } from "react";
+import { useState, useEffect, useRef, Fragment } from "react";
 import { Svg } from "@/components/cardMeta";
 import type { DeckDataFile } from "@/decks/types";
 
 type Meaning = { upright?: string[]; inverted?: string[] };
 type Suit = { index: number; name: string; slug: string; description: string; symbol?: { svg?: string }; meaning?: Meaning; visual_style?: string };
-type Rank = { index: number; numeric_value: number; name: string; symbol?: string; description?: string; question?: string; meaning?: Meaning };
-type Station = { index: number; slug: string; name: string; description?: string; symbol?: { svg?: string }; meaning?: Meaning; visual_motif?: string };
+type Rank = { index: number; numeric_value: number; name: string; symbol?: string; description?: string; question?: string };
+type Station = { index: number; slug: string; name: string; description?: string; meaning?: Meaning; visual_motif?: string };
 type Transversal = { name: string; description: string; ordering_rationale?: string; suit_stride?: number; stations: Record<string, Station> };
-type Major = { story?: string; visual_style?: string };
+type MajorArcana = { story?: string; visual_style?: string; symbol?: { svg?: string } };
+type Card = { arcana: string; number: string; name: string };
 
-const GOLD = "#c9a44a";
-const TEXT = "#c7c2b2";
-const MUTE = "#9aa0b0";
-const PANEL = "#13131f";
-const LINE = "rgba(255,255,255,0.08)";
+const GOLD = "#c9a44a", TEXT = "#c7c2b2", MUTE = "#9aa0b0", PANEL = "#13131f", LINE = "rgba(255,255,255,0.08)";
+
+function useNarrow(bp = 680) {
+  const [n, setN] = useState(typeof window !== "undefined" && window.innerWidth < bp);
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width:${bp - 1}px)`);
+    const h = () => setN(mq.matches); h();
+    mq.addEventListener("change", h); return () => mq.removeEventListener("change", h);
+  }, [bp]);
+  return n;
+}
 
 export function AxisExplorer({ deck }: { deck: DeckDataFile }) {
-  const tx = deck.transversal as Transversal;
-  const tabs = ["Suits", "Ranks", tx?.name ?? "Transversal", "Prime Factorization"];
+  const tabs = ["Suits", "Ranks", "Transversal", "Prime Factorization"];
   const [active, setActive] = useState(0);
+  const refs = useRef<(HTMLButtonElement | null)[]>([]);
+
+  const onKey = (e: React.KeyboardEvent) => {
+    let next = active;
+    if (e.key === "ArrowRight") next = (active + 1) % tabs.length;
+    else if (e.key === "ArrowLeft") next = (active - 1 + tabs.length) % tabs.length;
+    else if (e.key === "Home") next = 0;
+    else if (e.key === "End") next = tabs.length - 1;
+    else return;
+    e.preventDefault(); setActive(next); refs.current[next]?.focus();
+  };
 
   return (
     <div>
-      {/* tab bar */}
-      <div role="tablist" style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 18 }}>
+      <div role="tablist" aria-label="The four axes" onKeyDown={onKey}
+        style={{ display: "flex", gap: 6, overflowX: "auto", paddingBottom: 4, marginBottom: 18, scrollbarWidth: "none" }}>
         {tabs.map((label, i) => {
           const on = i === active;
           return (
-            <button key={i} role="tab" aria-selected={on} onClick={() => setActive(i)}
+            <button key={i} role="tab" id={`axis-tab-${i}`} aria-selected={on} aria-controls={`axis-panel-${i}`}
+              tabIndex={on ? 0 : -1} ref={(el) => (refs.current[i] = el)} onClick={() => setActive(i)}
               style={{
-                all: "unset", cursor: "pointer", padding: "9px 13px", borderRadius: 9,
-                font: "600 13px/1.1 ui-sans-serif, system-ui",
-                background: on ? "#e9dcc0" : "rgba(255,255,255,0.04)",
-                color: on ? "#0b0b14" : TEXT, border: `1px solid ${on ? "transparent" : LINE}`,
+                all: "unset", cursor: "pointer", whiteSpace: "nowrap", padding: "10px 14px", borderRadius: 9,
+                font: "600 13px/1.1 ui-sans-serif, system-ui", outlineOffset: 2,
+                background: on ? "#e9dcc0" : "rgba(255,255,255,0.04)", color: on ? "#0b0b14" : TEXT,
+                border: `1px solid ${on ? "transparent" : LINE}`,
               }}>
-              <span style={{ opacity: on ? 0.55 : 0.5, fontWeight: 700 }}>Axis {i + 1}</span>
-              <span style={{ margin: "0 6px", opacity: 0.4 }}>·</span>{label}
+              <span style={{ opacity: 0.5, fontWeight: 700 }}>{i + 1}</span>
+              <span style={{ margin: "0 7px", opacity: 0.35 }}>·</span>{label}
             </button>
           );
         })}
       </div>
 
-      {active === 0 && <SuitsPanel deck={deck} />}
-      {active === 1 && <RanksPanel deck={deck} />}
-      {active === 2 && <TransversalPanel tx={tx} suitCount={Object.keys(deck.suits).length} />}
-      {active === 3 && <PrimePanel deck={deck} />}
+      <div role="tabpanel" id={`axis-panel-${active}`} aria-labelledby={`axis-tab-${active}`}>
+        {active === 0 && <SuitsPanel deck={deck} />}
+        {active === 1 && <RanksPanel deck={deck} />}
+        {active === 2 && <TransversalPanel tx={deck.transversal as Transversal} suitCount={Object.keys(deck.suits).length} />}
+        {active === 3 && <PrimePanel deck={deck} />}
+      </div>
     </div>
   );
 }
 
 // ── shared bits ───────────────────────────────────────────────────────────────
 function Lead({ children }: { children: React.ReactNode }) {
-  return <p style={{ ...body, color: MUTE, margin: "0 0 16px", maxWidth: 760 }}>{children}</p>;
+  return <p style={{ ...body, color: MUTE, margin: "0 0 18px", maxWidth: 720 }}>{children}</p>;
 }
-function Chips({ items, tone }: { items?: string[]; tone: "up" | "down" }) {
-  if (!items?.length) return null;
-  const c = tone === "up" ? GOLD : "#7c8295";
+function Means({ m }: { m?: Meaning }) {
+  if (!m?.upright?.length && !m?.inverted?.length) return null;
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 6 }}>
-      {items.map((t, i) => (
-        <span key={i} style={{ font: "400 11px/1.3 ui-sans-serif, system-ui", color: c, background: "rgba(255,255,255,0.04)", border: `1px solid ${LINE}`, borderRadius: 6, padding: "2px 7px" }}>{t}</span>
-      ))}
+    <div style={{ marginTop: 8, font: "400 12px/1.55 ui-sans-serif, system-ui" }}>
+      {m.upright?.length ? <div><span style={{ color: GOLD, fontWeight: 600 }}>Upright </span><span style={{ color: TEXT }}>{m.upright.join(" · ")}</span></div> : null}
+      {m.inverted?.length ? <div><span style={{ color: "#8a7f6e", fontWeight: 600 }}>Shadow </span><span style={{ color: MUTE }}>{m.inverted.join(" · ")}</span></div> : null}
     </div>
   );
 }
 
 // ── Axis 1: Suits ─────────────────────────────────────────────────────────────
-/** Detect a leading "A x B." dialectic in every suit description; if all four resolve to a clean
- *  2×2 (two distinct A's × two distinct B's), return the axis labels + cell map. */
 function dialectic(suits: Suit[]) {
   const parsed = suits.map((s) => {
     const m = s.description.match(/^\s*([A-Za-z]+)\s*[x×]\s*([A-Za-z]+)\b/);
     return m ? { s, a: m[1], b: m[2] } : null;
   });
   if (parsed.some((p) => !p)) return null;
-  const as = [...new Set(parsed.map((p) => p!.a))];
-  const bs = [...new Set(parsed.map((p) => p!.b))];
+  const as = [...new Set(parsed.map((p) => p!.a))], bs = [...new Set(parsed.map((p) => p!.b))];
   if (as.length !== 2 || bs.length !== 2 || suits.length !== 4) return null;
   const at = (a: string, b: string) => parsed.find((p) => p!.a === a && p!.b === b)?.s;
   const cells = as.map((a) => bs.map((b) => at(a, b)));
@@ -97,29 +115,31 @@ function SuitCard({ s }: { s: Suit }) {
   return (
     <div style={panel}>
       <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-        <span style={{ color: "#d8b24a" }}>{s.symbol?.svg ? <Svg svg={s.symbol.svg} size={24} /> : null}</span>
+        {s.symbol?.svg && <span style={{ color: "#d8b24a" }}><Svg svg={s.symbol.svg} size={24} /></span>}
         <span style={{ font: "600 16px/1 ui-serif, Georgia, serif" }}>{s.name}</span>
       </div>
       <p style={{ ...body, margin: "9px 0 0" }}>{s.description}</p>
-      <Chips items={s.meaning?.upright} tone="up" />
-      <Chips items={s.meaning?.inverted} tone="down" />
-      {s.visual_style && <p style={{ ...body, color: MUTE, fontStyle: "italic", margin: "9px 0 0", fontSize: 12.5 }}>{s.visual_style}</p>}
+      <Means m={s.meaning} />
+      {s.visual_style && <p style={{ ...mutedItalic, margin: "9px 0 0" }}>{s.visual_style}</p>}
     </div>
   );
 }
 
 function SuitsPanel({ deck }: { deck: DeckDataFile }) {
   const suits = (Object.values(deck.suits) as Suit[]).sort((a, b) => a.index - b.index);
+  const ma = deck.major_arcana as MajorArcana | undefined;
   const di = dialectic(suits);
+  const narrow = useNarrow();
   return (
     <div>
       <Lead>
-        The first grid axis. Each suit is one quadrant of the deck's space, <strong>declared</strong> openly
-        in line and color — it stamps its glyph on every minor card and lends its palette of meanings.
-        {di && <> Here the four are a true cross-product: <strong>{di.rows.join(" / ")}</strong> against <strong>{di.cols.join(" / ")}</strong>.</>}
+        The first grid axis. Each suit is a quadrant of the deck's space, <strong>declared</strong> in line
+        and color — it stamps its glyph on every minor card and lends a palette of meanings.
+        {di && <> Here the four form a true cross-product: <strong>{di.rows.join(" / ")}</strong> against <strong>{di.cols.join(" / ")}</strong>.</>}
       </Lead>
-      {di ? (
-        <div style={{ display: "grid", gridTemplateColumns: "auto 1fr 1fr", gap: 10, alignItems: "stretch" }}>
+
+      {di && !narrow ? (
+        <div style={{ display: "grid", gridTemplateColumns: "20px 1fr 1fr", gap: 10, alignItems: "stretch" }}>
           <div />
           {di.cols.map((b) => <AxisLabel key={b} text={b} />)}
           {di.rows.map((a, ri) => (
@@ -130,42 +150,74 @@ function SuitsPanel({ deck }: { deck: DeckDataFile }) {
           ))}
         </div>
       ) : (
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 12 }}>
-          {suits.map((s) => <SuitCard key={s.slug} s={s} />)}
-        </div>
+        <div style={grid(300)}>{suits.map((s) => <SuitCard key={s.slug} s={s} />)}</div>
       )}
+
+      {/* The Major Arcana — no suit, yet functions as one */}
+      <div style={{ ...panel, marginTop: 14, borderColor: "rgba(201,164,74,0.28)" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+          {ma?.symbol?.svg && <span style={{ color: "#d8b24a" }}><Svg svg={ma.symbol.svg} size={24} /></span>}
+          <span style={{ font: "600 16px/1 ui-serif, Georgia, serif" }}>The Major Arcana</span>
+          <span style={{ font: "600 10px/1 ui-sans-serif, system-ui", color: GOLD, letterSpacing: "0.08em", textTransform: "uppercase", border: `1px solid ${LINE}`, borderRadius: 5, padding: "3px 6px" }}>no suit</span>
+        </div>
+        <p style={{ ...body, margin: "9px 0 0" }}>
+          The 22 trumps carry no suit and no rank — yet the Major Arcana <em>functions</em> as a fifth suit:
+          a register that contributes a single <strong>visual style</strong> across all of its cards, exactly
+          as a suit does for its minors. (Their place on the other three axes is set by their number alone.)
+        </p>
+        {ma?.visual_style && <p style={{ ...mutedItalic, margin: "9px 0 0" }}>{ma.visual_style}</p>}
+      </div>
     </div>
   );
 }
 function AxisLabel({ text, vertical }: { text: string; vertical?: boolean }) {
   return (
-    <div style={{ display: "grid", placeItems: "center", color: GOLD, font: "700 11px/1 ui-sans-serif, system-ui", letterSpacing: "0.12em", textTransform: "uppercase", writingMode: vertical ? "vertical-rl" : undefined, transform: vertical ? "rotate(180deg)" : undefined, padding: vertical ? "0 2px" : "0 0 4px" }}>{text}</div>
+    <div style={{ display: "grid", placeItems: "center", color: GOLD, font: "700 11px/1 ui-sans-serif, system-ui", letterSpacing: "0.12em", textTransform: "uppercase", writingMode: vertical ? "vertical-rl" : undefined, transform: vertical ? "rotate(180deg)" : undefined, padding: vertical ? 0 : "0 0 4px" }}>{text}</div>
   );
 }
 
 // ── Axis 2: Ranks ─────────────────────────────────────────────────────────────
 function RanksPanel({ deck }: { deck: DeckDataFile }) {
   const ranks = (Object.values(deck.ranks) as Rank[]).sort((a, b) => a.index - b.index);
+  const majors = (Object.values(deck.cards) as Card[])
+    .filter((c) => c.arcana === "major")
+    .map((c) => ({ n: parseInt(c.number, 10), name: c.name }))
+    .sort((a, b) => a.n - b.n);
   return (
     <div>
       <Lead>
-        The second grid axis — {ranks.length} frameworks, each an abstract question or stage that every
-        suit answers in its own way. Also <strong>declared</strong>: a rank stamps its number (A = 1) and
-        lends its sense. They run as a progression from seed to fullness, then through the face ranks.
+        Rank works differently for the two arcana. <strong>Minor cards</strong> share {ranks.length} ranks —
+        a progression each suit answers in its own way. <strong>Major cards</strong> have no rank at all;
+        instead each is numbered <strong>0–{majors.length ? majors[majors.length - 1].n : 21}</strong>, its
+        fixed position in the arc. Both numbering systems are shown below.
       </Lead>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+
+      <SubHead>Minor ranks · 1–14</SubHead>
+      <div style={{ display: "flex", flexDirection: "column", marginBottom: 26 }}>
         {ranks.map((r) => (
-          <div key={r.index} style={{ display: "flex", gap: 14, padding: "12px 0", borderTop: `1px solid ${LINE}` }}>
-            <div style={{ flex: "0 0 44px", textAlign: "center" }}>
-              <div style={{ font: "700 20px/1 ui-serif, Georgia, serif", color: GOLD }}>{r.symbol || r.numeric_value}</div>
+          <div key={r.index} style={{ display: "flex", gap: 14, padding: "11px 0", borderTop: `1px solid ${LINE}` }}>
+            <div style={{ flex: "0 0 40px", textAlign: "center" }}>
+              <div style={{ font: "700 19px/1 ui-serif, Georgia, serif", color: GOLD }}>{r.symbol || r.numeric_value}</div>
               <div style={{ font: "400 10px/1.4 ui-sans-serif, system-ui", color: MUTE }}>{r.numeric_value}</div>
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div style={{ font: "600 15px/1.2 ui-serif, Georgia, serif", color: "#e9dcc0" }}>{r.name}</div>
-              {r.question && <div style={{ ...body, color: GOLD, fontStyle: "italic", margin: "3px 0 0" }}>{r.question.replace(/\{suit\}/g, "the suit")}</div>}
+              {r.question && <div style={{ ...body, color: GOLD, fontStyle: "italic", margin: "3px 0 0", fontSize: 13 }}>{r.question.replace(/\{suit\}/g, "the suit")}</div>}
               {r.description && <p style={{ ...body, margin: "4px 0 0" }}>{r.description}</p>}
-              <Chips items={r.meaning?.upright} tone="up" />
             </div>
+          </div>
+        ))}
+      </div>
+
+      <SubHead>Major arcana · 0–{majors.length ? majors[majors.length - 1].n : 21}</SubHead>
+      <p style={{ ...body, color: MUTE, margin: "0 0 10px", fontSize: 13 }}>
+        The majors' own sequence — each number is a named station of the journey, not a suit rank.
+      </p>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: "4px 16px" }}>
+        {majors.map((m) => (
+          <div key={m.n} style={{ display: "flex", gap: 9, padding: "5px 0", font: "400 13px/1.4 ui-sans-serif, system-ui" }}>
+            <span style={{ flex: "0 0 22px", textAlign: "right", color: GOLD, fontWeight: 700 }}>{m.n}</span>
+            <span style={{ color: TEXT }}>{m.name}</span>
           </div>
         ))}
       </div>
@@ -175,34 +227,35 @@ function RanksPanel({ deck }: { deck: DeckDataFile }) {
 
 // ── Axis 3: Transversal ───────────────────────────────────────────────────────
 function TransversalPanel({ tx, suitCount }: { tx: Transversal; suitCount: number }) {
+  void suitCount;
   const stations = (Object.values(tx.stations) as Station[]).sort((a, b) => a.index - b.index);
   const k = tx.suit_stride ?? 1;
   return (
     <div>
       <Lead>
-        The third axis is a <strong>substrate</strong>, not a grid line: a single named cycle —{" "}
-        <strong>{tx.name}</strong> — laid <em>across</em> the suit×rank grid so it refuses to align with it.
-        Unlike suits and ranks it is never declared; it is <strong>sublimated</strong> into each card's
-        palette, light and mood. {tx.description}
+        The third axis is a <strong>substrate</strong>, not a grid line: a single named cycle laid{" "}
+        <em>across</em> the suit×rank grid so it refuses to align with it. Unlike suits and ranks it is
+        never declared — it's <strong>sublimated</strong> into each card's palette, light and mood. This
+        deck's choice is <strong style={{ color: GOLD }}>{tx.name}</strong>.
       </Lead>
-      {tx.ordering_rationale && <p style={{ ...body, color: MUTE, fontStyle: "italic", maxWidth: 760, margin: "0 0 14px" }}>{tx.ordering_rationale}</p>}
-      <p style={{ ...body, color: MUTE, margin: "0 0 16px" }}>
-        The cycle has <strong>{stations.length}</strong> stations; each card lands on one by a fixed walk
-        (suit stride {k}{k === 1 ? ", the cleanest diagonal" : ""}), so the same station recurs across
-        suits and ranks, binding cross-cutting families of cards.
+      <p style={{ ...body, margin: "0 0 12px" }}>{tx.description}</p>
+      {tx.ordering_rationale && <p style={{ ...mutedItalic, maxWidth: 720, margin: "0 0 14px" }}>{tx.ordering_rationale}</p>}
+      <p style={{ ...body, color: MUTE, margin: "0 0 16px", fontSize: 13 }}>
+        {stations.length} stations; each card lands on one by a fixed walk (suit stride {k}{k === 1 ? ", the cleanest diagonal" : ""}),
+        so a station recurs across suits and ranks — binding cross-cutting families of cards.
       </p>
+
       {/* the cycle, mapped out */}
       <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 6, marginBottom: 18 }}>
         {stations.map((st, i) => (
           <Fragment key={st.slug}>
-            <span style={{ font: "600 12px/1 ui-sans-serif, system-ui", color: GOLD, background: "rgba(201,164,74,0.12)", border: `1px solid rgba(201,164,74,0.3)`, borderRadius: 20, padding: "5px 10px" }}>
-              {st.index}. {st.name}
-            </span>
-            <span style={{ color: MUTE }}>{i < stations.length - 1 ? "→" : "↺"}</span>
+            <span style={{ font: "600 12px/1 ui-sans-serif, system-ui", color: GOLD, background: "rgba(201,164,74,0.12)", border: "1px solid rgba(201,164,74,0.3)", borderRadius: 20, padding: "5px 10px" }}>{st.index}. {st.name}</span>
+            <span style={{ color: MUTE }} aria-hidden>{i < stations.length - 1 ? "→" : "↺"}</span>
           </Fragment>
         ))}
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 12 }}>
+
+      <div style={grid(280)}>
         {stations.map((st) => (
           <div key={st.slug} style={panel}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
@@ -210,8 +263,8 @@ function TransversalPanel({ tx, suitCount }: { tx: Transversal; suitCount: numbe
               <span style={{ font: "600 15px/1 ui-serif, Georgia, serif" }}>{st.name}</span>
             </div>
             {st.description && <p style={{ ...body, margin: "7px 0 0" }}>{st.description}</p>}
-            {st.visual_motif && <p style={{ ...body, color: MUTE, fontStyle: "italic", margin: "7px 0 0", fontSize: 12.5 }}>{st.visual_motif}</p>}
-            <Chips items={st.meaning?.upright} tone="up" />
+            {st.visual_motif && <p style={{ ...mutedItalic, margin: "7px 0 0" }}>{st.visual_motif}</p>}
+            <Means m={st.meaning} />
           </div>
         ))}
       </div>
@@ -241,38 +294,34 @@ function NumCell({ n }: { n: number }) {
 }
 
 function PrimePanel({ deck }: { deck: DeckDataFile }) {
-  const cards = Object.values(deck.cards) as { arcana: string; number: string }[];
+  const cards = Object.values(deck.cards) as Card[];
   const majors = [...new Set(cards.filter((c) => c.arcana === "major").map((c) => parseInt(c.number, 10)))].sort((a, b) => a - b);
   const minors = Array.from({ length: 14 }, (_, i) => i + 1);
   return (
     <div>
       <Lead>
         The fourth axis isn't woven into the deck's space — it's <strong>intrinsic</strong> to each card's
-        number, and it's the same in every deck. Every number has a factorization, and that gives the card
-        a character: an <strong style={{ color: CHAR_COLOR.identity }}>identity</strong> (0 the void, 1 the
-        unit of agency), a <strong style={{ color: CHAR_COLOR.prime }}>prime</strong> (irreducible — it
-        simply <em>is</em>), or a <strong style={{ color: CHAR_COLOR.composite }}>composite</strong> (derived
-        from its factors). Powers intensify (x² stabilizes, x³ masters or overreaches); products combine two
+        number, and the same in every deck. Every number has a factorization, giving the card a character:
+        an <strong style={{ color: CHAR_COLOR.identity }}>identity</strong> (0 the void, 1 the unit of
+        agency), a <strong style={{ color: CHAR_COLOR.prime }}>prime</strong> (irreducible — it simply{" "}
+        <em>is</em>), or a <strong style={{ color: CHAR_COLOR.composite }}>composite</strong> (derived from
+        its factors). Powers intensify (x² stabilizes, x³ masters or overreaches); products combine two
         energies. It rides under every card as a quiet undertone — the fourth quantum number.
       </Lead>
       <Legend />
-      <Group title="Major Arcana" subtitle="numbered by position, 0 upward">
-        {majors.map((n) => <NumCell key={n} n={n} />)}
-      </Group>
-      <Group title="Minor Arcana" subtitle="each suit's ranks, 1–14">
-        {minors.map((n) => <NumCell key={n} n={n} />)}
-      </Group>
+      <Group title="Major arcana" subtitle="numbered by position, 0 upward">{majors.map((n) => <NumCell key={n} n={n} />)}</Group>
+      <Group title="Minor arcana" subtitle="each suit's ranks, 1–14">{minors.map((n) => <NumCell key={n} n={n} />)}</Group>
     </div>
   );
 }
 function Legend() {
-  const items: [string, string][] = [["identity", "0, 1 — the void & the unit"], ["prime", "irreducible"], ["composite", "a product of primes"]];
+  const items: [keyof typeof CHAR_COLOR, string][] = [["identity", "0, 1 — the void & the unit"], ["prime", "irreducible"], ["composite", "a product of primes"]];
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: 14, margin: "0 0 18px" }}>
       {items.map(([k, label]) => (
         <span key={k} style={{ display: "flex", alignItems: "center", gap: 6, font: "400 12px/1 ui-sans-serif, system-ui", color: TEXT }}>
-          <span style={{ width: 10, height: 10, borderRadius: 3, background: CHAR_COLOR[k as keyof typeof CHAR_COLOR] }} />
-          <strong style={{ color: CHAR_COLOR[k as keyof typeof CHAR_COLOR], textTransform: "capitalize" }}>{k}</strong>
+          <span style={{ width: 10, height: 10, borderRadius: 3, background: CHAR_COLOR[k] }} />
+          <strong style={{ color: CHAR_COLOR[k], textTransform: "capitalize" }}>{k}</strong>
           <span style={{ color: MUTE }}>· {label}</span>
         </span>
       ))}
@@ -282,11 +331,17 @@ function Legend() {
 function Group({ title, subtitle, children }: { title: string; subtitle: string; children: React.ReactNode }) {
   return (
     <div style={{ marginBottom: 18 }}>
-      <div style={{ font: "600 12px/1 ui-sans-serif, system-ui", color: MUTE, letterSpacing: "0.06em", textTransform: "uppercase" }}>{title} <span style={{ opacity: 0.6, textTransform: "none", letterSpacing: 0 }}>— {subtitle}</span></div>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 10 }}>{children}</div>
+      <SubHead>{title} <span style={{ opacity: 0.6, textTransform: "none", letterSpacing: 0, fontWeight: 400 }}>— {subtitle}</span></SubHead>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 4 }}>{children}</div>
     </div>
   );
 }
 
+function SubHead({ children }: { children: React.ReactNode }) {
+  return <h3 style={{ font: "600 11px/1 ui-sans-serif, system-ui", letterSpacing: "0.1em", textTransform: "uppercase", color: MUTE, margin: "0 0 10px" }}>{children}</h3>;
+}
+
 const body: React.CSSProperties = { font: "400 14px/1.6 ui-sans-serif, system-ui", color: TEXT };
+const mutedItalic: React.CSSProperties = { font: "400 12.5px/1.5 ui-sans-serif, system-ui", color: MUTE, fontStyle: "italic" };
 const panel: React.CSSProperties = { padding: 14, borderRadius: 12, background: PANEL, border: `1px solid ${LINE}` };
+const grid = (min: number): React.CSSProperties => ({ display: "grid", gridTemplateColumns: `repeat(auto-fit, minmax(min(${min}px, 100%), 1fr))`, gap: 12 });

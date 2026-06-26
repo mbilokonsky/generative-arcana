@@ -45,12 +45,13 @@ function namespaceIds(svg: string, uid: string): string {
   return out;
 }
 
-/** Render a deck-supplied FULL <svg> string, sized and recolored via currentColor (ids namespaced). */
+/** Render a deck-supplied FULL <svg> string, sized and recolored via currentColor (ids namespaced).
+ *  Only the ROOT <svg> tag's width/height are normalized — stripping them globally would also delete
+ *  every <rect width=… height=…>, which silently destroys rect-built glyphs (towers, key shafts). */
 export function Svg({ svg, size = 16 }: { svg: string; size?: number }) {
   const uid = useId().replace(/[^a-zA-Z0-9]/g, "");
-  const sized = svg
-    .replace(/\s(width|height)="[^"]*"/g, "")
-    .replace(/<svg /, `<svg width="${size}" height="${size}" `);
+  const sized = svg.replace(/<svg([^>]*)>/, (_m, attrs: string) =>
+    `<svg${attrs.replace(/\s(width|height)="[^"]*"/g, "")} width="${size}" height="${size}">`);
   return (
     <span
       aria-hidden
