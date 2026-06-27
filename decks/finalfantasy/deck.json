@@ -9,7 +9,7 @@
   },
   "suits": {
     "chocobo": {
-      "name": "Chocobo",
+      "name": "Chocobos",
       "slug": "chocobo",
       "description": "The glad companion of the road. A chocobo exists, to the traveler, as the means of getting from here to there: motion freely given, the open country, help that arrives when you whistle for it. The benevolent face of the journey.",
       "symbol": {
@@ -39,7 +39,7 @@
       "index": 0
     },
     "moogle": {
-      "name": "Moogle",
+      "name": "Moogles",
       "slug": "moogle",
       "description": "The keeper of the hearth. The moogle is the place you come back to: the shop, the save point, the letter waiting, the small warm community that holds while you are away. Its magic is bound to where you stand. The benevolent face of place.",
       "symbol": {
@@ -70,7 +70,7 @@
       "index": 1
     },
     "cactuar": {
-      "name": "Cactuar",
+      "name": "Cactuars",
       "slug": "cactuar",
       "description": "The sentinel of its own ground. A cactuar wants nothing from you and will not move toward you; trespass on its patch of desert, though, and a thousand needles answer in an instant. Boundary made flesh. The adversarial face of place.",
       "symbol": {
@@ -100,7 +100,7 @@
       "index": 2
     },
     "tonberry": {
-      "name": "Tonberry",
+      "name": "Tonberries",
       "slug": "tonberry",
       "description": "The lantern at the end of the corridor. The tonberry does not rush; it takes one slow step at a time and arrives regardless, lantern lit, knife in hand, carrying every grudge ever owed. It is the liminal one — the unhurried, unstoppable passage out of the mortal coil. The adversarial face of the journey.",
       "symbol": {
@@ -366,7 +366,7 @@
       "name": "Ace",
       "symbol": "A",
       "description": "The seed: the suit in its first, undivided form, all potential and no history.",
-      "question": "What does {suit} set in motion?"
+      "question": "What do {suit} set in motion?"
     },
     "two": {
       "index": 1,
@@ -375,7 +375,7 @@
       "name": "Two",
       "symbol": "II",
       "description": "The pair: the first relation, a tension or balance held between two.",
-      "question": "What does {suit} hold in balance?"
+      "question": "What do {suit} hold in balance?"
     },
     "three": {
       "index": 2,
@@ -384,7 +384,7 @@
       "name": "Three",
       "symbol": "III",
       "description": "The first fruit: the pair bearing something new, initial growth and expression.",
-      "question": "How does {suit} first bear fruit?"
+      "question": "How do {suit} first bear fruit?"
     },
     "four": {
       "index": 3,
@@ -393,7 +393,7 @@
       "name": "Four",
       "symbol": "IV",
       "description": "The frame: structure, stability, the thing made solid enough to stand on.",
-      "question": "What does {suit} make solid?"
+      "question": "What do {suit} make solid?"
     },
     "five": {
       "index": 4,
@@ -411,7 +411,7 @@
       "name": "Six",
       "symbol": "VI",
       "description": "The exchange: harmony restored through give and take, reciprocity and relief.",
-      "question": "How does {suit} give and receive?"
+      "question": "How do {suit} give and receive?"
     },
     "seven": {
       "index": 6,
@@ -438,7 +438,7 @@
       "name": "Nine",
       "symbol": "IX",
       "description": "The burden: near-fulfillment carried to the threshold, the last hard stretch.",
-      "question": "What does {suit} carry to the threshold?"
+      "question": "What do {suit} carry to the threshold?"
     },
     "ten": {
       "index": 9,
@@ -447,7 +447,7 @@
       "name": "Ten",
       "symbol": "X",
       "description": "The fullness: completion and overflow, the cycle come round and ready to pass on.",
-      "question": "How does {suit} come full and pass on?"
+      "question": "How do {suit} come full and pass on?"
     },
     "freelancer": {
       "index": 10,
@@ -960,7 +960,7 @@
       }
     },
     "chocobo-0": {
-      "name": "Ace of Chocobo",
+      "name": "Ace of Chocobos",
       "number": "1",
       "slug": "chocobo-0",
       "arcana": "minor",
@@ -976,7 +976,7 @@
       }
     },
     "chocobo-1": {
-      "name": "Two of Chocobo",
+      "name": "Two of Chocobos",
       "number": "2",
       "slug": "chocobo-1",
       "arcana": "minor",
@@ -992,7 +992,7 @@
       }
     },
     "chocobo-2": {
-      "name": "Three of Chocobo",
+      "name": "Three of Chocobos",
       "number": "3",
       "slug": "chocobo-2",
       "arcana": "minor",
@@ -1008,7 +1008,7 @@
       }
     },
     "chocobo-3": {
-      "name": "Four of Chocobo",
+      "name": "Four of Chocobos",
       "number": "4",
       "slug": "chocobo-3",
       "arcana": "minor",
@@ -1024,7 +1024,7 @@
       }
     },
     "chocobo-4": {
-      "name": "Five of Chocobo",
+      "name": "Five of Chocobos",
       "number": "5",
       "slug": "chocobo-4",
       "arcana": "minor",
@@ -1040,7 +1040,7 @@
       }
     },
     "chocobo-5": {
-      "name": "Six of Chocobo",
+      "name": "Six of Chocobos",
       "number": "6",
       "slug": "chocobo-5",
       "arcana": "minor",
@@ -1056,7 +1056,7 @@
       }
     },
     "chocobo-6": {
-      "name": "Seven of Chocobo",
+      "name": "Seven of Chocobos",
       "number": "7",
       "slug": "chocobo-6",
       "arcana": "minor",
@@ -1072,7 +1072,7 @@
       }
     },
     "chocobo-7": {
-      "name": "Eight of Chocobo",
+      "name": "Eight of Chocobos",
       "number": "8",
       "slug": "chocobo-7",
       "arcana": "minor",
@@ -1088,7 +1088,7 @@
       }
     },
     "chocobo-8": {
-      "name": "Nine of Chocobo",
+      "name": "Nine of Chocobos",
       "number": "9",
       "slug": "chocobo-8",
       "arcana": "minor",
@@ -1104,7 +1104,7 @@
       }
     },
     "chocobo-9": {
-      "name": "Ten of Chocobo",
+      "name": "Ten of Chocobos",
       "number": "10",
       "slug": "chocobo-9",
       "arcana": "minor",
@@ -1120,7 +1120,7 @@
       }
     },
     "chocobo-10": {
-      "name": "Freelancer of Chocobo",
+      "name": "Freelancer of Chocobos",
       "number": "11",
       "slug": "chocobo-10",
       "arcana": "minor",
@@ -1136,7 +1136,7 @@
       }
     },
     "chocobo-11": {
-      "name": "Knight of Chocobo",
+      "name": "Knight of Chocobos",
       "number": "12",
       "slug": "chocobo-11",
       "arcana": "minor",
@@ -1152,7 +1152,7 @@
       }
     },
     "chocobo-12": {
-      "name": "Sage of Chocobo",
+      "name": "Sage of Chocobos",
       "number": "13",
       "slug": "chocobo-12",
       "arcana": "minor",
@@ -1168,7 +1168,7 @@
       }
     },
     "chocobo-13": {
-      "name": "Warrior of Light of Chocobo",
+      "name": "Warrior of Light of Chocobos",
       "number": "14",
       "slug": "chocobo-13",
       "arcana": "minor",
@@ -1184,7 +1184,7 @@
       }
     },
     "moogle-0": {
-      "name": "Ace of Moogle",
+      "name": "Ace of Moogles",
       "number": "1",
       "slug": "moogle-0",
       "arcana": "minor",
@@ -1200,7 +1200,7 @@
       }
     },
     "moogle-1": {
-      "name": "Two of Moogle",
+      "name": "Two of Moogles",
       "number": "2",
       "slug": "moogle-1",
       "arcana": "minor",
@@ -1216,7 +1216,7 @@
       }
     },
     "moogle-2": {
-      "name": "Three of Moogle",
+      "name": "Three of Moogles",
       "number": "3",
       "slug": "moogle-2",
       "arcana": "minor",
@@ -1232,7 +1232,7 @@
       }
     },
     "moogle-3": {
-      "name": "Four of Moogle",
+      "name": "Four of Moogles",
       "number": "4",
       "slug": "moogle-3",
       "arcana": "minor",
@@ -1248,7 +1248,7 @@
       }
     },
     "moogle-4": {
-      "name": "Five of Moogle",
+      "name": "Five of Moogles",
       "number": "5",
       "slug": "moogle-4",
       "arcana": "minor",
@@ -1264,7 +1264,7 @@
       }
     },
     "moogle-5": {
-      "name": "Six of Moogle",
+      "name": "Six of Moogles",
       "number": "6",
       "slug": "moogle-5",
       "arcana": "minor",
@@ -1280,7 +1280,7 @@
       }
     },
     "moogle-6": {
-      "name": "Seven of Moogle",
+      "name": "Seven of Moogles",
       "number": "7",
       "slug": "moogle-6",
       "arcana": "minor",
@@ -1296,7 +1296,7 @@
       }
     },
     "moogle-7": {
-      "name": "Eight of Moogle",
+      "name": "Eight of Moogles",
       "number": "8",
       "slug": "moogle-7",
       "arcana": "minor",
@@ -1312,7 +1312,7 @@
       }
     },
     "moogle-8": {
-      "name": "Nine of Moogle",
+      "name": "Nine of Moogles",
       "number": "9",
       "slug": "moogle-8",
       "arcana": "minor",
@@ -1328,7 +1328,7 @@
       }
     },
     "moogle-9": {
-      "name": "Ten of Moogle",
+      "name": "Ten of Moogles",
       "number": "10",
       "slug": "moogle-9",
       "arcana": "minor",
@@ -1344,7 +1344,7 @@
       }
     },
     "moogle-10": {
-      "name": "Freelancer of Moogle",
+      "name": "Freelancer of Moogles",
       "number": "11",
       "slug": "moogle-10",
       "arcana": "minor",
@@ -1360,7 +1360,7 @@
       }
     },
     "moogle-11": {
-      "name": "Knight of Moogle",
+      "name": "Knight of Moogles",
       "number": "12",
       "slug": "moogle-11",
       "arcana": "minor",
@@ -1376,7 +1376,7 @@
       }
     },
     "moogle-12": {
-      "name": "Sage of Moogle",
+      "name": "Sage of Moogles",
       "number": "13",
       "slug": "moogle-12",
       "arcana": "minor",
@@ -1392,7 +1392,7 @@
       }
     },
     "moogle-13": {
-      "name": "Warrior of Light of Moogle",
+      "name": "Warrior of Light of Moogles",
       "number": "14",
       "slug": "moogle-13",
       "arcana": "minor",
@@ -1408,7 +1408,7 @@
       }
     },
     "cactuar-0": {
-      "name": "Ace of Cactuar",
+      "name": "Ace of Cactuars",
       "number": "1",
       "slug": "cactuar-0",
       "arcana": "minor",
@@ -1424,7 +1424,7 @@
       }
     },
     "cactuar-1": {
-      "name": "Two of Cactuar",
+      "name": "Two of Cactuars",
       "number": "2",
       "slug": "cactuar-1",
       "arcana": "minor",
@@ -1440,7 +1440,7 @@
       }
     },
     "cactuar-2": {
-      "name": "Three of Cactuar",
+      "name": "Three of Cactuars",
       "number": "3",
       "slug": "cactuar-2",
       "arcana": "minor",
@@ -1456,7 +1456,7 @@
       }
     },
     "cactuar-3": {
-      "name": "Four of Cactuar",
+      "name": "Four of Cactuars",
       "number": "4",
       "slug": "cactuar-3",
       "arcana": "minor",
@@ -1472,7 +1472,7 @@
       }
     },
     "cactuar-4": {
-      "name": "Five of Cactuar",
+      "name": "Five of Cactuars",
       "number": "5",
       "slug": "cactuar-4",
       "arcana": "minor",
@@ -1488,7 +1488,7 @@
       }
     },
     "cactuar-5": {
-      "name": "Six of Cactuar",
+      "name": "Six of Cactuars",
       "number": "6",
       "slug": "cactuar-5",
       "arcana": "minor",
@@ -1504,7 +1504,7 @@
       }
     },
     "cactuar-6": {
-      "name": "Seven of Cactuar",
+      "name": "Seven of Cactuars",
       "number": "7",
       "slug": "cactuar-6",
       "arcana": "minor",
@@ -1520,7 +1520,7 @@
       }
     },
     "cactuar-7": {
-      "name": "Eight of Cactuar",
+      "name": "Eight of Cactuars",
       "number": "8",
       "slug": "cactuar-7",
       "arcana": "minor",
@@ -1536,7 +1536,7 @@
       }
     },
     "cactuar-8": {
-      "name": "Nine of Cactuar",
+      "name": "Nine of Cactuars",
       "number": "9",
       "slug": "cactuar-8",
       "arcana": "minor",
@@ -1552,7 +1552,7 @@
       }
     },
     "cactuar-9": {
-      "name": "Ten of Cactuar",
+      "name": "Ten of Cactuars",
       "number": "10",
       "slug": "cactuar-9",
       "arcana": "minor",
@@ -1568,7 +1568,7 @@
       }
     },
     "cactuar-10": {
-      "name": "Freelancer of Cactuar",
+      "name": "Freelancer of Cactuars",
       "number": "11",
       "slug": "cactuar-10",
       "arcana": "minor",
@@ -1584,7 +1584,7 @@
       }
     },
     "cactuar-11": {
-      "name": "Knight of Cactuar",
+      "name": "Knight of Cactuars",
       "number": "12",
       "slug": "cactuar-11",
       "arcana": "minor",
@@ -1600,7 +1600,7 @@
       }
     },
     "cactuar-12": {
-      "name": "Sage of Cactuar",
+      "name": "Sage of Cactuars",
       "number": "13",
       "slug": "cactuar-12",
       "arcana": "minor",
@@ -1616,7 +1616,7 @@
       }
     },
     "cactuar-13": {
-      "name": "Warrior of Light of Cactuar",
+      "name": "Warrior of Light of Cactuars",
       "number": "14",
       "slug": "cactuar-13",
       "arcana": "minor",
@@ -1632,7 +1632,7 @@
       }
     },
     "tonberry-0": {
-      "name": "Ace of Tonberry",
+      "name": "Ace of Tonberries",
       "number": "1",
       "slug": "tonberry-0",
       "arcana": "minor",
@@ -1648,7 +1648,7 @@
       }
     },
     "tonberry-1": {
-      "name": "Two of Tonberry",
+      "name": "Two of Tonberries",
       "number": "2",
       "slug": "tonberry-1",
       "arcana": "minor",
@@ -1664,7 +1664,7 @@
       }
     },
     "tonberry-2": {
-      "name": "Three of Tonberry",
+      "name": "Three of Tonberries",
       "number": "3",
       "slug": "tonberry-2",
       "arcana": "minor",
@@ -1680,7 +1680,7 @@
       }
     },
     "tonberry-3": {
-      "name": "Four of Tonberry",
+      "name": "Four of Tonberries",
       "number": "4",
       "slug": "tonberry-3",
       "arcana": "minor",
@@ -1696,7 +1696,7 @@
       }
     },
     "tonberry-4": {
-      "name": "Five of Tonberry",
+      "name": "Five of Tonberries",
       "number": "5",
       "slug": "tonberry-4",
       "arcana": "minor",
@@ -1712,7 +1712,7 @@
       }
     },
     "tonberry-5": {
-      "name": "Six of Tonberry",
+      "name": "Six of Tonberries",
       "number": "6",
       "slug": "tonberry-5",
       "arcana": "minor",
@@ -1728,7 +1728,7 @@
       }
     },
     "tonberry-6": {
-      "name": "Seven of Tonberry",
+      "name": "Seven of Tonberries",
       "number": "7",
       "slug": "tonberry-6",
       "arcana": "minor",
@@ -1744,7 +1744,7 @@
       }
     },
     "tonberry-7": {
-      "name": "Eight of Tonberry",
+      "name": "Eight of Tonberries",
       "number": "8",
       "slug": "tonberry-7",
       "arcana": "minor",
@@ -1760,7 +1760,7 @@
       }
     },
     "tonberry-8": {
-      "name": "Nine of Tonberry",
+      "name": "Nine of Tonberries",
       "number": "9",
       "slug": "tonberry-8",
       "arcana": "minor",
@@ -1776,7 +1776,7 @@
       }
     },
     "tonberry-9": {
-      "name": "Ten of Tonberry",
+      "name": "Ten of Tonberries",
       "number": "10",
       "slug": "tonberry-9",
       "arcana": "minor",
@@ -1792,7 +1792,7 @@
       }
     },
     "tonberry-10": {
-      "name": "Freelancer of Tonberry",
+      "name": "Freelancer of Tonberries",
       "number": "11",
       "slug": "tonberry-10",
       "arcana": "minor",
@@ -1808,7 +1808,7 @@
       }
     },
     "tonberry-11": {
-      "name": "Knight of Tonberry",
+      "name": "Knight of Tonberries",
       "number": "12",
       "slug": "tonberry-11",
       "arcana": "minor",
@@ -1824,7 +1824,7 @@
       }
     },
     "tonberry-12": {
-      "name": "Sage of Tonberry",
+      "name": "Sage of Tonberries",
       "number": "13",
       "slug": "tonberry-12",
       "arcana": "minor",
@@ -1840,7 +1840,7 @@
       }
     },
     "tonberry-13": {
-      "name": "Warrior of Light of Tonberry",
+      "name": "Warrior of Light of Tonberries",
       "number": "14",
       "slug": "tonberry-13",
       "arcana": "minor",
