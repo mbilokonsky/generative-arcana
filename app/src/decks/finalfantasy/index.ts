@@ -5,14 +5,15 @@
  *   suits     — Chocobo / Moogle / Cactuar / Tonberry, a dialectic of Boon↔Bane × Place↔Journey
  *   transversal — "The Elemental Wheel" (8 magicks: Fire/Thunder/Earth/Holy/Ice/Water/Wind/Dark)
  *   majors    — the FF monomyth cast through the prime/composite number axis
- *   ranks     — 14 (10 numbered questions + the Page/Knight/Sage/Monarch court)
+ *   ranks     — 14 (10 numbered questions + the Freelancer/Knight/Sage/Warrior of Light court)
  *
- * Foundation stage: data axes only. Cards (22 majors, then 56 minors) and a visual skin land next.
+ * 78/78 cards; the "Pixel" chibi skin (./cards) gives every card art lit by its element.
  */
 import deckJson from "@decks/finalfantasy/deck.json";
 import { registerDeck } from "../registry";
 import type { DeckDataFile, DeckModule } from "../types";
 import type { CardData } from "@/runtime/types";
+import "./cards"; // side effect: registers the "Pixel" chibi visual skin under "finalfantasy"
 
 const data = deckJson as unknown as DeckDataFile;
 
