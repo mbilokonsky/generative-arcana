@@ -8,4 +8,5 @@ export type { DeckModule, DeckDataFile } from "./types";
 import "./ultima"; // registers the Ultima deck (+ its sketches)
 import "./byrne"; // registers the Byrne Journey Tarot (placeholder visuals)
 import "./ulysses"; // registers the Ulysses Tarot (placeholder visuals)
-import "./finalfantasy"; // registers the Final Fantasy Tarot (foundation axes; cards/skin pending)
+import "./finalfantasy"; // registers the Final Fantasy Tarot (Pixel chibi skin)
+import "./evolution"; // registers the Evolution and Consciousness Tarot (data-complete; skin pending)

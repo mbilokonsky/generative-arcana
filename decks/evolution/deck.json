@@ -1,0 +1,2399 @@
+{
+  "name": "Evolution and Consciousness Tarot",
+  "slug": "evolution-and-consciousness",
+  "version": "1.0.0",
+  "theme": {
+    "name": "Evolution and Consciousness",
+    "description": "A deck woven from Leslie Dewart's account of how speech bootstraps human consciousness. Its four suits are the cells of Dewart's own fourfold of speech -- Force (signify vs. assert) crossed with Object (world vs. self) -- so the deck's geometry is the non-commuting operator at the heart of the work: to model the world and to model the self are distinct assertive acts that will not collapse into one. A seven-station transversal, The Involution, runs the developmental circuit by which assertion ignites the consciousness that feeds it, sublimated into every card as weather. The majors are built on the primes, making Dewart's caused-by / reducible-to distinction the spine of the deck: what is irreducible is prime, what is derived is composite. Upright Avowals read as phenomenal self-presence; inverted, as its chiral ontic shadow -- self-present in form, self-alienated in fact.",
+    "creator": "Myk"
+  },
+  "suits": {
+    "names": {
+      "index": 0,
+      "name": "Names",
+      "slug": "names",
+      "description": "Signify x World. The world rendered as sign: objects differentiated and held up to be looked at, but not yet claimed. The rose given in experience, sliced as 'red' or 'petal'; signification that points without asserting. World-modeling in its receptive, pre-assertive register -- in-formation taken in and named.",
+      "symbol": {
+        "name": "Label tag",
+        "description": "A luggage-tag outline with an eyelet -- naming, the world held legible at arm's length.",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 30 H64 L82 50 L64 70 H20 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linejoin=\"round\"/><circle cx=\"36\" cy=\"50\" r=\"7\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "naming",
+          "differentiation",
+          "reception",
+          "recognition",
+          "conceptual articulation",
+          "attention to the given"
+        ],
+        "inverted": [
+          "labels mistaken for things",
+          "over-classification",
+          "the map devouring the territory",
+          "naming as evasion of claim",
+          "taxonomic paralysis"
+        ]
+      },
+      "visual_style": "Cool, clear, diagrammatic. Pale grounds, ink-line botanical and lexical precision, objects floating labelled against negative space -- the palette of a naturalist's plate or a lexicon. Composition catalogued, gridded, the world held at arm's length."
+    },
+    "claims": {
+      "index": 1,
+      "name": "Claims",
+      "slug": "claims",
+      "description": "Assert x World. The thesis brought down upon reality -- assertion that takes the world as its object. 'Fire!'; the held-back punch thrown. World-modeling under full assertive force: the world not merely named but claimed as being so.",
+      "symbol": {
+        "name": "Strike",
+        "description": "A wedge struck down onto a baseline -- the thesis brought down upon reality.",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 14 L70 60 L50 48 L30 60 Z\" fill=\"currentColor\"/><line x1=\"16\" y1=\"80\" x2=\"84\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "assertion",
+          "the world claimed",
+          "predication outward",
+          "taking a stand on what is",
+          "the alarm",
+          "force meeting fact"
+        ],
+        "inverted": [
+          "assertion outrunning evidence",
+          "dogmatism",
+          "the claim that won't yield to the world",
+          "blinding certainty",
+          "force without ground"
+        ]
+      },
+      "visual_style": "Hot, high-contrast, kinetic. Strong diagonals, the moment of impact, a single charged gesture against a stark field -- the palette of an alarm or a struck match, coral and red against dark. Composition directional, urgent, the world shoved into focus."
+    },
+    "tells": {
+      "index": 2,
+      "name": "Tells",
+      "slug": "tells",
+      "description": "Signify x Self. One's experience signified without being asserted -- the self leaking through. 'God damn you' meaning 'Anger! Hate!'; the accusing finger that reveals without claiming. Self-modeling in its pre-assertive register: the self shown, not yet avowed.",
+      "symbol": {
+        "name": "Ripples",
+        "description": "Concentric rings -- the self radiating through, signified without being asserted.",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"27\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/><circle cx=\"50\" cy=\"50\" r=\"43\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "disclosure",
+          "the self showing through",
+          "involuntary expression",
+          "mood",
+          "tone",
+          "what the speaking betrays"
+        ],
+        "inverted": [
+          "self-betrayal",
+          "the tell that undoes the bluff",
+          "leakage mistaken for confession",
+          "exposure without ownership",
+          "affect flooding the message"
+        ]
+      },
+      "visual_style": "Warm, dim, intimate, atmospheric. Soft focus, interior light, a figure half-turned -- the palette of candle-lit confession or a held breath, amber shadow, things sensed at the edge. Composition oblique, partial, the self caught indirectly."
+    },
+    "avowals": {
+      "index": 3,
+      "name": "Avowals",
+      "slug": "avowals",
+      "description": "Assert x Self. Asserting one's experience of reality -- self-modeling under full assertive force. The reflexive act at the root of 'I', self-presence, self-definition: not merely showing the self but claiming it as one's own. Where Dewart's self-defining consciousness is born; its upright reading is phenomenal self-presence, its inversion the ontic shadow.",
+      "symbol": {
+        "name": "I in a ring",
+        "description": "A vertical stroke enclosed by a ring -- the 'I' present to itself.",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"50\" y1=\"16\" x2=\"50\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"8\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"50\" r=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "avowal",
+          "self-assertion",
+          "the 'I'",
+          "self-presence",
+          "taking responsibility for one's experiencing",
+          "self-definition"
+        ],
+        "inverted": [
+          "absentmindedness (the ontic shadow)",
+          "self-alienation",
+          "self-derealization -- claiming a self one then disowns",
+          "the avowal that hands its own reality to the object",
+          "'my true self is elsewhere'"
+        ]
+      },
+      "visual_style": "Luminous, reflexive, vertical. A figure meeting its own gaze, light that originates within -- the palette of dawn self-recognition or a mirror that answers, clear gold, a contained radiance. Composition centered, upright, self-enclosing."
+    }
+  },
+  "dialectic": {
+    "axes": [
+      {
+        "name": "Force",
+        "poles": [
+          "Signify",
+          "Assert"
+        ]
+      },
+      {
+        "name": "Object",
+        "poles": [
+          "World",
+          "Self"
+        ]
+      }
+    ],
+    "cells": {
+      "names": [
+        "Signify",
+        "World"
+      ],
+      "claims": [
+        "Assert",
+        "World"
+      ],
+      "tells": [
+        "Signify",
+        "Self"
+      ],
+      "avowals": [
+        "Assert",
+        "Self"
+      ]
+    }
+  },
+  "ranks": {
+    "ace": {
+      "index": 0,
+      "arcana": "minor",
+      "numeric_value": 1,
+      "name": "Ace",
+      "symbol": "A",
+      "description": "Pure potential of the suit -- the unit of its energy, the seed from which its every act unfolds, present but not yet exercised.",
+      "meaning": {
+        "upright": [
+          "seed",
+          "pure potential",
+          "the unit of the act",
+          "latent capacity",
+          "the gift offered"
+        ],
+        "inverted": [
+          "potential hoarded",
+          "the seed that won't open",
+          "capacity mistaken for achievement",
+          "beginning endlessly deferred"
+        ]
+      },
+      "visual_content": "A single nascent token of the suit's act, held alone and unexercised -- a sign about to be made but not yet made.",
+      "question": "What is the bare potential of {suit}?"
+    },
+    "two": {
+      "index": 1,
+      "arcana": "minor",
+      "numeric_value": 2,
+      "name": "Two",
+      "symbol": "II",
+      "description": "The first irreducible question: the act setting itself off against what it is not. Differentiation, the originary split the suit draws.",
+      "meaning": {
+        "upright": [
+          "differentiation",
+          "the split",
+          "self vs not-self",
+          "the first opposition",
+          "drawing a line"
+        ],
+        "inverted": [
+          "division for its own sake",
+          "estrangement",
+          "the line drawn too hard",
+          "opposition as identity"
+        ]
+      },
+      "visual_content": "Two forms held apart by a single deliberate seam -- the act in the moment of distinguishing itself from its object.",
+      "question": "Against what does {suit} set itself off?"
+    },
+    "three": {
+      "index": 2,
+      "arcana": "minor",
+      "numeric_value": 3,
+      "name": "Three",
+      "symbol": "III",
+      "description": "The second irreducible question: the act bringing something forth that was not there before. Generativity, production, the fertile surplus of the suit.",
+      "meaning": {
+        "upright": [
+          "generativity",
+          "bringing-forth",
+          "production",
+          "fertile surplus",
+          "the new"
+        ],
+        "inverted": [
+          "mere proliferation",
+          "producing without purpose",
+          "fertility that exhausts",
+          "output as evasion"
+        ]
+      },
+      "visual_content": "A third form issuing from the meeting of two -- the act's surplus, something new emerging into the frame.",
+      "question": "What does {suit} bring into being?"
+    },
+    "four": {
+      "index": 3,
+      "arcana": "minor",
+      "numeric_value": 4,
+      "name": "Four",
+      "symbol": "IV",
+      "description": "The differentiating question (Two) stabilized into a standing structure -- the split made into a frame the suit can build on.",
+      "meaning": {
+        "upright": [
+          "structure",
+          "foundation",
+          "the split made stable",
+          "framework",
+          "standing form"
+        ],
+        "inverted": [
+          "rigidity",
+          "the frame that imprisons",
+          "structure outliving use",
+          "walls mistaken for ground"
+        ]
+      },
+      "visual_content": "A fixed lattice raised from a single seam -- the distinction of the Two built up into a standing architecture.",
+      "question": "What structure does {suit}'s differentiation harden into?"
+    },
+    "five": {
+      "index": 4,
+      "arcana": "minor",
+      "numeric_value": 5,
+      "name": "Five",
+      "symbol": "V",
+      "description": "The third irreducible question: a pressure the suit meets that will not resolve into its existing terms. Disruption, the unfactorable stress.",
+      "meaning": {
+        "upright": [
+          "pressure",
+          "disruption",
+          "the unresolvable",
+          "challenge",
+          "the goad"
+        ],
+        "inverted": [
+          "pressure that only breaks",
+          "crisis courted",
+          "stress made identity",
+          "collapse mistaken for change"
+        ]
+      },
+      "visual_content": "A standing form strained near to fracture by a force that does not fit it -- the act under a stress it cannot absorb.",
+      "question": "What pressure does {suit} meet that won't resolve?"
+    },
+    "six": {
+      "index": 5,
+      "arcana": "minor",
+      "numeric_value": 6,
+      "name": "Six",
+      "symbol": "VI",
+      "description": "The differentiating question meets the generative one (Two x Three): distinction made fertile, the suit's first true composite act -- to divide and to create at once.",
+      "meaning": {
+        "upright": [
+          "fertile articulation",
+          "distinction that creates",
+          "harmony of split and surplus",
+          "integration"
+        ],
+        "inverted": [
+          "articulation that forecloses",
+          "creation that merely re-divides",
+          "false harmony",
+          "integration papering over the split"
+        ]
+      },
+      "visual_content": "A new form issuing precisely along a clean seam -- the cut and the bringing-forth fused into one productive gesture.",
+      "question": "What does {suit} make when difference becomes fertile?"
+    },
+    "seven": {
+      "index": 6,
+      "arcana": "minor",
+      "numeric_value": 7,
+      "name": "Seven",
+      "symbol": "VII",
+      "description": "The fourth irreducible question: the reckoning that stops the suit in its tracks, the crossroads that cannot be passed without an answer. Assessment, the question that won't be deferred.",
+      "meaning": {
+        "upright": [
+          "assessment",
+          "the crossroads",
+          "the question that stops you",
+          "reckoning",
+          "the necessary pause"
+        ],
+        "inverted": [
+          "paralysis at the crossroads",
+          "reckoning evaded",
+          "endless deliberation",
+          "the pause that never ends"
+        ]
+      },
+      "visual_content": "A single form halted before a fork it cannot yet take -- the act suspended at a question it must answer.",
+      "question": "What must {suit} reckon with before it can go on?"
+    },
+    "eight": {
+      "index": 7,
+      "arcana": "minor",
+      "numeric_value": 8,
+      "name": "Eight",
+      "symbol": "VIII",
+      "description": "The differentiating question cubed (Two-cubed): the split lived so long it becomes power -- or obsession. Mastery of distinction shading toward excess.",
+      "meaning": {
+        "upright": [
+          "mastery",
+          "the split made power",
+          "command of distinction",
+          "fluent control",
+          "depth become skill"
+        ],
+        "inverted": [
+          "obsession",
+          "command curdled into alienation",
+          "the split that has consumed its maker",
+          "power that cannot let go"
+        ]
+      },
+      "visual_content": "A single form wielding the very seam that defines it as a tool -- distinction deepened into a held, practiced power.",
+      "question": "What does {suit} command, having lived its difference to the bone?"
+    },
+    "nine": {
+      "index": 8,
+      "arcana": "minor",
+      "numeric_value": 9,
+      "name": "Nine",
+      "symbol": "IX",
+      "description": "The generative question fulfilled and turned inward (Three-squared): production complete, ripened into understanding the suit carries alone.",
+      "meaning": {
+        "upright": [
+          "fulfilment",
+          "generativity ripened into wisdom",
+          "completion turned inward",
+          "mature understanding",
+          "the harvest"
+        ],
+        "inverted": [
+          "fulfilment hoarded",
+          "wisdom turned to withdrawal",
+          "ripeness clung past its season",
+          "completion mistaken for an end"
+        ]
+      },
+      "visual_content": "An abundant form turned inward upon itself, its surplus become a quiet inner light -- generation matured into understanding.",
+      "question": "What does {suit} understand once it has produced enough?"
+    },
+    "ten": {
+      "index": 9,
+      "arcana": "minor",
+      "numeric_value": 10,
+      "name": "Ten",
+      "symbol": "X",
+      "description": "The differentiating question meets the disruptive one (Two x Five): the established split stressed until the cycle completes by meeting its own undoing -- culmination that is also transition.",
+      "meaning": {
+        "upright": [
+          "culmination",
+          "completion through destabilization",
+          "the cycle turning over",
+          "overflow",
+          "the end that seeds a beginning"
+        ],
+        "inverted": [
+          "overflow that drowns",
+          "completion clung to",
+          "the end refused",
+          "transition mistaken for catastrophe"
+        ]
+      },
+      "visual_content": "A fully built form breaking open along its founding seam under a final pressure -- the cycle spilling over into what comes next.",
+      "question": "How does {suit} complete by meeting what unmakes it?"
+    },
+    "novice": {
+      "index": 10,
+      "arcana": "minor",
+      "numeric_value": 11,
+      "name": "Novice",
+      "symbol": "N",
+      "description": "The Novice of the suit -- first contact with the act, learning to perform it; youthful, curious, the energy beginning to find its hand.",
+      "meaning": {
+        "upright": [
+          "first contact",
+          "learning the act",
+          "curiosity",
+          "openness",
+          "the apprentice's freshness"
+        ],
+        "inverted": [
+          "dabbling",
+          "learning never put to use",
+          "naivety mistaken for wisdom",
+          "the perpetual beginner"
+        ]
+      },
+      "visual_content": "A young figure tentatively performing the suit's act for the first time, attention wholly on the doing."
+    },
+    "wielder": {
+      "index": 11,
+      "arcana": "minor",
+      "numeric_value": 12,
+      "name": "Wielder",
+      "symbol": "W",
+      "description": "The Wielder of the suit -- the act in full motion, its energy thrown outward to extremes; active pursuit, the structured difference made to produce.",
+      "meaning": {
+        "upright": [
+          "active pursuit",
+          "the act in motion",
+          "extreme expression",
+          "drive",
+          "force directed outward"
+        ],
+        "inverted": [
+          "recklessness",
+          "force without aim",
+          "the act run to excess",
+          "motion mistaken for progress"
+        ]
+      },
+      "visual_content": "A figure in committed motion driving the suit's act outward, the gesture extended to its limit."
+    },
+    "keeper": {
+      "index": 12,
+      "arcana": "minor",
+      "numeric_value": 13,
+      "name": "Keeper",
+      "symbol": "K",
+      "description": "The Keeper of the suit -- the act internalized into character, mastery held inwardly and given receptively; depth that no longer needs to prove itself.",
+      "meaning": {
+        "upright": [
+          "internalized mastery",
+          "the act become character",
+          "receptive depth",
+          "quiet authority",
+          "holding"
+        ],
+        "inverted": [
+          "mastery turned to control",
+          "depth become aloofness",
+          "holding that withholds",
+          "character ossified"
+        ]
+      },
+      "visual_content": "A seated figure in whom the suit's act has become stillness -- mastery so internal it shows only as presence."
+    },
+    "sovereign": {
+      "index": 13,
+      "arcana": "minor",
+      "numeric_value": 14,
+      "name": "Sovereign",
+      "symbol": "S",
+      "description": "The Sovereign of the suit -- the act as directive authority, mastery turned outward to define a world; the standard others measure by.",
+      "meaning": {
+        "upright": [
+          "directive mastery",
+          "the act as authority",
+          "defining a world",
+          "the standard set",
+          "command"
+        ],
+        "inverted": [
+          "authority become tyranny",
+          "the standard imposed",
+          "mastery that brooks no other",
+          "defining narrowed to dictating"
+        ]
+      },
+      "visual_content": "A standing figure wielding the suit's act as law, the surrounding field ordered by the standard they hold."
+    }
+  },
+  "transversal": {
+    "name": "The Involution",
+    "description": "The self-sustaining circuit by which assertion bootstraps consciousness -- Dewart's mutual involution of experience and communication, 'as a fire ignites the fuel that feeds it.' Seven phases every act of consciousness recapitulates.",
+    "ordering_rationale": "The developmental order of emergence: reality is received (In-formation), rendered as sign (Signification), charged with assertive force (Assertion), lifted into a held theme (Thematization), predicated (Thesis-making), folded back upon the asserter (Self-presence), and finally settled into habitual ground (Sedimentation), which is received again -- so the order is a true cycle, not a ladder. Assertion (2) and Self-presence (5) sit at prime positions; cards landing there carry an extra charge of irreducibility.",
+    "suit_stride": 1,
+    "stations": {
+      "in-formation": {
+        "slug": "in-formation",
+        "index": 0,
+        "name": "In-formation",
+        "description": "Reality impressing its form on a receiver that does not yet assert.",
+        "symbol": {
+          "name": "Vessel and drop",
+          "description": "A drop falling into an open bowl -- form received.",
+          "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M22 52 Q50 80 78 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"28\" r=\"8\" fill=\"currentColor\"/></svg>"
+        },
+        "meaning": {
+          "upright": [
+            "reception",
+            "the given",
+            "raw form taken in",
+            "the ground before differentiation"
+          ],
+          "inverted": [
+            "passivity",
+            "merely informed",
+            "swamped by input",
+            "form without uptake"
+          ]
+        },
+        "visual_motif": "Flat, even, receptive light; low contrast; things arriving and settling; the held breath before speech. A scene that reads as received rather than done."
+      },
+      "signification": {
+        "slug": "signification",
+        "index": 1,
+        "name": "Signification",
+        "description": "The given lifted into a sign that points to it, without yet asserting it.",
+        "symbol": {
+          "name": "Pointer",
+          "description": "A flag on a staff -- the sign that points.",
+          "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"32\" y1=\"16\" x2=\"32\" y2=\"86\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M32 22 H76 L62 40 H32 Z\" fill=\"currentColor\"/></svg>"
+        },
+        "meaning": {
+          "upright": [
+            "naming",
+            "the sign",
+            "articulation",
+            "pointing"
+          ],
+          "inverted": [
+            "empty signs",
+            "words detached from reality",
+            "signification spinning free"
+          ]
+        },
+        "visual_motif": "Clear, diagrammatic light; labelled clarity; the world held legible at arm's length."
+      },
+      "assertion": {
+        "slug": "assertion",
+        "index": 2,
+        "name": "Assertion",
+        "description": "Force injected: the sign now also affirms the reality it signifies.",
+        "symbol": {
+          "name": "Strike",
+          "description": "A wedge struck onto a line -- the prethematic affirmation.",
+          "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 16 L68 56 L50 46 L32 56 Z\" fill=\"currentColor\"/><line x1=\"22\" y1=\"80\" x2=\"78\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg>"
+        },
+        "meaning": {
+          "upright": [
+            "the strike",
+            "affirmation",
+            "force",
+            "the prethematic 'Fire!'"
+          ],
+          "inverted": [
+            "force misfired",
+            "assertion without warrant",
+            "the cry that overstates"
+          ]
+        },
+        "visual_motif": "High-contrast, charged light; the instant of impact; a single decisive gesture."
+      },
+      "thematization": {
+        "slug": "thematization",
+        "index": 3,
+        "name": "Thematization",
+        "description": "Reality lifted from its situation and held up as a separately signified theme.",
+        "symbol": {
+          "name": "Brackets",
+          "description": "Brackets isolating a point -- the held object.",
+          "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M32 22 H22 V78 H32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M68 22 H78 V78 H68\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"50\" r=\"9\" fill=\"currentColor\"/></svg>"
+        },
+        "meaning": {
+          "upright": [
+            "objectification",
+            "holding-back",
+            "the discriminating pincers",
+            "focus as restraint"
+          ],
+          "inverted": [
+            "detachment",
+            "abstraction that loses the thing",
+            "holding-up that never puts down"
+          ]
+        },
+        "visual_motif": "A hush; a thing isolated in a clearing of attention; light narrowed to one held object; the pause of the boxer's withheld punch."
+      },
+      "thesis-making": {
+        "slug": "thesis-making",
+        "index": 4,
+        "name": "Thesis-making",
+        "description": "The withheld assertion brought down upon the theme -- predication proper.",
+        "symbol": {
+          "name": "Convergence",
+          "description": "Two arrows meeting -- thesis upon theme.",
+          "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M22 26 L50 50 L22 74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M78 26 L50 50 L78 74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
+        },
+        "meaning": {
+          "upright": [
+            "predication",
+            "the thesis upon the theme",
+            "the completed claim",
+            "the verb 'to be'"
+          ],
+          "inverted": [
+            "predication run amok",
+            "theses heaped without grounding",
+            "the claim that crushes its theme"
+          ]
+        },
+        "visual_motif": "Convergence; two streams meeting and locking; structured, articulate light; the punch landing on the named target."
+      },
+      "self-presence": {
+        "slug": "self-presence",
+        "index": 5,
+        "name": "Self-presence",
+        "description": "Consciousness becomes present to itself as the one asserting.",
+        "symbol": {
+          "name": "Eye",
+          "description": "A ring enclosing a pupil -- the reflexive turn.",
+          "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"currentColor\"/></svg>"
+        },
+        "meaning": {
+          "upright": [
+            "self-presence",
+            "the reflexive turn",
+            "the 'I'",
+            "luminous self-recognition"
+          ],
+          "inverted": [
+            "absentmindedness",
+            "self-alienation",
+            "the self handed to the object (the ontic shadow)",
+            "self-presence curdled"
+          ]
+        },
+        "visual_motif": "Light originating within the scene rather than falling on it; a figure meeting its own gaze; contained radiance."
+      },
+      "sedimentation": {
+        "slug": "sedimentation",
+        "index": 6,
+        "name": "Sedimentation",
+        "description": "The asserted settles into habitual ground and is received again -- the cycle closing.",
+        "symbol": {
+          "name": "Strata",
+          "description": "Settling horizontal layers -- the asserted become ground.",
+          "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"40\" x2=\"80\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"58\" x2=\"80\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"76\" x2=\"80\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg>"
+        },
+        "meaning": {
+          "upright": [
+            "settling",
+            "habituation",
+            "the asserted become tacit",
+            "ground for the next act",
+            "tradition"
+          ],
+          "inverted": [
+            "ossification",
+            "dead sediment",
+            "the unquestioned crust",
+            "fossilized assertion taken for given"
+          ]
+        },
+        "visual_motif": "Dimming and settling; layers laid down; warm dusk light thickening into ground; the close of the circuit."
+      }
+    }
+  },
+  "major_arcana": {
+    "story": "The arc of Evolution and Consciousness: from undifferentiated matter (0) and the bare organism (1) through the irreducible emergences that found human nature -- difference, utterance, pressure, the capacity to thematize -- and their composite consequences, to full self-present speech (19) and the world taken up entire into language (21). Primes mark what is caused but irreducible; composites mark what is derived from them: Dewart's caused-by / reducible-to distinction made the spine of the deck. The order is the developmental involution by which assertion bootstraps consciousness, and it ends by folding back into the ground it began from.",
+    "visual_style": "A superset register across the four suits: spare, luminous, near-abstract; deep grounds with form emerging as light rather than line; a single charged gesture per card. The palette ranges across the suits' four climates -- Names' cool clarity, Claims' hot impact, Tells' warm dusk, Avowals' inner gold -- but always pared to essentials, as befits archetypes. Composition centered and iconic.",
+    "symbol": {
+      "name": "The Involution",
+      "description": "A single open spiral -- the self-sustaining circuit of assertion and consciousness.",
+      "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 50 Q50 38 62 38 Q80 38 80 56 Q80 80 54 80 Q22 80 22 50 Q22 16 56 16 Q92 16 92 54\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg>"
+    }
+  },
+  "cards": {
+    "major-0": {
+      "name": "The Unformed",
+      "number": "0",
+      "slug": "major-0",
+      "arcana": "major",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Additive identity (0): the precondition that changes nothing by itself yet without which nothing follows -- the material plenum before consciousness is caused from it."
+      },
+      "meaning": {
+        "upright": "Pure potential before any differentiation -- matter and possibility not yet taken up into form. The ground that everything to come will be caused by but never reducible to.",
+        "inverted": "Potential refusing to actualize; formlessness clung to as an escape from commitment; the void romanticized into paralysis."
+      },
+      "visuals": {
+        "detailed_description": "A field of undifferentiated grey-gold haze under flat, even, receptive light, no horizon and no edge; a single faint dimple where form is about to be received but has not yet arrived."
+      }
+    },
+    "major-1": {
+      "name": "The Organism",
+      "number": "1",
+      "slug": "major-1",
+      "arcana": "major",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Multiplicative identity (1): the unit of agency, the transparent operator -- it does not distort what passes through it; it makes the passing possible."
+      },
+      "meaning": {
+        "upright": "The living unit through which form is first taken in and rendered as sign -- the transparent operator of every later act, adding nothing of its own yet enabling all. Bare agency, the receiver that will become a speaker.",
+        "inverted": "The operator mistaking itself for the whole; mere mechanism inflated into meaning; life reduced to throughput."
+      },
+      "visuals": {
+        "detailed_description": "A simple luminous cell-form against a legible pale ground, its membrane drawn like a clean diagram, one channel open to the world's incoming light."
+      }
+    },
+    "major-2": {
+      "name": "The Difference",
+      "number": "2",
+      "slug": "major-2",
+      "arcana": "major",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (2), and on a prime-position station (Assertion): doubly atomic. The originary differentiation -- self from object -- that no analysis dissolves; the load-bearing two beneath every composite."
+      },
+      "meaning": {
+        "upright": "The first irreducible act: consciousness setting itself off from its object, the original opposition between self and not-self. Everything later is built on this split, but the split itself cannot be factored.",
+        "inverted": "Difference hardened into estrangement; the cut that should distinguish instead severs; opposition for its own sake."
+      },
+      "visuals": {
+        "detailed_description": "A single stark seam of light splitting a charged dark field into two, struck with high contrast and no gradient between -- the instant the one becomes two, irreversible."
+      }
+    },
+    "major-3": {
+      "name": "The Utterance",
+      "number": "3",
+      "slug": "major-3",
+      "arcana": "major",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (3), on a prime-position station (Thematization): doubly atomic. The act of assertion and generativity that founds speech -- irreducible, and recurring as the generative factor in every composite that produces."
+      },
+      "meaning": {
+        "upright": "The irreducible injection of assertive force into the world -- the act of speech as such, generativity itself, bringing-forth that did not exist before it was said. It simply is; it cannot be assembled from quieter parts.",
+        "inverted": "Speech in love with its own force; bringing-forth that will not stop to listen; generativity as noise."
+      },
+      "visuals": {
+        "detailed_description": "A held, withdrawn hush around a single emergent form lifting into focus, lit as though spoken into being -- the generative word held just before it lands."
+      }
+    },
+    "major-4": {
+      "name": "The Frame",
+      "number": "4",
+      "slug": "major-4",
+      "arcana": "major",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared (2-squared): The Difference stabilized -- the self/object split hardened into the categorical structure a self-defining consciousness reasons inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "Differentiation stabilized into structure -- the original split made into a standing architecture of categories, the scaffold a worldview predicates everything upon. Difference become law.",
+        "inverted": "The frame mistaken for the world; categories that imprison what they were built to hold; structure outliving its truth."
+      },
+      "visuals": {
+        "detailed_description": "A rigorous lattice of locked lines converging into a single predicative joint, articulate and fixed, each cell of the grid a held category -- built, load-bearing, unmoving."
+      }
+    },
+    "major-5": {
+      "name": "The Pressure",
+      "number": "5",
+      "slug": "major-5",
+      "arcana": "major",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (5), on a prime-position station (Self-presence): doubly atomic. The irreducible disruptive demand that no recombination relieves -- the third load-bearing irreducible, recurring wherever the cycle meets what unmakes it."
+      },
+      "meaning": {
+        "upright": "The irreducible stress that drives development -- the unfactorable demand reality makes that cannot be met by the resources already at hand, the goad that forces the next emergence. It does not decompose into gentler pressures.",
+        "inverted": "Pressure with no release; stress mistaken for meaning; the goad that breaks rather than makes."
+      },
+      "visuals": {
+        "detailed_description": "A single point of self-originating light strained almost to fracture under converging dark, lit from within rather than upon -- the stress that births the reflexive turn."
+      }
+    },
+    "major-6": {
+      "name": "The Naming",
+      "number": "6",
+      "slug": "major-6",
+      "arcana": "major",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times three (2x3): The Difference meets The Utterance -- the split made generative. Naming as the first composite act: to divide and to create in one stroke.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Differentiation made fertile by speech -- to name is at once to split and to bring forth, the first true conceptual articulation that settles into a shared lexicon. Difference and Utterance meeting to produce a word that stays.",
+        "inverted": "Names taken for the things named; a lexicon that calcifies perception; articulation that forecloses what it sorts."
+      },
+      "visuals": {
+        "detailed_description": "Newly minted sign-forms settling in warm dusk light into layered strata, each name laid gently atop the last -- the cut and the bringing-forth come to rest as ground."
+      }
+    },
+    "major-7": {
+      "name": "The Theme",
+      "number": "7",
+      "slug": "major-7",
+      "arcana": "major",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (7): irreducible. The capacity to thematize -- to hold reality as object -- arriving as a genuinely new and unfactorable ability, recurring in The Measure (2x7) and The Spoken World (3x7)."
+      },
+      "meaning": {
+        "upright": "The irreducible capacity to lift a reality out of its living situation and hold it up as an object of attention -- the hinge on which prethematic becomes thematic. A new power that cannot be reduced to sharper perceiving.",
+        "inverted": "The held object never set back down; abstraction that loses the thing it lifted; attention that cannot return to life."
+      },
+      "visuals": {
+        "detailed_description": "A single ordinary form lifted free of a quiet receptive field and held isolated in even, flat light, the world around it dimmed to ground so that it alone is given."
+      }
+    },
+    "major-8": {
+      "name": "The Severance",
+      "number": "8",
+      "slug": "major-8",
+      "arcana": "major",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two cubed (2-cubed): The Difference compounded into mastery or excess -- the self/object split lived to the point where it becomes command, or estrangement. The shadow the load-bearing two casts when it goes too deep.",
+        "factors": [
+          2,
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "Differentiation lived so deeply it becomes power -- or estrangement. The self set off from its object long enough to command it, the sign cut entirely free of the thing. Mastery of the split that risks losing what it cut from.",
+        "inverted": "The sign floating wholly free of reality; mastery curdled into alienation; the split that can no longer find its way back."
+      },
+      "visuals": {
+        "detailed_description": "A single sign-form rendered in cold exact line, cleanly excised from any ground and floating in clear empty space -- supremely legible, utterly detached."
+      }
+    },
+    "major-9": {
+      "name": "The Discourse",
+      "number": "9",
+      "slug": "major-9",
+      "arcana": "major",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Three squared (3-squared): The Utterance fulfilled -- generativity turned inward until speech generates speech. The self-sustaining involution of language: consciousness developing itself by the very speech it generates.",
+        "factors": [
+          3,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Generativity fulfilled and turned on itself -- speech producing speech, the self-sustaining circle of language matured into a standing body of understanding. The Utterance complete, still carrying its assertive charge.",
+        "inverted": "Discourse feeding only on itself; talk that has forgotten the world it was about; the circle become a closed loop."
+      },
+      "visuals": {
+        "detailed_description": "Streams of charged sign-forms looping back to feed their own source under high, active light -- a fire whose fuel is its own speech, generation upon generation."
+      }
+    },
+    "major-10": {
+      "name": "The Turn",
+      "number": "10",
+      "slug": "major-10",
+      "arcana": "major",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times five (2x5): The Difference meets The Pressure -- the established split stressed until the cycle turns over. The involution completing a revolution by meeting its own destabilization.",
+        "factors": [
+          2,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "Differentiation meeting the pressure that destabilizes it -- the cycle turning over, the involution completing a revolution. What was split is stressed until it rotates into a new phase; fate as the meeting of structure and disruption.",
+        "inverted": "The wheel mistaken for fortune one merely suffers; change clung to or fled; rotation without arrival."
+      },
+      "visuals": {
+        "detailed_description": "A held, isolated form caught at the instant of rotation under narrowed focal light, half of it already turned into shadow, half still lit -- the differentiated thing pivoting under strain."
+      }
+    },
+    "major-11": {
+      "name": "The Self",
+      "number": "11",
+      "slug": "major-11",
+      "arcana": "major",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (11), the first irreducible of Act II: selfhood as a genuinely new energy -- the self-defining 'I' that cannot be reduced to the organism, the difference, or the speech that caused it."
+      },
+      "meaning": {
+        "upright": "Irreducible selfhood -- the self-defining consciousness as a genuinely new achievement, not assembled from the faculties beneath it. The 'I' that can be predicated of itself, standing as its own thesis.",
+        "inverted": "The self reified into a fixed possession; selfhood defended against its own becoming; the 'I' that mistakes its self-image for itself."
+      },
+      "visuals": {
+        "detailed_description": "A single upright figure of light meeting its own predicative gaze across a locked, articulate joint -- the asserter taking itself as the standing thesis it asserts."
+      }
+    },
+    "major-12": {
+      "name": "The Suspension",
+      "number": "12",
+      "slug": "major-12",
+      "arcana": "major",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared times three (2-squared x 3): The Frame made generative -- a stable structure of difference compelled to produce, which it can do only by inversion. Surrender as the price of self-seeing.",
+        "factors": [
+          2,
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "A stable frame of difference inverted so that it can finally produce -- the prethematic suspended, hung upside down, so the thematic can be born. Self-seeing bought by surrendering the structure one was sure of.",
+        "inverted": "Surrender that becomes mere passivity; the inverted view clung to as martyrdom; suspension with no descent back."
+      },
+      "visuals": {
+        "detailed_description": "A built lattice-figure hung inverted in light that originates from within it, its rigid frame gone weightless and reflexive -- structure surrendered so that seeing can come."
+      }
+    },
+    "major-13": {
+      "name": "The Crossing",
+      "number": "13",
+      "slug": "major-13",
+      "arcana": "major",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (13), the irreducible transformation: the crossing from prethematic to thematic that no analysis softens and no act reverses -- a genuine death-and-birth, recorded as a new ground."
+      },
+      "meaning": {
+        "upright": "The irreducible transformation by which the human crosses from prethematic immediacy into thematic self-definition -- an ending and a beginning that cannot be undone or stepped back across. The death of one mode of being and the settling of another.",
+        "inverted": "Crossing refused or denied; transformation cosmeticized; standing on the threshold treating the irreversible as reversible."
+      },
+      "visuals": {
+        "detailed_description": "A threshold-line in warm dimming light with the ground visibly changing texture across it, the near side dissolving into the far as new strata settle -- one mode of being laid to rest as another is taken up."
+      }
+    },
+    "major-14": {
+      "name": "The Measure",
+      "number": "14",
+      "slug": "major-14",
+      "arcana": "major",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times seven (2x7): The Difference meets The Theme -- the self/object split directed by the power to thematize. The self-originated standard measured against received in-formation: assertion, tempered.",
+        "factors": [
+          2,
+          7
+        ]
+      },
+      "meaning": {
+        "upright": "Differentiation directed by thematic holding -- the self-originated standard applied, with patience, against what the world supplies. Neither drowned in the given nor cut off from it: the tempered act of measuring received information by a standard one holds oneself. The assertion mechanism at rest in balance.",
+        "inverted": "The standard imposed regardless of the given; measure become rigid metric; balance that refuses the world any vote."
+      },
+      "visuals": {
+        "detailed_description": "A held standard-form poised in flat receptive light against a steady incoming current, the two meeting at an even, patient join -- a measure taken of what arrives, by a rule kept in hand."
+      }
+    },
+    "major-15": {
+      "name": "The Compulsion",
+      "number": "15",
+      "slug": "major-15",
+      "arcana": "major",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Three times five (3x5): The Utterance meets The Pressure -- generativity codified by demand into compulsion. Productive speech bound, without a third energy to mediate, into the chains of doctrine.",
+        "factors": [
+          3,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "Generativity captured by pressure and hardened into compulsion -- speech and desire codified into something that binds rather than frees. The fertile word and the irreducible demand combined without mediation: signs become chains.",
+        "inverted": "The binding seen as binding; the compulsion named and so loosened; recognizing the chain as made, not given."
+      },
+      "visuals": {
+        "detailed_description": "Generative sign-forms locked into a rigid repeating lattice of cold legible line, each one a link, the whole reading as doctrine that cannot be refused."
+      }
+    },
+    "major-16": {
+      "name": "The Rupture",
+      "number": "16",
+      "slug": "major-16",
+      "arcana": "major",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two to the fourth (2-to-the-4th): The Frame squared past containment -- The Difference concentrated until structure shatters. Landing on a prime-position station (Assertion), the derived rupture strikes with irreducible force: a built thing breaking like an atom.",
+        "factors": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The frame of difference squared again until it cannot hold -- the categorical structure shattered by the very difference it was built on, revelation arriving as collapse. What refused to stay contained explodes into the open.",
+        "inverted": "Rupture courted for its drama; collapse with no revelation; tearing down a structure only to rebuild the same one."
+      },
+      "visuals": {
+        "detailed_description": "A locked lattice detonating outward in a single high-contrast flash of struck light, its categories flying apart along the original seam -- built structure annihilated by atomic force."
+      }
+    },
+    "major-17": {
+      "name": "The Opening",
+      "number": "17",
+      "slug": "major-17",
+      "arcana": "major",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (17), the first of Act III and on a prime-position station (Thematization): doubly atomic. Renewal that cannot be derived from the collapse before it -- a genuinely new opening, irreducible as hope itself."
+      },
+      "meaning": {
+        "upright": "Irreducible renewal -- the self-present consciousness recovering its own reality, the possibility of reform that cannot be deduced from what came before. After collapse, an opening that is genuinely new: hope as an unfactorable fact.",
+        "inverted": "Hope inflated past its warrant; renewal mistaken for a return to before; the opening gazed at but never entered."
+      },
+      "visuals": {
+        "detailed_description": "A single clear aperture of new light held isolated in a hushed dark field, the surrounding ruin dimmed to ground so that the opening alone is given -- a way through that was not there a moment ago."
+      }
+    },
+    "major-18": {
+      "name": "The Veil",
+      "number": "18",
+      "slug": "major-18",
+      "arcana": "major",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times three squared (2 x 3-squared): The Difference witnessing the fulfilled Utterance -- generativity doubled but seen through the veil of the split. Fecund illusion: everything is being made, and you cannot read what.",
+        "factors": [
+          2,
+          3,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Differentiation witnessing a doubled generativity it cannot clearly read -- everything producing and producing, fecund but seen through the distortion of the original split. Abundance you cannot trust; predications made in obscurity.",
+        "inverted": "The veil recognized as veil; learning to act amid uncertainty without pretending to see; the fog admitted rather than mistaken for night."
+      },
+      "visuals": {
+        "detailed_description": "Teeming generative forms multiplying in obscured light, half-seen across a locked predicative joint, each one casting a doubtful double -- production glimpsed through a film that will not lift."
+      }
+    },
+    "major-19": {
+      "name": "The Logos",
+      "number": "19",
+      "slug": "major-19",
+      "arcana": "major",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (19), the final prime before completion, on a prime-position station (Self-presence): doubly atomic. Full self-present speech -- irreducible illumination, the Logos transparent to its own act."
+      },
+      "meaning": {
+        "upright": "Irreducible illumination -- speech wholly present to itself, the self-defining consciousness in full vitality, the Word transparent to its own act. Not assembled from lesser clarities; it simply shines. Dewart's self-present consciousness at its noon.",
+        "inverted": "Illumination that blinds; self-presence inflated into certainty without mercy; the light that will not admit a shadow."
+      },
+      "visuals": {
+        "detailed_description": "A single radiant upright form lit entirely from within, casting no shadow and needing no source but itself, the field around it warmed by its own clarity -- speech that sees itself speaking."
+      }
+    },
+    "major-20": {
+      "name": "The Summons",
+      "number": "20",
+      "slug": "major-20",
+      "arcana": "major",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared times five (2-squared x 5): The Frame met by The Pressure -- structured difference summoned by the disruptive demand. What was built and buried is called up; reckoning reveals the pattern you were always within.",
+        "factors": [
+          2,
+          2,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "The stable frame of difference called to account by the disruptive demand -- what was built and settled in the dark is summoned to answer for itself. Reckoning as the revelation of the pattern one was always inside; the settled ground called up to judgement.",
+        "inverted": "The summons heard but evaded; reckoning turned to self-recrimination; awakening that refuses to change anything."
+      },
+      "visuals": {
+        "detailed_description": "Settled strata of structured sign-forms stirring upward in warm dusk light as though called, a long-laid pattern rising to be read at last -- the sediment summoned to account."
+      }
+    },
+    "major-21": {
+      "name": "The Spoken World",
+      "number": "21",
+      "slug": "major-21",
+      "arcana": "major",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Three times seven (3x7): The Utterance meets The Theme -- generativity given thematic form. The complete dynamic whole, the world fully spoken; returning to the In-formation station, the cycle closes and the ground awaits the next act.",
+        "factors": [
+          3,
+          7
+        ]
+      },
+      "meaning": {
+        "upright": "Everything brought forth and held as theme -- reality fully taken up into self-present speech, the human world as the world said. Dynamic completion: generativity and thematization integrated, the involution whole, the end folding back into the ground it began from.",
+        "inverted": "Completion mistaken for closure; the spoken world taken for the only world; wholeness that stops listening for what it hasn't yet said."
+      },
+      "visuals": {
+        "detailed_description": "A vast articulated field of forms, each one both generated and held, resolving into a single integrated whole under flat receptive light that returns it gently to ground -- the world entire, spoken, and given back to be received again."
+      }
+    },
+    "names-ace": {
+      "name": "Ace of Names",
+      "number": "1",
+      "slug": "names-ace",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "ace",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Multiplicative identity (1): the pure unit of naming -- the world's legibility present but unexercised, the seed of every later act of Names."
+      },
+      "meaning": {
+        "upright": "The bare capacity to name -- a world arriving as nameable before any name is set upon it. Pure differentiative potential, the first openness of attention to the given, the seed from which every later act of naming unfolds.",
+        "inverted": "Potential to name hoarded; the world held at the threshold of recognition and never let in; a readiness to articulate that congeals into mute receptivity."
+      },
+      "visuals": {
+        "detailed_description": "A single unlabelled specimen-form resting at the center of a pale, even field under flat receptive light, one blank tag floating beside it on a fine thread -- the naturalist's plate before the first word is inked, the name about to be given but not yet given."
+      }
+    },
+    "names-two": {
+      "name": "Two of Names",
+      "number": "2",
+      "slug": "names-two",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "two",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (2): irreducible. The originary split Names draws -- this from not-this -- that no analysis dissolves; the load-bearing difference beneath every later naming."
+      },
+      "meaning": {
+        "upright": "The first cut of the name: the world split into this and not-this, a sign set against what it is not. Differentiation as the originary work of naming, articulation drawing its first clean line across the given.",
+        "inverted": "The line drawn too hard -- distinction calcified into opposition, a name that severs what it should merely distinguish, the world cleaved for the cleaving's sake."
+      },
+      "visuals": {
+        "detailed_description": "Two specimen-forms held apart by a single ruled seam on a pale gridded ground, each side lit with the same clear diagrammatic light, a fine pointer poised at the seam -- the lexicon's first entry dividing the world in two."
+      }
+    },
+    "names-three": {
+      "name": "Three of Names",
+      "number": "3",
+      "slug": "names-three",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "three",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (3): irreducible. The generative surplus of Names -- the new concept brought forth -- arriving as something the world did not contain until it was said."
+      },
+      "meaning": {
+        "upright": "Naming made fertile -- a new sign brought forth that was not in the world before, the surplus of articulation generating concepts that outlast the moment. The given doubled by the word that gathers it.",
+        "inverted": "Names proliferating past use -- a lexicon breeding terms for its own sake, articulation that buries the thing under the names for it."
+      },
+      "visuals": {
+        "detailed_description": "A third specimen-form issuing crisply from between two on a pale ground, struck into focus by a sudden charged clarity, freshly labelled -- the catalogue's new coinage emerging, lit as though named into being."
+      }
+    },
+    "names-four": {
+      "name": "Four of Names",
+      "number": "4",
+      "slug": "names-four",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "four",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared: the Two of Names stabilized -- the originary this/not-this split hardened into the standing taxonomy a worldview reasons inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The name's distinction built up into a standing taxonomy -- categories locked into a frame the mind can reason inside. The split of the Two made permanent architecture, a worldview's scaffolding of kinds.",
+        "inverted": "The taxonomy mistaken for the world -- a grid of categories that imprisons what it sorts, classification outliving the perceptions that warranted it."
+      },
+      "visuals": {
+        "detailed_description": "A rigorous lattice of labelled cells raised from a single seam, each cell holding one named kind, the whole isolated and held in a hush of narrowed light against pale ground -- the classification table lifted up and regarded as object."
+      }
+    },
+    "names-five": {
+      "name": "Five of Names",
+      "number": "5",
+      "slug": "names-five",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "five",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (5): irreducible. The unfactorable pressure Names meets -- the given that no existing category absorbs -- a stress that won't resolve into the terms already drawn."
+      },
+      "meaning": {
+        "upright": "A given that will not fit the names on hand -- the anomalous specimen, the pressure of a reality that breaks the taxonomy meant to hold it. Disruption arriving as the thing no existing category can take.",
+        "inverted": "The unfitting thing forced into a box anyway -- pressure that only fractures the lexicon, the anomaly courted as crisis rather than met as occasion."
+      },
+      "visuals": {
+        "detailed_description": "A standing classification-lattice strained near to fracture where one specimen refuses every cell, the two locking into structured articulate light at the point of stress -- the name brought down hard on a thing that will not answer to it."
+      }
+    },
+    "names-six": {
+      "name": "Six of Names",
+      "number": "6",
+      "slug": "names-six",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "six",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times three: the Two of Names meets the Three -- the split made generative, distinction and surplus fused into the first articulate naming.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Distinction made generative -- to name well is at once to divide and to bring forth, the clean cut and the fertile concept fused into one articulate act. The lexicon's first true composite work, recognized as one's own.",
+        "inverted": "Articulation that forecloses -- a naming so deft it re-divides what it was meant to gather, false harmony where the cut quietly cancels the surplus."
+      },
+      "visuals": {
+        "detailed_description": "A new named form issuing precisely along a clean seam, lit from within the scene by a contained inner radiance rather than from without -- the dividing and the bringing-forth shown as a single self-aware gesture on pale ground."
+      }
+    },
+    "names-seven": {
+      "name": "Seven of Names",
+      "number": "7",
+      "slug": "names-seven",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "seven",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (7): irreducible. The reckoning that halts Names -- the assessment of inherited terms against the world -- a crossroads that cannot be deferred."
+      },
+      "meaning": {
+        "upright": "The reckoning that stops the namer -- a crossroads where the inherited lexicon must be assessed before another word is set down. The irreducible pause in which one weighs the names received against the world they were meant to hold.",
+        "inverted": "The pause that never ends -- endless taxonomic deliberation, reckoning with the lexicon turned into refusal to name at all."
+      },
+      "visuals": {
+        "detailed_description": "A single specimen-form halted before a forking row of labels in warm dimming light, the older names settling into layered strata beneath it -- the catalogue's crossroads, the held question of which name to lay down next."
+      }
+    },
+    "names-eight": {
+      "name": "Eight of Names",
+      "number": "8",
+      "slug": "names-eight",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "eight",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two cubed: the Two of Names compounded into mastery or excess -- the this/not-this split lived until naming becomes command, or the sign drifts free of its thing.",
+        "factors": [
+          2,
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The name's distinction lived so deep it becomes power -- total command of the lexicon, the sign wielded with such fluency it risks floating free of the thing. Mastery of classification shading toward a legibility that no longer touches the given.",
+        "inverted": "The name cut wholly loose from reality -- supremely fluent, utterly detached, a taxonomy so complete it has forgotten the world it was drawn from."
+      },
+      "visuals": {
+        "detailed_description": "A single sign-form rendered in cold exact line, cleanly excised from any ground and floating in pale empty space under flat receptive light -- the named thing perfected into pure legibility, arriving weightless and unanchored."
+      }
+    },
+    "names-nine": {
+      "name": "Nine of Names",
+      "number": "9",
+      "slug": "names-nine",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "nine",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Three squared: the Three of Names fulfilled and turned inward -- generativity ripened into a standing understanding the lexicon carries alone.",
+        "factors": [
+          3,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "The lexicon's generativity ripened and turned inward -- naming so complete it has become a standing body of understanding, the catalogue matured into a way of seeing. Productive articulation harvested into quiet competence.",
+        "inverted": "Understanding hoarded as a private taxonomy -- the ripe lexicon clung past its season, wisdom withdrawn into a vocabulary only its keeper can read."
+      },
+      "visuals": {
+        "detailed_description": "An abundant array of named forms turned inward upon a single point on a pale gridded ground, the catalogue's surplus gathered into one quiet legible center under clear articulating light -- generation matured into a held understanding of kinds."
+      }
+    },
+    "names-ten": {
+      "name": "Ten of Names",
+      "number": "10",
+      "slug": "names-ten",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "ten",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times five: the Two of Names meets the Five -- the established taxonomy stressed by the unfitting given until the whole scheme turns over.",
+        "factors": [
+          2,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "The taxonomy stressed until it completes by breaking open -- the established system of names meeting the anomaly that overturns it, culmination that is also the seed of a new scheme. The lexicon spilling past its own categories.",
+        "inverted": "The overflowing system clung to as it drowns -- completion refused, the breaking scheme defended as though the flood of new things were catastrophe rather than the turn."
+      },
+      "visuals": {
+        "detailed_description": "A fully built classification-lattice breaking open along its founding seam under a sudden charged strike of light, named cells flying loose on pale ground -- the catalogue spilling over into the scheme that will succeed it."
+      }
+    },
+    "names-novice": {
+      "name": "Novice of Names",
+      "number": "11",
+      "slug": "names-novice",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "novice",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (11): irreducible. First contact with Names as a genuinely new energy -- the apprentice's act of recognition, not reducible to the faculties beneath it."
+      },
+      "meaning": {
+        "upright": "First contact with the act of naming -- the apprentice lexicographer learning to fit word to world, attention wholly on the doing. Fresh, curious, irreducible openness to the work of recognition.",
+        "inverted": "Naming dabbled at and never tested -- terms collected for their own charm, the perpetual beginner mistaking a growing vocabulary for understanding."
+      },
+      "visuals": {
+        "detailed_description": "A young figure tentatively setting a first label beside a specimen held in a hush of narrowed light, the rest of the field dimmed to ground so the one named thing alone is given -- the apprentice's first act of recognition."
+      }
+    },
+    "names-wielder": {
+      "name": "Wielder of Names",
+      "number": "12",
+      "slug": "names-wielder",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "wielder",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared times three: the Frame of Names made to produce -- structured taxonomy driven outward into the active, extended work of naming the world.",
+        "factors": [
+          2,
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "The taxonomy driven outward into active pursuit -- a structured lexicon thrown at the world to name everything in reach, classification in full committed motion. The frame of kinds made to produce, extended to its limit.",
+        "inverted": "Naming run to recklessness -- the lexicon flung outward without aim, every thing labelled at speed and nothing truly recognized, motion mistaken for understanding."
+      },
+      "visuals": {
+        "detailed_description": "A figure in committed motion laying labels rapidly across a widening field, names converging and locking onto target after target in structured articulate light -- the classification act driven outward to its furthest extension."
+      }
+    },
+    "names-keeper": {
+      "name": "Keeper of Names",
+      "number": "13",
+      "slug": "names-keeper",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "keeper",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (13): irreducible. Naming internalized into character -- a transformation into quiet mastery of kinds that no analysis softens."
+      },
+      "meaning": {
+        "upright": "Naming internalized into character -- the lexicon become so much a part of the seer that it shows only as a quiet authority over kinds, mastery held inwardly and given without display. Recognition matured into presence.",
+        "inverted": "The keeper's mastery turned to gatekeeping -- naming become control over who may name, depth curdled into an aloof custody of the lexicon."
+      },
+      "visuals": {
+        "detailed_description": "A seated figure in whom the act of naming has become stillness, a single labelled form resting in their hands lit from within by contained radiance on pale ground -- taxonomy so internal it appears only as presence."
+      }
+    },
+    "names-sovereign": {
+      "name": "Sovereign of Names",
+      "number": "14",
+      "slug": "names-sovereign",
+      "arcana": "minor",
+      "suit_slug": "names",
+      "rank_slug": "sovereign",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times seven: the Two of Names meets the Seven -- the originary split directed by the power to reckon, naming become the authoritative standard of kinds.",
+        "factors": [
+          2,
+          7
+        ]
+      },
+      "meaning": {
+        "upright": "Naming as directive authority -- the lexicon turned outward to define a shared world, the standard of kinds others measure by. Distinction wedded to reckoning: the namer who sets the terms a whole tradition will inherit.",
+        "inverted": "The standard of names imposed as law -- a taxonomy dictated rather than offered, authority over kinds narrowed to the silencing of every other way of cutting the world."
+      },
+      "visuals": {
+        "detailed_description": "A standing figure holding a single defining label aloft as the surrounding field of named forms settles into ordered strata beneath them in warm dusk light -- the lexicon laid down as the law of kinds a tradition will receive."
+      }
+    },
+    "claims-ace": {
+      "name": "Ace of Claims",
+      "number": "1",
+      "slug": "claims-ace",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "ace",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Multiplicative identity (1): the pure unit of assertion -- the force to claim the world present but unexercised, the seed of every later act of Claims."
+      },
+      "meaning": {
+        "upright": "The bare capacity to assert the world -- a claim latent in the throat before it is thrown, pure assertive potential gathering behind the sign. The seed of every stand one will take on what is.",
+        "inverted": "The claim hoarded, never thrown -- assertive force held so long it sours into mere posture, a stand readied and endlessly deferred."
+      },
+      "visuals": {
+        "detailed_description": "A single wedge-form poised above a clear baseline in diagrammatic light, charged but unstruck, its shadow already cast on the line below -- the alarm drawn in, the claim about to fall but not yet fallen."
+      }
+    },
+    "claims-two": {
+      "name": "Two of Claims",
+      "number": "2",
+      "slug": "claims-two",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "two",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (2): irreducible. The originary split Claims draws -- so from not-so, by force -- that no analysis dissolves; the load-bearing difference under every later assertion."
+      },
+      "meaning": {
+        "upright": "The first division a claim makes: it cleaves the world into so and not-so, forcing a stand by setting the asserted against everything it denies. Differentiation under full force -- the line drawn not in ink but in commitment.",
+        "inverted": "The cleaving claim that only estranges -- a stand taken so hard it severs the asserter from every position but their own, opposition mistaken for truth."
+      },
+      "visuals": {
+        "detailed_description": "Two charged forms struck violently apart by a single decisive wedge of light on a stark dark field, the line between them carrying real impact -- the alarm that divides the world into what is and what is denied."
+      }
+    },
+    "claims-three": {
+      "name": "Three of Claims",
+      "number": "3",
+      "slug": "claims-three",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "three",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (3): irreducible. The generative surplus of Claims -- the new fact an assertion brings into the shared world -- arriving with the force of commitment."
+      },
+      "meaning": {
+        "upright": "Assertion bringing a new fact into the shared world -- the claim that does not merely report but generates, a thesis whose force makes something the case for those who take it up. Generativity with the weight of commitment behind it.",
+        "inverted": "Claims breeding claims for their own momentum -- assertion generating positions faster than the world can warrant, force outrunning fact."
+      },
+      "visuals": {
+        "detailed_description": "A third charged form lifted into a hush of narrowed light from between two struck shapes, held up as the thing newly claimed -- the assertion's surplus, a fact brought forth and isolated for the taking."
+      }
+    },
+    "claims-four": {
+      "name": "Four of Claims",
+      "number": "4",
+      "slug": "claims-four",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "four",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared: the Two of Claims stabilized -- the so/not-so cleaving hardened into the standing platform of positions a worldview asserts from.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The claim's division built into a standing platform -- a structure of asserted positions locked into a stance one predicates everything from. Force made permanent: the worldview hardened into the things it will not unsay.",
+        "inverted": "The platform mistaken for the world -- a stance so rigid every new fact is bent to fit it, asserted structure outliving the convictions that raised it."
+      },
+      "visuals": {
+        "detailed_description": "A rigorous lattice of struck lines converging into a single predicative joint and locking, each beam a held position, the whole driven home in structured articulate light against dark -- the worldview built up as a platform of claims."
+      }
+    },
+    "claims-five": {
+      "name": "Five of Claims",
+      "number": "5",
+      "slug": "claims-five",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "five",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (5): irreducible. The unfactorable pressure Claims meets -- the fact that will not be asserted away -- a resistance that won't resolve into the terms of the stand."
+      },
+      "meaning": {
+        "upright": "A fact that resists the claim -- the recalcitrant reality that will not be asserted away, the pressure of a world pushing back against the stand taken. Disruption met by the asserter as the thing their force cannot move.",
+        "inverted": "Force flung harder at the immovable -- pressure that only shatters the claim, the asserter breaking themselves against a world they will not concede."
+      },
+      "visuals": {
+        "detailed_description": "A single point of self-originating light strained near to fracture under converging dark, lit from within rather than struck from without -- the claim meeting the fact it cannot move, the stress turning the asserter back upon themselves."
+      }
+    },
+    "claims-six": {
+      "name": "Six of Claims",
+      "number": "6",
+      "slug": "claims-six",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "six",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times three: the Two of Claims meets the Three -- forceful division made generative, the stand and the new truth fused into one settling assertion.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Forceful division made generative -- the claim that both takes a stand and produces a settled truth, cleaving and bringing-forth fused so the asserted comes to rest as shared ground. Assertion's first composite work, settling into the tacit.",
+        "inverted": "The productive claim that forecloses -- a stand so quickly settled it ossifies, the fertile assertion crusting into dogma before it was ever tested."
+      },
+      "visuals": {
+        "detailed_description": "A newly asserted form issuing along a clean struck seam and settling into warm layered strata, the cut and the bringing-forth coming to rest as ground -- the claim laid down to become the next generation's given."
+      }
+    },
+    "claims-seven": {
+      "name": "Seven of Claims",
+      "number": "7",
+      "slug": "claims-seven",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "seven",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (7): irreducible. The reckoning that halts Claims -- the standing assertion called to answer for itself -- a crossroads that cannot be shouted past."
+      },
+      "meaning": {
+        "upright": "The reckoning that halts the asserter -- the crossroads where one's standing claims must be answered for before another can be thrown. The irreducible pause in which force meets the question it cannot shout down, received rather than imposed.",
+        "inverted": "The crossroads fled by asserting louder -- reckoning evaded with a fresh claim, the necessary pause drowned under more force."
+      },
+      "visuals": {
+        "detailed_description": "A single wedge-form halted mid-fall before a fork it cannot strike through, the charge draining into flat receptive light, the baseline waiting unstruck below -- the alarm suspended at the question it must answer before it lands."
+      }
+    },
+    "claims-eight": {
+      "name": "Eight of Claims",
+      "number": "8",
+      "slug": "claims-eight",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "eight",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two cubed: the Two of Claims compounded into mastery or excess -- the so/not-so cleaving lived until asserting becomes command, or compulsion.",
+        "factors": [
+          2,
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The claim's division lived to mastery -- total command of the stand, force wielded with such fluency it can assert anything, and risks asserting what it should not. The cleaving power deepened into authority, or into the inability to stop claiming.",
+        "inverted": "Force that cannot let go -- the stand become compulsion, every situation met with a claim, mastery of assertion curdled into a need to dominate the world by saying so."
+      },
+      "visuals": {
+        "detailed_description": "A single figure wielding the very wedge that defines them as a practiced tool, striking claim after claim into clear diagrammatic light with effortless command -- assertion deepened into a power that no longer knows how to be silent."
+      }
+    },
+    "claims-nine": {
+      "name": "Nine of Claims",
+      "number": "9",
+      "slug": "claims-nine",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "nine",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Three squared: the Three of Claims fulfilled and turned inward -- generativity become a self-sustaining body of conviction the worldview generates on its own.",
+        "factors": [
+          3,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Assertion's generativity fulfilled and turned inward -- claims producing claims until they form a self-sustaining body of conviction, a worldview that now generates its own positions. Force matured into a standing edifice of the asserted.",
+        "inverted": "Conviction feeding only on itself -- a body of claims that has forgotten the world it was about, the self-sustaining edifice become a closed loop of assertion."
+      },
+      "visuals": {
+        "detailed_description": "Streams of struck forms looping back to feed their own source under high charged light, claim igniting claim -- a fire of assertion whose fuel is its own conviction, generation upon generation of the asserted."
+      }
+    },
+    "claims-ten": {
+      "name": "Ten of Claims",
+      "number": "10",
+      "slug": "claims-ten",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "ten",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times five: the Two of Claims meets the Five -- the established platform stressed by the recalcitrant fact until the whole conviction turns over.",
+        "factors": [
+          2,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "The platform of claims stressed until it overturns -- the established conviction meeting the fact that breaks it, a stand completing by yielding to what unmakes it. The worldview spilling past its own positions at the moment of the turn.",
+        "inverted": "The overturning stand clung to as catastrophe -- completion refused, the breaking conviction defended though the disruptive fact has already won."
+      },
+      "visuals": {
+        "detailed_description": "A fully built platform of struck beams caught at the instant of rotation in a hush of narrowed light, half already turned to shadow under a final pressure -- the conviction pivoting, breaking open along its founding claim."
+      }
+    },
+    "claims-novice": {
+      "name": "Novice of Claims",
+      "number": "11",
+      "slug": "claims-novice",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "novice",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (11): irreducible. First contact with Claims as a genuinely new energy -- the apprentice's first true stand, not reducible to the faculties beneath it."
+      },
+      "meaning": {
+        "upright": "First contact with assertion -- the apprentice learning to take a stand, to throw a claim and mean it, force found for the first time. Fresh, eager, irreducible willingness to commit to what is.",
+        "inverted": "Assertion dabbled at -- claims thrown without weight, the perpetual beginner mistaking the noise of a stand for the substance of conviction."
+      },
+      "visuals": {
+        "detailed_description": "A young figure tentatively striking a first wedge down onto a baseline, the two meeting and locking in structured articulate light -- the apprentice's first real claim, attention wholly on the landing."
+      }
+    },
+    "claims-wielder": {
+      "name": "Wielder of Claims",
+      "number": "12",
+      "slug": "claims-wielder",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "wielder",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared times three: the Frame of Claims made to produce -- the structured platform of conviction driven outward into headlong, extended assertion.",
+        "factors": [
+          2,
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "The platform of conviction driven outward to extremes -- a structured stand thrown at the world with full committed force, assertion in headlong motion. The frame of positions made to produce, claiming as far as it can reach.",
+        "inverted": "Assertion run to recklessness -- force flung outward without aim, every situation claimed at speed, the stand become a battering momentum that mistakes motion for victory."
+      },
+      "visuals": {
+        "detailed_description": "A figure in committed motion driving claim after claim outward, the gestures extended to their limit and lit from within by a reflexive inner charge -- the asserter's force thrown to its furthest reach and knowing itself as it throws."
+      }
+    },
+    "claims-keeper": {
+      "name": "Keeper of Claims",
+      "number": "13",
+      "slug": "claims-keeper",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "keeper",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (13): irreducible. Assertion internalized into character -- a transformation into quiet, unshakeable conviction that no analysis softens."
+      },
+      "meaning": {
+        "upright": "Assertion internalized into character -- conviction become so much a part of the person that it shows only as quiet authority, force held inwardly and given without raising the voice. The stand matured into settled presence.",
+        "inverted": "The keeper's conviction turned to control -- assertion become a quiet dominance, depth of stand curdled into an authority that brooks no question, settled into an unmovable crust."
+      },
+      "visuals": {
+        "detailed_description": "A seated figure in whom the act of claiming has become stillness, a single wedge resting at rest in their hands under warm dusk light thickening into ground -- conviction so internal it shows only as a settled, unanswerable presence."
+      }
+    },
+    "claims-sovereign": {
+      "name": "Sovereign of Claims",
+      "number": "14",
+      "slug": "claims-sovereign",
+      "arcana": "minor",
+      "suit_slug": "claims",
+      "rank_slug": "sovereign",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times seven: the Two of Claims meets the Seven -- forceful division directed by the power to reckon, assertion become the authoritative standard of what is.",
+        "factors": [
+          2,
+          7
+        ]
+      },
+      "meaning": {
+        "upright": "Assertion as directive authority -- conviction turned outward to define what a community will hold true, the standard of fact others measure by. Force wedded to reckoning: the asserter who sets the terms of the real, and listens for what the world returns.",
+        "inverted": "The standard of truth imposed as decree -- conviction dictated rather than offered, authority over the real narrowed to the silencing of every dissenting fact."
+      },
+      "visuals": {
+        "detailed_description": "A standing figure holding a single defining claim aloft over a field that settles receptively to receive it in flat even light -- the assertion laid down as the standard of the real a community will take in as given."
+      }
+    },
+    "tells-ace": {
+      "name": "Ace of Tells",
+      "number": "1",
+      "slug": "tells-ace",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "ace",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Multiplicative identity (1): the pure unit of disclosure -- the self's capacity to show through present but unexercised, the seed of every later act of Tells."
+      },
+      "meaning": {
+        "upright": "The bare capacity for the self to show -- disclosure latent before any sign betrays it, pure expressive potential gathering at the surface. The seed of every way the speaking will reveal the speaker.",
+        "inverted": "The tell held back so hard it becomes its own signal -- self-disclosure hoarded until the very withholding leaks, potential for openness sealed into guardedness."
+      },
+      "visuals": {
+        "detailed_description": "A single faint ripple beginning at the center of a warm dim field, lit by one sudden interior glow, a half-turned figure sensed at the edge -- the self about to show through, the first tremor of disclosure not yet read."
+      }
+    },
+    "tells-two": {
+      "name": "Two of Tells",
+      "number": "2",
+      "slug": "tells-two",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "two",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (2): irreducible. The originary split Tells draws -- felt from shown, inner from leaked -- that no analysis dissolves; the load-bearing difference beneath every disclosure."
+      },
+      "meaning": {
+        "upright": "The first division the self betrays -- the tell that distinguishes inner from shown, what is felt from what leaks out, the originary split between the self and its own expression. Differentiation surfacing involuntarily, sensed before it is grasped.",
+        "inverted": "The split between felt and shown turned to estrangement -- a self so divided from its own expression it no longer recognizes the tell as its own, leakage mistaken for a stranger's."
+      },
+      "visuals": {
+        "detailed_description": "Two faint concentric forms held apart by a single seam in a hush of narrowed amber light, one inner and one surfacing, a figure half-turned away from the very ripple it casts -- the self distinguished from its own disclosure."
+      }
+    },
+    "tells-three": {
+      "name": "Three of Tells",
+      "number": "3",
+      "slug": "tells-three",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "three",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (3): irreducible. The generative surplus of Tells -- the self-image disclosure brings forth in another -- arriving as more than the sign intended."
+      },
+      "meaning": {
+        "upright": "Disclosure made generative -- the tell that brings forth more than it meant to, expression generating a self-image in the watcher that exceeds the sign. The involuntary surplus by which a mood, once shown, makes something new between people.",
+        "inverted": "Leakage proliferating past control -- the self betraying more and more, each tell breeding another, disclosure that floods the message it rode in on."
+      },
+      "visuals": {
+        "detailed_description": "A third ripple issuing from the meeting of two and locking into structured articulate light, warmer and wider than its sources -- the self's disclosure generating a surplus that converges on the one who watches."
+      }
+    },
+    "tells-four": {
+      "name": "Four of Tells",
+      "number": "4",
+      "slug": "tells-four",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "four",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared: the Two of Tells stabilized -- the felt/shown split hardened into the standing temperament others read the self by.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The tell's division stabilized into a standing manner -- recurring disclosure hardened into temperament, the involuntary made into a frame others read one by. The split between felt and shown built up into character one is present to.",
+        "inverted": "Temperament become a cage -- a manner so fixed every feeling is forced through the same disclosure, the standing self-image outliving the self it was meant to show."
+      },
+      "visuals": {
+        "detailed_description": "A fixed lattice of concentric ripples raised from a single seam, lit from within by contained radiance, a figure meeting the steady pattern of its own disclosure -- involuntary expression built up into a standing, self-aware manner."
+      }
+    },
+    "tells-five": {
+      "name": "Five of Tells",
+      "number": "5",
+      "slug": "tells-five",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "five",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (5): irreducible. The unfactorable pressure Tells meets -- the feeling too strong to hide -- a disclosure that won't resolve into composure."
+      },
+      "meaning": {
+        "upright": "A feeling that will not stay hidden -- the pressure of an inner state too strong for any composure, the tell that breaks through despite every effort to settle it. Disruption surfacing as the disclosure one cannot prevent, sinking into the room as fact.",
+        "inverted": "The breaking feeling courted for its drama -- pressure let leak as performance, the uncontrollable tell cultivated rather than met, collapse mistaken for honesty."
+      },
+      "visuals": {
+        "detailed_description": "A standing pattern of ripples strained near to fracture by a force rising from beneath, the disturbance settling into warm dusk light as it spreads -- the inner state breaking composure and sinking into the room as something everyone now knows."
+      }
+    },
+    "tells-six": {
+      "name": "Six of Tells",
+      "number": "6",
+      "slug": "tells-six",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "six",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times three: the Two of Tells meets the Three -- the felt/shown split made generative, distinction and surplus fused into the disclosure that makes contact.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Disclosure made fertile -- the tell that both distinguishes the self and brings forth genuine contact, expression that divides inner from shown precisely so something true can pass between people. The self's first composite work, received as a gift rather than a leak.",
+        "inverted": "Expression that forecloses contact -- a disclosure so practiced it re-divides where it meant to join, false intimacy where the showing quietly cancels what it offered."
+      },
+      "visuals": {
+        "detailed_description": "A new ripple issuing along a clean seam into flat receptive light, settling gently as it widens toward a second figure -- the self's disclosure shown as a single articulate gesture of contact, given and taken in."
+      }
+    },
+    "tells-seven": {
+      "name": "Seven of Tells",
+      "number": "7",
+      "slug": "tells-seven",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "seven",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (7): irreducible. The reckoning that halts Tells -- the self assessing what its own disclosures have said -- a crossroads that cannot be deferred."
+      },
+      "meaning": {
+        "upright": "The reckoning that halts the self-disclosing -- the crossroads where one must assess what one's tells have been saying before showing more. The irreducible pause in which the self reads its own leakage, held up clear and at arm's length.",
+        "inverted": "The crossroads of self-reading turned to paralysis -- endless scrutiny of one's own tells, disclosure frozen by the fear of what it reveals, the pause that never resolves into expression."
+      },
+      "visuals": {
+        "detailed_description": "A single half-turned figure halted before a forking row of its own faint ripples, each disclosure lifted into clear legible light to be read -- the self at the crossroads of what it has been showing, weighing the next tell."
+      }
+    },
+    "tells-eight": {
+      "name": "Eight of Tells",
+      "number": "8",
+      "slug": "tells-eight",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "eight",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two cubed: the Two of Tells compounded into mastery or excess -- the felt/shown split lived until disclosure becomes command, or the surface estranges from the depth.",
+        "factors": [
+          2,
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The tell's division lived to mastery -- the self so fluent in its own disclosure it can show or withhold at will, the involuntary made into a practiced instrument. Expression deepened into command, risking a self that is all surface and no felt depth; here the ontic shadow stirs early, for a self that performs disclosure may lose touch with what it discloses.",
+        "inverted": "Disclosure become pure performance -- the tell wielded so masterfully it no longer connects to any feeling, the self estranged from its own expression, showing what it does not feel and feeling nothing it shows."
+      },
+      "visuals": {
+        "detailed_description": "A single figure wielding its own ripple as a struck instrument, casting disclosure outward with effortless charged command into high-contrast light -- expression deepened into a power that has begun to float free of the self it signals."
+      }
+    },
+    "tells-nine": {
+      "name": "Nine of Tells",
+      "number": "9",
+      "slug": "tells-nine",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "nine",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Three squared: the Three of Tells fulfilled and turned inward -- generativity ripened into the self-knowledge a person carries alone.",
+        "factors": [
+          3,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Expression's generativity fulfilled and turned inward -- disclosure so complete it has become deep self-knowledge, the self that has read its own tells until it understands itself. Involuntary expression matured into a quiet, inward-facing wisdom of who one is.",
+        "inverted": "Self-knowledge hoarded into withdrawal -- the ripe understanding of one's own tells turned inward so far it becomes self-absorption, intimacy with the self that has no room left for another."
+      },
+      "visuals": {
+        "detailed_description": "An abundant array of ripples turned inward upon a single point and held in a hush of narrowed light, their warmth gathered into one quiet inner glow -- the self's long disclosure matured into a held understanding of its own depths."
+      }
+    },
+    "tells-ten": {
+      "name": "Ten of Tells",
+      "number": "10",
+      "slug": "tells-ten",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "ten",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times five: the Two of Tells meets the Five -- the standing temperament stressed by the unconcealable feeling until the self breaks open.",
+        "factors": [
+          2,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "The standing manner stressed until it gives way -- the temperament one has shown for years meeting the feeling that breaks it open, a self completing by yielding to what it can no longer conceal. Disclosure spilling past the character that held it.",
+        "inverted": "The breaking composure clung to as ruin -- the overflow of long-hidden feeling treated as catastrophe rather than the turn, the self refusing the disclosure that has already come."
+      },
+      "visuals": {
+        "detailed_description": "A fully built pattern of ripples breaking open along its founding seam under a final pressure, the two locking and then spilling in structured articulate light -- the long-held manner giving way to the feeling it could no longer hold."
+      }
+    },
+    "tells-novice": {
+      "name": "Novice of Tells",
+      "number": "11",
+      "slug": "tells-novice",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "novice",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (11): irreducible. First contact with Tells as a genuinely new energy -- the apprentice discovering its own disclosure, not reducible to the faculties beneath it."
+      },
+      "meaning": {
+        "upright": "First contact with disclosure -- the apprentice learning that the self shows through the speaking, discovering its own tells for the first time. Fresh, raw, irreducible openness to being read, present to the fact of its own expression.",
+        "inverted": "Disclosure dabbled at without ownership -- the beginner showing the self carelessly, mistaking every leak for confession, never learning what the tells actually mean."
+      },
+      "visuals": {
+        "detailed_description": "A young figure noticing for the first time the ripple it casts, half-turned toward its own faint disclosure and lit from within by a dawning inner light -- the apprentice meeting the fact that it shows."
+      }
+    },
+    "tells-wielder": {
+      "name": "Wielder of Tells",
+      "number": "12",
+      "slug": "tells-wielder",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "wielder",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared times three: the Frame of Tells made to produce -- standing temperament driven outward into full, extended self-disclosure.",
+        "factors": [
+          2,
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "The standing manner driven outward to its extreme -- temperament thrown into full expressive motion, the self disclosed at the highest pitch, showing everything it has. The frame of character made to produce, settling its full self-image into the room.",
+        "inverted": "Disclosure run to excess -- the self performed outward without restraint, every feeling broadcast at full volume until the expression exhausts itself and the room, intensity mistaken for depth."
+      },
+      "visuals": {
+        "detailed_description": "A figure in committed motion casting wide warm ripples outward to their limit, the disclosure thickening into dusk light as it settles across the whole field -- the self's expression driven to its furthest, fullest extension."
+      }
+    },
+    "tells-keeper": {
+      "name": "Keeper of Tells",
+      "number": "13",
+      "slug": "tells-keeper",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "keeper",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (13): irreducible. Disclosure internalized into character -- a transformation into quiet, receptive expressive depth that no analysis softens."
+      },
+      "meaning": {
+        "upright": "Disclosure internalized into character -- the self so at home in its own expression that it shows only as a quiet, receptive depth, the tells become a steady warmth others rest in. Expression matured into a presence that receives more than it broadcasts.",
+        "inverted": "The keeper's depth turned to withholding -- a self so composed it discloses nothing, the receptive warmth become an aloof reserve that takes everything in and gives nothing back."
+      },
+      "visuals": {
+        "detailed_description": "A seated figure in whom disclosure has become stillness, faint ripples resting at rest around them in flat even light, the warmth held quietly inward -- expression so internal it appears only as a depth one is received into."
+      }
+    },
+    "tells-sovereign": {
+      "name": "Sovereign of Tells",
+      "number": "14",
+      "slug": "tells-sovereign",
+      "arcana": "minor",
+      "suit_slug": "tells",
+      "rank_slug": "sovereign",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times seven: the Two of Tells meets the Seven -- the felt/shown split directed by the power to reckon, disclosure become the standard others read the room by.",
+        "factors": [
+          2,
+          7
+        ]
+      },
+      "meaning": {
+        "upright": "Disclosure as directive authority -- the self's expression turned outward to set the emotional standard a room takes from, the temperament others read and measure themselves by. Self-showing wedded to reckoning: the presence whose disclosed mood defines the felt terms of a shared space.",
+        "inverted": "The emotional standard imposed -- a self whose disclosure dictates the room's whole climate, expressive authority narrowed to demanding that everyone feel as it shows, mood as command."
+      },
+      "visuals": {
+        "detailed_description": "A standing figure whose disclosed presence orders the field of ripples around it into clear legible bands, the surrounding mood arranged by the temperament they hold -- the self's expression laid down as the felt standard of the room."
+      }
+    },
+    "avowals-ace": {
+      "name": "Ace of Avowals",
+      "number": "1",
+      "slug": "avowals-ace",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "ace",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Multiplicative identity (1): the pure unit of self-assertion -- the capacity to claim one's own experiencing present but unexercised, the seed of every later act of Avowals."
+      },
+      "meaning": {
+        "upright": "The bare capacity to claim oneself -- self-assertion latent before the first 'I', the pure potential of self-presence gathering. The seed from which every act of taking responsibility for one's own experiencing will unfold.",
+        "inverted": "The 'I' latent but never claimed -- self-presence held at the threshold and never entered, the capacity for self-definition congealed into a self one only points at, never avows. The ontic shadow at its faintest: a selfhood available and declined."
+      },
+      "visuals": {
+        "detailed_description": "A single upright stroke beginning to rise within a faint ring, lit from within by the first contained glow, held isolated in a hush of narrowed light -- the 'I' about to claim itself, self-presence on the verge of its first act."
+      }
+    },
+    "avowals-two": {
+      "name": "Two of Avowals",
+      "number": "2",
+      "slug": "avowals-two",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "two",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (2): irreducible. The originary split Avowals draws -- the 'I' from the self it claims -- that no analysis dissolves; the reflexive difference beneath all self-definition."
+      },
+      "meaning": {
+        "upright": "The first division the self asserts within itself -- the originary reflexive split between the 'I' that asserts and the self it asserts, the cut by which one becomes present to oneself as one's own object. Self-definition's load-bearing difference, claimed under full force.",
+        "inverted": "The reflexive split turned to self-estrangement -- the 'I' set so hard against its own self that the two no longer answer to each other, self-assertion become self-division. The ontic shadow: a self that asserts an 'I' it then disowns."
+      },
+      "visuals": {
+        "detailed_description": "Two upright forms held apart by a single deliberate seam, each ringed in its own light, meeting across a locked predicative joint in structured articulate light -- the self dividing into asserter and asserted, present to itself as its own theme."
+      }
+    },
+    "avowals-three": {
+      "name": "Three of Avowals",
+      "number": "3",
+      "slug": "avowals-three",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "three",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (3): irreducible. The generative surplus of Avowals -- the self brought into being by the act of claiming it -- arriving as something the avowal itself creates."
+      },
+      "meaning": {
+        "upright": "Self-assertion bringing forth a self that was not there before -- the avowal that generates selfhood in the act of claiming it, the 'I' producing itself by asserting its own experiencing. Pure reflexive generativity, luminous self-recognition as a creative act.",
+        "inverted": "The self generated faster than it can be owned -- self-assertion breeding self-images, an 'I' proliferating into roles none of which it inhabits. The ontic shadow: selfhood produced and never recognized as one's own."
+      },
+      "visuals": {
+        "detailed_description": "A third upright form issuing from the meeting of two and lit entirely from within, casting no shadow, a figure meeting its own newly-generated gaze in contained radiance -- the self brought forth by the very act of avowing it."
+      }
+    },
+    "avowals-four": {
+      "name": "Four of Avowals",
+      "number": "4",
+      "slug": "avowals-four",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "four",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared: the Two of Avowals stabilized -- the reflexive 'I'/self split hardened into the standing identity one returns to as oneself.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The reflexive split stabilized into a standing self -- self-assertion hardened into a settled identity, the 'I' built into a structure one inhabits and returns to. Self-definition become permanent architecture, the avowed self sedimented into who one simply is.",
+        "inverted": "Identity become a fixed possession -- the self reified into a structure defended against its own becoming, the avowed 'I' ossified into a self-image mistaken for the self. The ontic shadow: a standing identity one wears but is absent from."
+      },
+      "visuals": {
+        "detailed_description": "A fixed lattice of upright ringed forms raised from a single seam and settling into warm strata, lit from within, a figure at rest inside the structure of its own avowed self -- self-assertion built up into a standing, inhabited identity."
+      }
+    },
+    "avowals-five": {
+      "name": "Five of Avowals",
+      "number": "5",
+      "slug": "avowals-five",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "five",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (5): irreducible. The unfactorable pressure Avowals meets -- the experiencing the 'I' cannot claim -- a remainder that won't resolve into self-assertion."
+      },
+      "meaning": {
+        "upright": "A self that resists its own avowal -- the pressure of an experiencing one cannot fully claim, the part of oneself that will not be taken up into the 'I'. Disruption met inwardly: the irreducible remainder that self-assertion receives but cannot assert away.",
+        "inverted": "The unclaimable self forced into the 'I' anyway -- pressure that fractures self-presence, the avowal breaking against an experiencing it cannot own. The ontic shadow: a self that derealizes the part of itself it cannot assert."
+      },
+      "visuals": {
+        "detailed_description": "A single ringed upright form strained near to fracture by a force rising from within, lit from within and arriving into flat receptive light -- the 'I' meeting the experiencing it cannot claim, the stress turning self-presence back on what it must simply receive."
+      }
+    },
+    "avowals-six": {
+      "name": "Six of Avowals",
+      "number": "6",
+      "slug": "avowals-six",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "six",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times three: the Two of Avowals meets the Three -- the reflexive split made generative, division and self-creation fused into the avowal that makes one present to oneself.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Self-assertion made generative -- the avowal that both distinguishes the 'I' from its self and brings forth genuine self-presence, reflexive division and creation fused so that to claim oneself is to become oneself. Self-definition's first composite work, articulated clearly to oneself.",
+        "inverted": "Self-assertion that forecloses the self -- an avowal so practiced it re-divides where it meant to integrate, a fluent self-image that quietly cancels the self it claims. The ontic shadow: a self articulately defined and absently inhabited."
+      },
+      "visuals": {
+        "detailed_description": "A new upright form issuing precisely along a clean seam and lifted into clear legible light, a figure recognizing the self it has just brought forth -- self-assertion shown as the single articulate gesture by which one becomes present to oneself."
+      }
+    },
+    "avowals-seven": {
+      "name": "Seven of Avowals",
+      "number": "7",
+      "slug": "avowals-seven",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "seven",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (7): irreducible. The reckoning that halts Avowals -- the 'I' called to answer for the self it claims -- a crossroads that cannot be deferred."
+      },
+      "meaning": {
+        "upright": "The reckoning that halts the self-asserter -- the crossroads where the 'I' must answer for the self it has been claiming before it claims further. The irreducible pause in which self-presence is brought to account, struck into focus by a demand it cannot evade.",
+        "inverted": "The crossroads of self-reckoning fled by re-asserting -- the 'I' answering the question of itself with a louder avowal, the necessary pause shouted down. The ontic shadow: a self that asserts past the very reckoning that would make it real."
+      },
+      "visuals": {
+        "detailed_description": "A single ringed upright figure halted before a fork it cannot yet take, struck into high-contrast focus by a charged demanding light -- the 'I' arrested at the question of the self it has been asserting, the avowal suspended at its own reckoning."
+      }
+    },
+    "avowals-eight": {
+      "name": "Eight of Avowals",
+      "number": "8",
+      "slug": "avowals-eight",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "eight",
+      "station_slug": "thematization",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two cubed: the Two of Avowals compounded into mastery or excess -- the reflexive split lived until self-assertion becomes total command, and the command empties into the ontic shadow. The deck's sharpest crossing of phenomenal self-presence and its chiral ontic double.",
+        "factors": [
+          2,
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "The reflexive split lived to mastery -- self-assertion so fluent the 'I' can take itself as object with total command, holding its own self up as theme at will. Self-definition deepened into power; but lived to the bone, this is the very capacity by which a self can hold itself at such distance that it goes absent from its own experiencing. Phenomenal self-presence at its most accomplished, shadowed by the ontic turn it makes possible.",
+        "inverted": "Self-mastery curdled into the ontic shadow proper -- the 'I' so practiced at objectifying itself that it hands its own reality over to the object and goes absentminded, self-present in form and self-alienated in fact. The self wielded so expertly it is no longer inhabited: 'my true self is elsewhere,' said by the one most fluent in saying 'I'."
+      },
+      "visuals": {
+        "detailed_description": "A single ringed upright figure holding its own self-image aloft as a tool in a hush of narrowed light, the held self lit brilliantly while the figure that holds it dims toward shadow -- self-assertion deepened into a mastery that has begun to vacate the one who wields it."
+      }
+    },
+    "avowals-nine": {
+      "name": "Nine of Avowals",
+      "number": "9",
+      "slug": "avowals-nine",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "nine",
+      "station_slug": "thesis-making",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Three squared: the Three of Avowals fulfilled and turned inward -- generativity become the self-sustaining self-presence the 'I' generates on its own.",
+        "factors": [
+          3,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Self-assertion's generativity fulfilled and turned inward -- the avowal producing avowal until selfhood becomes a self-sustaining understanding, the 'I' that has claimed itself so thoroughly it now generates its own self-presence. Reflexive creation matured into a standing, self-aware wholeness.",
+        "inverted": "Self-understanding closed into a loop -- the self generating only itself, an 'I' feeding on its own avowals until it has forgotten the experiencing it was about. The ontic shadow: a self-sustaining self-image with no self left inside it."
+      },
+      "visuals": {
+        "detailed_description": "Streams of upright ringed forms looping back to feed their own source and locking into structured articulate light, each avowal igniting the next -- a fire of self-assertion whose fuel is its own self-presence, generation upon generation of the claimed 'I'."
+      }
+    },
+    "avowals-ten": {
+      "name": "Ten of Avowals",
+      "number": "10",
+      "slug": "avowals-ten",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "ten",
+      "station_slug": "self-presence",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times five: the Two of Avowals meets the Five -- the standing identity stressed by the unclaimable experiencing until the self turns over into a truer one.",
+        "factors": [
+          2,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "The standing self stressed until it turns over -- the settled identity meeting the experiencing that breaks it, an 'I' completing by yielding to what unmakes it, dying into a truer self. Self-definition spilling past the identity that held it, lit from within at the moment of the turn.",
+        "inverted": "The breaking self clung to as annihilation -- the overturning of identity treated as catastrophe rather than rebirth, the 'I' refusing the self it is becoming. The ontic shadow: a self that derealizes its own transformation to keep the old self-image intact."
+      },
+      "visuals": {
+        "detailed_description": "A fully built structure of ringed upright forms caught at the instant of rotation, half already turned to shadow and half lit from within by contained radiance -- the avowed self pivoting under a final inward pressure, breaking open along its founding 'I'."
+      }
+    },
+    "avowals-novice": {
+      "name": "Novice of Avowals",
+      "number": "11",
+      "slug": "avowals-novice",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "novice",
+      "station_slug": "sedimentation",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (11): irreducible. First contact with Avowals as a genuinely new energy -- the apprentice's first true 'I', not reducible to the faculties beneath it."
+      },
+      "meaning": {
+        "upright": "First contact with self-assertion -- the apprentice learning to say 'I' and mean it, claiming its own experiencing for the first time. Fresh, irreducible self-presence dawning, the first avowal settling into the ground of a self about to be built.",
+        "inverted": "Self-assertion dabbled at -- the beginner saying 'I' without owning it, an avowal performed before there is a self to avow, the perpetual novice mistaking the word for the self-presence. The ontic shadow at its outset: a self claimed and not inhabited."
+      },
+      "visuals": {
+        "detailed_description": "A young figure tentatively raising a first upright stroke within a faint ring, the avowal settling into warm dusk ground beneath it -- the apprentice's first 'I', self-presence dawning and beginning to take hold."
+      }
+    },
+    "avowals-wielder": {
+      "name": "Wielder of Avowals",
+      "number": "12",
+      "slug": "avowals-wielder",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "wielder",
+      "station_slug": "in-formation",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two squared times three: the Frame of Avowals made to produce -- the standing self driven outward into full, extended self-assertion.",
+        "factors": [
+          2,
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "The standing self driven outward to its extreme -- identity thrown into full assertive motion, the 'I' claimed at the highest pitch and pressed upon the world. The frame of selfhood made to produce, self-presence extended to its limit, even as it must still receive what the world returns.",
+        "inverted": "Self-assertion run to recklessness -- the 'I' flung outward without aim, identity broadcast at full force and grounded in nothing, the self performed so hard it overruns the experiencing it claims to express. The ontic shadow: a self all assertion and no presence."
+      },
+      "visuals": {
+        "detailed_description": "A figure in committed motion driving its upright ringed self outward to the limit, lit from within yet arriving into flat receptive light -- self-assertion thrown to its furthest reach, pressed on a world that has yet to answer."
+      }
+    },
+    "avowals-keeper": {
+      "name": "Keeper of Avowals",
+      "number": "13",
+      "slug": "avowals-keeper",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "keeper",
+      "station_slug": "signification",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Prime (13): irreducible. Self-assertion internalized into character -- a transformation into quiet, fully inhabited self-possession that no analysis softens."
+      },
+      "meaning": {
+        "upright": "Self-assertion internalized into character -- the 'I' so wholly inhabited that it shows only as a quiet self-possession, self-presence held inwardly and given receptively. Self-definition matured into a calm authority over one's own being, articulate to itself without display.",
+        "inverted": "The keeper's self-possession turned to self-enclosure -- an 'I' so internal it admits no one, self-presence curdled into a guarded interiority that holds itself and shares nothing. The ontic shadow: a self perfectly possessed and perfectly withdrawn."
+      },
+      "visuals": {
+        "detailed_description": "A seated figure in whom self-assertion has become stillness, a single ringed upright form resting in clear legible light, the self held quietly and wholly inhabited -- selfhood so internal it appears only as a calm, articulate presence."
+      }
+    },
+    "avowals-sovereign": {
+      "name": "Sovereign of Avowals",
+      "number": "14",
+      "slug": "avowals-sovereign",
+      "arcana": "minor",
+      "suit_slug": "avowals",
+      "rank_slug": "sovereign",
+      "station_slug": "assertion",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Two times seven: the Two of Avowals meets the Seven -- the reflexive split directed by the power to reckon, self-assertion become the sovereign standard of selfhood. The deck's fullest phenomenal self-presence and, in inversion, its deepest ontic shadow -- the two faces of the self-defining 'I'.",
+        "factors": [
+          2,
+          7
+        ]
+      },
+      "meaning": {
+        "upright": "Self-assertion as directive authority -- the 'I' turned outward to define a self that becomes the standard others orient by, self-presence so complete it founds a world. Reflexive division wedded to reckoning: the fully self-defined consciousness at its noon, the avowal that sets the very terms of selfhood. This is Dewart's self-present consciousness sovereign over its own being -- and precisely because it is the most fully self-asserting card, it casts the longest ontic shadow.",
+        "inverted": "The sovereign 'I' hollowed into pure ontic shadow -- self-definition so total it has handed its whole reality to the role it asserts, a consciousness that commands selfhood everywhere and is absent from itself entirely. Authority over one's own being narrowed to a self-image that dictates and a self that has gone elsewhere: the most accomplished self-assertion concealing the most complete self-alienation, 'I' as throne with no one upon it."
+      },
+      "visuals": {
+        "detailed_description": "A standing figure holding a single radiant ringed 'I' aloft as law, the surrounding field ordered by the self they assert and struck into charged high-contrast focus -- self-presence at its fullest authority, the avowed self casting a shadow as long and exact as its light."
+      }
+    }
+  }
+}
