@@ -18,8 +18,22 @@
         "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"44\" cy=\"62\" rx=\"22\" ry=\"18\" fill=\"currentColor\"/><path d=\"M56 50 Q62 26 53 14\" stroke=\"currentColor\" stroke-width=\"9\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"55\" cy=\"19\" r=\"9\" fill=\"currentColor\"/><polygon points=\"63,19 80,16 63,27\" fill=\"currentColor\"/><path d=\"M50 6 L54 17 M58 6 L59 17 M66 8 L61 18\" stroke=\"currentColor\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/><rect x=\"37\" y=\"77\" width=\"4\" height=\"15\" fill=\"currentColor\"/><rect x=\"49\" y=\"77\" width=\"4\" height=\"15\" fill=\"currentColor\"/><path d=\"M23 58 Q8 60 7 76 Q20 71 27 65 Z\" fill=\"currentColor\"/></svg>"
       },
       "meaning": {
-        "upright": ["glad passage", "momentum", "the open road", "freely given help", "swift arrival", "loyal companionship", "the next horizon"],
-        "inverted": ["aimless wandering", "flight from what should be faced", "dependence on rescue", "restlessness", "a journey with no destination"]
+        "upright": [
+          "glad passage",
+          "momentum",
+          "the open road",
+          "freely given help",
+          "swift arrival",
+          "loyal companionship",
+          "the next horizon"
+        ],
+        "inverted": [
+          "aimless wandering",
+          "flight from what should be faced",
+          "dependence on rescue",
+          "restlessness",
+          "a journey with no destination"
+        ]
       },
       "visual_style": "Warm, kinetic, open. Golden plumage and dawn light, big skies and receding roads, a sense of forward motion and wind. Rolling country, plains and trails, the cheerful primary palette of the world map. Composition tends outward and onward, toward a horizon.",
       "index": 0
@@ -34,8 +48,23 @@
         "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"50\" cy=\"63\" rx=\"20\" ry=\"17\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"39\" r=\"16\" fill=\"currentColor\"/><path d=\"M37 27 Q31 16 41 19 Z\" fill=\"currentColor\"/><path d=\"M63 27 Q69 16 59 19 Z\" fill=\"currentColor\"/><line x1=\"50\" y1=\"23\" x2=\"50\" y2=\"11\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"50\" cy=\"8\" r=\"7\" fill=\"currentColor\"/><path d=\"M31 60 Q14 53 17 69 Q25 65 33 65 Z\" fill=\"currentColor\"/><path d=\"M69 60 Q86 53 83 69 Q75 65 67 65 Z\" fill=\"currentColor\"/></svg>"
       },
       "meaning": {
-        "upright": ["hearth", "shelter", "community", "the saved moment", "belonging", "care that stays", "small comforts", "kupo-kindness"],
-        "inverted": ["clinging to safety", "domesticity as a cage", "hoarding", "refusing to leave", "comfort that smothers"]
+        "upright": [
+          "hearth",
+          "shelter",
+          "community",
+          "the saved moment",
+          "belonging",
+          "care that stays",
+          "small comforts",
+          "kupo-kindness"
+        ],
+        "inverted": [
+          "clinging to safety",
+          "domesticity as a cage",
+          "hoarding",
+          "refusing to leave",
+          "comfort that smothers"
+        ]
       },
       "visual_style": "Cozy, interior, lamplit. Soft rounded forms, plush textures, the warm reds and creams of a moogle's fur and a shop's awning. Hearths, hostels, save-crystals, letters and ledgers. Composition gathers inward, enclosed and snug, the world kept safely outside the window.",
       "index": 1
@@ -50,8 +79,22 @@
         "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"43\" y=\"16\" width=\"14\" height=\"50\" rx=\"7\" fill=\"currentColor\"/><rect x=\"21\" y=\"36\" width=\"23\" height=\"11\" rx=\"5\" fill=\"currentColor\"/><rect x=\"56\" y=\"22\" width=\"11\" height=\"24\" rx=\"5\" fill=\"currentColor\"/><rect x=\"58\" y=\"15\" width=\"11\" height=\"15\" rx=\"5\" fill=\"currentColor\"/><rect x=\"39\" y=\"62\" width=\"10\" height=\"22\" rx=\"5\" transform=\"rotate(18 44 62)\" fill=\"currentColor\"/><rect x=\"51\" y=\"62\" width=\"10\" height=\"22\" rx=\"5\" transform=\"rotate(-18 56 62)\" fill=\"currentColor\"/></svg>"
       },
       "meaning": {
-        "upright": ["territory", "the guarded threshold", "firm boundaries", "self-defense", "leave-me-be", "sudden consequence", "the needle for the trespasser"],
-        "inverted": ["prickliness", "disproportionate retaliation", "isolation by spite", "walls that keep out the welcome too", "a grudge dressed as a fence"]
+        "upright": [
+          "territory",
+          "the guarded threshold",
+          "firm boundaries",
+          "self-defense",
+          "leave-me-be",
+          "sudden consequence",
+          "the needle for the trespasser"
+        ],
+        "inverted": [
+          "prickliness",
+          "disproportionate retaliation",
+          "isolation by spite",
+          "walls that keep out the welcome too",
+          "a grudge dressed as a fence"
+        ]
       },
       "visual_style": "Stark, arid, high-contrast. Hard desert light, long flat shadows, dust and bone-dry palette of ochre and pale green. Spines, fences, boundary-stones, the single guarded oasis. Composition is centered, frontal, planted — a thing that will not come to you and will not be moved.",
       "index": 2
@@ -66,8 +109,22 @@
         "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"50\" cy=\"52\" rx=\"26\" ry=\"30\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"16\" r=\"10\" fill=\"currentColor\"/><polygon points=\"50,86 45,97 55,97\" fill=\"currentColor\"/><ellipse cx=\"24\" cy=\"32\" rx=\"9\" ry=\"6\" transform=\"rotate(40 24 32)\" fill=\"currentColor\"/><ellipse cx=\"76\" cy=\"32\" rx=\"9\" ry=\"6\" transform=\"rotate(-40 76 32)\" fill=\"currentColor\"/><ellipse cx=\"24\" cy=\"72\" rx=\"9\" ry=\"6\" transform=\"rotate(-40 24 72)\" fill=\"currentColor\"/><ellipse cx=\"76\" cy=\"72\" rx=\"9\" ry=\"6\" transform=\"rotate(40 76 72)\" fill=\"currentColor\"/></svg>"
       },
       "meaning": {
-        "upright": ["inexorable passage", "mortality's slow march", "the reckoning that always arrives", "patient consequence", "karma", "what cannot be outrun", "the quiet doom"],
-        "inverted": ["dread that paralyzes", "vengeance nursed too long", "the grudge that consumes the bearer", "fixation on the end", "punishment without release"]
+        "upright": [
+          "inexorable passage",
+          "mortality's slow march",
+          "the reckoning that always arrives",
+          "patient consequence",
+          "karma",
+          "what cannot be outrun",
+          "the quiet doom"
+        ],
+        "inverted": [
+          "dread that paralyzes",
+          "vengeance nursed too long",
+          "the grudge that consumes the bearer",
+          "fixation on the end",
+          "punishment without release"
+        ]
       },
       "visual_style": "Dim, processional, inevitable. Low lantern-light in a long dark, deep greens and drowned blues, a single small figure advancing through gloom. Corridors, thresholds, the far door. Composition is deep and recessive, drawing the eye down a passage toward something that is, however slowly, coming.",
       "index": 3
@@ -75,14 +132,38 @@
   },
   "dialectic": {
     "axes": [
-      { "name": "Valence", "poles": ["Boon", "Bane"] },
-      { "name": "Stance", "poles": ["Place", "Journey"] }
+      {
+        "name": "Valence",
+        "poles": [
+          "Boon",
+          "Bane"
+        ]
+      },
+      {
+        "name": "Stance",
+        "poles": [
+          "Place",
+          "Journey"
+        ]
+      }
     ],
     "cells": {
-      "chocobo": ["Boon", "Journey"],
-      "moogle": ["Boon", "Place"],
-      "cactuar": ["Bane", "Place"],
-      "tonberry": ["Bane", "Journey"]
+      "chocobo": [
+        "Boon",
+        "Journey"
+      ],
+      "moogle": [
+        "Boon",
+        "Place"
+      ],
+      "cactuar": [
+        "Bane",
+        "Place"
+      ],
+      "tonberry": [
+        "Bane",
+        "Journey"
+      ]
     }
   },
   "transversal": {
@@ -92,74 +173,182 @@
     "suit_stride": 3,
     "stations": {
       "fire": {
-        "slug": "fire", "index": 0, "name": "Fire",
+        "slug": "fire",
+        "index": 0,
+        "name": "Fire",
         "description": "The asserting flame: passion, war, the forge, the will that consumes to create.",
         "meaning": {
-          "upright": ["passion", "drive", "the forge", "purifying burn", "courage", "the spark of action"],
-          "inverted": ["rage", "burnout", "destruction for its own sake", "consuming what it loves"]
+          "upright": [
+            "passion",
+            "drive",
+            "the forge",
+            "purifying burn",
+            "courage",
+            "the spark of action"
+          ],
+          "inverted": [
+            "rage",
+            "burnout",
+            "destruction for its own sake",
+            "consuming what it loves"
+          ]
         },
         "visual_motif": "Ember-glow and ash on the air; warm rim-light, reds and golds against char-dark, heat-shimmer at the edges; everything lit as if by a fire just out of frame."
       },
       "thunder": {
-        "slug": "thunder", "index": 1, "name": "Thunder",
+        "slug": "thunder",
+        "index": 1,
+        "name": "Thunder",
         "description": "The sudden charge: revelation, shock, the verdict that arrives all at once.",
         "meaning": {
-          "upright": ["revelation", "sudden clarity", "decisive strike", "awakening", "the charged moment"],
-          "inverted": ["shock", "rash judgment", "chaos discharged", "the strike that scatters"]
+          "upright": [
+            "revelation",
+            "sudden clarity",
+            "decisive strike",
+            "awakening",
+            "the charged moment"
+          ],
+          "inverted": [
+            "shock",
+            "rash judgment",
+            "chaos discharged",
+            "the strike that scatters"
+          ]
         },
         "visual_motif": "Storm-violet sky and hard white light; high contrast, sharp cast shadows, the static tension before a strike; electric blues and bruised purples, an air that crackles."
       },
       "earth": {
-        "slug": "earth", "index": 2, "name": "Earth",
+        "slug": "earth",
+        "index": 2,
+        "name": "Earth",
         "description": "The settled ground: endurance, foundation, the weight that holds and the weight that buries.",
         "meaning": {
-          "upright": ["endurance", "foundation", "stability", "patience", "the solid and proven"],
-          "inverted": ["stagnation", "burial", "inertia", "the weight that crushes"]
+          "upright": [
+            "endurance",
+            "foundation",
+            "stability",
+            "patience",
+            "the solid and proven"
+          ],
+          "inverted": [
+            "stagnation",
+            "burial",
+            "inertia",
+            "the weight that crushes"
+          ]
         },
         "visual_motif": "Ochre, stone, and dust; heavy grounded forms, low horizon, the palette of canyon and quarry; warm earth tones under a steady even light, everything with mass."
       },
       "holy": {
-        "slug": "holy", "index": 3, "name": "Holy",
+        "slug": "holy",
+        "index": 3,
+        "name": "Holy",
         "description": "The radiant pole: grace, healing, the light that names and restores and judges.",
         "meaning": {
-          "upright": ["grace", "healing", "blessing", "clarity of spirit", "restoration", "the light that names"],
-          "inverted": ["zealotry", "blinding glare", "judgment without mercy", "purity as cruelty"]
+          "upright": [
+            "grace",
+            "healing",
+            "blessing",
+            "clarity of spirit",
+            "restoration",
+            "the light that names"
+          ],
+          "inverted": [
+            "zealotry",
+            "blinding glare",
+            "judgment without mercy",
+            "purity as cruelty"
+          ]
         },
         "visual_motif": "Radiant gold-white; soft volumetric light from above, pale luminous palette, halation and bloom; the warm clean glow of a White Magic and a crystal's heart."
       },
       "ice": {
-        "slug": "ice", "index": 4, "name": "Ice",
+        "slug": "ice",
+        "index": 4,
+        "name": "Ice",
         "description": "The stilling frost: pause, preservation, clarity through cold, the quiet that can become numbness.",
         "meaning": {
-          "upright": ["stillness", "preservation", "clear cold thought", "composure", "the pause that holds"],
-          "inverted": ["numbness", "isolation", "frozen feeling", "the chill that arrests"]
+          "upright": [
+            "stillness",
+            "preservation",
+            "clear cold thought",
+            "composure",
+            "the pause that holds"
+          ],
+          "inverted": [
+            "numbness",
+            "isolation",
+            "frozen feeling",
+            "the chill that arrests"
+          ]
         },
         "visual_motif": "Frost-blue and pale white; crystalline edges, high-key cold light, breath visible on the air; a hushed, glassy stillness, everything slowed and sharpened by cold."
       },
       "water": {
-        "slug": "water", "index": 5, "name": "Water",
+        "slug": "water",
+        "index": 5,
+        "name": "Water",
         "description": "The yielding flood: feeling, memory, the depth that flows around every obstacle and remembers.",
         "meaning": {
-          "upright": ["feeling", "memory", "flow", "depth", "adaptation", "the current that finds a way"],
-          "inverted": ["drowning", "the past undertow", "emotion that floods", "dissolution"]
+          "upright": [
+            "feeling",
+            "memory",
+            "flow",
+            "depth",
+            "adaptation",
+            "the current that finds a way"
+          ],
+          "inverted": [
+            "drowning",
+            "the past undertow",
+            "emotion that floods",
+            "dissolution"
+          ]
         },
         "visual_motif": "Teal and deep blue, caustics and reflection; soft refracted light, fluid forms, a surface and the depth beneath it; the palette of sea and lifestream, everything in motion and remembering."
       },
       "wind": {
-        "slug": "wind", "index": 6, "name": "Wind",
+        "slug": "wind",
+        "index": 6,
+        "name": "Wind",
         "description": "The scattering sky: freedom, change, breath and travel, the unseen force that moves all things on.",
         "meaning": {
-          "upright": ["freedom", "change", "breath", "lightness", "the carrying wind", "release"],
-          "inverted": ["dispersal", "rootlessness", "the gust that uproots", "instability"]
+          "upright": [
+            "freedom",
+            "change",
+            "breath",
+            "lightness",
+            "the carrying wind",
+            "release"
+          ],
+          "inverted": [
+            "dispersal",
+            "rootlessness",
+            "the gust that uproots",
+            "instability"
+          ]
         },
         "visual_motif": "Pale sky and scattering motion; high airy palette, drifting particulate, soft directional blur, a wide open emptiness; light, fast, everything caught mid-motion and going."
       },
       "dark": {
-        "slug": "dark", "index": 7, "name": "Dark",
+        "slug": "dark",
+        "index": 7,
+        "name": "Dark",
         "description": "The devouring void: the shadow, the end, the unknowing — and the fertile dark from which the cycle begins again.",
         "meaning": {
-          "upright": ["the necessary shadow", "the unknown", "endings", "the fertile void", "what precedes rebirth"],
-          "inverted": ["despair", "annihilation", "the void that only takes", "the dark mistaken for the end"]
+          "upright": [
+            "the necessary shadow",
+            "the unknown",
+            "endings",
+            "the fertile void",
+            "what precedes rebirth"
+          ],
+          "inverted": [
+            "despair",
+            "annihilation",
+            "the void that only takes",
+            "the dark mistaken for the end"
+          ]
         },
         "visual_motif": "Umbral void-violet and near-black; a single weak source against deep shadow, negative space dominant, edges swallowed; the palette of the world's end and the night before the dawn."
       }
@@ -171,270 +360,1500 @@
   },
   "ranks": {
     "ace": {
-      "index": 0, "arcana": "minor", "numeric_value": 1, "name": "Ace", "symbol": "A",
+      "index": 0,
+      "arcana": "minor",
+      "numeric_value": 1,
+      "name": "Ace",
+      "symbol": "A",
       "description": "The seed: the suit in its first, undivided form, all potential and no history.",
       "question": "What does {suit} set in motion?"
     },
     "two": {
-      "index": 1, "arcana": "minor", "numeric_value": 2, "name": "Two", "symbol": "II",
+      "index": 1,
+      "arcana": "minor",
+      "numeric_value": 2,
+      "name": "Two",
+      "symbol": "II",
       "description": "The pair: the first relation, a tension or balance held between two.",
       "question": "What does {suit} hold in balance?"
     },
     "three": {
-      "index": 2, "arcana": "minor", "numeric_value": 3, "name": "Three", "symbol": "III",
+      "index": 2,
+      "arcana": "minor",
+      "numeric_value": 3,
+      "name": "Three",
+      "symbol": "III",
       "description": "The first fruit: the pair bearing something new, initial growth and expression.",
       "question": "How does {suit} first bear fruit?"
     },
     "four": {
-      "index": 3, "arcana": "minor", "numeric_value": 4, "name": "Four", "symbol": "IV",
+      "index": 3,
+      "arcana": "minor",
+      "numeric_value": 4,
+      "name": "Four",
+      "symbol": "IV",
       "description": "The frame: structure, stability, the thing made solid enough to stand on.",
       "question": "What does {suit} make solid?"
     },
     "five": {
-      "index": 4, "arcana": "minor", "numeric_value": 5, "name": "Five", "symbol": "V",
+      "index": 4,
+      "arcana": "minor",
+      "numeric_value": 5,
+      "name": "Five",
+      "symbol": "V",
       "description": "The break: conflict, loss, the disruption that tests what was built.",
       "question": "What strife tests {suit}?"
     },
     "six": {
-      "index": 5, "arcana": "minor", "numeric_value": 6, "name": "Six", "symbol": "VI",
+      "index": 5,
+      "arcana": "minor",
+      "numeric_value": 6,
+      "name": "Six",
+      "symbol": "VI",
       "description": "The exchange: harmony restored through give and take, reciprocity and relief.",
       "question": "How does {suit} give and receive?"
     },
     "seven": {
-      "index": 6, "arcana": "minor", "numeric_value": 7, "name": "Seven", "symbol": "VII",
+      "index": 6,
+      "arcana": "minor",
+      "numeric_value": 7,
+      "name": "Seven",
+      "symbol": "VII",
       "description": "The trial: the lone test of faith, perseverance against doubt.",
       "question": "What must {suit} endure alone?"
     },
     "eight": {
-      "index": 7, "arcana": "minor", "numeric_value": 8, "name": "Eight", "symbol": "VIII",
+      "index": 7,
+      "arcana": "minor",
+      "numeric_value": 8,
+      "name": "Eight",
+      "symbol": "VIII",
       "description": "The craft: mastery in motion, momentum and accelerating skill.",
       "question": "Where does {suit}'s craft accelerate?"
     },
     "nine": {
-      "index": 8, "arcana": "minor", "numeric_value": 9, "name": "Nine", "symbol": "IX",
+      "index": 8,
+      "arcana": "minor",
+      "numeric_value": 9,
+      "name": "Nine",
+      "symbol": "IX",
       "description": "The burden: near-fulfillment carried to the threshold, the last hard stretch.",
       "question": "What does {suit} carry to the threshold?"
     },
     "ten": {
-      "index": 9, "arcana": "minor", "numeric_value": 10, "name": "Ten", "symbol": "X",
+      "index": 9,
+      "arcana": "minor",
+      "numeric_value": 10,
+      "name": "Ten",
+      "symbol": "X",
       "description": "The fullness: completion and overflow, the cycle come round and ready to pass on.",
       "question": "How does {suit} come full and pass on?"
     },
     "freelancer": {
-      "index": 10, "arcana": "minor", "numeric_value": 11, "name": "Freelancer", "symbol": "F",
+      "index": 10,
+      "arcana": "minor",
+      "numeric_value": 11,
+      "name": "Freelancer",
+      "symbol": "F",
       "description": "The classless beginner of the suit — raw, unspecialized potential, the suit before it has chosen what to become. First of the court, an FF job progression."
     },
     "knight": {
-      "index": 11, "arcana": "minor", "numeric_value": 12, "name": "Knight", "symbol": "K",
+      "index": 11,
+      "arcana": "minor",
+      "numeric_value": 12,
+      "name": "Knight",
+      "symbol": "K",
       "description": "The suit taken up as a vocation and carried into action — valor, the field, the deed done. Second of the court progression."
     },
     "sage": {
-      "index": 12, "arcana": "minor", "numeric_value": 13, "name": "Sage", "symbol": "S",
+      "index": 12,
+      "arcana": "minor",
+      "numeric_value": 13,
+      "name": "Sage",
+      "symbol": "S",
       "description": "The suit mastered as wisdom — its deepest art understood and held within (the FF pinnacle mage-job). Third of the court progression."
     },
     "warrior-of-light": {
-      "index": 13, "arcana": "minor", "numeric_value": 14, "name": "Warrior of Light", "symbol": "W",
+      "index": 13,
+      "arcana": "minor",
+      "numeric_value": 14,
+      "name": "Warrior of Light",
+      "symbol": "W",
       "description": "The suit fully realized and turned outward — the legendary capstone, the hero who leads and culminates. Fourth and last of the court progression."
     }
   },
   "cards": {
     "major-0": {
-      "name": "The Unwritten", "number": "0", "slug": "major-0", "arcana": "major", "station_slug": "fire",
+      "name": "The Unwritten",
+      "number": "0",
+      "slug": "major-0",
+      "arcana": "major",
+      "station_slug": "fire",
       "meaning": {
         "upright": "The amnesiac at the threshold of the tale — no past, no name, only the open possibility of who they might become. Pure potential before the story writes itself onto them: innocence, the blank slate, the first morning. The willingness to step forward into a life not yet begun.",
         "inverted": "Aimlessness; refusal to begin; a self kept blank out of fear. Potential hoarded and never spent, amnesia as evasion rather than openness, the page left empty because writing on it might cost something."
       },
-      "visuals": { "detailed_description": "A lone young figure stands at the lip of an unlit field at dawn, seen from behind, silhouetted against a low ember-colored sky. The first warmth of the day catches their edge in gold while everything ahead stays dark and unwritten. No insignia, no chosen weapon — just a traveler's plain clothes and a horizon beginning to smolder, a single spark drifting upward as if the world itself is only now being lit." },
-      "factorization": { "character": "identity", "factors": [], "gloss": "Zero — the precondition before any factor: the self with no history, the empty hand into which the whole deck will be dealt." }
+      "visuals": {
+        "detailed_description": "A lone young figure stands at the lip of an unlit field at dawn, seen from behind, silhouetted against a low ember-colored sky. The first warmth of the day catches their edge in gold while everything ahead stays dark and unwritten. No insignia, no chosen weapon — just a traveler's plain clothes and a horizon beginning to smolder, a single spark drifting upward as if the world itself is only now being lit."
+      },
+      "factorization": {
+        "character": "identity",
+        "factors": [],
+        "gloss": "Zero — the precondition before any factor: the self with no history, the empty hand into which the whole deck will be dealt."
+      }
     },
     "major-1": {
-      "name": "The Call", "number": "1", "slug": "major-1", "arcana": "major", "station_slug": "thunder",
+      "name": "The Call",
+      "number": "1",
+      "slug": "major-1",
+      "arcana": "major",
+      "station_slug": "thunder",
       "meaning": {
         "upright": "The summons that begins everything — the crystal's light, the dream, the catastrophe that demands an answer. The spark of agency: the instant potential is named and set in motion. Vocation, the first yes, the operator that turns a blank life into a quest.",
         "inverted": "A call ignored or misheard; false vocation; the spark seized for ego rather than service. Being summoned and answering for the wrong reason, or refusing to answer at all."
       },
-      "visuals": { "detailed_description": "A shaft of charged light splits a violet, storm-dark sky and strikes a single upraised hand; the air crackles, hair and cloak lifted by the static of the moment. Behind, a faceted crystal pulses once, throwing hard blue shadows. Everything is poised in the instant before the thunderclap — the world holding its breath at the verge of a beginning." },
-      "factorization": { "character": "identity", "factors": [], "gloss": "One — the operator: not a precondition but the act that starts the count, the unit by which every later number is built." }
+      "visuals": {
+        "detailed_description": "A shaft of charged light splits a violet, storm-dark sky and strikes a single upraised hand; the air crackles, hair and cloak lifted by the static of the moment. Behind, a faceted crystal pulses once, throwing hard blue shadows. Everything is poised in the instant before the thunderclap — the world holding its breath at the verge of a beginning."
+      },
+      "factorization": {
+        "character": "identity",
+        "factors": [],
+        "gloss": "One — the operator: not a precondition but the act that starts the count, the unit by which every later number is built."
+      }
     },
     "major-2": {
-      "name": "The Companion", "number": "2", "slug": "major-2", "arcana": "major", "station_slug": "earth",
+      "name": "The Companion",
+      "number": "2",
+      "slug": "major-2",
+      "arcana": "major",
+      "station_slug": "earth",
       "meaning": {
         "upright": "The first other — the friend who falls in beside you and makes a journey a fellowship of two. The irreducible bond; trust given before it is earned; the discovery that you are not alone in this. Loyalty, the shared road, the strength of the pair.",
         "inverted": "Codependence; a bond that traps rather than supports; trust misplaced. The partner who completes you in the wrong way, or whose presence keeps you from becoming yourself."
       },
-      "visuals": { "detailed_description": "Two figures stand close on solid ochre ground, one offering a hand to steady the other across a gap in the stone. Low even light, the steady palette of canyon and trail; their shadows overlap into a single shape. Around them the patient weight of the earth — boulders, a worn path — a world that holds firm beneath a partnership just formed." },
-      "factorization": { "character": "prime", "factors": [2], "gloss": "The first prime — the smallest thing that is more than one yet cannot be divided: the bond of two, the irreducible atom from which every later fellowship is built." }
+      "visuals": {
+        "detailed_description": "Two figures stand close on solid ochre ground, one offering a hand to steady the other across a gap in the stone. Low even light, the steady palette of canyon and trail; their shadows overlap into a single shape. Around them the patient weight of the earth — boulders, a worn path — a world that holds firm beneath a partnership just formed."
+      },
+      "factorization": {
+        "character": "prime",
+        "factors": [
+          2
+        ],
+        "gloss": "The first prime — the smallest thing that is more than one yet cannot be divided: the bond of two, the irreducible atom from which every later fellowship is built."
+      }
     },
     "major-3": {
-      "name": "The Mentor", "number": "3", "slug": "major-3", "arcana": "major", "station_slug": "holy",
+      "name": "The Mentor",
+      "number": "3",
+      "slug": "major-3",
+      "arcana": "major",
+      "station_slug": "holy",
       "meaning": {
         "upright": "The elder who knows the way — the engineer, the sage, the old hand (so often a Cid) who gives knowledge, an airship, a reason. Guidance freely offered; the inheritance of wisdom; the one who believes in you before you believe in yourself.",
         "inverted": "The mentor who controls instead of frees; wisdom withheld or weaponized; a teacher you must outgrow and can't; false counsel that flatters."
       },
-      "visuals": { "detailed_description": "An aged figure stands haloed in soft descending gold light, one hand on a young traveler's shoulder, the other gesturing toward a far horizon. Workshop tools and rolled charts at their feet; the warm clean glow of a sanctuary or a crystal's chamber. Grace in the light — a blessing being passed from one generation to the next." },
-      "factorization": { "character": "prime", "factors": [3], "gloss": "The second prime — irreducible and generative, pure source. Where the Companion is the bond, the Mentor is the wellspring: a thing that gives and cannot itself be reduced to parts." }
+      "visuals": {
+        "detailed_description": "An aged figure stands haloed in soft descending gold light, one hand on a young traveler's shoulder, the other gesturing toward a far horizon. Workshop tools and rolled charts at their feet; the warm clean glow of a sanctuary or a crystal's chamber. Grace in the light — a blessing being passed from one generation to the next."
+      },
+      "factorization": {
+        "character": "prime",
+        "factors": [
+          3
+        ],
+        "gloss": "The second prime — irreducible and generative, pure source. Where the Companion is the bond, the Mentor is the wellspring: a thing that gives and cannot itself be reduced to parts."
+      }
     },
     "major-4": {
-      "name": "The Fellowship", "number": "4", "slug": "major-4", "arcana": "major", "station_slug": "ice",
+      "name": "The Fellowship",
+      "number": "4",
+      "slug": "major-4",
+      "arcana": "major",
+      "station_slug": "ice",
       "meaning": {
         "upright": "The bond become a band — the full party assembled, each role finding its place, the many made one. Structure and belonging; the strength of a unit greater than its members; the table where the company gathers before the war.",
         "inverted": "A party in name only; cliques and friction; structure ossified into hierarchy; belonging that demands conformity to stay."
       },
-      "visuals": { "detailed_description": "Four or five figures stand in a loose ring on a frozen plateau, breath visible, a small fire of resolve between them in the still cold light. Crystalline blue distance, sharp clean air; each figure distinct in silhouette yet bound by their circle. The pause before departure, held and clarified by the cold." },
-      "factorization": { "character": "composite", "factors": [2, 2], "gloss": "Two squared — the Companion (2) doubled and squared into a company: the bond is no longer a single pair but a structure of pairs, fellowship built directly from the atom of friendship." }
+      "visuals": {
+        "detailed_description": "Four or five figures stand in a loose ring on a frozen plateau, breath visible, a small fire of resolve between them in the still cold light. Crystalline blue distance, sharp clean air; each figure distinct in silhouette yet bound by their circle. The pause before departure, held and clarified by the cold."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2
+        ],
+        "gloss": "Two squared — the Companion (2) doubled and squared into a company: the bond is no longer a single pair but a structure of pairs, fellowship built directly from the atom of friendship."
+      }
     },
     "major-5": {
-      "name": "The Empire", "number": "5", "slug": "major-5", "arcana": "major", "station_slug": "water",
+      "name": "The Empire",
+      "number": "5",
+      "slug": "major-5",
+      "arcana": "major",
+      "station_slug": "water",
       "meaning": {
         "upright": "The great adversarial power — the empire, the order that would rule all, magnificent and crushing. Institution, ambition at scale, the antagonist not as a person but as a system. The tide that rises against the small and the living.",
         "inverted": "The empire from within — complicity, the comfort of order, a tyranny one has stopped noticing; or its collapse into mere chaos."
       },
-      "visuals": { "detailed_description": "A vast iron fortress-city rises from a dark sea under heavy rain, its banners hanging wet and enormous, a single small boat dwarfed in the foreground. Deep blues and drowned greys, reflections fracturing on the water; the architecture of domination doubled in the flood. Power as weather — vast, cold, impersonal." },
-      "factorization": { "character": "prime", "factors": [5], "gloss": "A prime — irreducible and singular: the Empire is not built from the heroes' atoms but stands as its own indivisible force, an order that answers to nothing smaller than itself." }
+      "visuals": {
+        "detailed_description": "A vast iron fortress-city rises from a dark sea under heavy rain, its banners hanging wet and enormous, a single small boat dwarfed in the foreground. Deep blues and drowned greys, reflections fracturing on the water; the architecture of domination doubled in the flood. Power as weather — vast, cold, impersonal."
+      },
+      "factorization": {
+        "character": "prime",
+        "factors": [
+          5
+        ],
+        "gloss": "A prime — irreducible and singular: the Empire is not built from the heroes' atoms but stands as its own indivisible force, an order that answers to nothing smaller than itself."
+      }
     },
     "major-6": {
-      "name": "The Airship", "number": "6", "slug": "major-6", "arcana": "major", "station_slug": "wind",
+      "name": "The Airship",
+      "number": "6",
+      "slug": "major-6",
+      "arcana": "major",
+      "station_slug": "wind",
       "meaning": {
         "upright": "Freedom of the open sky — the airship that turns a map into a world, the mentor's gift that lets the fellowship go anywhere. Mobility, escape, the lifting of every horizon; the exhilaration of the whole world suddenly within reach.",
         "inverted": "Flight as avoidance; freedom that never lands; a gift misused; motion mistaken for progress."
       },
-      "visuals": { "detailed_description": "An airship banks through bright scattering cloud, its envelope catching high pale light, the fellowship at the rail looking out over a world made small and reachable below. Wind streams everything backward — pennants, hair, trailing vapor; the palette airy and luminous. The unmistakable joy of leaving the ground." },
-      "factorization": { "character": "composite", "factors": [2, 3], "gloss": "Two times three — the Companion (2) carried by the Mentor (3): the fellowship's bond given range by the elder's gift. The airship is exactly the product of friendship and the one who hands you the keys." }
+      "visuals": {
+        "detailed_description": "An airship banks through bright scattering cloud, its envelope catching high pale light, the fellowship at the rail looking out over a world made small and reachable below. Wind streams everything backward — pennants, hair, trailing vapor; the palette airy and luminous. The unmistakable joy of leaving the ground."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          3
+        ],
+        "gloss": "Two times three — the Companion (2) carried by the Mentor (3): the fellowship's bond given range by the elder's gift. The airship is exactly the product of friendship and the one who hands you the keys."
+      }
     },
     "major-7": {
-      "name": "The Trial", "number": "7", "slug": "major-7", "arcana": "major", "station_slug": "dark",
+      "name": "The Trial",
+      "number": "7",
+      "slug": "major-7",
+      "arcana": "major",
+      "station_slug": "dark",
       "meaning": {
         "upright": "The threshold guarded — the lone test that must be passed before the story can go on. Perseverance in the dark; the gate that asks who you are; courage without an audience. The proving that cannot be shared or shortcut.",
         "inverted": "A trial refused or cheated; being stuck at the threshold; ordeal sought for its own sake; the test that curdles into obsession."
       },
-      "visuals": { "detailed_description": "A single figure stands at the mouth of a black passage, a faint guttering light barely holding back the dark, the way ahead swallowed in shadow. Negative space dominates; one weak source picks out a set face and a drawn weapon. Everything beyond is unknown — the umbral threshold of a trial faced alone." },
-      "factorization": { "character": "prime", "factors": [7], "gloss": "A prime — irreducible: the Trial cannot be factored into easier steps. It is a single indivisible passage, all or nothing, the gate that must be met whole." }
+      "visuals": {
+        "detailed_description": "A single figure stands at the mouth of a black passage, a faint guttering light barely holding back the dark, the way ahead swallowed in shadow. Negative space dominates; one weak source picks out a set face and a drawn weapon. Everything beyond is unknown — the umbral threshold of a trial faced alone."
+      },
+      "factorization": {
+        "character": "prime",
+        "factors": [
+          7
+        ],
+        "gloss": "A prime — irreducible: the Trial cannot be factored into easier steps. It is a single indivisible passage, all or nothing, the gate that must be met whole."
+      }
     },
     "major-8": {
-      "name": "The Summoned Gods", "number": "8", "slug": "major-8", "arcana": "major", "station_slug": "fire",
+      "name": "The Summoned Gods",
+      "number": "8",
+      "slug": "major-8",
+      "arcana": "major",
+      "station_slug": "fire",
       "meaning": {
         "upright": "Pacts with powers beyond the mortal — the espers, the eidolons, the summoned ones who lend their fire to a worthy bond. Alliance with the vast; borrowed strength wielded with respect; the bond extended past the human into the divine.",
         "inverted": "Power borrowed without respect; the summoner consumed by what they call; dependence on borrowed might; gods reduced to weapons."
       },
-      "visuals": { "detailed_description": "A colossal fiery being rises behind a tiny summoner whose arms are flung wide, the creature half flame and half muscle against a sky of ember and ash. Heat-shimmer warps the air; the human is dwarfed yet unafraid, a thread of trust running between them. The grandeur of a god answering a call." },
-      "factorization": { "character": "composite", "factors": [2, 2, 2], "gloss": "Two cubed — the Companion (2) raised three times: bond upon bond upon bond, friendship extended until it reaches past the mortal and a god consents to stand with you." }
+      "visuals": {
+        "detailed_description": "A colossal fiery being rises behind a tiny summoner whose arms are flung wide, the creature half flame and half muscle against a sky of ember and ash. Heat-shimmer warps the air; the human is dwarfed yet unafraid, a thread of trust running between them. The grandeur of a god answering a call."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2,
+          2
+        ],
+        "gloss": "Two cubed — the Companion (2) raised three times: bond upon bond upon bond, friendship extended until it reaches past the mortal and a god consents to stand with you."
+      }
     },
     "major-9": {
-      "name": "The Deep Lore", "number": "9", "slug": "major-9", "arcana": "major", "station_slug": "thunder",
+      "name": "The Deep Lore",
+      "number": "9",
+      "slug": "major-9",
+      "arcana": "major",
+      "station_slug": "thunder",
       "meaning": {
         "upright": "The hidden history revealed — the truth beneath the world, the lore the mentor only half-told. Knowledge turned inward and downward; the solitary scholar's revelation; understanding that reframes everything that came before.",
         "inverted": "Knowledge that isolates; truth that paralyzes; lore hoarded; the scholar lost in the past, unable to act on what they know."
       },
-      "visuals": { "detailed_description": "A lone figure bends over a glowing tablet in a vaulted dark, a single charged shaft of light illuminating ancient script while violet shadows crackle at the edges. The air is electric with revelation; faint murals of an older age flicker into legibility around them. The Hermit's lamp recast as a sudden, illuminating strike." },
-      "factorization": { "character": "composite", "factors": [3, 3], "gloss": "Three squared — the Mentor (3) deepened by itself: wisdom no longer received from another but turned inward and compounded, the source examining its own source." }
+      "visuals": {
+        "detailed_description": "A lone figure bends over a glowing tablet in a vaulted dark, a single charged shaft of light illuminating ancient script while violet shadows crackle at the edges. The air is electric with revelation; faint murals of an older age flicker into legibility around them. The Hermit's lamp recast as a sudden, illuminating strike."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          3,
+          3
+        ],
+        "gloss": "Three squared — the Mentor (3) deepened by itself: wisdom no longer received from another but turned inward and compounded, the source examining its own source."
+      }
     },
     "major-10": {
-      "name": "The Magitek", "number": "10", "slug": "major-10", "arcana": "major", "station_slug": "earth",
+      "name": "The Magitek",
+      "number": "10",
+      "slug": "major-10",
+      "arcana": "major",
+      "station_slug": "earth",
       "meaning": {
         "upright": "Life fused to machine — the empire's terrible alchemy, the living drained into engines, magic made industrial. The wheel of an age turning on stolen vitality; power and progress bought with the soul of the world.",
         "inverted": "The machine refused or broken; a turn back toward the living; or the full horror laid bare — life reduced entirely to fuel."
       },
-      "visuals": { "detailed_description": "Great ochre machines grind in a quarry-like works, tubes drawing a faint glow from caged, half-living forms, the whole scene in heavy industrial earth-tones and dust. A vast gear turns slowly behind. Mass and weight everywhere — the grinding, grounded machinery of an empire feeding on life." },
-      "factorization": { "character": "composite", "factors": [2, 5], "gloss": "Two times five — the Companion, the living (2), seized by the Empire (5): magitek is exactly what happens when the indivisible force of order lays hold of the bond of life and runs it through a machine." }
+      "visuals": {
+        "detailed_description": "Great ochre machines grind in a quarry-like works, tubes drawing a faint glow from caged, half-living forms, the whole scene in heavy industrial earth-tones and dust. A vast gear turns slowly behind. Mass and weight everywhere — the grinding, grounded machinery of an empire feeding on life."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          5
+        ],
+        "gloss": "Two times five — the Companion, the living (2), seized by the Empire (5): magitek is exactly what happens when the indivisible force of order lays hold of the bond of life and runs it through a machine."
+      }
     },
     "major-11": {
-      "name": "The Betrayal", "number": "11", "slug": "major-11", "arcana": "major", "station_slug": "holy",
+      "name": "The Betrayal",
+      "number": "11",
+      "slug": "major-11",
+      "arcana": "major",
+      "station_slug": "holy",
       "meaning": {
         "upright": "The clean break of faith — the ally who turns, the order that lies, the trust that shatters in a single irrevocable moment. The blade from a known hand; the loss of innocence about whom you can rely on; a reckoning with broken faith.",
         "inverted": "Betrayal nursed into bitterness; the betrayer rationalized; or the hard mercy of forgiving the unforgivable."
       },
-      "visuals": { "detailed_description": "Two figures face each other in flat, judgmental gold light, one drawing back a hand that had held trust, the other recognizing the betrayal a half-second too late. The light is merciless and even, hiding nothing; long fingers of shadow point between them. Grace turned to glare — radiance used to expose rather than to bless." },
-      "factorization": { "character": "prime", "factors": [11], "gloss": "A prime — irreducible and abrupt: betrayal does not build from smaller parts or soften into stages. It is a single clean break, a number that yields to nothing." }
+      "visuals": {
+        "detailed_description": "Two figures face each other in flat, judgmental gold light, one drawing back a hand that had held trust, the other recognizing the betrayal a half-second too late. The light is merciless and even, hiding nothing; long fingers of shadow point between them. Grace turned to glare — radiance used to expose rather than to bless."
+      },
+      "factorization": {
+        "character": "prime",
+        "factors": [
+          11
+        ],
+        "gloss": "A prime — irreducible and abrupt: betrayal does not build from smaller parts or soften into stages. It is a single clean break, a number that yields to nothing."
+      }
     },
     "major-12": {
-      "name": "The Sacrifice", "number": "12", "slug": "major-12", "arcana": "major", "station_slug": "ice",
+      "name": "The Sacrifice",
+      "number": "12",
+      "slug": "major-12",
+      "arcana": "major",
+      "station_slug": "ice",
       "meaning": {
         "upright": "The band loses one — the death freely given so the rest may go on, grief and wisdom paid in a single body. Suspension between what was and what must be; the cost that cannot be refunded; love proven by loss.",
         "inverted": "A sacrifice made in vain or for the wrong cause; martyrdom as vanity; refusing a necessary letting-go; survivor's guilt that will not heal."
       },
-      "visuals": { "detailed_description": "The fellowship stands frozen around a fallen companion on pale ice, breath stopped, the cold holding the moment like glass that will not melt. A single shaft of wan light falls on the still figure; the others' faces are caught between disbelief and resolve. The stillness of cold made into the stillness of grief." },
-      "factorization": { "character": "composite", "factors": [2, 2, 3], "gloss": "Four times three — the Fellowship (4) and the Mentor (3): the company pays in blood and the wisdom of the elders is purchased. Sacrifice is the band's structure multiplied by hard-won understanding." }
+      "visuals": {
+        "detailed_description": "The fellowship stands frozen around a fallen companion on pale ice, breath stopped, the cold holding the moment like glass that will not melt. A single shaft of wan light falls on the still figure; the others' faces are caught between disbelief and resolve. The stillness of cold made into the stillness of grief."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2,
+          3
+        ],
+        "gloss": "Four times three — the Fellowship (4) and the Mentor (3): the company pays in blood and the wisdom of the elders is purchased. Sacrifice is the band's structure multiplied by hard-won understanding."
+      }
     },
     "major-13": {
-      "name": "The Fall", "number": "13", "slug": "major-13", "arcana": "major", "station_slug": "water",
+      "name": "The Fall",
+      "number": "13",
+      "slug": "major-13",
+      "arcana": "major",
+      "station_slug": "water",
       "meaning": {
         "upright": "The great death, the world tipping — the point past which nothing returns to what it was. Necessary ending; the dark turn at the story's center; transformation that arrives as catastrophe. The old world drowning so a new one can be born.",
         "inverted": "Clinging to the drowned world; change refused; the end mistaken for the finish; decay without renewal."
       },
-      "visuals": { "detailed_description": "A vast wave rises over a sinking land, figures small against the dark water, a single tower going under as the sea takes everything. Deep teal and drowned blue, surface and depths becoming one; the reflections of a falling world. The lifestream taking the world back into itself." },
-      "factorization": { "character": "prime", "factors": [13], "gloss": "A prime — irreducible: the Fall cannot be broken into gentler increments. It is the deck's great indivisible turn, the single number on which everything pivots." }
+      "visuals": {
+        "detailed_description": "A vast wave rises over a sinking land, figures small against the dark water, a single tower going under as the sea takes everything. Deep teal and drowned blue, surface and depths becoming one; the reflections of a falling world. The lifestream taking the world back into itself."
+      },
+      "factorization": {
+        "character": "prime",
+        "factors": [
+          13
+        ],
+        "gloss": "A prime — irreducible: the Fall cannot be broken into gentler increments. It is the deck's great indivisible turn, the single number on which everything pivots."
+      }
     },
     "major-14": {
-      "name": "The God-Ascendant", "number": "14", "slug": "major-14", "arcana": "major", "station_slug": "wind",
+      "name": "The God-Ascendant",
+      "number": "14",
+      "slug": "major-14",
+      "arcana": "major",
+      "station_slug": "wind",
       "meaning": {
         "upright": "The man who would be god — the antagonist who passes through the ultimate ordeal and comes out transformed, no longer human. Apotheosis; ambition completed; the terrible beauty of a being who has shed every limit. The dark mirror of the hero's own trial.",
         "inverted": "Ascension exposed as emptiness; godhood that is only a larger hunger; the fall that waits inside every apotheosis."
       },
-      "visuals": { "detailed_description": "A winged, luminous figure rises into a pale scattering sky, the last of their humanity blowing away like ash on the wind, far below the tiny upturned faces of those they left behind. Everything streams upward and outward, dispersing; the palette high and thin and cold. Transcendence as a terrible, beautiful leaving of the ground." },
-      "factorization": { "character": "composite", "factors": [2, 7], "gloss": "Two times seven — a being (2) passed through the Trial (7): the God-Ascendant is a single soul multiplied by the ultimate ordeal, the hero's threshold taken to its monstrous conclusion." }
+      "visuals": {
+        "detailed_description": "A winged, luminous figure rises into a pale scattering sky, the last of their humanity blowing away like ash on the wind, far below the tiny upturned faces of those they left behind. Everything streams upward and outward, dispersing; the palette high and thin and cold. Transcendence as a terrible, beautiful leaving of the ground."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          7
+        ],
+        "gloss": "Two times seven — a being (2) passed through the Trial (7): the God-Ascendant is a single soul multiplied by the ultimate ordeal, the hero's threshold taken to its monstrous conclusion."
+      }
     },
     "major-15": {
-      "name": "The Throne of Power", "number": "15", "slug": "major-15", "arcana": "major", "station_slug": "dark",
+      "name": "The Throne of Power",
+      "number": "15",
+      "slug": "major-15",
+      "arcana": "major",
+      "station_slug": "dark",
       "meaning": {
         "upright": "Forbidden power institutionalized — knowledge and empire wed into a throne that binds all beneath it. Bondage to power; the seduction of control; the chains that look like a crown. The comfort of total order, and its price.",
         "inverted": "The chain seen and refused; power renounced; the throne revealed as a cage for the one who sits it too."
       },
-      "visuals": { "detailed_description": "A dark throne rises in near-black, a single cold source glinting off chains that run from it to small bound figures below, the seated form barely more than a silhouette of authority. Void-violet shadow swallows the edges; only the throne and its chains catch light. Power as darkness given a seat." },
-      "factorization": { "character": "composite", "factors": [3, 5], "gloss": "Three times five — the Mentor's knowledge (3, the root of the Deep Lore) wedded to the Empire (5): forbidden wisdom made institutional. The throne is exactly lore in the service of domination." }
+      "visuals": {
+        "detailed_description": "A dark throne rises in near-black, a single cold source glinting off chains that run from it to small bound figures below, the seated form barely more than a silhouette of authority. Void-violet shadow swallows the edges; only the throne and its chains catch light. Power as darkness given a seat."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          3,
+          5
+        ],
+        "gloss": "Three times five — the Mentor's knowledge (3, the root of the Deep Lore) wedded to the Empire (5): forbidden wisdom made institutional. The throne is exactly lore in the service of domination."
+      }
     },
     "major-16": {
-      "name": "The Calamity", "number": "16", "slug": "major-16", "arcana": "major", "station_slug": "fire",
+      "name": "The Calamity",
+      "number": "16",
+      "slug": "major-16",
+      "arcana": "major",
+      "station_slug": "fire",
       "meaning": {
         "upright": "The world's end — Meteor in the sky, the cataclysm that brings everything built crashing down. The tower struck; sudden total collapse; the proud structure undone in fire; whatever was false in the old world burned away at once.",
         "inverted": "A calamity survived but unlearned-from; collapse clung to; or catastrophe deferred, the meteor still hanging overhead."
       },
-      "visuals": { "detailed_description": "An enormous burning mass hangs in a blood-red sky over a city already cracking, towers toppling in silhouette against the glare, ember and ash filling the air. Everything is lit by the terrible light of the falling thing; figures flee as small dark shapes. Fire as apocalypse, the world consumed in a single held instant." },
-      "factorization": { "character": "composite", "factors": [2, 2, 2, 2], "gloss": "Two to the fourth — the bond raised past all structure until it collapses: fellowship doubled and doubled again becomes not strength but a tower too tall to stand. The Calamity is the bond's own power turned to ruin." }
+      "visuals": {
+        "detailed_description": "An enormous burning mass hangs in a blood-red sky over a city already cracking, towers toppling in silhouette against the glare, ember and ash filling the air. Everything is lit by the terrible light of the falling thing; figures flee as small dark shapes. Fire as apocalypse, the world consumed in a single held instant."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "gloss": "Two to the fourth — the bond raised past all structure until it collapses: fellowship doubled and doubled again becomes not strength but a tower too tall to stand. The Calamity is the bond's own power turned to ruin."
+      }
     },
     "major-17": {
-      "name": "The Last Light", "number": "17", "slug": "major-17", "arcana": "major", "station_slug": "thunder",
+      "name": "The Last Light",
+      "number": "17",
+      "slug": "major-17",
+      "arcana": "major",
+      "station_slug": "thunder",
       "meaning": {
         "upright": "Irreducible hope after the fall — the one small light the dark cannot put out, the crystal's final ember, the reason to go on. Faith stripped to its essence; guidance in the ruin; the simple, unbreakable yes that survives catastrophe.",
         "inverted": "Hope as denial; a light clung to against all evidence; false reassurance; the star followed off a cliff."
       },
-      "visuals": { "detailed_description": "A single bright star burns in a charged, clearing sky over a ruined land, its light catching one upturned face far below. Storm-violet dark all around, but the star's glow is clean and sudden, a revelation in the gloom. The smallest possible light, and enough." },
-      "factorization": { "character": "prime", "factors": [17], "gloss": "A prime — irreducible: hope at its smallest cannot be broken down further. The Last Light is the atom of faith that remains when everything composite has fallen away." }
+      "visuals": {
+        "detailed_description": "A single bright star burns in a charged, clearing sky over a ruined land, its light catching one upturned face far below. Storm-violet dark all around, but the star's glow is clean and sudden, a revelation in the gloom. The smallest possible light, and enough."
+      },
+      "factorization": {
+        "character": "prime",
+        "factors": [
+          17
+        ],
+        "gloss": "A prime — irreducible: hope at its smallest cannot be broken down further. The Last Light is the atom of faith that remains when everything composite has fallen away."
+      }
     },
     "major-18": {
-      "name": "The World of Ruin", "number": "18", "slug": "major-18", "arcana": "major", "station_slug": "earth",
+      "name": "The World of Ruin",
+      "number": "18",
+      "slug": "major-18",
+      "arcana": "major",
+      "station_slug": "earth",
       "meaning": {
         "upright": "The scattered fellowship wandering a dead world — the long night after the fall, each survivor alone with their memory of what was. Searching the wreckage; holding on by remembered bonds; the slow, uncertain work of regathering in a world made strange.",
         "inverted": "Lost in the ruin; memory become illusion; wandering that has forgotten it was searching; despair mistaken for the landscape itself."
       },
-      "visuals": { "detailed_description": "A lone figure crosses a broken ochre plain under a dim sky, ruins half-buried in dust, a faint after-image of absent companions walking beside them. Heavy grounded desolation, the palette of a quarry after the world ended; long flat light and longer shadows. The earth itself in mourning, vast and patient and empty." },
-      "factorization": { "character": "composite", "factors": [2, 3, 3], "gloss": "Two times three squared — the Companion (2) carried by the Deep Lore (9): in the ruin, the only things that move the wanderer are the bond remembered and the hard knowledge of what was lost." }
+      "visuals": {
+        "detailed_description": "A lone figure crosses a broken ochre plain under a dim sky, ruins half-buried in dust, a faint after-image of absent companions walking beside them. Heavy grounded desolation, the palette of a quarry after the world ended; long flat light and longer shadows. The earth itself in mourning, vast and patient and empty."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          3,
+          3
+        ],
+        "gloss": "Two times three squared — the Companion (2) carried by the Deep Lore (9): in the ruin, the only things that move the wanderer are the bond remembered and the hard knowledge of what was lost."
+      }
     },
     "major-19": {
-      "name": "The Reunion", "number": "19", "slug": "major-19", "arcana": "major", "station_slug": "holy",
+      "name": "The Reunion",
+      "number": "19",
+      "slug": "major-19",
+      "arcana": "major",
+      "station_slug": "holy",
       "meaning": {
         "upright": "The fellowship regathered — the dawn after the long night, the company whole again and ready for the end. Joy that has come through grief; the clarity of being known and found; the warm certainty of allies at your back once more.",
         "inverted": "A reunion that papers over real wounds; nostalgia for a fellowship that has changed; gathering again for the wrong final purpose."
       },
-      "visuals": { "detailed_description": "The full company stands together again in clean, rising gold light atop a rise, faces turned toward a brightening sky, shadows short and warm. The radiant glow of a true morning; every figure distinct and luminous. Grace returned — the simple, blazing joy of not being alone for the last march." },
-      "factorization": { "character": "prime", "factors": [19], "gloss": "A prime — irreducible: the Reunion is a single clean turn toward the light, not assembled from parts but arriving whole, the dawn that cannot be divided." }
+      "visuals": {
+        "detailed_description": "The full company stands together again in clean, rising gold light atop a rise, faces turned toward a brightening sky, shadows short and warm. The radiant glow of a true morning; every figure distinct and luminous. Grace returned — the simple, blazing joy of not being alone for the last march."
+      },
+      "factorization": {
+        "character": "prime",
+        "factors": [
+          19
+        ],
+        "gloss": "A prime — irreducible: the Reunion is a single clean turn toward the light, not assembled from parts but arriving whole, the dawn that cannot be divided."
+      }
     },
     "major-20": {
-      "name": "The Final Ascent", "number": "20", "slug": "major-20", "arcana": "major", "station_slug": "ice",
+      "name": "The Final Ascent",
+      "number": "20",
+      "slug": "major-20",
+      "arcana": "major",
+      "station_slug": "ice",
       "meaning": {
         "upright": "The band storms the god's tower — the gathered fellowship rising to confront the final power, every thread of the story drawn to one point. The reckoning; the call to account answered; the last climb made together into the cold height.",
         "inverted": "An ascent made unready; the final confrontation sought for vengeance; the summit reached at too great a cost."
       },
-      "visuals": { "detailed_description": "The fellowship climbs a vast spire into a freezing high sky, the final fortress glittering above in pale crystalline light, the world tiny and clouded far below. Cold clean air, sharp blue distance; the company small but unbroken against the immense ascent. The stillness of altitude before the last battle." },
-      "factorization": { "character": "composite", "factors": [2, 2, 5], "gloss": "Four times five — the Fellowship (4) against the Empire (5): the final ascent is the reunited company set against the indivisible power, structure thrown at last upon the throne." }
+      "visuals": {
+        "detailed_description": "The fellowship climbs a vast spire into a freezing high sky, the final fortress glittering above in pale crystalline light, the world tiny and clouded far below. Cold clean air, sharp blue distance; the company small but unbroken against the immense ascent. The stillness of altitude before the last battle."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          2,
+          2,
+          5
+        ],
+        "gloss": "Four times five — the Fellowship (4) against the Empire (5): the final ascent is the reunited company set against the indivisible power, structure thrown at last upon the throne."
+      }
     },
     "major-21": {
-      "name": "The World Reborn", "number": "21", "slug": "major-21", "arcana": "major", "station_slug": "water",
+      "name": "The World Reborn",
+      "number": "21",
+      "slug": "major-21",
+      "arcana": "major",
+      "station_slug": "water",
       "meaning": {
         "upright": "The cycle of light renewed — wisdom carried through the ultimate trial restores the world; the lifestream returns, green comes back to the ruin. Culmination and integration; the story completed and given back; the new morning of a healed world.",
         "inverted": "A restoration that forgets its cost; a cycle that will only turn to calamity again; an ending mistaken for permanence."
       },
-      "visuals": { "detailed_description": "Green returns to a flooded, healing land under soft refracted light, the lifestream running clear, the fellowship small and at peace on a new shore. Teal and gentle gold, water giving life rather than taking it; the reflections of a world made whole. The cycle closed and quietly, hopefully, reopening." },
-      "factorization": { "character": "composite", "factors": [3, 7], "gloss": "Three times seven — the Mentor (3) carried through the Trial (7): the world is reborn when inherited wisdom passes through the ultimate ordeal and comes out as renewal. The deck's last number is its first lesson, completed." }
+      "visuals": {
+        "detailed_description": "Green returns to a flooded, healing land under soft refracted light, the lifestream running clear, the fellowship small and at peace on a new shore. Teal and gentle gold, water giving life rather than taking it; the reflections of a world made whole. The cycle closed and quietly, hopefully, reopening."
+      },
+      "factorization": {
+        "character": "composite",
+        "factors": [
+          3,
+          7
+        ],
+        "gloss": "Three times seven — the Mentor (3) carried through the Trial (7): the world is reborn when inherited wisdom passes through the ultimate ordeal and comes out as renewal. The deck's last number is its first lesson, completed."
+      }
+    },
+    "chocobo-0": {
+      "name": "Ace of Chocobo",
+      "number": "1",
+      "slug": "chocobo-0",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "ace",
+      "station_slug": "fire",
+      "meaning": {
+        "upright": "The whistle answered, the first glad surge of going — the road opens and something in you leaps to meet it before the mind has even chosen. This is motion as pure spark, undivided and unspent: the courage of departure, the impulse that turns a still life kinetic. What it sets in motion is the journey itself, lit from within by a heat that wants only to run.",
+        "inverted": "The spark catches but the bird bolts in every direction at once, motion spent before it points anywhere. The eagerness to be off becomes flight from a standstill that should have been held a moment longer; raw drive burns hot and aimless, a beginning squandered in restlessness rather than offered to a true road."
+      },
+      "visuals": {
+        "detailed_description": "A single golden chocobo rears at the lip of an unlit plain at first light, neck thrown back mid-cry, crest-feathers flaring like a struck match. The low sky behind it smolders ember-red and gold, heat shimmering at the horizon where the road begins. Warm rim-light catches the edge of every feather while the country ahead lies dark and waiting, a drift of bright sparks lifting from the bird's wake as it gathers to run."
+      }
+    },
+    "chocobo-1": {
+      "name": "Two of Chocobo",
+      "number": "2",
+      "slug": "chocobo-1",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "two",
+      "station_slug": "thunder",
+      "meaning": {
+        "upright": "Two roads diverge and the chocobo stands poised between them, weight on neither, charged with the choice of which way to run. What it holds in balance is direction itself — the live tension of a fork, the instant before a decision discharges into motion. There is clarity in this poise, the sense that a single bright fact is about to settle which horizon is yours.",
+        "inverted": "The poise curdles into a flinch; the bird shies from both paths and the charged moment scatters unspent. Balance becomes paralysis dressed as prudence, or a rash bolt down the nearer road for no reason but to end the tension. The choice that should have struck clean instead jangles, and momentum is lost to dithering."
+      },
+      "visuals": {
+        "detailed_description": "A chocobo stands rigid at a forked trail under a storm-violet sky, one road running left and one right into hard white distance. The air crackles with the static before a strike; the bird's feathers stand on end and its shadow forks sharp and double across the ground. Bruised purples bank in the clouds and a single fissure of light hangs unbroken above the junction, the whole scene held in the breathless instant before the bolt chooses."
+      }
+    },
+    "chocobo-2": {
+      "name": "Three of Chocobo",
+      "number": "3",
+      "slug": "chocobo-2",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "three",
+      "station_slug": "earth",
+      "meaning": {
+        "upright": "The road bears its first fruit: a path worn smooth by repeated passage, a way that others can now follow because someone glad went first. What the chocobo's going brings forth is not a single arrival but a trail — the early growth of a route, momentum become something solid enough to stand on. Travel here begins to give back, the journey leaving the ground better for having been crossed.",
+        "inverted": "The trail ruts and deepens until it is a groove no one can leave; first growth hardens into mere habit. The well-worn way that should have opened the country closes it, the same circuit walked until the legs forget there was ever a horizon. Fruit borne too cautiously roots in place and refuses to ripen further."
+      },
+      "visuals": {
+        "detailed_description": "A chocobo walks a fresh trail it has pressed into ochre grassland, the bent stalks and printed earth showing plainly where it has passed. Heavy steady light lies even over canyon-colored country, a low horizon and the patient mass of stone in the middle distance. The bird looks back once at the green path unspooling behind it, the first solid evidence that a way has been made."
+      }
+    },
+    "chocobo-3": {
+      "name": "Four of Chocobo",
+      "number": "4",
+      "slug": "chocobo-3",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "four",
+      "station_slug": "holy",
+      "meaning": {
+        "upright": "What the chocobo makes solid is the promise of return — the stable, the waystation, the reliable creature you can always whistle for. This is freedom given a frame: not a cage but a place to set out from and come back to, help made dependable. Motion gains a structure that blesses it, the open road steadied by the knowledge that it loops home.",
+        "inverted": "The frame closes over the freedom it was built to serve; the waystation becomes a stall and the glad companion is kept rather than answered. Dependability curdles into obligation, the bird saddled and idle, a structure so sure of itself it forgets motion was the point. Stability hardens into a stillness that judges every leaving as desertion."
+      },
+      "visuals": {
+        "detailed_description": "A chocobo stands content at the open gate of a sunlit stable-yard, harness hung ready but unbuckled, the road visible beyond the fence. Soft radiant light pours from above in clean gold-white, haloing the bird and bathing the worn posts and stones in a luminous calm. Everything glows with the warmth of a sure homecoming, the structure plainly a place of rest rather than confinement, its gate standing pointedly ajar."
+      }
+    },
+    "chocobo-4": {
+      "name": "Five of Chocobo",
+      "number": "5",
+      "slug": "chocobo-4",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "five",
+      "station_slug": "ice",
+      "meaning": {
+        "upright": "The road turns hard and cold and the journey is tested by a stretch that does not welcome travelers — the pass that freezes, the way that stalls. What strife tries the chocobo is the loss of momentum itself, the country gone still and unyielding when all it wants is to run. The trial is to hold composure when the glad warmth of motion meets a world that has shut its doors.",
+        "inverted": "The cold gets inside; the stall becomes a sulk, the bird refusing the road out of numb resentment rather than honest exhaustion. Strife that should have been crossed is instead nursed into isolation, the traveler frozen in place and calling it caution. Feeling for the journey ices over entirely, and what was a glad companion stands shivering and aloof."
+      },
+      "visuals": {
+        "detailed_description": "A chocobo stands flank-deep in a stilled white pass, head lowered against a frost-blue stillness, its breath hanging visible and unmoving on the air. The road ahead is glazed and crystalline, every edge sharpened by cold, the warm gold of its plumage muted nearly to grey under high pale light. Nothing moves but that one slow plume of breath, the whole glad momentum of the suit arrested in a hush of ice."
+      }
+    },
+    "chocobo-5": {
+      "name": "Six of Chocobo",
+      "number": "6",
+      "slug": "chocobo-5",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "six",
+      "station_slug": "water",
+      "meaning": {
+        "upright": "The give and take of the road restored: the rider feeds and tends, the chocobo carries and keeps faith, and each is borne onward by the other. This is companionship flowing easy as a current, help freely given and freely received, the journey become a shared kindness. What the suit exchanges is trust for passage and passage for trust, a reciprocity that finds its own way around every obstacle.",
+        "inverted": "The current runs only one way and the exchange drowns; one party gives until depleted while the other only takes the ride. Reliance on the glad rescuer curdles into a debt the traveler never means to repay, or old gratitude floods back as guilt that clogs the easy flow. What was mutual carrying becomes a slow undertow of resentment."
+      },
+      "visuals": {
+        "detailed_description": "A rider and chocobo ford a shallow river together, the bird stepping sure through teal water while a hand rests trusting at its neck. Soft refracted light scatters caustics across the surface and the wet gold of feathers, reflections doubling horse and rider in the gentle current below. The whole scene moves and gives, fluid and unhurried, the give of the water answering the give between the two who cross it."
+      }
+    },
+    "chocobo-6": {
+      "name": "Seven of Chocobo",
+      "number": "7",
+      "slug": "chocobo-6",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "seven",
+      "station_slug": "wind",
+      "meaning": {
+        "upright": "Far out on the open plain with no rider, no stable, no whistle to answer — the chocobo must endure the long solitary run on faith alone that the road still goes somewhere. What it bears alone is the test of freedom itself: motion with no one to share it, the wind at its back and only its own heart to say keep on. This is perseverance as pure forward breath, doubt outpaced by the simple act of not stopping.",
+        "inverted": "The solitary run loosens into a drift with no destination, freedom gone to mere dispersal. The wind that carried becomes the gust that scatters, the traveler so unmoored that every direction feels equal and none feels chosen. What should have been a trial endured becomes wandering that has forgotten it was ever going anywhere at all."
+      },
+      "visuals": {
+        "detailed_description": "A lone chocobo runs flat-out across a vast pale plain under a wide, almost empty sky, the only figure in all that openness. Wind streams its crest and tail back in soft directional blur, loose grass and dust lifting and scattering around its driving legs. The high airy palette gives no landmark and no shelter, just light and motion and the bird going on alone, caught forever mid-stride and going."
+      }
+    },
+    "chocobo-7": {
+      "name": "Eight of Chocobo",
+      "number": "8",
+      "slug": "chocobo-7",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "eight",
+      "station_slug": "dark",
+      "meaning": {
+        "upright": "The craft of the road accelerates where the way runs into the unknown — the night ride, the trackless dark, the rider who has learned to trust the bird's sure feet past the edge of the map. Skill compounds into speed precisely where sight fails, momentum carrying into territory that has no road yet. The chocobo's art is at its keenest here, hurrying gladly into a darkness it does not fear.",
+        "inverted": "Speed outruns judgment and the dark swallows the road entirely; mastery becomes a headlong rush into a void that gives nothing back. The craft that should have read the unseen instead bolts blind, momentum mistaken for direction until the traveler is lost in a country with no edges. What was confident acceleration curdles into a flight that cannot find its way to stop."
+      },
+      "visuals": {
+        "detailed_description": "A chocobo races through deep umbral country at night, the road already swallowed behind it, a single weak source of light glinting off its eye and the curve of its neck. Void-violet shadow dominates, edges dissolving into near-black, only the bird's surging form picked faintly out of the dark. It runs full-tilt into the unknown ahead with the easy certainty of long-honed craft, the negative space vast and unmapped around its speed."
+      }
+    },
+    "chocobo-8": {
+      "name": "Nine of Chocobo",
+      "number": "9",
+      "slug": "chocobo-8",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "nine",
+      "station_slug": "fire",
+      "meaning": {
+        "upright": "Near the end of a long hard ride, legs burning, the destination just beyond the rise — what the chocobo carries to the threshold is the last reserve of will, the journey almost finished and refusing to fall short. This is momentum sustained past comfort, the glad creature spending its final heat to bring the road home. The burden is heavy and the finish is near, and the fire to close the gap still answers.",
+        "inverted": "The last stretch is run on rage rather than heart; the bird is driven past spending into burning out, the goal pursued until the pursuing consumes the joy of it. Near-fulfillment becomes a grim forced march, the warm momentum scorched to ash, a traveler so fixed on arrival that they ruin the very strength meant to carry them there."
+      },
+      "visuals": {
+        "detailed_description": "A chocobo labors up the final slope at dusk, flanks heaving, mouth open, its golden plumage lit hot orange by a low sky burning down to embers. Ash drifts on the heat-shimmered air and warm rim-light edges every straining muscle against the char-dark land. Just over the crest a faint glow promises the journey's end, and the bird pours its last fire into the climb toward it, momentum held by sheer blazing will."
+      }
+    },
+    "chocobo-9": {
+      "name": "Ten of Chocobo",
+      "number": "10",
+      "slug": "chocobo-9",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "ten",
+      "station_slug": "thunder",
+      "meaning": {
+        "upright": "The journey comes full: the chocobo arrives, the road completes, and in the same flash the next traveler is already being whistled forth. Fullness here is overflow — a homecoming so glad it cannot be contained and spills outward into another departure. The whole cycle of motion stands revealed at once, completion and beginning struck together, the road handed on as freely as it was given.",
+        "inverted": "The completion lands as a jolt that scatters rather than passes on; arrival comes too sudden, too loud, and overflow becomes overload. The cycle cannot settle into its handing-off — it discharges all at once into chaos, a homecoming that shocks instead of gladdens, abundance flung wide and grounded nowhere. What should have come round and passed on instead breaks apart in the moment of fullness."
+      },
+      "visuals": {
+        "detailed_description": "A chocobo gallops home over a final ridge as a whole flock of others streams out past it in the other direction, the road full of birds coming and going at once. The sky is split by hard white light and bruised violet, every figure thrown into sharp double-shadowed relief by the charge in the air. The scene crackles with the electric fullness of a cycle completing and breaking open in the same struck instant."
+      }
+    },
+    "chocobo-10": {
+      "name": "Freelancer of Chocobo",
+      "number": "11",
+      "slug": "chocobo-10",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "freelancer",
+      "station_slug": "earth",
+      "meaning": {
+        "upright": "The raw beginner of the road — a young wild chocobo, unbroken and unspecialized, all glad untrained motion and no craft yet. It carries the whole potential of the journey in its legs without knowing a single trail, freedom in its purest unschooled form. Here is the suit before it has chosen what kind of going to become, grounded and steady and ready to learn any road.",
+        "inverted": "Untrained potential stalls and settles where it stands; the wild beginner, faced with too many possible roads, simply roots and refuses to start. Rawness becomes mere inertia, the open horizon ignored in favor of the comfortable patch of grass underfoot. What should be unspecialized readiness sinks instead into a stubborn stillness, freedom never spent because it was never aimed."
+      },
+      "visuals": {
+        "detailed_description": "A young, unsaddled chocobo stands square on solid ochre ground, gangly and bright-eyed, its crest-feathers not yet fully grown. Heavy even light lies over a low grounded country of stone and dust, the bird planted firmly with all four toes spread on the earth. No harness, no rider, no chosen path — only mass and steadiness and a half-curious gaze toward a horizon it has not yet decided to run for."
+      }
+    },
+    "chocobo-11": {
+      "name": "Knight of Chocobo",
+      "number": "12",
+      "slug": "chocobo-11",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "knight",
+      "station_slug": "holy",
+      "meaning": {
+        "upright": "The road taken up as a calling — the courier, the outrider, the one whose vocation is to carry help swiftly where it is needed. The glad companion of the journey is here a creature in active service, freedom turned to purpose, motion become a deed done in the world. This is the suit in its working prime: a blessing delivered at a gallop, aid that arrives because someone made arriving their craft.",
+        "inverted": "Service curdles into a zeal for the errand that forgets the people at its end; the rider rides for the riding, or for the glory of always being the one who comes. Vocation hardens into a blinding sense of duty, help delivered with a righteousness that judges those who needed it. What was glad purpose becomes a grim crusade on horseback, grace soured into glare."
+      },
+      "visuals": {
+        "detailed_description": "An armored rider drives a chocobo at full charge across open country, a sealed message or a healer's case held high, urgency in every line. Soft radiant gold-white light pours from above and blazes off the bird's plumage and the rider's mail, haloing the pair as they come. Behind them the road streams away clean and luminous, the whole image lit with the bright clean glow of help arriving in time and meant well."
+      }
+    },
+    "chocobo-12": {
+      "name": "Sage of Chocobo",
+      "number": "13",
+      "slug": "chocobo-12",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "sage",
+      "station_slug": "ice",
+      "meaning": {
+        "upright": "The road mastered inwardly — the old, calm chocobo who has run every trail and now holds the whole map within, needing no whistle and no spur. Mastery here is stillness rather than speed: a knowing so complete it no longer has to move to prove itself, the journey understood as a thing carried quietly in the bones. This is freedom grown wise, composure that has outlasted every horizon and kept its glad heart cold-clear and sure.",
+        "inverted": "The inward mastery freezes into detachment; the wise creature, having seen every road, can no longer be moved to take one. Stillness becomes numbness, knowing becomes aloofness, the glad heart iced over by a wisdom that has stopped caring where it leads. What should be serene understanding hardens into a frozen remove, the sage so far inside itself that no road reaches it anymore."
+      },
+      "visuals": {
+        "detailed_description": "An old chocobo stands utterly still on a high frost-blue ridge, eyes half-closed, surveying a country it plainly knows by heart. Crystalline cold sharpens every edge of its weathered plumage, its slow breath hanging clear in high-key pale light, the trails below it glazed and quiet. Nothing in the scene moves; the bird's stillness is not exhaustion but the deep composure of a creature that has run everything and now simply, knowingly, holds the whole cold map in its gaze."
+      }
+    },
+    "chocobo-13": {
+      "name": "Warrior of Light of Chocobo",
+      "number": "14",
+      "slug": "chocobo-13",
+      "arcana": "minor",
+      "suit_slug": "chocobo",
+      "rank_slug": "warrior-of-light",
+      "station_slug": "water",
+      "meaning": {
+        "upright": "The road fully realized and turned outward — the legendary mount of legends, the chocobo that does not merely travel but opens the way for everyone behind it. Here the glad companion becomes the source of passage itself, freedom so complete it is given freely to all who follow, the whole meaning of the journey culminating in a creature that leads. This is help on the way grown to its capstone: a flowing, generous motion that carries a world along with it toward its next horizon.",
+        "inverted": "The leader's flow becomes a flood that sweeps the followers off their own feet; realized freedom, turned outward too forcefully, drowns the very passage it meant to open. The capstone mount drags its company into a current they cannot steer, momentum become a tide rather than a gift. What should culminate in generous leading instead dissolves into a rush that takes everyone under in the name of going forward."
+      },
+      "visuals": {
+        "detailed_description": "A magnificent chocobo leads a long line of riders along a luminous coastal road, the sea running teal and bright beside them, water and light flowing as one. Soft refracted caustics play over its plumage and the wet road, reflections doubling the whole company in the shallows; everything is in motion and remembering. The lead bird looks ahead toward a far shining horizon, carrying the realized joy of the open road forward and giving it, freely, to all who come behind."
+      }
+    },
+    "moogle-0": {
+      "name": "Ace of Moogle",
+      "number": "1",
+      "slug": "moogle-0",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "ace",
+      "station_slug": "holy",
+      "meaning": {
+        "upright": "What the hearth sets in motion is the first claiming of a place as home, a single lamp lit against the dark and never asked to justify itself. It is the seed of belonging, the bare room that some quiet grace has already chosen to bless and make warm. Here the gift is not a journey begun but a sanctuary opened, the pure radiant promise that somewhere is yours and will hold you.",
+        "inverted": "The blessing curdles into a glare that will not let the room rest; a welcome offered so insistently it becomes a demand, sanctuary turned into a thing you must be grateful for. The first warmth shines too hard and too clean, and the new home judges its keeper rather than shelters them."
+      },
+      "visuals": {
+        "detailed_description": "A single round moogle stands in an empty, newly-kept room, one paw cupped around a small lamp whose light pours upward and fills the air with a soft golden bloom. The walls are bare and pale, washed in a clean luminous glow that seems to fall gently from above, halation softening every edge. A folded blanket and an unlit hearth wait at the room's heart, blessed already by the light that has found them first."
+      }
+    },
+    "moogle-1": {
+      "name": "Two of Moogle",
+      "number": "2",
+      "slug": "moogle-1",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "two",
+      "station_slug": "ice",
+      "meaning": {
+        "upright": "The hearth holds two in balance: the one who stays and the one who is away, the home kept exactly as it was so that a return will find nothing changed. This is the held breath of a quiet house, a stillness deliberately preserved, the cup left on the shelf and the chair left turned. Care here is the discipline of waiting without disturbing, love made into a perfect, patient pause.",
+        "inverted": "The pause stiffens into a chill no warmth can reach; preservation becomes a cold museum of a life no longer lived, the house kept so unchanged that it forgets how to feel. Waiting hardens into numbness, the two no longer holding each other but frozen apart, a hearth gone glassy and silent and afraid to thaw."
+      },
+      "visuals": {
+        "detailed_description": "Two moogles sit on either side of a low, banked hearth in a hushed cold room, breath faintly visible on the still air, one gazing toward a frost-rimmed window and the other keeping watch on the embers. The light is high and pale and blue, every surface sharpened to a crystalline edge, a thin lace of frost climbing the glass. Between them a single cup waits untouched, kept exactly in its place, the whole snug room slowed and clarified by the cold."
+      }
+    },
+    "moogle-2": {
+      "name": "Three of Moogle",
+      "number": "3",
+      "slug": "moogle-2",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "three",
+      "station_slug": "water",
+      "meaning": {
+        "upright": "The hearth first bears fruit when a household becomes a gathering, when the two who kept the home open the door and a third is folded in. Its first growth is the shared meal, the story passed across the table, the warmth that deepens by being given away. Feeling flows here and finds its level, memory pooling among those who have begun to belong to one another.",
+        "inverted": "The current rises past the banks and the gathering drowns in its own feeling; old grievances surge back up from the depths and flood the warm room, nostalgia pulling everyone under. What should have nourished instead dissolves, the household awash in sentiment it can no longer hold, fruit rotting soft in standing water."
+      },
+      "visuals": {
+        "detailed_description": "Three moogles cluster around a small table laden with steaming bowls, lamplight catching on a pitcher and pooling in soft reflections across the worn wood. The air is teal-tinged and gently refracted, as though the cozy room sits just beneath a calm surface, light wavering like caustics over their fur. Condensation beads on the windowpane and runs in slow threads, and the whole gathered scene seems to flow quietly inward, remembering itself."
+      }
+    },
+    "moogle-3": {
+      "name": "Four of Moogle",
+      "number": "4",
+      "slug": "moogle-3",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "four",
+      "station_slug": "wind",
+      "meaning": {
+        "upright": "What the hearth makes solid is the shelter that stands precisely because it stands against the open air, the four walls raised so the wind has somewhere to break. This is the lamp that does not gutter, the door latched firm while the world streams past outside, structure as the gift of a fixed point in a moving sky. Here belonging is built and proven, a home made stable enough that others can come in out of the weather.",
+        "inverted": "The walls close until the air goes stale and the latched door keeps out the very breath the house needs; what was shelter becomes a sealed box, change locked outside and never let in. The structure holds too well, rootbound and stifling, and the home that should have been a refuge from the wind forgets that a window was ever meant to open."
+      },
+      "visuals": {
+        "detailed_description": "A small snug cottage holds firm on an exposed rise while a high pale wind scours the sky around it, grasses and loose leaves streaming sideways in soft directional blur. Within the lit window a moogle calmly tends a steady lamp, the warm interior glowing against the airy, washed-out brightness outside. The whole open emptiness rushes past the four solid walls, everything beyond caught mid-flight while the home alone stays still and rooted."
+      }
+    },
+    "moogle-4": {
+      "name": "Five of Moogle",
+      "number": "5",
+      "slug": "moogle-4",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "five",
+      "station_slug": "dark",
+      "meaning": {
+        "upright": "The strife that tests the hearth is the night the lamp goes out, the shelter that fails just when it is most needed, the community scattered into the dark. This is the cold ledger of an empty shop, the letter that never came, the home no longer able to hold. Yet the testing dark is also fertile, the necessary unmaking from which a warmer house might one day be rebuilt, if the keeper can bear the unknowing first.",
+        "inverted": "The dark stops being a passage and becomes the whole of things; the keeper decides the lamp will never light again and makes a home of despair. What was a hard night curdles into permanent ruin, the void mistaken for the end, the saved place abandoned to shadow by the one who should have rekindled it."
+      },
+      "visuals": {
+        "detailed_description": "A lone moogle huddles in a near-dark room where the hearth has gone to grey ash and a single weak ember is all that remains, void-violet shadow swallowing the corners and the doorway. Negative space dominates, the familiar shapes of shelf and chair barely surfacing from the gloom, the warm world of the home reduced to one failing point of light. The moogle's small face is turned toward that last coal, uncertain whether it will catch or die."
+      }
+    },
+    "moogle-5": {
+      "name": "Six of Moogle",
+      "number": "6",
+      "slug": "moogle-5",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "six",
+      "station_slug": "fire",
+      "meaning": {
+        "upright": "The hearth gives and receives through the open kitchen, the bread baked for the traveler and the coin or the tale given back, the forge of hospitality where warmth circulates and renews. Reciprocity is the fire kept alive by being shared, each guest both warmed and warming, the community thriving because nothing in it is hoarded. Here harmony is restored by passing the heat along, relief arriving in the simple equity of a hot meal repaid with company.",
+        "inverted": "The fire is fed too hard and consumes what it was meant to comfort; generosity flares into a burnout that exhausts the keeper, hospitality given until there is nothing left to give. The warm exchange becomes a one-way blaze, the hearth scorching its own household in the name of welcome, charity turned to ash and resentment."
+      },
+      "visuals": {
+        "detailed_description": "Moogles pass loaves and steaming mugs hand to hand around a bright open hearth, the fire's glow rimming their fur in warm gold and throwing soft ember-light across the busy room. Faint ash drifts upward through the heat-shimmer, the whole interior lit as if by a generous blaze just beyond the frame, reds and golds glowing against the cozy dark. The giving moves in a circle, every paw both offering and receiving, the warmth visibly traveling from one to the next."
+      }
+    },
+    "moogle-6": {
+      "name": "Seven of Moogle",
+      "number": "7",
+      "slug": "moogle-6",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "seven",
+      "station_slug": "thunder",
+      "meaning": {
+        "upright": "What the hearth must endure alone is the long night of keeping the place when no one else believes it worth keeping, the solitary vigil over a save-point in the storm. This is faith held against doubt, the single keeper waiting up while the house sleeps, certain in the dark that the home still matters. The trial comes as a sudden charge, a moment of stark clarity that tests whether the lamp will be defended or abandoned.",
+        "inverted": "The charged moment breaks the keeper rather than steadies them; a rash strike of panic scatters the long patience, doubt discharging all at once into a decision made in shock. The lonely vigil shatters under a flash of fear, the home left unguarded at the very instant it needed its keeper most, faith arcing out into chaos."
+      },
+      "visuals": {
+        "detailed_description": "A single moogle sits awake in a darkened shop as a storm presses at the windows, one paw on the counter, lit by the hard white flicker of lightning that throws sharp shadows across the empty room. The air is charged and violet, the static tension of a strike about to fall, every familiar shelf and ledger picked out in stark momentary contrast. The keeper holds its post alone, small and resolute, the whole snug place trembling on the edge of the thunderclap."
+      }
+    },
+    "moogle-7": {
+      "name": "Eight of Moogle",
+      "number": "8",
+      "slug": "moogle-7",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "eight",
+      "station_slug": "earth",
+      "meaning": {
+        "upright": "The hearth's craft accelerates in the steady, grounded labor of keeping house, the keeper grown so practiced that the shop runs like a turning wheel and the home deepens by the day. This is mastery with weight behind it, the ledger balanced, the larder full, skill compounding into a place so solidly run it feels eternal. Momentum here is patient and proven, an enduring competence that lets the whole community rest on its foundation.",
+        "inverted": "The accelerating craft grinds to a halt and settles into mere routine, the practiced keeper buried under their own habits, the house heavy and unchanging. What was skill in motion sinks into stagnation, the weight of the well-run home crushing rather than supporting, momentum mistaken for the inertia of a place too set in its ways to grow."
+      },
+      "visuals": {
+        "detailed_description": "A moogle moves with brisk sure habit through a well-stocked shop, restacking crates and tallying a ledger amid heavy shelves of ochre stone and stout timber, everything possessed of solid mass. The light is steady and even, warm in earth tones, dust hanging gold in the air above the worn floor. A great millstone-shaped wheel of a counter anchors the room, and the whole grounded interior hums with the quiet, accumulating competence of a place that has stood and will go on standing."
+      }
+    },
+    "moogle-8": {
+      "name": "Nine of Moogle",
+      "number": "9",
+      "slug": "moogle-8",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "nine",
+      "station_slug": "holy",
+      "meaning": {
+        "upright": "What the hearth carries to the threshold is the home almost whole, the long care nearly complete, the last hard stretch of keeping faith until everyone is safely gathered in. This is the keeper waiting up for the final one still out in the dark, the lamp kept burning past all reasonable hours, blessing held ready at the very edge of fulfillment. Grace shines here on the cusp, the radiant near-arrival of a household about to be made entire.",
+        "inverted": "The waiting light hardens into a vigil that will not end and cannot be satisfied, blessing turned to a blinding insistence that no one ever be allowed to leave. The keeper guards the threshold so jealously that the home becomes a glare, mercy lost in the relentless need for completion, the last one held at the door rather than welcomed through it."
+      },
+      "visuals": {
+        "detailed_description": "A moogle stands in a warm open doorway holding a raised lamp into the night, soft golden light streaming out and down the steps as it watches for one last figure to come home. The glow blooms around the frame in gentle halation, the interior behind already full and bright with the rest of the household. Everything is bathed in a clean radiant gold, the whole scene poised on the verge of being complete, the keeper's blessing reaching out into the dark toward an arrival not quite yet."
+      }
+    },
+    "moogle-9": {
+      "name": "Ten of Moogle",
+      "number": "10",
+      "slug": "moogle-9",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "ten",
+      "station_slug": "ice",
+      "meaning": {
+        "upright": "The hearth comes full and passes on in the perfected home now complete enough to be left, the lifetime of care crystallized into a place so whole it can hold without its keeper. This is the inheritance handed down, the still and shining house given over to the next who will warm it, fulfillment preserved in a clear cold permanence. Completion here is a quiet snow-light settling, the cycle of belonging clarified and ready to begin again in other paws.",
+        "inverted": "The fullness freezes before it can be passed on; the keeper clings to the finished home and will not let it move to other hands, abundance locked in ice. What should overflow instead stiffens into a numb, hoarded perfection, the complete house become a tomb of itself, the cycle arrested by a love too cold to let go."
+      },
+      "visuals": {
+        "detailed_description": "A whole household of moogles stands gathered in a snug, fully furnished home under a high still light, the eldest pressing a worn key into a younger paw while breath hangs faintly in the cool air. Frost edges the windows in fine crystalline lace and the palette is hushed pale blue, every laden shelf and folded quilt sharpened and clarified by the cold. The room is brimful and complete, slowed to a glassy stillness, the moment of handing-on held perfectly in place."
+      }
+    },
+    "moogle-10": {
+      "name": "Freelancer of Moogle",
+      "number": "11",
+      "slug": "moogle-10",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "freelancer",
+      "station_slug": "water",
+      "meaning": {
+        "upright": "The keeper as raw beginner has only the instinct to make a place, no craft yet and no fixed home, just the unschooled tenderness that finds a corner anywhere and calls it shelter. This is hospitality before it has learned its trade, warmth flowing wherever it can, adaptable and unspecialized, a homemaker who is still all feeling and no form. The gift is the open current itself, ready to take the shape of whatever roof it is offered.",
+        "inverted": "Untrained feeling overflows into a homemaking that drowns its object, the eager beginner so flooded with the wish to nurture that they smother the very place they meant to tend. Without a craft to hold it, the warmth dissolves into formlessness, washing rootlessly from corner to corner, care that floods rather than shelters."
+      },
+      "visuals": {
+        "detailed_description": "A young moogle improvises a first nest in a borrowed corner, draping a single blanket and setting out one small bowl in a space that is not yet truly a home, lit by soft refracted blue light. The palette is teal and deep water-shadow, faint caustics rippling across the walls as if the whole room drifts just beneath a gentle surface. Everything about the scene is fluid and unfinished, the eager keeper's instinct flowing outward, a shelter still forming and finding its level."
+      }
+    },
+    "moogle-11": {
+      "name": "Knight of Moogle",
+      "number": "12",
+      "slug": "moogle-11",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "knight",
+      "station_slug": "wind",
+      "meaning": {
+        "upright": "The keeper in active vocation defends the hearth as a deed and a duty, the homemaker who carries shelter out into the open and raises a refuge wherever it is needed. This is care taken up as valor, the one who pitches the camp against the gale and stands the door against the storm, hospitality become a thing done in the field. Belonging here is mobile and willed, a sanctuary that travels on the shoulders of one who has made keeping it their calling.",
+        "inverted": "The vocation scatters into restlessness, the would-be defender so caught up in motion that no shelter ever quite gets built, valor blown loose from its purpose. The keeper rushes from place to place uprooting more than they raise, duty dispersed on the wind, a homemaker who has forgotten that a refuge must finally stand still to shelter anyone."
+      },
+      "visuals": {
+        "detailed_description": "A moogle braces a canvas awning open against a hard pale wind, fur and pennants streaming, planting a traveling refuge on open ground while grit and leaves blur past in fast directional motion. The sky is high and airy and washed of color, the whole scene caught mid-gust, the keeper leaning into the gale with sure purpose. One paw holds the shelter fast while everything loose around it goes flying, vocation made visible in the act of building warmth in the teeth of the moving air."
+      }
+    },
+    "moogle-12": {
+      "name": "Sage of Moogle",
+      "number": "13",
+      "slug": "moogle-12",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "sage",
+      "station_slug": "dark",
+      "meaning": {
+        "upright": "The keeper as inward master understands that the truest shelter is not the walls but the knowing of when to keep them and when to let the dark do its work. This is hospitality mastered down to its quiet root, the elder homemaker who can sit with an unlit room and an unknown night and still hold it as sanctuary. Wisdom here is the deep acceptance that every hearth passes through shadow, that the fertile dark is part of what a home must shelter, that care includes the courage to dwell in the not-yet-known.",
+        "inverted": "The mastery sinks into a darkness that only takes; the wise keeper, knowing too well how the lamp can fail, lets it stay out and calls the despair wisdom. What was deep acceptance becomes a learned resignation, the elder mistaking the shadow for the whole truth of home, withdrawing into a void they no longer try to warm."
+      },
+      "visuals": {
+        "detailed_description": "An old moogle sits perfectly at ease in a near-dark room, hands folded, a single faint source glinting in its calm eyes while void-violet shadow fills the space and swallows the edges of shelf and door. The familiar shapes of the home are barely visible, dissolved into deep negative space, yet the keeper rests within the dark as comfortably as within lamplight. There is no fear in the gloom around it, only the quiet mastery of one who has learned to make a sanctuary even of the unknowing night."
+      }
+    },
+    "moogle-13": {
+      "name": "Warrior of Light of Moogle",
+      "number": "14",
+      "slug": "moogle-13",
+      "arcana": "minor",
+      "suit_slug": "moogle",
+      "rank_slug": "warrior-of-light",
+      "station_slug": "fire",
+      "meaning": {
+        "upright": "The keeper fully realized is the legendary hearth-bringer who carries home itself outward as a gift to the whole world, the one whose presence makes any place a sanctuary and any stranger kin. This is shelter become heroic, hospitality at its capstone, a warmth so complete and so freely given that it kindles community wherever the keeper walks. Here the saved moment is offered to everyone, the great fire of belonging shared without measure, care turned outward into a beacon the lost can steer by.",
+        "inverted": "The beacon blazes into a consuming fire that demands the world come home on the keeper's terms, generosity swollen into a heat that scorches the very people it gathers. The hero of the hearth burns out in the giving, or worse, forces their warmth on all until welcome becomes tyranny, the great light of belonging turned to a blaze that devours what it meant to shelter."
+      },
+      "visuals": {
+        "detailed_description": "A radiant moogle stands at the center of a great communal hall, arms flung wide as a roaring hearth blazes behind it and warm ember-light pours out over a crowd of gathered figures of every kind. The air glows with rim-lit gold and drifting ash, heat-shimmer softening the far edges, the whole vast room lit as if the keeper itself were the source of the fire. Strangers and travelers press in toward the warmth, faces turned up to the blaze, the saved moment made enormous and given freely to all."
+      }
+    },
+    "cactuar-0": {
+      "name": "Ace of Cactuar",
+      "number": "1",
+      "slug": "cactuar-0",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "ace",
+      "station_slug": "wind",
+      "meaning": {
+        "upright": "What the sentinel sets in motion is not motion at all but the drawing of a line: a single patch of ground claimed, a here that is now defended and a there that is not. It is the first refusal, the seed of every later needle, the quiet declaration that this far and no farther. From one planted creature an entire principle of self begins, scattered on the open air for anyone with the wit to read it.",
+        "inverted": "The boundary unclaimed and let blow away before it could root, a line drawn so faintly the wind takes it and no one ever learns where the edge was. Potential for self-defense dispersed into vague unease, a leave-me-be muttered too softly to carry. The seed of a self that never quite plants itself, restless and unrooted where it should have stood its ground."
+      },
+      "visuals": {
+        "detailed_description": "A single small cactuar stands alone on a pale flat expanse, the first and only thing planted in an enormous emptiness of high thin sky. A faint ring of disturbed sand spirals outward from its feet, the only mark it has made, already beginning to drift. Loose seed-spores and dust stream sideways past it in soft directional blur, the whole scene light and going somewhere, while the creature alone refuses to move."
+      }
+    },
+    "cactuar-1": {
+      "name": "Two of Cactuar",
+      "number": "2",
+      "slug": "cactuar-1",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "two",
+      "station_slug": "dark",
+      "meaning": {
+        "upright": "What the sentinel holds in balance is the strung tension between two grounds that touch but will not merge: my edge and your edge, held in a stillness that is anything but peace. Two creatures face each other across an unmarked seam, neither advancing, each a thousand needles held in reserve, and the balance is exactly the cost each would pay the other for crossing. It is the truce of mutual threat, a boundary kept honest by the dark certainty of what lies past it.",
+        "inverted": "The standoff tips: one edge encroaches in the unlit hour and the held tension collapses into spite, or both sides nurse the same grudge until the seam between them becomes a wall neither can see over. Balance soured into a cold war of fences, the leave-me-be curdled to a refusal to ever again be near. What was a watchful equilibrium becomes two isolations facing away in the same swallowing dark."
+      },
+      "visuals": {
+        "detailed_description": "Two cactuar stand a few paces apart in near-total blackness, facing each other across a barely-visible line scored in the ground between them. A single weak source low at the horizon catches one edge of each creature and leaves the rest swallowed in umbral violet, so they read as twin silhouettes held in a charged, watchful gap. Negative space dominates everything around them; only the thin seam of dividing ground and the two guarding shapes emerge from the dark."
+      }
+    },
+    "cactuar-2": {
+      "name": "Three of Cactuar",
+      "number": "3",
+      "slug": "cactuar-2",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "three",
+      "station_slug": "fire",
+      "meaning": {
+        "upright": "The sentinel first bears fruit the only way a guarded thing can: the defended ground, left undisturbed, quietly grows something worth defending. Within the perimeter no one was permitted to trample, a small fierce abundance takes hold, and the boundary is revealed as the wall of a forge rather than a tomb. The first sweet proof that leave-me-be was never mere refusal but the condition under which a self could finally make something burn.",
+        "inverted": "The fence that should have sheltered growth instead scorches it, the heat of constant vigilance consuming the very thing it was meant to protect. Fruit borne and then guarded so jealously it spoils on the branch, or a creativity that flares only to drive others off rather than to make. The forge become a wildfire, defense overdone until it destroys the small abundance it was raised to keep."
+      },
+      "visuals": {
+        "detailed_description": "A cactuar stands sentinel at the rim of its small patch where three bright blossoms have opened low against its base, the only living color in a charred, arid frame. Warm rim-light catches the creature and its flowers from a fire just out of view, ember-glow pulsing at the edges and fine ash drifting across the heat-shimmered air. The defended ground glows like the floor of a forge, the blooms vivid and hard-won in the surrounding char-dark."
+      }
+    },
+    "cactuar-3": {
+      "name": "Four of Cactuar",
+      "number": "4",
+      "slug": "cactuar-3",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "four",
+      "station_slug": "thunder",
+      "meaning": {
+        "upright": "What the sentinel makes solid is the threshold itself: the boundary set in stone, surveyed, marked, made a structure firm enough to stand a lifetime on. The line is no longer a mood but a fact, a wall of guardians ranged at the cardinal points, the consequence for trespass now a settled and certain law. Here is the stability of a self that knows exactly where it ends, charged and ready, its verdict already drawn before the first foot crosses.",
+        "inverted": "The frame hardens into a fortress with the gate welded shut, structure so total it becomes a cell, the boundary kept long after there is anything left worth keeping out. Stability mistaken for rigidity, the settled law grown brittle and quick to discharge against the smallest provocation. The wall that was built to hold a self in place becomes the bars that hold it apart from everything, a rash and rigid keep that strikes at shadows."
+      },
+      "visuals": {
+        "detailed_description": "Four cactuar stand planted at the corners of a squared-off plot of ground, boundary-stones set hard between them, the whole forming a stark fixed perimeter under a bruised storm-violet sky. Hard white light rakes across the scene casting sharp black cast-shadows from every spine and stone, the air taut with the static charge that precedes a strike. The structure reads as immovable and braced, a planted fortress holding its shape in the breathless tension before thunder."
+      }
+    },
+    "cactuar-4": {
+      "name": "Five of Cactuar",
+      "number": "5",
+      "slug": "cactuar-4",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "five",
+      "station_slug": "earth",
+      "meaning": {
+        "upright": "The strife that tests the sentinel is the slow siege: not the trespasser at the gate but the grinding pressure of a ground encroached upon a little at a time, the patient weight that asks whether a boundary can outlast erosion. Stones are moved, edges crowded, the patch shrunk by inches, and the creature must hold its line against a force too heavy to strike and too steady to outwait. This is the trial of endurance over retaliation, the test of whether self-defense can mean simply refusing to be buried.",
+        "inverted": "The weight wins: the boundary slumps under the long pressure and the creature either gives ground until there is none, or digs in so immovably that it is buried where it stands rather than yield an inch. Endurance ossified into pure stubbornness, a grudge gone to stone, the line defended past all sense until it becomes a grave. Stagnation dressed as steadfastness, the sentinel crushed by the very inertia it mistook for strength."
+      },
+      "visuals": {
+        "detailed_description": "A single cactuar braces on a shrinking patch of cracked ochre ground as heavy boulders and shifting dunes press in from every side, half-burying the boundary-stones that once marked its edge. Warm earth tones lie flat under a steady even light, the low horizon stacked with mass that seems to be slowly closing the frame. The creature stands planted and weighted, dust banked against its base, a small holdout against the patient burial of the land itself."
+      }
+    },
+    "cactuar-5": {
+      "name": "Six of Cactuar",
+      "number": "6",
+      "slug": "cactuar-5",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "six",
+      "station_slug": "holy",
+      "meaning": {
+        "upright": "The sentinel gives and receives through the grace of the honored boundary: the traveler who asks before crossing and is granted passage, the water of the guarded oasis shared with the one who did not trespass to take it. Here the needle stays sheathed because respect has done its work, and the creature discovers that a clear edge is the very thing that makes generosity safe to offer. Reciprocity blessed and made luminous, leave-me-be answered by leave-you-be, and from that mutual grace a quiet healing flows both ways.",
+        "inverted": "The exchange curdles into a toll exacted without mercy, the boundary used to extort rather than to bless, every grant of passage made to cost more than it should. Grace soured to zealotry, the keeper of the oasis judging all who approach and finding them wanting, generosity withheld until the gift rots from never being given. The clean light of fair reciprocity glares into a cruelty that calls itself principle, blessing turned to blinding judgment at the gate."
+      },
+      "visuals": {
+        "detailed_description": "A cactuar stands beside a small clear oasis pool, one arm lowered as if granting passage to a faint figure approaching its edge with open hands, the whole scene bathed in radiant gold-white light descending softly from above. Pale luminous haze blooms around the water and the guardian, halation softening every spine until the sentinel looks less like a threat than a warden of something holy. The shared pool catches and throws the warm clean glow, an exchange made gentle and bright at a boundary kept with grace."
+      }
+    },
+    "cactuar-6": {
+      "name": "Seven of Cactuar",
+      "number": "7",
+      "slug": "cactuar-6",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "seven",
+      "station_slug": "ice",
+      "meaning": {
+        "upright": "What the sentinel must endure alone is the long unbroken watch when no one comes: the trial not of repelling the trespasser but of holding the line through an emptiness that tests whether the boundary meant anything at all. In the still cold of the unvisited vigil, doubt creeps in colder than any enemy, and the creature must keep its post against the suspicion that it guards nothing for no one. This is the lonely proving of a self defined by its edge, composure kept through the freezing question of whether the edge still matters with no one left to cross it.",
+        "inverted": "The cold wins and the lone watch hardens into numbness, the vigil kept so long in isolation that the creature forgets why it ever stood and freezes into a fence around an empty plot. Solitude soured from chosen privacy into a chill that arrests all feeling, leave-me-be petrified into a permanent unreachability. The endurance that should have proven the self instead encases it, a sentinel frozen at a post it can no longer remember the meaning of."
+      },
+      "visuals": {
+        "detailed_description": "A single cactuar stands alone at a frost-rimed boundary-stone under a hushed pale sky, its breath the only motion in a glassy, frozen stillness that stretches empty in every direction. High-key cold light glitters off crystalline frost sheathing each spine, the air sharp and still, no other creature anywhere in the vast clear cold. The sentinel holds its post in perfect arrested silence, a lone dark shape keeping a watch that the ice has slowed almost to stone."
+      }
+    },
+    "cactuar-7": {
+      "name": "Eight of Cactuar",
+      "number": "8",
+      "slug": "cactuar-7",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "eight",
+      "station_slug": "water",
+      "meaning": {
+        "upright": "The sentinel's craft accelerates in fluency: the once-rigid line learns to flow, the guardian reading every approach and answering each with exactly the measure it requires, no more. Defense becomes an art of timing rather than a wall of refusal, the creature adapting its threshold to the shape of who comes near, remembering every past crossing and meeting the next with a current that finds the gap. Mastery in motion, the needle now released with a swimmer's ease, a boundary kept by depth and feel instead of by sheer rigidity.",
+        "inverted": "The flow overruns its banks: the practiced defense floods past all proportion, every approach met with the same drowning over-response until the craft becomes a reflex that cannot stop. Adaptation dissolved into mere reactivity, the boundary that should have flexed instead surging out to retaliate against everything, swept under by the undertow of every remembered slight. Skill accelerated past control, the sentinel's fluid art become a current that pulls the creature itself down into disproportionate, dissolving spite."
+      },
+      "visuals": {
+        "detailed_description": "A cactuar stands at the edge of a shallow tidal flat where teal water laps and recedes around its splayed legs, caustic light rippling across its surface as reflections double the creature on the wet sand. Its outstretched arm seems to move with the current, spines catching refracted blue-green light, the whole figure caught fluid and adapting between the surface and the depth beneath. The boundary it keeps is the shifting waterline itself, everything in soft motion and remembering the shape of the last tide."
+      }
+    },
+    "cactuar-8": {
+      "name": "Nine of Cactuar",
+      "number": "9",
+      "slug": "cactuar-8",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "nine",
+      "station_slug": "wind",
+      "meaning": {
+        "upright": "What the sentinel carries to the threshold is the whole long discipline of the watch, borne now to its hardest stretch: the boundary held through exhaustion, the line kept when keeping it costs nearly everything left. Near the end of its vigil the creature stands battered and thinned by the constant scouring, every needle counted, the will to refuse worn down to its last carrying breath. This is leave-me-be held to the brink, self-defense become a burden hauled up to the very edge of fulfillment, almost done and never heavier.",
+        "inverted": "The last stretch breaks the bearer: the long-held boundary, carried one step too far, is finally torn loose and scattered, the creature uprooted by the same wind it stood against for so long. The burden of the watch dispersed into rootless drift, vigilance kept past all reserve until it simply blows away, the self thinned out and carried off with nothing left to defend or stand on. Near-fulfillment lost at the threshold, the guardian instability incarnate, scattered rather than completed."
+      },
+      "visuals": {
+        "detailed_description": "A worn, weather-thinned cactuar leans into a hard sidewind on a high open ridge, its remaining spines streaming with the drifting particulate that scours past it, almost at the end of some long boundary it has walked. The pale airy sky is full of soft directional blur, dust and stripped fragments caught mid-flight all going one way. The creature holds its lean against the gust by sheer worn will, a single planted thing at the threshold of being carried off, enduring one more breath of the scattering air."
+      }
+    },
+    "cactuar-9": {
+      "name": "Ten of Cactuar",
+      "number": "10",
+      "slug": "cactuar-9",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "ten",
+      "station_slug": "dark",
+      "meaning": {
+        "upright": "The sentinel comes full when the boundary it kept its whole life is handed on: the old guardian, its watch complete, gives its claimed ground over to the small new growth springing up at its feet. Fullness here is the perimeter perfected and then released into the fertile dark from which the next will rise, the long defense overflowing at last into legacy. The cycle of leave-me-be come round to its end and its beginning at once, a self entire enough to finally let its ground belong to another.",
+        "inverted": "The fullness will not pass on: the old sentinel hoards its ground into the dark and refuses every successor, the boundary clung to past its purpose until it becomes a wall around a barren, ungiven plot. Completion mistaken for a final possession, the cycle jammed by a grudge that will not release, the dark that should have been fertile become only a void that takes and gives nothing back. The watch overflowing into nothing, a guarded ground that ends with its keeper rather than beginning again."
+      },
+      "visuals": {
+        "detailed_description": "A tall worn cactuar stands at the center of its long-held ground in deep umbral dark, and at its base a cluster of tiny new sprouts catches the single weak source of light, the only brightness in a near-black frame. The old guardian recedes into void-violet shadow above while the small successors glow faintly below, the claimed perimeter dissolving at its edges into the swallowing dark. The whole scene is the closing of a watch and the seed of the next, full and ending and quietly beginning in the fertile black."
+      }
+    },
+    "cactuar-10": {
+      "name": "Freelancer of Cactuar",
+      "number": "11",
+      "slug": "cactuar-10",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "freelancer",
+      "station_slug": "fire",
+      "meaning": {
+        "upright": "The boundary in its raw and unschooled form: a young sentinel who has not yet learned proportion, all instinct and no measure, ground claimed by impulse and defended in a hot flare before thought can temper it. Here is the suit as untrained beginner, the needle loosed too eagerly, the self-defense that burns bright and unaimed because it has not yet discovered which crossings truly warrant the spines. Pure unspecialized potential for guardianship, fierce and promising and not yet made wise by the heat it cannot quite control.",
+        "inverted": "The raw flare goes to waste: the untaught guardian lashes out at every shadow, defense expended in pointless eruptions that scorch friend and trespasser alike until nothing wants to come near. Beginner's passion soured into mere prickliness, a self-defense so undisciplined it becomes self-isolation, the bright unfocused fire of a creature that has learned to strike but not when. Potential squandered in tantrum, the apprentice boundary burning out before it ever became a craft."
+      },
+      "visuals": {
+        "detailed_description": "A young, slightly crooked cactuar stands in a fighting flourish on a scorched plain, both arms thrown out, fresh spines bristling in every direction as if it cannot yet decide where the threat is. Warm rim-light flares across it from a fire just out of frame, embers and ash swirling around its eager untrained stance, the heat-shimmer giving its silhouette a restless wavering edge. It reads as all raw spark and no discipline, a beginner guardian lit and bristling in the unsteady glow of its own unspent heat."
+      }
+    },
+    "cactuar-11": {
+      "name": "Knight of Cactuar",
+      "number": "12",
+      "slug": "cactuar-11",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "knight",
+      "station_slug": "thunder",
+      "meaning": {
+        "upright": "The boundary taken up as a vocation and carried into the field: the sentinel who has made guardianship its active office, the verdict for trespass now delivered with practiced, decisive force the instant it is warranted. Here the suit is in full working valor, the needle a deed rather than a reflex, the watch ridden out and the threshold defended with the clean shock of a strike that lands true. Self-defense become duty done, the boundary not merely held but actively, courageously enforced by one who has chosen the post and answers each crossing at once.",
+        "inverted": "The office becomes brutality: the active guardian strikes first and judges after, the decisive deed degraded into rash overreaction, every approach met with a discharge of force out of all proportion to the cause. Valor soured into a quick and chaotic temper, the knight of the boundary become a thug at the gate, scattering the welcome and the trespasser alike in a flurry of premature verdicts. Duty turned to violence for its own sake, the practiced strike now a hair-trigger that punishes before it understands."
+      },
+      "visuals": {
+        "detailed_description": "A vigorous cactuar stands mid-stride at its boundary in full guardian action, one arm flung up and spines flared as a hard white flash splits the storm-violet sky behind it. Sharp cast shadows knife across the charged ground and the air crackles with static, the creature caught in the decisive instant of meeting a crossing head-on. Electric blue light rims its braced, advancing form, a sentinel in active vocation rendered as the very figure of the sudden, committed strike."
+      }
+    },
+    "cactuar-12": {
+      "name": "Sage of Cactuar",
+      "number": "13",
+      "slug": "cactuar-12",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "sage",
+      "station_slug": "earth",
+      "meaning": {
+        "upright": "The boundary mastered inwardly until it no longer needs a single needle to be felt: the old sage of the ground whose very presence is the perimeter, so settled and rooted that trespass simply does not occur to those who come near. Here the suit is wisdom held within, self-defense distilled to a stillness so complete it has become authority, the spines grown quiet because the boundary now lives in the bearing rather than the threat. Leave-me-be understood at last as a depth rather than a warning, a guardianship so foundational it holds without ever having to strike.",
+        "inverted": "The inward mastery sets into burial: the sage so rooted in its own ground that it can no longer move, wisdom hardened to inertia, the deep stillness gone stagnant and entombing. Self-knowledge turned to immovable isolation, the boundary internalized so far that the creature is walled inside it, a depth become a grave. The settled authority that should have held lightly instead crushes, a guardian so weighted by its own mastery that it has buried itself beneath the very ground it learned by heart."
+      },
+      "visuals": {
+        "detailed_description": "An ancient, massive cactuar stands deeply rooted at the heart of a canyon of warm ochre stone, so still and weathered it seems part of the rock itself, its base merged with the settled earth. Heavy grounded forms surround it under a steady even light, dust hanging motionless, the low horizon stacked with patient mass that echoes the creature's own immovable calm. It needs no flared spines to read as a boundary; its sheer rooted weight makes the whole canyon feel like ground one does not cross."
+      }
+    },
+    "cactuar-13": {
+      "name": "Warrior of Light of Cactuar",
+      "number": "14",
+      "slug": "cactuar-13",
+      "arcana": "minor",
+      "suit_slug": "cactuar",
+      "rank_slug": "warrior-of-light",
+      "station_slug": "holy",
+      "meaning": {
+        "upright": "The boundary fully realized and turned outward as a gift to all: the legendary sentinel whose guarded ground has become a sanctuary, the perimeter no longer a refusal but a shelter that names what may safely enter and what may not. Here the suit reaches its capstone, self-defense perfected into protection, the needle reserved now wholly for what would harm the cared-for, the leave-me-be transfigured into a leave-them-be-safe held over others. The threshold made radiant, a guardianship so complete it blesses the ground it keeps and everyone it has chosen to keep upon it.",
+        "inverted": "The realized guardian curdles into a holy tyrant of the threshold: the boundary turned outward becomes a crusade, the sanctuary a fortress that judges all who would enter and admits almost none. Protection soured into zealotry, the radiant keeper deciding with merciless light who is worthy of the ground, purity made into cruelty at the gate. The capstone defense become a blinding glare, a guardian so certain of what it shelters that it shuts out the very welcome it was raised to protect, mercy lost in the brightness of its own righteousness."
+      },
+      "visuals": {
+        "detailed_description": "A resplendent cactuar stands atop a rise at the entrance of a flourishing guarded oasis, arms spread wide in clear gold-white light that streams down from above, sheltering the green and the small figures gathered safely behind it. Soft volumetric radiance blooms around the creature until its spines look less like weapons than rays, halation gilding the whole sanctuary it presides over. It reads as the boundary perfected into blessing, a luminous guardian whose realized watch keeps a bright and living ground for all it has taken under its protection."
+      }
+    },
+    "tonberry-0": {
+      "name": "Ace of Tonberry",
+      "number": "1",
+      "slug": "tonberry-0",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "ace",
+      "station_slug": "thunder",
+      "meaning": {
+        "upright": "What the slow doom sets in motion is the first cold certainty that it has begun and will not be called back. Far down the corridor a lantern wakes, and in that instant the whole reckoning is decided though not a single step has yet been taken; the verdict arrives all at once, complete in its seed. This is the undivided start of a consequence you cannot now unstart.",
+        "inverted": "The summons that flared and froze: the knowledge that something is coming, seized as a shock and then refused. The first step is denied, the lantern smothered, the inevitable mistaken for a thing that can be argued with. What was meant to begin a passage instead only crackles in place, a charge that will not earth itself and so never moves on."
+      },
+      "visuals": {
+        "detailed_description": "At the far end of a long black passage a single small lantern flares awake, and the sudden hard light throws one stark shadow the whole length of the corridor toward the viewer. The walls are picked out in bruised violet and electric blue, every edge knife-sharp in the static air. A small domed figure has only just begun its first step, and already the verdict of its arrival hangs over everything like the held breath before a strike."
+      }
+    },
+    "tonberry-1": {
+      "name": "Two of Tonberry",
+      "number": "2",
+      "slug": "tonberry-1",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "two",
+      "station_slug": "earth",
+      "meaning": {
+        "upright": "What the patient end holds in balance is the debt and the debtor, weighed one against the other across a distance that closes by inches. Neither rushes; the grudge sits heavy and settled as a foundation stone, and the slow walker carries it without strain, for there is all the time in the world. Here is the steady equilibrium of consequence and its cause, held level until the ground itself decides.",
+        "inverted": "The scale stops moving. What should be a slow approach toward settlement becomes a stalemate buried under its own weight, the debt neither forgiven nor collected, only entombed. The bearer and the owed are locked in place, each waiting for the other to move first, and the patience that was meant to close the distance instead crushes both into stillness."
+      },
+      "visuals": {
+        "detailed_description": "Two heavy boundary-stones stand a measured distance apart on a floor of ochre dust, and between them a small dark figure walks the line that joins them, lantern low. The light is even and grounded, the palette all canyon-brown and quarried stone, every form possessed of real mass. One stone is carved with a mark of what is owed; the slow tread of the figure raises no dust, as if even the earth is content to wait."
+      }
+    },
+    "tonberry-2": {
+      "name": "Three of Tonberry",
+      "number": "3",
+      "slug": "tonberry-2",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "three",
+      "station_slug": "holy",
+      "meaning": {
+        "upright": "The first fruit of the inexorable is recognition: the moment the one being approached finally sees, with terrible clarity, that the reckoning is real and is theirs. The slow light reaches them and names them, and in being named the consequence bears its first fruit, no longer abstract but addressed to a single face. There is a mercy in this clarity, the grace of being told the truth at last.",
+        "inverted": "The naming light turns merciless. What should be clear recognition curdles into a glare that only accuses, the slow approach exposing without offering any path through. The fruit is borne, but it is bitter and premature, a verdict pronounced as condemnation rather than truth, illumination used to blind the one it falls upon."
+      },
+      "visuals": {
+        "detailed_description": "A soft radiant gold-white spills down the passage from somewhere high and unseen, and where its glow finally touches a waiting figure, that face is lifted and fully revealed. The small lantern-bearer advances steadily into this descending light, its slow shape haloed and clean against the gloom behind. The whole corridor blooms pale and luminous around the single moment of being seen and named."
+      }
+    },
+    "tonberry-3": {
+      "name": "Four of Tonberry",
+      "number": "4",
+      "slug": "tonberry-3",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "four",
+      "station_slug": "ice",
+      "meaning": {
+        "upright": "What the slow doom makes solid is the certainty of its own arrival, structured and unhurried into a thing you can lean nothing against. The cold settles every variable; nothing will speed it and nothing will turn it aside, and in that frozen surety there is a strange composure. The reckoning is built now, four-square and immovable, a fact preserved against all argument.",
+        "inverted": "The structure becomes a tomb of feeling. What was clear cold certainty hardens into numbness, the inevitable contemplated until the heart freezes solid around it. The frame still stands, but the one who built it is sealed inside, arrested by the very stability they made, unable to feel the approach as anything but a permanent killing chill."
+      },
+      "visuals": {
+        "detailed_description": "The corridor is sheathed in pale frost, its walls squared and crystalline, breath visible and hanging in the hushed cold light. A small domed figure stands utterly still upon the rimed floor, lantern frozen mid-swing, every edge of the passage sharpened to glass. The stillness is absolute and built to last, a structure of cold in which the slow arrival has become a settled, glittering fact."
+      }
+    },
+    "tonberry-4": {
+      "name": "Five of Tonberry",
+      "number": "5",
+      "slug": "tonberry-4",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "five",
+      "station_slug": "water",
+      "meaning": {
+        "upright": "The strife that tests the patient end is the flood of memory it must wade, every old grief and grudge rising around it as it walks. The current pulls at the slow tread, the past surging up to drown the long resolve, and the question is whether the reckoning can keep its feet through the depth of all it remembers. This is consequence tested by sorrow, the doom made to feel everything it carries.",
+        "inverted": "The undertow wins. What should be a passage through remembered pain becomes a drowning in it, the bearer pulled under by the very grudges that gave the march its purpose. The slow approach dissolves into grief that floods without end, the resolve lost in deep water, the reckoning forgotten in favor of merely sinking into what was."
+      },
+      "visuals": {
+        "detailed_description": "Dark teal water rises waist-deep along the flooded corridor, caustics rippling across the walls as the lantern-light refracts and breaks on the surface. A small figure wades forward against the pull, its slow shape doubled in the moving reflections, faces of old griefs seeming to surface and dissolve in the depths around it. Everything is in motion and remembering, the passage half-drowned and the far door barely visible beyond the swell."
+      }
+    },
+    "tonberry-5": {
+      "name": "Six of Tonberry",
+      "number": "6",
+      "slug": "tonberry-5",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "six",
+      "station_slug": "wind",
+      "meaning": {
+        "upright": "How the slow doom gives and receives is in the exchange of release: it takes the debt it is owed and, in the taking, hands back at last an ending, a letting-go, the closing of accounts. The air lightens as it passes; what was held too long is carried off, and both bearer and owed are unburdened in the reciprocity of a thing finally finished. The reckoning, arriving, is also a kind of mercy that breathes out.",
+        "inverted": "The exchange scatters before it can complete. What should be a clean settlement disperses on the wind, the debt half-collected and the release never fully given, both parties left rootless and unresolved. The lightness becomes mere drift, a gust that uproots without delivering anyone anywhere, the balance of give and take blown apart into loose ends that will not settle."
+      },
+      "visuals": {
+        "detailed_description": "A high pale draft moves down the corridor, and for once the gloom thins; loose ash and old paper lift and drift on the moving air, carried away toward an opening far ahead. The small figure walks lighter here, its lantern-flame leaning in the breeze, the deep greens giving way to an airy washed-out brightness. Everything is caught mid-motion and going, the passage breathing out as something long held is finally let go."
+      }
+    },
+    "tonberry-6": {
+      "name": "Seven of Tonberry",
+      "number": "7",
+      "slug": "tonberry-6",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "seven",
+      "station_slug": "dark",
+      "meaning": {
+        "upright": "What the inexorable must endure alone is the long dark between the lighting of the lantern and the arrival, the solitary trial of continuing when nothing answers and the end is not yet near. No one walks beside it; the faith required is faith in the next step only, taken into a void that gives back nothing. This is perseverance reduced to its irreducible core, the doom proving itself in the unwitnessed deep.",
+        "inverted": "The dark swallows the purpose. What should be a solitary passage endured becomes a fixation on the void itself, the bearer lost so long in shadow that the lantern is forgotten and the next step never comes. The trial curdles into despair, the necessary darkness mistaken for the only truth, the slow march halted in a black that no longer leads anywhere at all."
+      },
+      "visuals": {
+        "detailed_description": "Near-total blackness fills the passage; only a single weak point of lantern-light holds against the void-violet dark, the walls swallowed entirely by negative space. A small domed silhouette is barely legible at the center, alone with its faint glow, the way both behind and ahead lost in shadow. The darkness dominates everything, vast and patient, and the one small light goes on through it unseen and unaccompanied."
+      }
+    },
+    "tonberry-7": {
+      "name": "Eight of Tonberry",
+      "number": "8",
+      "slug": "tonberry-7",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "eight",
+      "station_slug": "fire",
+      "meaning": {
+        "upright": "Where the slow doom's craft accelerates is in the certainty of the closing distance, the long patience now bent into purpose as the forge-heat of resolve rises. It does not run, but every step lands with practiced inevitability, the will sharpened to a point, the approach gathering an unmistakable momentum. This is consequence become artisanship, the reckoning honed and driving toward its work.",
+        "inverted": "The drive overheats into rage. What should be honed momentum becomes a blaze of vengeance that consumes the bearer faster than its target, the craft of patience burned away in the rush to arrive. The accelerating skill turns reckless, destruction kindled for its own sake, the slow sure march abandoned for a fury that destroys the one who carries it before it ever reaches the one who is owed."
+      },
+      "visuals": {
+        "detailed_description": "A warm ember-glow rises along the corridor walls, ash drifting on heated air, the gloom now rimmed and charred with reds and golds as if a forge burns just out of frame. The small figure advances with new purpose, its lantern echoed by the firelight, its short knife catching a hot edge of reflected flame. Heat-shimmer warps the far end of the passage, and the slow approach has taken on the driving glow of a thing being brought, at last, to the boil."
+      }
+    },
+    "tonberry-8": {
+      "name": "Nine of Tonberry",
+      "number": "9",
+      "slug": "tonberry-8",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "nine",
+      "station_slug": "thunder",
+      "meaning": {
+        "upright": "What the patient end carries to the threshold is the full weight of every grudge ever owed, borne now to the very door where it must be answered. The last hard stretch is the heaviest; the charge has built and built and stands ready to break, the whole accumulated reckoning poised on the lip of its arrival. This is near-fulfillment, the long march come to the final step before the verdict lands.",
+        "inverted": "The charge will not discharge. What should arrive at the threshold instead hangs there, the burden carried so far now frozen at the brink, the grudge nursed past the moment it might have been released. The bearer stands forever at the last step, unable to strike or to forgive, the accumulated weight crackling unspent, a verdict eternally about to fall and never falling."
+      },
+      "visuals": {
+        "detailed_description": "At the very end of the corridor a great closed door looms, and before it a small figure halts, bowed slightly under the weight it carries, lantern raised to the threshold. The air is thick with storm-violet tension and hard white edges, cast shadows knife-sharp, everything strung taut as the instant before lightning. The whole passage seems to lean toward that door, charged and waiting, the long reckoning gathered to its final, heaviest step."
+      }
+    },
+    "tonberry-9": {
+      "name": "Ten of Tonberry",
+      "number": "10",
+      "slug": "tonberry-9",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "ten",
+      "station_slug": "earth",
+      "meaning": {
+        "upright": "How the slow doom comes full and passes on is in the arrival completed, the debt collected, the reckoning settled and laid to rest in the solid ground. The march reaches its end; what was owed is paid in full, and the consequence, having overflowed at last into its conclusion, becomes foundation for whatever comes after. The cycle closes, heavy and final, the account closed and the dust settling over a finished thing.",
+        "inverted": "The fullness becomes burial. What should be a completed reckoning passed on instead lies inert, the debt collected but never released, the ending settled into stagnation rather than rest. The weight that should have grounded the next cycle only crushes it, the slow doom arrived and then refusing to move on, a finished thing left to ossify where it fell."
+      },
+      "visuals": {
+        "detailed_description": "The corridor opens at last into a low chamber of stone, and there the small figure stands over a settled grave-flat slab, its lantern set down, its long walk done. The light is even and grounded, the palette deep ochre and quarried grey, dust drifting slowly to rest over everything with real and final weight. The far door stands open beyond, but the air here is heavy and complete, a reckoning come full and sinking back into the patient earth."
+      }
+    },
+    "tonberry-10": {
+      "name": "Freelancer of Tonberry",
+      "number": "11",
+      "slug": "tonberry-10",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "freelancer",
+      "station_slug": "holy",
+      "meaning": {
+        "upright": "The inexorable in its rawest form: a doom not yet specialized, only the bare fact of approach without art or method, the slow walker who has just lit its first lantern and knows only that it must go forward. There is an unschooled clarity to this beginning, a grace in the simplicity of one who has not yet learned cruelty, who carries consequence as pure unhurried intent. The reckoning here is potential, undivided, all its terrible patience still ahead.",
+        "inverted": "The raw beginning blinded by its own certainty. What should be unschooled clarity becomes a glare of righteousness untempered by understanding, the novice doom mistaking its first conviction for wisdom. Lacking craft, it judges without mercy and walks without restraint, the pure light of its beginning turned harsh, a consequence loosed before it has learned what it is for."
+      },
+      "visuals": {
+        "detailed_description": "A small unmarked figure stands at the very mouth of a long passage, plainly drawn, no insignia upon its shell, a freshly lit lantern held uncertainly in one hand. Soft gold-white light falls from above as if blessing the first step of a journey only now beginning, the corridor pale and luminous ahead. There is a clean simplicity to the scene, the slow walker at its outset, all its long inevitability still unspent and waiting in the bright unknown."
+      }
+    },
+    "tonberry-11": {
+      "name": "Knight of Tonberry",
+      "number": "12",
+      "slug": "tonberry-11",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "knight",
+      "station_slug": "ice",
+      "meaning": {
+        "upright": "The patient end taken up as a vocation and carried into the field: the doom that has made its slow march a discipline, the knife held with cold composure, the approach now a deed pursued without haste and without doubt. This is consequence in active service, the reckoning given a steady, clear-eyed will, advancing through any cold because the work is understood and accepted. The deed is done one measured step at a time, and nothing wavers.",
+        "inverted": "The vocation freezes into mere coldness. What should be clear-eyed discipline becomes numb mechanical pursuit, the knight of the slow doom going through the motions of the march with all feeling frozen over. Composure curdles to detachment, the deed done without conscience, the cold that once clarified now isolating the bearer from any reason but the killing routine itself."
+      },
+      "visuals": {
+        "detailed_description": "A small armored figure strides through a frost-rimed corridor with deliberate purpose, breath fogging in the high cold light, its knife held level and sure. The walls are crystalline and pale, edges sharp as cut glass, the whole passage hushed and slowed by the chill. There is a disciplined poise to the advancing shape, the lantern swinging in measured time, a vocation of slow consequence carried coldly and competently into the field."
+      }
+    },
+    "tonberry-12": {
+      "name": "Sage of Tonberry",
+      "number": "13",
+      "slug": "tonberry-12",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "sage",
+      "station_slug": "water",
+      "meaning": {
+        "upright": "The inexorable mastered inwardly as wisdom: the doom that has walked so long it understands consequence from the inside, that holds every memory and grudge as deep still water rather than current. This is the reckoning become contemplative, knowing precisely what is owed and why, flowing around all resistance with the patience of something that has made peace with the depth it carries. The slow march is now an inner art, sorrow understood and no longer fought.",
+        "inverted": "The depth becomes dissolution. What should be mastered inner wisdom drowns in its own remembering, the sage of the slow doom lost in the undertow of all it has carried so long. Understanding turns to brooding, the still water gone stagnant and dark, the contemplative reckoning sunk so deep into the past that it can no longer move forward at all, only sink further into what it knows."
+      },
+      "visuals": {
+        "detailed_description": "In a flooded vaulted chamber a small robed figure stands serene in deep teal water, the lantern-light refracting in slow caustics across the surface and the walls. The depths around it are full of dim remembered shapes, calm rather than threatening, the whole scene soft and refracted and quietly in motion. The slow walker holds utterly still in the deep, at home in the current, a master of consequence contemplating all it carries from within the water itself."
+      }
+    },
+    "tonberry-13": {
+      "name": "Warrior of Light of Tonberry",
+      "number": "14",
+      "slug": "tonberry-13",
+      "arcana": "minor",
+      "suit_slug": "tonberry",
+      "rank_slug": "warrior-of-light",
+      "station_slug": "wind",
+      "meaning": {
+        "upright": "The inexorable fully realized and turned outward: the doom become legend, the slow walker whose arrival is no longer dread but deliverance, carrying off at last everything that was owed and everything that was held too long. This is the capstone of consequence, the reckoning that frees as it completes, lifting the burden from the world like wind clearing a corridor of ash. What could never be outrun is revealed, in its fullness, as the very thing that sets all things at last in motion again.",
+        "inverted": "The realized doom disperses into mere finality. What should be a freeing culmination becomes an ending that only scatters, the legend of the slow march mistaken for annihilation rather than release. The capstone uproots without replanting, the great consequence arriving to empty the world rather than to clear it, its outward-turned mastery become a wind that carries everything off and leaves nothing in its place."
+      },
+      "visuals": {
+        "detailed_description": "At the threshold of an open far door a small figure stands transfigured, lantern raised high, and a bright scattering wind streams down the corridor behind it carrying away the last drifting ash into pale luminous sky. The deep greens of the passage dissolve into airy brightness, everything caught in upward motion and release. The slow walker has arrived and become something larger, its long inevitability completed and turned outward, a doom realized at last as the wind that clears the way."
+      }
     }
   }
 }
