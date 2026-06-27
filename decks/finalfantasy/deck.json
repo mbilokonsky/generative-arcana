@@ -1,0 +1,440 @@
+{
+  "name": "Final Fantasy Tarot",
+  "slug": "final-fantasy-tarot",
+  "version": "2.0.0",
+  "theme": {
+    "name": "Final Fantasy",
+    "description": "Not any single game but the recurring myth beneath all of them: four crystals and the elements they hold, a world that ends in fire and dark and is reborn in light, the orphan who answers a call, the engineer and the airship, the mage and the summoned god, the man who would become a god and the friends who refuse him. Across forty years the series has told one story in many costumes — order against entropy, the small and living against the vast and final. This deck reads that story through its smallest familiars (the chocobo, the moogle, the cactuar, the tonberry) and its oldest magicks, asking the querent to find the epic in the ordinary and the ordinary in the epic.",
+    "creator": "Mykola Bilokonsky, https://myk.pub"
+  },
+  "suits": {
+    "chocobo": {
+      "name": "Chocobo",
+      "slug": "chocobo",
+      "description": "The glad companion of the road. A chocobo exists, to the traveler, as the means of getting from here to there: motion freely given, the open country, help that arrives when you whistle for it. The benevolent face of the journey.",
+      "symbol": {
+        "name": "Chocobo",
+        "description": "A round-bodied riding bird with a long neck, hooked beak, the three signature crest-feathers, and running legs.",
+        "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"44\" cy=\"62\" rx=\"22\" ry=\"18\" fill=\"currentColor\"/><path d=\"M56 50 Q62 26 53 14\" stroke=\"currentColor\" stroke-width=\"9\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"55\" cy=\"19\" r=\"9\" fill=\"currentColor\"/><polygon points=\"63,19 80,16 63,27\" fill=\"currentColor\"/><path d=\"M50 6 L54 17 M58 6 L59 17 M66 8 L61 18\" stroke=\"currentColor\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/><rect x=\"37\" y=\"77\" width=\"4\" height=\"15\" fill=\"currentColor\"/><rect x=\"49\" y=\"77\" width=\"4\" height=\"15\" fill=\"currentColor\"/><path d=\"M23 58 Q8 60 7 76 Q20 71 27 65 Z\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": ["glad passage", "momentum", "the open road", "freely given help", "swift arrival", "loyal companionship", "the next horizon"],
+        "inverted": ["aimless wandering", "flight from what should be faced", "dependence on rescue", "restlessness", "a journey with no destination"]
+      },
+      "visual_style": "Warm, kinetic, open. Golden plumage and dawn light, big skies and receding roads, a sense of forward motion and wind. Rolling country, plains and trails, the cheerful primary palette of the world map. Composition tends outward and onward, toward a horizon.",
+      "index": 0
+    },
+    "moogle": {
+      "name": "Moogle",
+      "slug": "moogle",
+      "description": "The keeper of the hearth. The moogle is the place you come back to: the shop, the save point, the letter waiting, the small warm community that holds while you are away. Its magic is bound to where you stand. The benevolent face of place.",
+      "symbol": {
+        "name": "Moogle",
+        "description": "A round fuzzy body with a round head, small ears, bat-like wings, and the signature pom-pom on an antenna.",
+        "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"50\" cy=\"63\" rx=\"20\" ry=\"17\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"39\" r=\"16\" fill=\"currentColor\"/><path d=\"M37 27 Q31 16 41 19 Z\" fill=\"currentColor\"/><path d=\"M63 27 Q69 16 59 19 Z\" fill=\"currentColor\"/><line x1=\"50\" y1=\"23\" x2=\"50\" y2=\"11\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"50\" cy=\"8\" r=\"7\" fill=\"currentColor\"/><path d=\"M31 60 Q14 53 17 69 Q25 65 33 65 Z\" fill=\"currentColor\"/><path d=\"M69 60 Q86 53 83 69 Q75 65 67 65 Z\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": ["hearth", "shelter", "community", "the saved moment", "belonging", "care that stays", "small comforts", "kupo-kindness"],
+        "inverted": ["clinging to safety", "domesticity as a cage", "hoarding", "refusing to leave", "comfort that smothers"]
+      },
+      "visual_style": "Cozy, interior, lamplit. Soft rounded forms, plush textures, the warm reds and creams of a moogle's fur and a shop's awning. Hearths, hostels, save-crystals, letters and ledgers. Composition gathers inward, enclosed and snug, the world kept safely outside the window.",
+      "index": 1
+    },
+    "cactuar": {
+      "name": "Cactuar",
+      "slug": "cactuar",
+      "description": "The sentinel of its own ground. A cactuar wants nothing from you and will not move toward you; trespass on its patch of desert, though, and a thousand needles answer in an instant. Boundary made flesh. The adversarial face of place.",
+      "symbol": {
+        "name": "Cactuar",
+        "description": "A columnar cactus in the signature pose — one arm out, one arm up, two legs splayed mid-run.",
+        "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"43\" y=\"16\" width=\"14\" height=\"50\" rx=\"7\" fill=\"currentColor\"/><rect x=\"21\" y=\"36\" width=\"23\" height=\"11\" rx=\"5\" fill=\"currentColor\"/><rect x=\"56\" y=\"22\" width=\"11\" height=\"24\" rx=\"5\" fill=\"currentColor\"/><rect x=\"58\" y=\"15\" width=\"11\" height=\"15\" rx=\"5\" fill=\"currentColor\"/><rect x=\"39\" y=\"62\" width=\"10\" height=\"22\" rx=\"5\" transform=\"rotate(18 44 62)\" fill=\"currentColor\"/><rect x=\"51\" y=\"62\" width=\"10\" height=\"22\" rx=\"5\" transform=\"rotate(-18 56 62)\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": ["territory", "the guarded threshold", "firm boundaries", "self-defense", "leave-me-be", "sudden consequence", "the needle for the trespasser"],
+        "inverted": ["prickliness", "disproportionate retaliation", "isolation by spite", "walls that keep out the welcome too", "a grudge dressed as a fence"]
+      },
+      "visual_style": "Stark, arid, high-contrast. Hard desert light, long flat shadows, dust and bone-dry palette of ochre and pale green. Spines, fences, boundary-stones, the single guarded oasis. Composition is centered, frontal, planted — a thing that will not come to you and will not be moved.",
+      "index": 2
+    },
+    "tonberry": {
+      "name": "Tonberry",
+      "slug": "tonberry",
+      "description": "The lantern at the end of the corridor. The tonberry does not rush; it takes one slow step at a time and arrives regardless, lantern lit, knife in hand, carrying every grudge ever owed. It is the liminal one — the unhurried, unstoppable passage out of the mortal coil. The adversarial face of the journey.",
+      "symbol": {
+        "name": "Tonberry",
+        "description": "A turtle, seen from above — domed oval shell, round head, four legs, and a small tail; the tonberry's unmistakable creature-shape.",
+        "svg": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"50\" cy=\"52\" rx=\"26\" ry=\"30\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"16\" r=\"10\" fill=\"currentColor\"/><polygon points=\"50,86 45,97 55,97\" fill=\"currentColor\"/><ellipse cx=\"24\" cy=\"32\" rx=\"9\" ry=\"6\" transform=\"rotate(40 24 32)\" fill=\"currentColor\"/><ellipse cx=\"76\" cy=\"32\" rx=\"9\" ry=\"6\" transform=\"rotate(-40 76 32)\" fill=\"currentColor\"/><ellipse cx=\"24\" cy=\"72\" rx=\"9\" ry=\"6\" transform=\"rotate(-40 24 72)\" fill=\"currentColor\"/><ellipse cx=\"76\" cy=\"72\" rx=\"9\" ry=\"6\" transform=\"rotate(40 76 72)\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": ["inexorable passage", "mortality's slow march", "the reckoning that always arrives", "patient consequence", "karma", "what cannot be outrun", "the quiet doom"],
+        "inverted": ["dread that paralyzes", "vengeance nursed too long", "the grudge that consumes the bearer", "fixation on the end", "punishment without release"]
+      },
+      "visual_style": "Dim, processional, inevitable. Low lantern-light in a long dark, deep greens and drowned blues, a single small figure advancing through gloom. Corridors, thresholds, the far door. Composition is deep and recessive, drawing the eye down a passage toward something that is, however slowly, coming.",
+      "index": 3
+    }
+  },
+  "dialectic": {
+    "axes": [
+      { "name": "Valence", "poles": ["Boon", "Bane"] },
+      { "name": "Stance", "poles": ["Place", "Journey"] }
+    ],
+    "cells": {
+      "chocobo": ["Boon", "Journey"],
+      "moogle": ["Boon", "Place"],
+      "cactuar": ["Bane", "Place"],
+      "tonberry": ["Bane", "Journey"]
+    }
+  },
+  "transversal": {
+    "name": "The Elemental Wheel",
+    "description": "The eight recurring magicks of Final Fantasy — Fire, Ice, Thunder, Water, Earth, Wind, Holy, Dark — laid across the deck as its weather. It asks of every card not which creature it is or how strong, but under which element's sky it stands: whether it burns, freezes, charges, drowns, roots, scatters, blesses, or devours. The familiars are not themselves elemental, so the wheel turns freely across all four suits, and it turns slowly — an atmosphere, not an actor, felt in the light and color long before it is named.",
+    "ordering_rationale": "The eight magicks are set on a wheel so each faces its opposite across the diameter: Fire (0) against Ice (4), Thunder (1) against Water (5), Earth (2) against Wind (6), Holy (3) against Dark (7). The first half-turn runs through the active, asserting poles (fire, storm, stone, light); the second half-turn answers each with its quenching, yielding opposite (frost, flood, sky, void). A suit_stride of 3 (coprime to 8) sends each rank's four familiars to four well-separated points on the wheel, so no rank ever bunches in one element.",
+    "suit_stride": 3,
+    "stations": {
+      "fire": {
+        "slug": "fire", "index": 0, "name": "Fire",
+        "description": "The asserting flame: passion, war, the forge, the will that consumes to create.",
+        "meaning": {
+          "upright": ["passion", "drive", "the forge", "purifying burn", "courage", "the spark of action"],
+          "inverted": ["rage", "burnout", "destruction for its own sake", "consuming what it loves"]
+        },
+        "visual_motif": "Ember-glow and ash on the air; warm rim-light, reds and golds against char-dark, heat-shimmer at the edges; everything lit as if by a fire just out of frame."
+      },
+      "thunder": {
+        "slug": "thunder", "index": 1, "name": "Thunder",
+        "description": "The sudden charge: revelation, shock, the verdict that arrives all at once.",
+        "meaning": {
+          "upright": ["revelation", "sudden clarity", "decisive strike", "awakening", "the charged moment"],
+          "inverted": ["shock", "rash judgment", "chaos discharged", "the strike that scatters"]
+        },
+        "visual_motif": "Storm-violet sky and hard white light; high contrast, sharp cast shadows, the static tension before a strike; electric blues and bruised purples, an air that crackles."
+      },
+      "earth": {
+        "slug": "earth", "index": 2, "name": "Earth",
+        "description": "The settled ground: endurance, foundation, the weight that holds and the weight that buries.",
+        "meaning": {
+          "upright": ["endurance", "foundation", "stability", "patience", "the solid and proven"],
+          "inverted": ["stagnation", "burial", "inertia", "the weight that crushes"]
+        },
+        "visual_motif": "Ochre, stone, and dust; heavy grounded forms, low horizon, the palette of canyon and quarry; warm earth tones under a steady even light, everything with mass."
+      },
+      "holy": {
+        "slug": "holy", "index": 3, "name": "Holy",
+        "description": "The radiant pole: grace, healing, the light that names and restores and judges.",
+        "meaning": {
+          "upright": ["grace", "healing", "blessing", "clarity of spirit", "restoration", "the light that names"],
+          "inverted": ["zealotry", "blinding glare", "judgment without mercy", "purity as cruelty"]
+        },
+        "visual_motif": "Radiant gold-white; soft volumetric light from above, pale luminous palette, halation and bloom; the warm clean glow of a White Magic and a crystal's heart."
+      },
+      "ice": {
+        "slug": "ice", "index": 4, "name": "Ice",
+        "description": "The stilling frost: pause, preservation, clarity through cold, the quiet that can become numbness.",
+        "meaning": {
+          "upright": ["stillness", "preservation", "clear cold thought", "composure", "the pause that holds"],
+          "inverted": ["numbness", "isolation", "frozen feeling", "the chill that arrests"]
+        },
+        "visual_motif": "Frost-blue and pale white; crystalline edges, high-key cold light, breath visible on the air; a hushed, glassy stillness, everything slowed and sharpened by cold."
+      },
+      "water": {
+        "slug": "water", "index": 5, "name": "Water",
+        "description": "The yielding flood: feeling, memory, the depth that flows around every obstacle and remembers.",
+        "meaning": {
+          "upright": ["feeling", "memory", "flow", "depth", "adaptation", "the current that finds a way"],
+          "inverted": ["drowning", "the past undertow", "emotion that floods", "dissolution"]
+        },
+        "visual_motif": "Teal and deep blue, caustics and reflection; soft refracted light, fluid forms, a surface and the depth beneath it; the palette of sea and lifestream, everything in motion and remembering."
+      },
+      "wind": {
+        "slug": "wind", "index": 6, "name": "Wind",
+        "description": "The scattering sky: freedom, change, breath and travel, the unseen force that moves all things on.",
+        "meaning": {
+          "upright": ["freedom", "change", "breath", "lightness", "the carrying wind", "release"],
+          "inverted": ["dispersal", "rootlessness", "the gust that uproots", "instability"]
+        },
+        "visual_motif": "Pale sky and scattering motion; high airy palette, drifting particulate, soft directional blur, a wide open emptiness; light, fast, everything caught mid-motion and going."
+      },
+      "dark": {
+        "slug": "dark", "index": 7, "name": "Dark",
+        "description": "The devouring void: the shadow, the end, the unknowing — and the fertile dark from which the cycle begins again.",
+        "meaning": {
+          "upright": ["the necessary shadow", "the unknown", "endings", "the fertile void", "what precedes rebirth"],
+          "inverted": ["despair", "annihilation", "the void that only takes", "the dark mistaken for the end"]
+        },
+        "visual_motif": "Umbral void-violet and near-black; a single weak source against deep shadow, negative space dominant, edges swallowed; the palette of the world's end and the night before the dawn."
+      }
+    }
+  },
+  "major_arcana": {
+    "story": "The Major Arcana tells the recurring Final Fantasy monomyth, but cast onto the number axis so that the prime and composite character of each trump carries its weight. The irreducible primes are the story's atomic turns — the bond, the mentor, the threshold, the betrayer-god, the sacrifice — while the composites are built from them, their meaning following from their factor-trumps (the airship at 6 = the bond at 2 ranged across the world by the mentor's gift at 3; the world reborn at 21 = the mentor at 3 carried through the final trial at 7). The two identities, 0 and 1, are the preconditions: the unwritten youth before the call, and the call itself. A composite whose meaning will not follow from its factors is treated as a miscast slot, not papered over.",
+    "visual_style": "Epic and luminous, the grandeur of a crystal's heart shot through with the intimacy of a small party against a vast world. Sweeping skies, airships and ruins, summoned gods rendered colossal against human-scale figures. The palette moves from the cool blue of the translucent menu and the crystal, through the fire and dark of calamity, to the gold-white of restoration. Each card should feel like the box art for a game that never existed — mythic, painterly, and just a little melancholy."
+  },
+  "ranks": {
+    "ace": {
+      "index": 0, "arcana": "minor", "numeric_value": 1, "name": "Ace", "symbol": "A",
+      "description": "The seed: the suit in its first, undivided form, all potential and no history.",
+      "question": "What does {suit} set in motion?"
+    },
+    "two": {
+      "index": 1, "arcana": "minor", "numeric_value": 2, "name": "Two", "symbol": "II",
+      "description": "The pair: the first relation, a tension or balance held between two.",
+      "question": "What does {suit} hold in balance?"
+    },
+    "three": {
+      "index": 2, "arcana": "minor", "numeric_value": 3, "name": "Three", "symbol": "III",
+      "description": "The first fruit: the pair bearing something new, initial growth and expression.",
+      "question": "How does {suit} first bear fruit?"
+    },
+    "four": {
+      "index": 3, "arcana": "minor", "numeric_value": 4, "name": "Four", "symbol": "IV",
+      "description": "The frame: structure, stability, the thing made solid enough to stand on.",
+      "question": "What does {suit} make solid?"
+    },
+    "five": {
+      "index": 4, "arcana": "minor", "numeric_value": 5, "name": "Five", "symbol": "V",
+      "description": "The break: conflict, loss, the disruption that tests what was built.",
+      "question": "What strife tests {suit}?"
+    },
+    "six": {
+      "index": 5, "arcana": "minor", "numeric_value": 6, "name": "Six", "symbol": "VI",
+      "description": "The exchange: harmony restored through give and take, reciprocity and relief.",
+      "question": "How does {suit} give and receive?"
+    },
+    "seven": {
+      "index": 6, "arcana": "minor", "numeric_value": 7, "name": "Seven", "symbol": "VII",
+      "description": "The trial: the lone test of faith, perseverance against doubt.",
+      "question": "What must {suit} endure alone?"
+    },
+    "eight": {
+      "index": 7, "arcana": "minor", "numeric_value": 8, "name": "Eight", "symbol": "VIII",
+      "description": "The craft: mastery in motion, momentum and accelerating skill.",
+      "question": "Where does {suit}'s craft accelerate?"
+    },
+    "nine": {
+      "index": 8, "arcana": "minor", "numeric_value": 9, "name": "Nine", "symbol": "IX",
+      "description": "The burden: near-fulfillment carried to the threshold, the last hard stretch.",
+      "question": "What does {suit} carry to the threshold?"
+    },
+    "ten": {
+      "index": 9, "arcana": "minor", "numeric_value": 10, "name": "Ten", "symbol": "X",
+      "description": "The fullness: completion and overflow, the cycle come round and ready to pass on.",
+      "question": "How does {suit} come full and pass on?"
+    },
+    "freelancer": {
+      "index": 10, "arcana": "minor", "numeric_value": 11, "name": "Freelancer", "symbol": "F",
+      "description": "The classless beginner of the suit — raw, unspecialized potential, the suit before it has chosen what to become. First of the court, an FF job progression."
+    },
+    "knight": {
+      "index": 11, "arcana": "minor", "numeric_value": 12, "name": "Knight", "symbol": "K",
+      "description": "The suit taken up as a vocation and carried into action — valor, the field, the deed done. Second of the court progression."
+    },
+    "sage": {
+      "index": 12, "arcana": "minor", "numeric_value": 13, "name": "Sage", "symbol": "S",
+      "description": "The suit mastered as wisdom — its deepest art understood and held within (the FF pinnacle mage-job). Third of the court progression."
+    },
+    "warrior-of-light": {
+      "index": 13, "arcana": "minor", "numeric_value": 14, "name": "Warrior of Light", "symbol": "W",
+      "description": "The suit fully realized and turned outward — the legendary capstone, the hero who leads and culminates. Fourth and last of the court progression."
+    }
+  },
+  "cards": {
+    "major-0": {
+      "name": "The Unwritten", "number": "0", "slug": "major-0", "arcana": "major", "station_slug": "fire",
+      "meaning": {
+        "upright": "The amnesiac at the threshold of the tale — no past, no name, only the open possibility of who they might become. Pure potential before the story writes itself onto them: innocence, the blank slate, the first morning. The willingness to step forward into a life not yet begun.",
+        "inverted": "Aimlessness; refusal to begin; a self kept blank out of fear. Potential hoarded and never spent, amnesia as evasion rather than openness, the page left empty because writing on it might cost something."
+      },
+      "visuals": { "detailed_description": "A lone young figure stands at the lip of an unlit field at dawn, seen from behind, silhouetted against a low ember-colored sky. The first warmth of the day catches their edge in gold while everything ahead stays dark and unwritten. No insignia, no chosen weapon — just a traveler's plain clothes and a horizon beginning to smolder, a single spark drifting upward as if the world itself is only now being lit." },
+      "factorization": { "character": "identity", "factors": [], "gloss": "Zero — the precondition before any factor: the self with no history, the empty hand into which the whole deck will be dealt." }
+    },
+    "major-1": {
+      "name": "The Call", "number": "1", "slug": "major-1", "arcana": "major", "station_slug": "thunder",
+      "meaning": {
+        "upright": "The summons that begins everything — the crystal's light, the dream, the catastrophe that demands an answer. The spark of agency: the instant potential is named and set in motion. Vocation, the first yes, the operator that turns a blank life into a quest.",
+        "inverted": "A call ignored or misheard; false vocation; the spark seized for ego rather than service. Being summoned and answering for the wrong reason, or refusing to answer at all."
+      },
+      "visuals": { "detailed_description": "A shaft of charged light splits a violet, storm-dark sky and strikes a single upraised hand; the air crackles, hair and cloak lifted by the static of the moment. Behind, a faceted crystal pulses once, throwing hard blue shadows. Everything is poised in the instant before the thunderclap — the world holding its breath at the verge of a beginning." },
+      "factorization": { "character": "identity", "factors": [], "gloss": "One — the operator: not a precondition but the act that starts the count, the unit by which every later number is built." }
+    },
+    "major-2": {
+      "name": "The Companion", "number": "2", "slug": "major-2", "arcana": "major", "station_slug": "earth",
+      "meaning": {
+        "upright": "The first other — the friend who falls in beside you and makes a journey a fellowship of two. The irreducible bond; trust given before it is earned; the discovery that you are not alone in this. Loyalty, the shared road, the strength of the pair.",
+        "inverted": "Codependence; a bond that traps rather than supports; trust misplaced. The partner who completes you in the wrong way, or whose presence keeps you from becoming yourself."
+      },
+      "visuals": { "detailed_description": "Two figures stand close on solid ochre ground, one offering a hand to steady the other across a gap in the stone. Low even light, the steady palette of canyon and trail; their shadows overlap into a single shape. Around them the patient weight of the earth — boulders, a worn path — a world that holds firm beneath a partnership just formed." },
+      "factorization": { "character": "prime", "factors": [2], "gloss": "The first prime — the smallest thing that is more than one yet cannot be divided: the bond of two, the irreducible atom from which every later fellowship is built." }
+    },
+    "major-3": {
+      "name": "The Mentor", "number": "3", "slug": "major-3", "arcana": "major", "station_slug": "holy",
+      "meaning": {
+        "upright": "The elder who knows the way — the engineer, the sage, the old hand (so often a Cid) who gives knowledge, an airship, a reason. Guidance freely offered; the inheritance of wisdom; the one who believes in you before you believe in yourself.",
+        "inverted": "The mentor who controls instead of frees; wisdom withheld or weaponized; a teacher you must outgrow and can't; false counsel that flatters."
+      },
+      "visuals": { "detailed_description": "An aged figure stands haloed in soft descending gold light, one hand on a young traveler's shoulder, the other gesturing toward a far horizon. Workshop tools and rolled charts at their feet; the warm clean glow of a sanctuary or a crystal's chamber. Grace in the light — a blessing being passed from one generation to the next." },
+      "factorization": { "character": "prime", "factors": [3], "gloss": "The second prime — irreducible and generative, pure source. Where the Companion is the bond, the Mentor is the wellspring: a thing that gives and cannot itself be reduced to parts." }
+    },
+    "major-4": {
+      "name": "The Fellowship", "number": "4", "slug": "major-4", "arcana": "major", "station_slug": "ice",
+      "meaning": {
+        "upright": "The bond become a band — the full party assembled, each role finding its place, the many made one. Structure and belonging; the strength of a unit greater than its members; the table where the company gathers before the war.",
+        "inverted": "A party in name only; cliques and friction; structure ossified into hierarchy; belonging that demands conformity to stay."
+      },
+      "visuals": { "detailed_description": "Four or five figures stand in a loose ring on a frozen plateau, breath visible, a small fire of resolve between them in the still cold light. Crystalline blue distance, sharp clean air; each figure distinct in silhouette yet bound by their circle. The pause before departure, held and clarified by the cold." },
+      "factorization": { "character": "composite", "factors": [2, 2], "gloss": "Two squared — the Companion (2) doubled and squared into a company: the bond is no longer a single pair but a structure of pairs, fellowship built directly from the atom of friendship." }
+    },
+    "major-5": {
+      "name": "The Empire", "number": "5", "slug": "major-5", "arcana": "major", "station_slug": "water",
+      "meaning": {
+        "upright": "The great adversarial power — the empire, the order that would rule all, magnificent and crushing. Institution, ambition at scale, the antagonist not as a person but as a system. The tide that rises against the small and the living.",
+        "inverted": "The empire from within — complicity, the comfort of order, a tyranny one has stopped noticing; or its collapse into mere chaos."
+      },
+      "visuals": { "detailed_description": "A vast iron fortress-city rises from a dark sea under heavy rain, its banners hanging wet and enormous, a single small boat dwarfed in the foreground. Deep blues and drowned greys, reflections fracturing on the water; the architecture of domination doubled in the flood. Power as weather — vast, cold, impersonal." },
+      "factorization": { "character": "prime", "factors": [5], "gloss": "A prime — irreducible and singular: the Empire is not built from the heroes' atoms but stands as its own indivisible force, an order that answers to nothing smaller than itself." }
+    },
+    "major-6": {
+      "name": "The Airship", "number": "6", "slug": "major-6", "arcana": "major", "station_slug": "wind",
+      "meaning": {
+        "upright": "Freedom of the open sky — the airship that turns a map into a world, the mentor's gift that lets the fellowship go anywhere. Mobility, escape, the lifting of every horizon; the exhilaration of the whole world suddenly within reach.",
+        "inverted": "Flight as avoidance; freedom that never lands; a gift misused; motion mistaken for progress."
+      },
+      "visuals": { "detailed_description": "An airship banks through bright scattering cloud, its envelope catching high pale light, the fellowship at the rail looking out over a world made small and reachable below. Wind streams everything backward — pennants, hair, trailing vapor; the palette airy and luminous. The unmistakable joy of leaving the ground." },
+      "factorization": { "character": "composite", "factors": [2, 3], "gloss": "Two times three — the Companion (2) carried by the Mentor (3): the fellowship's bond given range by the elder's gift. The airship is exactly the product of friendship and the one who hands you the keys." }
+    },
+    "major-7": {
+      "name": "The Trial", "number": "7", "slug": "major-7", "arcana": "major", "station_slug": "dark",
+      "meaning": {
+        "upright": "The threshold guarded — the lone test that must be passed before the story can go on. Perseverance in the dark; the gate that asks who you are; courage without an audience. The proving that cannot be shared or shortcut.",
+        "inverted": "A trial refused or cheated; being stuck at the threshold; ordeal sought for its own sake; the test that curdles into obsession."
+      },
+      "visuals": { "detailed_description": "A single figure stands at the mouth of a black passage, a faint guttering light barely holding back the dark, the way ahead swallowed in shadow. Negative space dominates; one weak source picks out a set face and a drawn weapon. Everything beyond is unknown — the umbral threshold of a trial faced alone." },
+      "factorization": { "character": "prime", "factors": [7], "gloss": "A prime — irreducible: the Trial cannot be factored into easier steps. It is a single indivisible passage, all or nothing, the gate that must be met whole." }
+    },
+    "major-8": {
+      "name": "The Summoned Gods", "number": "8", "slug": "major-8", "arcana": "major", "station_slug": "fire",
+      "meaning": {
+        "upright": "Pacts with powers beyond the mortal — the espers, the eidolons, the summoned ones who lend their fire to a worthy bond. Alliance with the vast; borrowed strength wielded with respect; the bond extended past the human into the divine.",
+        "inverted": "Power borrowed without respect; the summoner consumed by what they call; dependence on borrowed might; gods reduced to weapons."
+      },
+      "visuals": { "detailed_description": "A colossal fiery being rises behind a tiny summoner whose arms are flung wide, the creature half flame and half muscle against a sky of ember and ash. Heat-shimmer warps the air; the human is dwarfed yet unafraid, a thread of trust running between them. The grandeur of a god answering a call." },
+      "factorization": { "character": "composite", "factors": [2, 2, 2], "gloss": "Two cubed — the Companion (2) raised three times: bond upon bond upon bond, friendship extended until it reaches past the mortal and a god consents to stand with you." }
+    },
+    "major-9": {
+      "name": "The Deep Lore", "number": "9", "slug": "major-9", "arcana": "major", "station_slug": "thunder",
+      "meaning": {
+        "upright": "The hidden history revealed — the truth beneath the world, the lore the mentor only half-told. Knowledge turned inward and downward; the solitary scholar's revelation; understanding that reframes everything that came before.",
+        "inverted": "Knowledge that isolates; truth that paralyzes; lore hoarded; the scholar lost in the past, unable to act on what they know."
+      },
+      "visuals": { "detailed_description": "A lone figure bends over a glowing tablet in a vaulted dark, a single charged shaft of light illuminating ancient script while violet shadows crackle at the edges. The air is electric with revelation; faint murals of an older age flicker into legibility around them. The Hermit's lamp recast as a sudden, illuminating strike." },
+      "factorization": { "character": "composite", "factors": [3, 3], "gloss": "Three squared — the Mentor (3) deepened by itself: wisdom no longer received from another but turned inward and compounded, the source examining its own source." }
+    },
+    "major-10": {
+      "name": "The Magitek", "number": "10", "slug": "major-10", "arcana": "major", "station_slug": "earth",
+      "meaning": {
+        "upright": "Life fused to machine — the empire's terrible alchemy, the living drained into engines, magic made industrial. The wheel of an age turning on stolen vitality; power and progress bought with the soul of the world.",
+        "inverted": "The machine refused or broken; a turn back toward the living; or the full horror laid bare — life reduced entirely to fuel."
+      },
+      "visuals": { "detailed_description": "Great ochre machines grind in a quarry-like works, tubes drawing a faint glow from caged, half-living forms, the whole scene in heavy industrial earth-tones and dust. A vast gear turns slowly behind. Mass and weight everywhere — the grinding, grounded machinery of an empire feeding on life." },
+      "factorization": { "character": "composite", "factors": [2, 5], "gloss": "Two times five — the Companion, the living (2), seized by the Empire (5): magitek is exactly what happens when the indivisible force of order lays hold of the bond of life and runs it through a machine." }
+    },
+    "major-11": {
+      "name": "The Betrayal", "number": "11", "slug": "major-11", "arcana": "major", "station_slug": "holy",
+      "meaning": {
+        "upright": "The clean break of faith — the ally who turns, the order that lies, the trust that shatters in a single irrevocable moment. The blade from a known hand; the loss of innocence about whom you can rely on; a reckoning with broken faith.",
+        "inverted": "Betrayal nursed into bitterness; the betrayer rationalized; or the hard mercy of forgiving the unforgivable."
+      },
+      "visuals": { "detailed_description": "Two figures face each other in flat, judgmental gold light, one drawing back a hand that had held trust, the other recognizing the betrayal a half-second too late. The light is merciless and even, hiding nothing; long fingers of shadow point between them. Grace turned to glare — radiance used to expose rather than to bless." },
+      "factorization": { "character": "prime", "factors": [11], "gloss": "A prime — irreducible and abrupt: betrayal does not build from smaller parts or soften into stages. It is a single clean break, a number that yields to nothing." }
+    },
+    "major-12": {
+      "name": "The Sacrifice", "number": "12", "slug": "major-12", "arcana": "major", "station_slug": "ice",
+      "meaning": {
+        "upright": "The band loses one — the death freely given so the rest may go on, grief and wisdom paid in a single body. Suspension between what was and what must be; the cost that cannot be refunded; love proven by loss.",
+        "inverted": "A sacrifice made in vain or for the wrong cause; martyrdom as vanity; refusing a necessary letting-go; survivor's guilt that will not heal."
+      },
+      "visuals": { "detailed_description": "The fellowship stands frozen around a fallen companion on pale ice, breath stopped, the cold holding the moment like glass that will not melt. A single shaft of wan light falls on the still figure; the others' faces are caught between disbelief and resolve. The stillness of cold made into the stillness of grief." },
+      "factorization": { "character": "composite", "factors": [2, 2, 3], "gloss": "Four times three — the Fellowship (4) and the Mentor (3): the company pays in blood and the wisdom of the elders is purchased. Sacrifice is the band's structure multiplied by hard-won understanding." }
+    },
+    "major-13": {
+      "name": "The Fall", "number": "13", "slug": "major-13", "arcana": "major", "station_slug": "water",
+      "meaning": {
+        "upright": "The great death, the world tipping — the point past which nothing returns to what it was. Necessary ending; the dark turn at the story's center; transformation that arrives as catastrophe. The old world drowning so a new one can be born.",
+        "inverted": "Clinging to the drowned world; change refused; the end mistaken for the finish; decay without renewal."
+      },
+      "visuals": { "detailed_description": "A vast wave rises over a sinking land, figures small against the dark water, a single tower going under as the sea takes everything. Deep teal and drowned blue, surface and depths becoming one; the reflections of a falling world. The lifestream taking the world back into itself." },
+      "factorization": { "character": "prime", "factors": [13], "gloss": "A prime — irreducible: the Fall cannot be broken into gentler increments. It is the deck's great indivisible turn, the single number on which everything pivots." }
+    },
+    "major-14": {
+      "name": "The God-Ascendant", "number": "14", "slug": "major-14", "arcana": "major", "station_slug": "wind",
+      "meaning": {
+        "upright": "The man who would be god — the antagonist who passes through the ultimate ordeal and comes out transformed, no longer human. Apotheosis; ambition completed; the terrible beauty of a being who has shed every limit. The dark mirror of the hero's own trial.",
+        "inverted": "Ascension exposed as emptiness; godhood that is only a larger hunger; the fall that waits inside every apotheosis."
+      },
+      "visuals": { "detailed_description": "A winged, luminous figure rises into a pale scattering sky, the last of their humanity blowing away like ash on the wind, far below the tiny upturned faces of those they left behind. Everything streams upward and outward, dispersing; the palette high and thin and cold. Transcendence as a terrible, beautiful leaving of the ground." },
+      "factorization": { "character": "composite", "factors": [2, 7], "gloss": "Two times seven — a being (2) passed through the Trial (7): the God-Ascendant is a single soul multiplied by the ultimate ordeal, the hero's threshold taken to its monstrous conclusion." }
+    },
+    "major-15": {
+      "name": "The Throne of Power", "number": "15", "slug": "major-15", "arcana": "major", "station_slug": "dark",
+      "meaning": {
+        "upright": "Forbidden power institutionalized — knowledge and empire wed into a throne that binds all beneath it. Bondage to power; the seduction of control; the chains that look like a crown. The comfort of total order, and its price.",
+        "inverted": "The chain seen and refused; power renounced; the throne revealed as a cage for the one who sits it too."
+      },
+      "visuals": { "detailed_description": "A dark throne rises in near-black, a single cold source glinting off chains that run from it to small bound figures below, the seated form barely more than a silhouette of authority. Void-violet shadow swallows the edges; only the throne and its chains catch light. Power as darkness given a seat." },
+      "factorization": { "character": "composite", "factors": [3, 5], "gloss": "Three times five — the Mentor's knowledge (3, the root of the Deep Lore) wedded to the Empire (5): forbidden wisdom made institutional. The throne is exactly lore in the service of domination." }
+    },
+    "major-16": {
+      "name": "The Calamity", "number": "16", "slug": "major-16", "arcana": "major", "station_slug": "fire",
+      "meaning": {
+        "upright": "The world's end — Meteor in the sky, the cataclysm that brings everything built crashing down. The tower struck; sudden total collapse; the proud structure undone in fire; whatever was false in the old world burned away at once.",
+        "inverted": "A calamity survived but unlearned-from; collapse clung to; or catastrophe deferred, the meteor still hanging overhead."
+      },
+      "visuals": { "detailed_description": "An enormous burning mass hangs in a blood-red sky over a city already cracking, towers toppling in silhouette against the glare, ember and ash filling the air. Everything is lit by the terrible light of the falling thing; figures flee as small dark shapes. Fire as apocalypse, the world consumed in a single held instant." },
+      "factorization": { "character": "composite", "factors": [2, 2, 2, 2], "gloss": "Two to the fourth — the bond raised past all structure until it collapses: fellowship doubled and doubled again becomes not strength but a tower too tall to stand. The Calamity is the bond's own power turned to ruin." }
+    },
+    "major-17": {
+      "name": "The Last Light", "number": "17", "slug": "major-17", "arcana": "major", "station_slug": "thunder",
+      "meaning": {
+        "upright": "Irreducible hope after the fall — the one small light the dark cannot put out, the crystal's final ember, the reason to go on. Faith stripped to its essence; guidance in the ruin; the simple, unbreakable yes that survives catastrophe.",
+        "inverted": "Hope as denial; a light clung to against all evidence; false reassurance; the star followed off a cliff."
+      },
+      "visuals": { "detailed_description": "A single bright star burns in a charged, clearing sky over a ruined land, its light catching one upturned face far below. Storm-violet dark all around, but the star's glow is clean and sudden, a revelation in the gloom. The smallest possible light, and enough." },
+      "factorization": { "character": "prime", "factors": [17], "gloss": "A prime — irreducible: hope at its smallest cannot be broken down further. The Last Light is the atom of faith that remains when everything composite has fallen away." }
+    },
+    "major-18": {
+      "name": "The World of Ruin", "number": "18", "slug": "major-18", "arcana": "major", "station_slug": "earth",
+      "meaning": {
+        "upright": "The scattered fellowship wandering a dead world — the long night after the fall, each survivor alone with their memory of what was. Searching the wreckage; holding on by remembered bonds; the slow, uncertain work of regathering in a world made strange.",
+        "inverted": "Lost in the ruin; memory become illusion; wandering that has forgotten it was searching; despair mistaken for the landscape itself."
+      },
+      "visuals": { "detailed_description": "A lone figure crosses a broken ochre plain under a dim sky, ruins half-buried in dust, a faint after-image of absent companions walking beside them. Heavy grounded desolation, the palette of a quarry after the world ended; long flat light and longer shadows. The earth itself in mourning, vast and patient and empty." },
+      "factorization": { "character": "composite", "factors": [2, 3, 3], "gloss": "Two times three squared — the Companion (2) carried by the Deep Lore (9): in the ruin, the only things that move the wanderer are the bond remembered and the hard knowledge of what was lost." }
+    },
+    "major-19": {
+      "name": "The Reunion", "number": "19", "slug": "major-19", "arcana": "major", "station_slug": "holy",
+      "meaning": {
+        "upright": "The fellowship regathered — the dawn after the long night, the company whole again and ready for the end. Joy that has come through grief; the clarity of being known and found; the warm certainty of allies at your back once more.",
+        "inverted": "A reunion that papers over real wounds; nostalgia for a fellowship that has changed; gathering again for the wrong final purpose."
+      },
+      "visuals": { "detailed_description": "The full company stands together again in clean, rising gold light atop a rise, faces turned toward a brightening sky, shadows short and warm. The radiant glow of a true morning; every figure distinct and luminous. Grace returned — the simple, blazing joy of not being alone for the last march." },
+      "factorization": { "character": "prime", "factors": [19], "gloss": "A prime — irreducible: the Reunion is a single clean turn toward the light, not assembled from parts but arriving whole, the dawn that cannot be divided." }
+    },
+    "major-20": {
+      "name": "The Final Ascent", "number": "20", "slug": "major-20", "arcana": "major", "station_slug": "ice",
+      "meaning": {
+        "upright": "The band storms the god's tower — the gathered fellowship rising to confront the final power, every thread of the story drawn to one point. The reckoning; the call to account answered; the last climb made together into the cold height.",
+        "inverted": "An ascent made unready; the final confrontation sought for vengeance; the summit reached at too great a cost."
+      },
+      "visuals": { "detailed_description": "The fellowship climbs a vast spire into a freezing high sky, the final fortress glittering above in pale crystalline light, the world tiny and clouded far below. Cold clean air, sharp blue distance; the company small but unbroken against the immense ascent. The stillness of altitude before the last battle." },
+      "factorization": { "character": "composite", "factors": [2, 2, 5], "gloss": "Four times five — the Fellowship (4) against the Empire (5): the final ascent is the reunited company set against the indivisible power, structure thrown at last upon the throne." }
+    },
+    "major-21": {
+      "name": "The World Reborn", "number": "21", "slug": "major-21", "arcana": "major", "station_slug": "water",
+      "meaning": {
+        "upright": "The cycle of light renewed — wisdom carried through the ultimate trial restores the world; the lifestream returns, green comes back to the ruin. Culmination and integration; the story completed and given back; the new morning of a healed world.",
+        "inverted": "A restoration that forgets its cost; a cycle that will only turn to calamity again; an ending mistaken for permanence."
+      },
+      "visuals": { "detailed_description": "Green returns to a flooded, healing land under soft refracted light, the lifestream running clear, the fellowship small and at peace on a new shore. Teal and gentle gold, water giving life rather than taking it; the reflections of a world made whole. The cycle closed and quietly, hopefully, reopening." },
+      "factorization": { "character": "composite", "factors": [3, 7], "gloss": "Three times seven — the Mentor (3) carried through the Trial (7): the world is reborn when inherited wisdom passes through the ultimate ordeal and comes out as renewal. The deck's last number is its first lesson, completed." }
+    }
+  }
+}

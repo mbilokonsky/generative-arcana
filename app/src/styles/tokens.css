@@ -125,6 +125,18 @@
   --font-mono:'Space Mono', ui-monospace, monospace;
 }
 
+[data-theme="finalfantasy"] {
+  --paper:#0A1022; --paper-2:#0F1730; --card:#131C3A; --raise:#1B2647;
+  --ink:#DCE6F5; --ink-2:#93A2C4; --ink-3:#5E6E92;
+  --line:rgba(220,230,245,.12); --line-2:rgba(220,230,245,.24);
+  --accent:#46C8E0; --accent-2:#6FD8EC; --accent-ink:#06101F; --accent-wash:rgba(70,200,224,.14);
+  --error:#E0737B; --ok:#6FB59A;
+  --scrim:rgba(2,4,12,.62); --scrim-soft:rgba(2,4,12,.34);
+  --font-display:'DM Serif Display', ui-serif, serif; /* the grand box-art serif */
+  --font-body:'Archivo', system-ui, sans-serif;
+  --font-mono:'Space Mono', ui-monospace, monospace; /* the translucent-menu mono */
+}
+
 /* ----------------------------------------------------------------------------
    CARD FRAME COMPATIBILITY ALIASES
    The existing <CardFrame> reads --card-bg / --banner-fg / --banner-title-bg.
