@@ -1,18 +1,24 @@
 # app — the Generative Arcana renderer
 
-A static deck browser & reading composer for custom tarot decks. Cards are animated with **p5.js** as
-**React components**; the whole thing builds to static files for **GitHub Pages**. It renders decks from
-the top-level **`../decks/`** corpus (portable, renderer-agnostic JSON) and supplies each one a *visual
-pack* of p5 sketches. The bundled deck is the **Ultima Tarot** (all 78 cards illustrated).
+A static deck browser & reading composer for custom tarot decks. It renders decks from the top-level
+**`../decks/`** corpus (portable, renderer-agnostic JSON) and gives each one one or more visual
+**skins**. The whole thing builds to static files for **GitHub Pages**.
 
-Read **[PRINCIPLES.md](./PRINCIPLES.md)** for the per-card illustration spec.
+Read **[PRINCIPLES.md](./PRINCIPLES.md)** for the Ultima p5 illustration spec.
 
-## The data/renderer boundary
+## The data / renderer boundary
 
 A `deck.json` holds only data (meanings, the four axes, structure) — **no visual information**. It lives
-in the top-level `decks/<id>/` corpus and any renderer can read it. *This* app is one renderer: its p5
-sketches are a visual pack paired to a deck **by id**. (A future SVG / image / scanned-art renderer would
-read the same `decks/` and bring its own pack.)
+in the top-level `decks/<id>/` corpus and any renderer can read it. *This* app is one renderer.
+
+## Visual skins
+
+A **skin is just a name.** Each card's renderer is resolved *per card* from whatever content is
+registered for that (deck, skin): a typed p5 **"kit"** sketch (`TarotCard`), a **raw p5** source string
+(`RawP5Card`), or a **static image** (`<img>`). A deck can offer several skins, selectable in the
+browser; per-card fallback means a partial skin degrades to whichever other skin has the card. The
+registry + resolver live in `runtime/defineCard.ts` (`registerPack` / `registerImagePack` /
+`registerRawPack` / `claimSketchesFor` / `resolveVisual`).
 
 ## Structure
 
@@ -21,25 +27,27 @@ app/                            # the renderer
   index.html                    # mounts src/main.tsx
   vite.config.ts                # base "./", "@" -> src, "@decks" -> ../decks (the data corpus)
   src/
-    main.tsx                    # entry: registers decks, renders <App>
+    main.tsx                    # entry: imports design tokens, registers decks, renders <App>
     app/                        # the shell — hash router + screens
-      App.tsx  router.ts  Landing.tsx  DeckHome.tsx  CardBrowser.tsx  Reading.tsx  DeckTabs.tsx
-    runtime/                    # the p5 engine (no React): lighting, registers, figures, kit, types
-    components/                 # card UI: TarotCard, CardFrame (banner + detail modal), CardModal,
-                                #   CardPlaceholder, DeckGrid, cardMeta
-    decks/                      # the deck LAYER (app-side): registry, types, spreads, custom-loader,
-      registry.ts  types.ts  spreads.ts  custom.ts  index.ts
-      ultima/                   #   + each deck's visual pack:
-        cards/                  #     78 p5 sketches (the Ultima skin)
-        index.ts                #     imports @decks/ultima/deck.json + ./cards, registers the deck
+      App.tsx router.ts Landing.tsx DeckHome.tsx AxisExplorer.tsx CardBrowser.tsx Reading.tsx packPref.ts
+    runtime/                    # the skin registry (defineCard) + the p5 kit engine (no React)
+    components/                 # card UI: CardArt (resolves a card's skin), CardFrame, CardModal,
+                                #   CardPlaceholder, DeckGrid, TarotCard, RawP5Card, cardMeta
+    decks/                      # the deck LAYER: registry, types, spreads, custom-loader + each deck's skin(s)
+      registry.ts types.ts spreads.ts custom.ts index.ts
+      ultima/                   #   cards/ (typed p5 "kit" skin) + index.ts
+      ulysses/                  #   cards.ts (raw-p5 + Pixel image skins) + pixel/*.png
+      byrne/                    #   cards.ts (image skin) + cards/*.png
+      finalfantasy/             #   cards.ts (Pixel chibi skin) + pixel/*.png
     reading/                    # deal, encode/decode the reading token, build the LLM prompt
-../decks/ultima/deck.json       # the DATA (top-level, outside this app) — read via @decks
+    styles/                     # the design-system tokens: light core + per-deck data-theme "worlds"
+../decks/<id>/deck.json         # the DATA (top-level, outside this app) — read via @decks
 ../.github/workflows/deploy.yml # CI build + deploy to GitHub Pages
 ```
 
 **Layers, by dependency direction:** `runtime` (pure, no React) ← `components` (React, deck-agnostic)
-← `decks` (registry + visual packs, reads data via `@decks`) ← `app` (shell). A sketch never imports
-React; the app discovers decks through the registry.
+← `decks` (registry + skins, reads data via `@decks`) ← `app` (shell). A sketch never imports React; the
+app discovers decks through the registry.
 
 ## Run / build
 
@@ -58,16 +66,16 @@ any `/<repo>/` path, and **hash routing** needs no 404/SPA-fallback — and (key
 ## Adding a deck
 
 1. Drop the data: `../decks/<id>/deck.json` (run the generative-arcana skill).
-2. Visual pack: `src/decks/<id>/cards/*.ts` — a `registerCard({ slug, draw, … })` sketch per card; you
-   author only the *scene* — station lighting + suit register come free from the slug's deck data.
-3. `src/decks/<id>/index.ts` — `import deckJson from "@decks/<id>/deck.json"` + `import "./cards"`, then
-   `registerDeck({ id, name, tagline, data, cards, spreads? })`.
-4. Add `import "./<id>";` to `src/decks/index.ts`.
+2. Add a skin (optional): `src/decks/<id>/cards.ts` — register a static-image pack
+   (`registerImagePack(deckId, skinId, urls)` + `registerPack(...)`), or for generative art put typed p5
+   sketches in `src/decks/<id>/cards/*.ts` and claim them with `claimSketchesFor`. A deck may register
+   several skins; un-illustrated cards fall back to an automatic placeholder, so a data-only (or pasted)
+   deck works with no skin at all.
+3. `src/decks/<id>/index.ts` — `import deckJson from "@decks/<id>/deck.json"` (+ `import "./cards"` if it
+   has a skin), then `registerDeck({ id, name, tagline, data, cards, spreads? })`.
+4. Add `import "./<id>";` to `src/decks/index.ts`, and a `[data-theme="<id>"]` block in `styles/tokens.css`.
 
-(Un-illustrated cards render an automatic placeholder, so a data-only deck — or a pasted one — works
-without any sketches.)
-
-## Adding a card sketch
+## Adding a p5 card sketch (a "kit" skin)
 
 ```ts
 import { registerCard } from "@/runtime/defineCard";
@@ -83,8 +91,7 @@ export default registerCard({
 a looping clock + seeded RNG, the shared library pre-bound (`light`, `register`, `fig`, `palette`),
 `pointer`, and a `signal(name, detail)` channel to the host. Never import React from a sketch.
 
-## Status
+## Pixel skins
 
-`npm run typecheck` and `npm run build` both pass. The Ultima deck is fully illustrated (78/78) and on
-the v2 schema; the full flow — landing, deck about, filterable browser, reading composer with shareable
-links + self-contained LLM prompts — is built and deployed.
+The image skins (Ulysses' "Pixel · Vico", Final Fantasy's "Pixel") are generated by the Python pipeline
+in `../tools/pixel/` and rendered out to each deck's `pixel/*.png` (filenames are bare card slugs).
