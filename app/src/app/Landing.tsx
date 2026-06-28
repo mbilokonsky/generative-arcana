@@ -25,9 +25,10 @@ export function Landing() {
         <h1 style={hero}>Generative Arcana</h1>
         <p style={lede}>
           A home for <em>custom tarot decks</em> — each woven from four symbolic axes (suit, rank, a
-          transversal substrate, and the prime/composite character of every number), illustrated with
-          animated p5.js cards. Browse a deck's structure and art, or compose a reading: ask a question,
-          deal a spread, and get a shareable link any LLM can interpret — no account, no tokens.
+          transversal substrate, and the prime/composite character of every number), and dressed in a
+          selectable visual skin (animated p5, pixel art, generative light). Browse a deck's structure
+          and art, or compose a reading: ask a question, deal a spread, and get a shareable link any LLM
+          can interpret — no account, no tokens.
         </p>
       </header>
 
@@ -91,6 +92,12 @@ export function Landing() {
           </div>
         </div>
       )}
+
+      <footer style={footer}>
+        <a href="https://github.com/mbilokonsky/generative-arcana" target="_blank" rel="noopener noreferrer" style={repoLink}>
+          Open source — the decks, the renderer, and the deck-design skill on GitHub ↗
+        </a>
+      </footer>
     </div>
   );
 }
@@ -276,6 +283,23 @@ const errorMsg: React.CSSProperties = {
   fontFamily: "var(--font-body)",
   fontSize: 13,
   lineHeight: 1.4,
+};
+
+const footer: React.CSSProperties = {
+  marginTop: "var(--s-6)",
+  paddingTop: "var(--s-4)",
+  borderTop: "1px solid var(--line)",
+  textAlign: "center",
+};
+
+const repoLink: React.CSSProperties = {
+  fontFamily: "var(--font-mono)",
+  fontSize: 12,
+  letterSpacing: "0.06em",
+  color: "var(--ink-3)",
+  textDecoration: "none",
+  borderBottom: "1px solid var(--line-2)",
+  paddingBottom: 2,
 };
 
 function primaryBtn(disabled: boolean): React.CSSProperties {
