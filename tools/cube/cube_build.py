@@ -17,7 +17,7 @@ OUT = os.path.join(ROOT, "app", "src", "decks", "ultima-octave", "cube")
 GRAPHITE = (12, 12, 14)
 
 def hx(h): h = h.lstrip("#"); return (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16))
-VIRHEX = {"humility":"#1B1B20","valor":"#D4453F","compassion":"#3FA85C","sacrifice":"#D8B23A",
+VIRHEX = {"humility":"#26252E","valor":"#D4453F","compassion":"#3FA85C","sacrifice":"#D8B23A",
           "honesty":"#3E6FD6","honor":"#B45ABF","justice":"#46BFC4","spirituality":"#ECE9E0"}
 VIRBITS = {"humility":(0,0,0),"valor":(0,0,1),"compassion":(0,1,0),"sacrifice":(0,1,1),
            "honesty":(1,0,0),"honor":(1,0,1),"justice":(1,1,0),"spirituality":(1,1,1)}
@@ -80,7 +80,8 @@ def lunar(c, station, field, ink):               # a faint phase mark, bottom ce
 
 def render_minor(card):
     suit = card["suit_slug"]; field = hx(VIRHEX[suit]); ink = ink_for(field)
-    c = Lumen(field); c.fill(field)
+    c = Lumen(field)
+    c.rgrad(100, 122, H * 0.82, _lerp(field, (255, 255, 255), 0.08), field)  # subtle centre sheen so the field has body
     OCTEM[card["rank_slug"]](c, ink, field)
     watermark(c, VIRBITS[suit], field, ink)
     lunar(c, card["station_slug"], field, ink)
