@@ -208,7 +208,7 @@ function RanksPanel({ deck }: { deck: DeckDataFile }) {
         fixed position in the arc. Both numbering systems are shown below.
       </Lead>
 
-      <SubHead>Minor ranks · 1–14</SubHead>
+      <SubHead>Minor ranks{ranks.length ? ` · ${ranks[0].numeric_value}–${ranks[ranks.length - 1].numeric_value}` : ""}</SubHead>
       <div style={{ display: "flex", flexDirection: "column", marginBottom: 26 }}>
         {ranks.map((r) => (
           <div key={r.index} style={{ display: "flex", gap: 14, padding: "11px 0", borderTop: `1px solid ${LINE}` }}>
@@ -318,7 +318,10 @@ function NumCell({ n }: { n: number }) {
 function PrimePanel({ deck }: { deck: DeckDataFile }) {
   const cards = Object.values(deck.cards) as Card[];
   const majors = [...new Set(cards.filter((c) => c.arcana === "major").map((c) => parseInt(c.number, 10)))].sort((a, b) => a - b);
-  const minors = Array.from({ length: 14 }, (_, i) => i + 1);
+  // the minor number-set is whatever numbers the minors actually carry — usually the ranks 1–14, but a
+  // deck can number them otherwise (e.g. the Ultima Octave's minors are numbered 0–7 by their virtue's value).
+  const minors = [...new Set(cards.filter((c) => c.arcana === "minor").map((c) => parseInt(c.number, 10)))].sort((a, b) => a - b);
+  const mrange = minors.length ? `${minors[0]}–${minors[minors.length - 1]}` : "—";
   return (
     <div>
       <Lead>
@@ -332,7 +335,7 @@ function PrimePanel({ deck }: { deck: DeckDataFile }) {
       </Lead>
       <Legend />
       <Group title="Major arcana" subtitle="numbered by position, 0 upward">{majors.map((n) => <NumCell key={n} n={n} />)}</Group>
-      <Group title="Minor arcana" subtitle="each suit's ranks, 1–14">{minors.map((n) => <NumCell key={n} n={n} />)}</Group>
+      <Group title="Minor arcana" subtitle={`the numbers the minor cards carry · ${mrange}`}>{minors.map((n) => <NumCell key={n} n={n} />)}</Group>
     </div>
   );
 }
