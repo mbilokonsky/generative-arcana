@@ -1,0 +1,2243 @@
+{
+  "name": "Ultima Octave Tarot",
+  "slug": "ultima-octave",
+  "version": "1.0.0",
+  "theme": {
+    "name": "Ultima — The Octave of Virtue",
+    "description": "A companion to the Ultima Tarot built on the bones of Garriott's design: the eight virtues are not a list but a 3-bit algebra over three Principles — Truth (4), Love (2), Courage (1) — so the eight are exactly the eight corners of the additive colour cube (black to white through R/G/B and C/M/Y). Every Ultima 8-fold hangs off that one value, so this deck makes the value the SUIT (a virtue = a colour) and the OCTAVE the rank: each card is one virtue read through one symbol-system — Place of Justice is Yew, Role of Valor is the Fighter, Companion of Spirituality is Shamino. Where the other decks spread meaning across four axes, this one concentrates it: the suit alone carries virtue, colour, binary principle-subset, and prime/composite character at once. The lunar cycle of Felucca runs across it as weather; the majors are the proper nouns the lattice hangs from.",
+    "creator": "Mykola Bilokonsky & Isaac Z. Schlueter"
+  },
+  "suits": {
+    "humility": {
+      "index": 0,
+      "name": "Humility",
+      "slug": "humility",
+      "description": "The virtue of Humility — claiming nothing — the ground from which all virtue springs. Principles: none (000 = 0); its colour is black.",
+      "symbol": {
+        "name": "Humility (black)",
+        "description": "Three pips for Truth, Love, Courage — filled where Humility holds them (000).",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><circle cx=\"72\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "humility",
+          "claiming nothing — the ground from which all virtue springs",
+          "none",
+          "black"
+        ],
+        "inverted": [
+          "pride",
+          "Humility overturned"
+        ]
+      },
+      "visual_style": "The colour of Humility: black (#1B1B20). Forms in black light on a neutral graphite ground; spare and heraldic, the cube-corner made a world."
+    },
+    "valor": {
+      "index": 1,
+      "name": "Valor",
+      "slug": "valor",
+      "description": "The virtue of Valor — facing what must be faced. Principles: Courage (001 = 1); its colour is red.",
+      "symbol": {
+        "name": "Valor (red)",
+        "description": "Three pips for Truth, Love, Courage — filled where Valor holds them (001).",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><circle cx=\"72\" cy=\"50\" r=\"11\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "valor",
+          "facing what must be faced",
+          "Courage",
+          "red"
+        ],
+        "inverted": [
+          "cowardice",
+          "Valor overturned"
+        ]
+      },
+      "visual_style": "The colour of Valor: red (#D4453F). Forms in red light on a neutral graphite ground; spare and heraldic, the cube-corner made a world."
+    },
+    "compassion": {
+      "index": 2,
+      "name": "Compassion",
+      "slug": "compassion",
+      "description": "The virtue of Compassion — feeling with another. Principles: Love (010 = 2); its colour is green.",
+      "symbol": {
+        "name": "Compassion (green)",
+        "description": "Three pips for Truth, Love, Courage — filled where Compassion holds them (010).",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"72\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "compassion",
+          "feeling with another",
+          "Love",
+          "green"
+        ],
+        "inverted": [
+          "hatred",
+          "Compassion overturned"
+        ]
+      },
+      "visual_style": "The colour of Compassion: green (#3FA85C). Forms in green light on a neutral graphite ground; spare and heraldic, the cube-corner made a world."
+    },
+    "sacrifice": {
+      "index": 3,
+      "name": "Sacrifice",
+      "slug": "sacrifice",
+      "description": "The virtue of Sacrifice — giving of oneself for others. Principles: Love+Courage (011 = 3); its colour is yellow.",
+      "symbol": {
+        "name": "Sacrifice (yellow)",
+        "description": "Three pips for Truth, Love, Courage — filled where Sacrifice holds them (011).",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"72\" cy=\"50\" r=\"11\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "sacrifice",
+          "giving of oneself for others",
+          "Love+Courage",
+          "yellow"
+        ],
+        "inverted": [
+          "selfishness",
+          "Sacrifice overturned"
+        ]
+      },
+      "visual_style": "The colour of Sacrifice: yellow (#D8B23A). Forms in yellow light on a neutral graphite ground; spare and heraldic, the cube-corner made a world."
+    },
+    "honesty": {
+      "index": 4,
+      "name": "Honesty",
+      "slug": "honesty",
+      "description": "The virtue of Honesty — truth in word and seeming. Principles: Truth (100 = 4); its colour is blue.",
+      "symbol": {
+        "name": "Honesty (blue)",
+        "description": "Three pips for Truth, Love, Courage — filled where Honesty holds them (100).",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><circle cx=\"72\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "honesty",
+          "truth in word and seeming",
+          "Truth",
+          "blue"
+        ],
+        "inverted": [
+          "deceit",
+          "Honesty overturned"
+        ]
+      },
+      "visual_style": "The colour of Honesty: blue (#3E6FD6). Forms in blue light on a neutral graphite ground; spare and heraldic, the cube-corner made a world."
+    },
+    "honor": {
+      "index": 5,
+      "name": "Honor",
+      "slug": "honor",
+      "description": "The virtue of Honor — living by one's word in the open. Principles: Truth+Courage (101 = 5); its colour is magenta.",
+      "symbol": {
+        "name": "Honor (magenta)",
+        "description": "Three pips for Truth, Love, Courage — filled where Honor holds them (101).",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><circle cx=\"72\" cy=\"50\" r=\"11\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "honor",
+          "living by one's word in the open",
+          "Truth+Courage",
+          "magenta"
+        ],
+        "inverted": [
+          "disgrace",
+          "Honor overturned"
+        ]
+      },
+      "visual_style": "The colour of Honor: magenta (#B45ABF). Forms in magenta light on a neutral graphite ground; spare and heraldic, the cube-corner made a world."
+    },
+    "justice": {
+      "index": 6,
+      "name": "Justice",
+      "slug": "justice",
+      "description": "The virtue of Justice — to each their due — mercy and law in balance. Principles: Truth+Love (110 = 6); its colour is cyan.",
+      "symbol": {
+        "name": "Justice (cyan)",
+        "description": "Three pips for Truth, Love, Courage — filled where Justice holds them (110).",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"72\" cy=\"50\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "justice",
+          "to each their due — mercy and law in balance",
+          "Truth+Love",
+          "cyan"
+        ],
+        "inverted": [
+          "tyranny",
+          "Justice overturned"
+        ]
+      },
+      "visual_style": "The colour of Justice: cyan (#46BFC4). Forms in cyan light on a neutral graphite ground; spare and heraldic, the cube-corner made a world."
+    },
+    "spirituality": {
+      "index": 7,
+      "name": "Spirituality",
+      "slug": "spirituality",
+      "description": "The virtue of Spirituality — the whole — all three principles held at once. Principles: Truth+Love+Courage (111 = 7); its colour is white.",
+      "symbol": {
+        "name": "Spirituality (white)",
+        "description": "Three pips for Truth, Love, Courage — filled where Spirituality holds them (111).",
+        "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"50\" r=\"11\" fill=\"currentColor\"/><circle cx=\"72\" cy=\"50\" r=\"11\" fill=\"currentColor\"/></svg>"
+      },
+      "meaning": {
+        "upright": [
+          "spirituality",
+          "the whole — all three principles held at once",
+          "Truth+Love+Courage",
+          "white"
+        ],
+        "inverted": [
+          "worldliness",
+          "Spirituality overturned"
+        ]
+      },
+      "visual_style": "The colour of Spirituality: white (#ECE9E0). Forms in white light on a neutral graphite ground; spare and heraldic, the cube-corner made a world."
+    }
+  },
+  "ranks": {
+    "virtue": {
+      "index": 0,
+      "arcana": "minor",
+      "numeric_value": 0,
+      "name": "Virtue",
+      "symbol": "V",
+      "description": "The Virtue octave — the virtue itself, named and met head-on.",
+      "question": "Read through {suit}, what is its Virtue?"
+    },
+    "place": {
+      "index": 1,
+      "arcana": "minor",
+      "numeric_value": 1,
+      "name": "Place",
+      "symbol": "P",
+      "description": "The Place octave — the city that houses the virtue, or the dungeon that is its shadow.",
+      "question": "Read through {suit}, what is its Place?"
+    },
+    "role": {
+      "index": 2,
+      "arcana": "minor",
+      "numeric_value": 2,
+      "name": "Role",
+      "symbol": "R",
+      "description": "The Role octave — the avatar-class that practises the virtue, or the shadow it becomes.",
+      "question": "Read through {suit}, what is its Role?"
+    },
+    "companion": {
+      "index": 3,
+      "arcana": "minor",
+      "numeric_value": 3,
+      "name": "Companion",
+      "symbol": "C",
+      "description": "The Companion octave — the party-member who embodies the virtue, present or astray.",
+      "question": "Read through {suit}, what is its Companion?"
+    },
+    "word": {
+      "index": 4,
+      "arcana": "minor",
+      "numeric_value": 4,
+      "name": "Word",
+      "symbol": "W",
+      "description": "The Word octave — the mantra that invokes the virtue, or its silence.",
+      "question": "Read through {suit}, what is its Word?"
+    },
+    "stone": {
+      "index": 5,
+      "arcana": "minor",
+      "numeric_value": 5,
+      "name": "Stone",
+      "symbol": "S",
+      "description": "The Stone octave — the colour-stone of the Abyss, raised rightly or misused.",
+      "question": "Read through {suit}, what is its Stone?"
+    },
+    "reagent": {
+      "index": 6,
+      "arcana": "minor",
+      "numeric_value": 6,
+      "name": "Reagent",
+      "symbol": "R",
+      "description": "The Reagent octave — the reagent aligned to the virtue, in white magic or black.",
+      "question": "Read through {suit}, what is its Reagent?"
+    },
+    "shrine": {
+      "index": 7,
+      "arcana": "minor",
+      "numeric_value": 7,
+      "name": "Shrine",
+      "symbol": "S",
+      "description": "The Shrine octave — the shrine of the virtue, elevation or desecration.",
+      "question": "Read through {suit}, what is its Shrine?"
+    }
+  },
+  "transversal": {
+    "name": "The Lunar Cycle",
+    "description": "Felucca, the outer moon, turns through eight phases, and at each a moongate opens to one of the eight cities. Across this lattice the moon is weather and timing — under which phase a card is read, not which virtue it is. It moves at the pace of the heavens, indifferent to the virtue or octave it lights.",
+    "ordering_rationale": "The natural lunar order, new moon to waning crescent; suit_stride 3 (coprime to 8) so a virtue is lit by a different phase in each octave, keeping the moon cross-cutting rather than pinned to any city.",
+    "suit_stride": 3,
+    "stations": {
+      "new-moon": {
+        "slug": "new-moon",
+        "index": 0,
+        "name": "New Moon",
+        "description": "Felucca at New Moon — the moongate it opens leads to Humility.",
+        "meaning": {
+          "upright": [
+            "new moon",
+            "timing",
+            "the gate open"
+          ],
+          "inverted": [
+            "the moongate",
+            "displacement",
+            "carried elsewhere"
+          ]
+        },
+        "visual_motif": "no moonlight; a dark gate; the void before the cycle; the silver weather of New Moon laid over the scene."
+      },
+      "waxing-crescent": {
+        "slug": "waxing-crescent",
+        "index": 1,
+        "name": "Waxing Crescent",
+        "description": "Felucca at Waxing Crescent — the moongate it opens leads to Valor.",
+        "meaning": {
+          "upright": [
+            "waxing crescent",
+            "timing",
+            "the gate open"
+          ],
+          "inverted": [
+            "the moongate",
+            "displacement",
+            "carried elsewhere"
+          ]
+        },
+        "visual_motif": "a thin silver rim; light beginning; the silver weather of Waxing Crescent laid over the scene."
+      },
+      "first-quarter": {
+        "slug": "first-quarter",
+        "index": 2,
+        "name": "First Quarter",
+        "description": "Felucca at First Quarter — the moongate it opens leads to Compassion.",
+        "meaning": {
+          "upright": [
+            "first quarter",
+            "timing",
+            "the gate open"
+          ],
+          "inverted": [
+            "the moongate",
+            "displacement",
+            "carried elsewhere"
+          ]
+        },
+        "visual_motif": "half dark, half silver; the gate half-open; the silver weather of First Quarter laid over the scene."
+      },
+      "waxing-gibbous": {
+        "slug": "waxing-gibbous",
+        "index": 3,
+        "name": "Waxing Gibbous",
+        "description": "Felucca at Waxing Gibbous — the moongate it opens leads to Sacrifice.",
+        "meaning": {
+          "upright": [
+            "waxing gibbous",
+            "timing",
+            "the gate open"
+          ],
+          "inverted": [
+            "the moongate",
+            "displacement",
+            "carried elsewhere"
+          ]
+        },
+        "visual_motif": "swelling silver, nearly full; a rising tide of light; the silver weather of Waxing Gibbous laid over the scene."
+      },
+      "full-moon": {
+        "slug": "full-moon",
+        "index": 4,
+        "name": "Full Moon",
+        "description": "Felucca at Full Moon — the moongate it opens leads to Honesty.",
+        "meaning": {
+          "upright": [
+            "full moon",
+            "timing",
+            "the gate open"
+          ],
+          "inverted": [
+            "the moongate",
+            "displacement",
+            "carried elsewhere"
+          ]
+        },
+        "visual_motif": "a flood of silver-white; the gate wide; all washed in lunar light; the silver weather of Full Moon laid over the scene."
+      },
+      "waning-gibbous": {
+        "slug": "waning-gibbous",
+        "index": 5,
+        "name": "Waning Gibbous",
+        "description": "Felucca at Waning Gibbous — the moongate it opens leads to Honor.",
+        "meaning": {
+          "upright": [
+            "waning gibbous",
+            "timing",
+            "the gate open"
+          ],
+          "inverted": [
+            "the moongate",
+            "displacement",
+            "carried elsewhere"
+          ]
+        },
+        "visual_motif": "the light past its peak, beginning to ebb; the silver weather of Waning Gibbous laid over the scene."
+      },
+      "last-quarter": {
+        "slug": "last-quarter",
+        "index": 6,
+        "name": "Last Quarter",
+        "description": "Felucca at Last Quarter — the moongate it opens leads to Justice.",
+        "meaning": {
+          "upright": [
+            "last quarter",
+            "timing",
+            "the gate open"
+          ],
+          "inverted": [
+            "the moongate",
+            "displacement",
+            "carried elsewhere"
+          ]
+        },
+        "visual_motif": "half-light waning; the gate half-closing; the silver weather of Last Quarter laid over the scene."
+      },
+      "waning-crescent": {
+        "slug": "waning-crescent",
+        "index": 7,
+        "name": "Waning Crescent",
+        "description": "Felucca at Waning Crescent — the moongate it opens leads to Spirituality.",
+        "meaning": {
+          "upright": [
+            "waning crescent",
+            "timing",
+            "the gate open"
+          ],
+          "inverted": [
+            "the moongate",
+            "displacement",
+            "carried elsewhere"
+          ]
+        },
+        "visual_motif": "the last sliver; the cycle closing toward dark; the silver weather of Waning Crescent laid over the scene."
+      }
+    }
+  },
+  "major_arcana": {
+    "story": "The proper nouns of Britannia — the named ones the lattice of virtues hangs from. The Avatar takes up the quest Lord British set; the Guardian and the three early foes (Mondain, Minax, Exodus) oppose it; the three Shadowlords are the living negations of the three Principles; and the Codex, the Ankh, the moons, the Word, and the Abyss are the furniture of the cosmos in which the eight virtues are practised.",
+    "visual_style": "Spare and iconic on the graphite ground, each named one rendered as a single luminous emblem; the palette free to use any of the eight virtue-colours as the figure demands, since the named ones stand outside the cube even as they move within it.",
+    "symbol": {
+      "name": "The Cube",
+      "description": "The eight-cornered colour cube of the virtues.",
+      "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M30 30 H62 V62 H30 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"/><path d=\"M44 18 H76 V50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"30\" y1=\"30\" x2=\"44\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"62\" y1=\"30\" x2=\"76\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"5\"/><line x1=\"62\" y1=\"62\" x2=\"76\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"5\"/></svg>"
+    }
+  },
+  "cards": {
+    "humility-virtue": {
+      "name": "Virtue of Humility",
+      "number": "0",
+      "slug": "humility-virtue",
+      "arcana": "minor",
+      "suit_slug": "humility",
+      "rank_slug": "virtue",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Zero: the empty set of principles, the precondition that holds none yet enables all. Pride is the fall from it."
+      },
+      "meaning": {
+        "upright": "Humility — claiming nothing — the ground from which all virtue springs. The Virtue of Humility: Humility (black) seen as virtue.",
+        "inverted": "Pride — the virtue overturned into pride. Humility inverted toward Pride."
+      },
+      "visuals": {
+        "detailed_description": "Humility, rendered as a black emblem (the colour of Humility) on graphite, under the silver weather of new moon."
+      }
+    },
+    "valor-virtue": {
+      "name": "Virtue of Valor",
+      "number": "1",
+      "slug": "valor-virtue",
+      "arcana": "minor",
+      "suit_slug": "valor",
+      "rank_slug": "virtue",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "identity",
+        "gloss": "One: the unit, the operator — Courage, the single act that must come first for any other virtue to be practised at all."
+      },
+      "meaning": {
+        "upright": "Valor — facing what must be faced. The Virtue of Valor: Valor (red) seen as virtue.",
+        "inverted": "Cowardice — the virtue overturned into cowardice. Valor inverted toward Cowardice."
+      },
+      "visuals": {
+        "detailed_description": "Valor, rendered as a red emblem (the colour of Valor) on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "compassion-virtue": {
+      "name": "Virtue of Compassion",
+      "number": "2",
+      "slug": "compassion-virtue",
+      "arcana": "minor",
+      "suit_slug": "compassion",
+      "rank_slug": "virtue",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Two: the first prime — Love, irreducible, the first real reach of the self beyond itself."
+      },
+      "meaning": {
+        "upright": "Compassion — feeling with another. The Virtue of Compassion: Compassion (green) seen as virtue.",
+        "inverted": "Hatred — the virtue overturned into hatred. Compassion inverted toward Hatred."
+      },
+      "visuals": {
+        "detailed_description": "Compassion, rendered as a green emblem (the colour of Compassion) on graphite, under the silver weather of last quarter."
+      }
+    },
+    "sacrifice-virtue": {
+      "name": "Virtue of Sacrifice",
+      "number": "3",
+      "slug": "sacrifice-virtue",
+      "arcana": "minor",
+      "suit_slug": "sacrifice",
+      "rank_slug": "virtue",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Three: prime — Love and Courage fused (yellow), an irreducible giving that no analysis divides."
+      },
+      "meaning": {
+        "upright": "Sacrifice — giving of oneself for others. The Virtue of Sacrifice: Sacrifice (yellow) seen as virtue.",
+        "inverted": "Selfishness — the virtue overturned into selfishness. Sacrifice inverted toward Selfishness."
+      },
+      "visuals": {
+        "detailed_description": "Sacrifice, rendered as a yellow emblem (the colour of Sacrifice) on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "honesty-virtue": {
+      "name": "Virtue of Honesty",
+      "number": "4",
+      "slug": "honesty-virtue",
+      "arcana": "minor",
+      "suit_slug": "honesty",
+      "rank_slug": "virtue",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Four = two squared: Truth as built structure (blue) — a single principle that nonetheless reads as an edifice, the framework reason stands inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "Honesty — truth in word and seeming. The Virtue of Honesty: Honesty (blue) seen as virtue.",
+        "inverted": "Deceit — the virtue overturned into deceit. Honesty inverted toward Deceit."
+      },
+      "visuals": {
+        "detailed_description": "Honesty, rendered as a blue emblem (the colour of Honesty) on graphite, under the silver weather of full moon."
+      }
+    },
+    "honor-virtue": {
+      "name": "Virtue of Honor",
+      "number": "5",
+      "slug": "honor-virtue",
+      "arcana": "minor",
+      "suit_slug": "honor",
+      "rank_slug": "virtue",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Five: prime — Truth and Courage (magenta), the stand taken in the open and answered for."
+      },
+      "meaning": {
+        "upright": "Honor — living by one's word in the open. The Virtue of Honor: Honor (magenta) seen as virtue.",
+        "inverted": "Disgrace — the virtue overturned into disgrace. Honor inverted toward Disgrace."
+      },
+      "visuals": {
+        "detailed_description": "Honor, rendered as a magenta emblem (the colour of Honor) on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "justice-virtue": {
+      "name": "Virtue of Justice",
+      "number": "6",
+      "slug": "justice-virtue",
+      "arcana": "minor",
+      "suit_slug": "justice",
+      "rank_slug": "virtue",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Six = two times three: Truth+Love by the bits (cyan), yet Compassion x Sacrifice by the factors — the card whose binary and prime parents disagree.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Justice — to each their due — mercy and law in balance. The Virtue of Justice: Justice (cyan) seen as virtue.",
+        "inverted": "Tyranny — the virtue overturned into tyranny. Justice inverted toward Tyranny."
+      },
+      "visuals": {
+        "detailed_description": "Justice, rendered as a cyan emblem (the colour of Justice) on graphite, under the silver weather of first quarter."
+      }
+    },
+    "spirituality-virtue": {
+      "name": "Virtue of Spirituality",
+      "number": "7",
+      "slug": "spirituality-virtue",
+      "arcana": "minor",
+      "suit_slug": "spirituality",
+      "rank_slug": "virtue",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Seven: prime — all three principles together (white), the irreducible union that cannot be assembled from fewer."
+      },
+      "meaning": {
+        "upright": "Spirituality — the whole — all three principles held at once. The Virtue of Spirituality: Spirituality (white) seen as virtue.",
+        "inverted": "Worldliness — the virtue overturned into worldliness. Spirituality inverted toward Worldliness."
+      },
+      "visuals": {
+        "detailed_description": "Spirituality, rendered as a white emblem (the colour of Spirituality) on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "humility-place": {
+      "name": "Place of Humility",
+      "number": "0",
+      "slug": "humility-place",
+      "arcana": "minor",
+      "suit_slug": "humility",
+      "rank_slug": "place",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Zero: the empty set of principles, the precondition that holds none yet enables all. Pride is the fall from it."
+      },
+      "meaning": {
+        "upright": "Magincia — the city of pride brought low and rebuilt as humility. The Place of Humility: Humility (black) seen as place.",
+        "inverted": "the Abyss — the final descent where pride is undone. Humility inverted toward Pride."
+      },
+      "visuals": {
+        "detailed_description": "Magincia, rendered as a black emblem (the colour of Humility) on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "valor-place": {
+      "name": "Place of Valor",
+      "number": "1",
+      "slug": "valor-place",
+      "arcana": "minor",
+      "suit_slug": "valor",
+      "rank_slug": "place",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "identity",
+        "gloss": "One: the unit, the operator — Courage, the single act that must come first for any other virtue to be practised at all."
+      },
+      "meaning": {
+        "upright": "Jhelom — the island city of fighters and the dueling arena. The Place of Valor: Valor (red) seen as place.",
+        "inverted": "Destard — the dragon-pit, where courage curdles to bloodlust. Valor inverted toward Cowardice."
+      },
+      "visuals": {
+        "detailed_description": "Jhelom, rendered as a red emblem (the colour of Valor) on graphite, under the silver weather of full moon."
+      }
+    },
+    "compassion-place": {
+      "name": "Place of Compassion",
+      "number": "2",
+      "slug": "compassion-place",
+      "arcana": "minor",
+      "suit_slug": "compassion",
+      "rank_slug": "place",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Two: the first prime — Love, irreducible, the first real reach of the self beyond itself."
+      },
+      "meaning": {
+        "upright": "Britain — Lord British's capital, the warm heart of the realm. The Place of Compassion: Compassion (green) seen as place.",
+        "inverted": "Despise — the dungeon of contempt — love soured to scorn. Compassion inverted toward Hatred."
+      },
+      "visuals": {
+        "detailed_description": "Britain, rendered as a green emblem (the colour of Compassion) on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "sacrifice-place": {
+      "name": "Place of Sacrifice",
+      "number": "3",
+      "slug": "sacrifice-place",
+      "arcana": "minor",
+      "suit_slug": "sacrifice",
+      "rank_slug": "place",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Three: prime — Love and Courage fused (yellow), an irreducible giving that no analysis divides."
+      },
+      "meaning": {
+        "upright": "Minoc — the mountain town of tinkers and open-handed giving. The Place of Sacrifice: Sacrifice (yellow) seen as place.",
+        "inverted": "Covetous — the hoard-dungeon — giving inverted to grasping. Sacrifice inverted toward Selfishness."
+      },
+      "visuals": {
+        "detailed_description": "Minoc, rendered as a yellow emblem (the colour of Sacrifice) on graphite, under the silver weather of first quarter."
+      }
+    },
+    "honesty-place": {
+      "name": "Place of Honesty",
+      "number": "4",
+      "slug": "honesty-place",
+      "arcana": "minor",
+      "suit_slug": "honesty",
+      "rank_slug": "place",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Four = two squared: Truth as built structure (blue) — a single principle that nonetheless reads as an edifice, the framework reason stands inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "Moonglow — the island city of mages and the Lycaeum. The Place of Honesty: Honesty (blue) seen as place.",
+        "inverted": "Deceit — the dungeon of lies — truth turned to illusion. Honesty inverted toward Deceit."
+      },
+      "visuals": {
+        "detailed_description": "Moonglow, rendered as a blue emblem (the colour of Honesty) on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "honor-place": {
+      "name": "Place of Honor",
+      "number": "5",
+      "slug": "honor-place",
+      "arcana": "minor",
+      "suit_slug": "honor",
+      "rank_slug": "place",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Five: prime — Truth and Courage (magenta), the stand taken in the open and answered for."
+      },
+      "meaning": {
+        "upright": "Trinsic — the walled city of paladins. The Place of Honor: Honor (magenta) seen as place.",
+        "inverted": "Shame — the dungeon of disgrace — honor lost. Honor inverted toward Disgrace."
+      },
+      "visuals": {
+        "detailed_description": "Trinsic, rendered as a magenta emblem (the colour of Honor) on graphite, under the silver weather of new moon."
+      }
+    },
+    "justice-place": {
+      "name": "Place of Justice",
+      "number": "6",
+      "slug": "justice-place",
+      "arcana": "minor",
+      "suit_slug": "justice",
+      "rank_slug": "place",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Six = two times three: Truth+Love by the bits (cyan), yet Compassion x Sacrifice by the factors — the card whose binary and prime parents disagree.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Yew — the forest city of druids and the courts. The Place of Justice: Justice (cyan) seen as place.",
+        "inverted": "Wrong — the dungeon of injustice — law without mercy. Justice inverted toward Tyranny."
+      },
+      "visuals": {
+        "detailed_description": "Yew, rendered as a cyan emblem (the colour of Justice) on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "spirituality-place": {
+      "name": "Place of Spirituality",
+      "number": "7",
+      "slug": "spirituality-place",
+      "arcana": "minor",
+      "suit_slug": "spirituality",
+      "rank_slug": "place",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Seven: prime — all three principles together (white), the irreducible union that cannot be assembled from fewer."
+      },
+      "meaning": {
+        "upright": "Skara Brae — the island of rangers and the spirit. The Place of Spirituality: Spirituality (white) seen as place.",
+        "inverted": "Hythloth — the deep dungeon nearest the Abyss — spirit lost in the dark. Spirituality inverted toward Worldliness."
+      },
+      "visuals": {
+        "detailed_description": "Skara Brae, rendered as a white emblem (the colour of Spirituality) on graphite, under the silver weather of last quarter."
+      }
+    },
+    "humility-role": {
+      "name": "Role of Humility",
+      "number": "0",
+      "slug": "humility-role",
+      "arcana": "minor",
+      "suit_slug": "humility",
+      "rank_slug": "role",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Zero: the empty set of principles, the precondition that holds none yet enables all. Pride is the fall from it."
+      },
+      "meaning": {
+        "upright": "the Shepherd — the lowly herder who claims nothing. The Role of Humility: Humility (black) seen as role.",
+        "inverted": "the Servile — self-abasement mistaken for humility. Humility inverted toward Pride."
+      },
+      "visuals": {
+        "detailed_description": "the Shepherd, rendered as a black emblem (the colour of Humility) on graphite, under the silver weather of first quarter."
+      }
+    },
+    "valor-role": {
+      "name": "Role of Valor",
+      "number": "1",
+      "slug": "valor-role",
+      "arcana": "minor",
+      "suit_slug": "valor",
+      "rank_slug": "role",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "identity",
+        "gloss": "One: the unit, the operator — Courage, the single act that must come first for any other virtue to be practised at all."
+      },
+      "meaning": {
+        "upright": "the Fighter — the warrior who meets danger head-on. The Role of Valor: Valor (red) seen as role.",
+        "inverted": "the Brute — courage without cause, violence for its own sake. Valor inverted toward Cowardice."
+      },
+      "visuals": {
+        "detailed_description": "the Fighter, rendered as a red emblem (the colour of Valor) on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "compassion-role": {
+      "name": "Role of Compassion",
+      "number": "2",
+      "slug": "compassion-role",
+      "arcana": "minor",
+      "suit_slug": "compassion",
+      "rank_slug": "role",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Two: the first prime — Love, irreducible, the first real reach of the self beyond itself."
+      },
+      "meaning": {
+        "upright": "the Bard — the singer who moves hearts. The Role of Compassion: Compassion (green) seen as role.",
+        "inverted": "the Charlatan — feeling weaponized — sympathy as manipulation. Compassion inverted toward Hatred."
+      },
+      "visuals": {
+        "detailed_description": "the Bard, rendered as a green emblem (the colour of Compassion) on graphite, under the silver weather of new moon."
+      }
+    },
+    "sacrifice-role": {
+      "name": "Role of Sacrifice",
+      "number": "3",
+      "slug": "sacrifice-role",
+      "arcana": "minor",
+      "suit_slug": "sacrifice",
+      "rank_slug": "role",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Three: prime — Love and Courage fused (yellow), an irreducible giving that no analysis divides."
+      },
+      "meaning": {
+        "upright": "the Tinker — the maker who gives their craft to others. The Role of Sacrifice: Sacrifice (yellow) seen as role.",
+        "inverted": "the Martyr — giving turned to self-erasure and reproach. Sacrifice inverted toward Selfishness."
+      },
+      "visuals": {
+        "detailed_description": "the Tinker, rendered as a yellow emblem (the colour of Sacrifice) on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "honesty-role": {
+      "name": "Role of Honesty",
+      "number": "4",
+      "slug": "honesty-role",
+      "arcana": "minor",
+      "suit_slug": "honesty",
+      "rank_slug": "role",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Four = two squared: Truth as built structure (blue) — a single principle that nonetheless reads as an edifice, the framework reason stands inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "the Mage — the scholar who seeks what is true. The Role of Honesty: Honesty (blue) seen as role.",
+        "inverted": "the Deceiver — knowledge used to mislead. Honesty inverted toward Deceit."
+      },
+      "visuals": {
+        "detailed_description": "the Mage, rendered as a blue emblem (the colour of Honesty) on graphite, under the silver weather of last quarter."
+      }
+    },
+    "honor-role": {
+      "name": "Role of Honor",
+      "number": "5",
+      "slug": "honor-role",
+      "arcana": "minor",
+      "suit_slug": "honor",
+      "rank_slug": "role",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Five: prime — Truth and Courage (magenta), the stand taken in the open and answered for."
+      },
+      "meaning": {
+        "upright": "the Paladin — the holy knight bound by their word. The Role of Honor: Honor (magenta) seen as role.",
+        "inverted": "the Zealot — honor hardened to merciless pride. Honor inverted toward Disgrace."
+      },
+      "visuals": {
+        "detailed_description": "the Paladin, rendered as a magenta emblem (the colour of Honor) on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "justice-role": {
+      "name": "Role of Justice",
+      "number": "6",
+      "slug": "justice-role",
+      "arcana": "minor",
+      "suit_slug": "justice",
+      "rank_slug": "role",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Six = two times three: Truth+Love by the bits (cyan), yet Compassion x Sacrifice by the factors — the card whose binary and prime parents disagree.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "the Druid — the keeper of balance and law. The Role of Justice: Justice (cyan) seen as role.",
+        "inverted": "the Tyrant — law without mercy, balance as control. Justice inverted toward Tyranny."
+      },
+      "visuals": {
+        "detailed_description": "the Druid, rendered as a cyan emblem (the colour of Justice) on graphite, under the silver weather of full moon."
+      }
+    },
+    "spirituality-role": {
+      "name": "Role of Spirituality",
+      "number": "7",
+      "slug": "spirituality-role",
+      "arcana": "minor",
+      "suit_slug": "spirituality",
+      "rank_slug": "role",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Seven: prime — all three principles together (white), the irreducible union that cannot be assembled from fewer."
+      },
+      "meaning": {
+        "upright": "the Ranger — the wanderer at home in the whole. The Role of Spirituality: Spirituality (white) seen as role.",
+        "inverted": "the Lost — detachment become rootlessness. Spirituality inverted toward Worldliness."
+      },
+      "visuals": {
+        "detailed_description": "the Ranger, rendered as a white emblem (the colour of Spirituality) on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "humility-companion": {
+      "name": "Companion of Humility",
+      "number": "0",
+      "slug": "humility-companion",
+      "arcana": "minor",
+      "suit_slug": "humility",
+      "rank_slug": "companion",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Zero: the empty set of principles, the precondition that holds none yet enables all. Pride is the fall from it."
+      },
+      "meaning": {
+        "upright": "Katrina — the shepherd of Magincia, humble and steady. The Companion of Humility: Humility (black) seen as companion.",
+        "inverted": "Katrina astray — humility curdled to self-erasure. Humility inverted toward Pride."
+      },
+      "visuals": {
+        "detailed_description": "Katrina, rendered as a black emblem (the colour of Humility) on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "valor-companion": {
+      "name": "Companion of Valor",
+      "number": "1",
+      "slug": "valor-companion",
+      "arcana": "minor",
+      "suit_slug": "valor",
+      "rank_slug": "companion",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "identity",
+        "gloss": "One: the unit, the operator — Courage, the single act that must come first for any other virtue to be practised at all."
+      },
+      "meaning": {
+        "upright": "Geoffrey — the fighter, captain of the guard. The Companion of Valor: Valor (red) seen as companion.",
+        "inverted": "Geoffrey astray — valor curdled to recklessness. Valor inverted toward Cowardice."
+      },
+      "visuals": {
+        "detailed_description": "Geoffrey, rendered as a red emblem (the colour of Valor) on graphite, under the silver weather of last quarter."
+      }
+    },
+    "compassion-companion": {
+      "name": "Companion of Compassion",
+      "number": "2",
+      "slug": "compassion-companion",
+      "arcana": "minor",
+      "suit_slug": "compassion",
+      "rank_slug": "companion",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Two: the first prime — Love, irreducible, the first real reach of the self beyond itself."
+      },
+      "meaning": {
+        "upright": "Iolo — the bard, Lord British's oldest friend. The Companion of Compassion: Compassion (green) seen as companion.",
+        "inverted": "Iolo astray — compassion curdled to indulgence. Compassion inverted toward Hatred."
+      },
+      "visuals": {
+        "detailed_description": "Iolo, rendered as a green emblem (the colour of Compassion) on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "sacrifice-companion": {
+      "name": "Companion of Sacrifice",
+      "number": "3",
+      "slug": "sacrifice-companion",
+      "arcana": "minor",
+      "suit_slug": "sacrifice",
+      "rank_slug": "companion",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Three: prime — Love and Courage fused (yellow), an irreducible giving that no analysis divides."
+      },
+      "meaning": {
+        "upright": "Julia — the tinker of Minoc. The Companion of Sacrifice: Sacrifice (yellow) seen as companion.",
+        "inverted": "Julia astray — sacrifice curdled to grievance. Sacrifice inverted toward Selfishness."
+      },
+      "visuals": {
+        "detailed_description": "Julia, rendered as a yellow emblem (the colour of Sacrifice) on graphite, under the silver weather of full moon."
+      }
+    },
+    "honesty-companion": {
+      "name": "Companion of Honesty",
+      "number": "4",
+      "slug": "honesty-companion",
+      "arcana": "minor",
+      "suit_slug": "honesty",
+      "rank_slug": "companion",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Four = two squared: Truth as built structure (blue) — a single principle that nonetheless reads as an edifice, the framework reason stands inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "Mariah — the mage of Moonglow. The Companion of Honesty: Honesty (blue) seen as companion.",
+        "inverted": "Mariah astray — honesty curdled to cold disclosure. Honesty inverted toward Deceit."
+      },
+      "visuals": {
+        "detailed_description": "Mariah, rendered as a blue emblem (the colour of Honesty) on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "honor-companion": {
+      "name": "Companion of Honor",
+      "number": "5",
+      "slug": "honor-companion",
+      "arcana": "minor",
+      "suit_slug": "honor",
+      "rank_slug": "companion",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Five: prime — Truth and Courage (magenta), the stand taken in the open and answered for."
+      },
+      "meaning": {
+        "upright": "Dupre — the paladin of Trinsic. The Companion of Honor: Honor (magenta) seen as companion.",
+        "inverted": "Dupre astray — honor curdled to pride. Honor inverted toward Disgrace."
+      },
+      "visuals": {
+        "detailed_description": "Dupre, rendered as a magenta emblem (the colour of Honor) on graphite, under the silver weather of first quarter."
+      }
+    },
+    "justice-companion": {
+      "name": "Companion of Justice",
+      "number": "6",
+      "slug": "justice-companion",
+      "arcana": "minor",
+      "suit_slug": "justice",
+      "rank_slug": "companion",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Six = two times three: Truth+Love by the bits (cyan), yet Compassion x Sacrifice by the factors — the card whose binary and prime parents disagree.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Jaana — the druid of Yew. The Companion of Justice: Justice (cyan) seen as companion.",
+        "inverted": "Jaana astray — justice curdled to severity. Justice inverted toward Tyranny."
+      },
+      "visuals": {
+        "detailed_description": "Jaana, rendered as a cyan emblem (the colour of Justice) on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "spirituality-companion": {
+      "name": "Companion of Spirituality",
+      "number": "7",
+      "slug": "spirituality-companion",
+      "arcana": "minor",
+      "suit_slug": "spirituality",
+      "rank_slug": "companion",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Seven: prime — all three principles together (white), the irreducible union that cannot be assembled from fewer."
+      },
+      "meaning": {
+        "upright": "Shamino — the ranger, the Avatar's truest companion. The Companion of Spirituality: Spirituality (white) seen as companion.",
+        "inverted": "Shamino astray — spirituality curdled to endless wandering. Spirituality inverted toward Worldliness."
+      },
+      "visuals": {
+        "detailed_description": "Shamino, rendered as a white emblem (the colour of Spirituality) on graphite, under the silver weather of new moon."
+      }
+    },
+    "humility-word": {
+      "name": "Word of Humility",
+      "number": "0",
+      "slug": "humility-word",
+      "arcana": "minor",
+      "suit_slug": "humility",
+      "rank_slug": "word",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Zero: the empty set of principles, the precondition that holds none yet enables all. Pride is the fall from it."
+      },
+      "meaning": {
+        "upright": "the mantra LUM — the word of power intoned at the Shrine of Humility. The Word of Humility: Humility (black) seen as word.",
+        "inverted": "the unsaid word — the mantra swallowed — the virtue gone mute. Humility inverted toward Pride."
+      },
+      "visuals": {
+        "detailed_description": "the mantra LUM, rendered as a black emblem (the colour of Humility) on graphite, under the silver weather of full moon."
+      }
+    },
+    "valor-word": {
+      "name": "Word of Valor",
+      "number": "1",
+      "slug": "valor-word",
+      "arcana": "minor",
+      "suit_slug": "valor",
+      "rank_slug": "word",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "identity",
+        "gloss": "One: the unit, the operator — Courage, the single act that must come first for any other virtue to be practised at all."
+      },
+      "meaning": {
+        "upright": "the mantra RA — the word of power intoned at the Shrine of Valor. The Word of Valor: Valor (red) seen as word.",
+        "inverted": "the unsaid word — the mantra swallowed — the virtue gone mute. Valor inverted toward Cowardice."
+      },
+      "visuals": {
+        "detailed_description": "the mantra RA, rendered as a red emblem (the colour of Valor) on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "compassion-word": {
+      "name": "Word of Compassion",
+      "number": "2",
+      "slug": "compassion-word",
+      "arcana": "minor",
+      "suit_slug": "compassion",
+      "rank_slug": "word",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Two: the first prime — Love, irreducible, the first real reach of the self beyond itself."
+      },
+      "meaning": {
+        "upright": "the mantra MU — the word of power intoned at the Shrine of Compassion. The Word of Compassion: Compassion (green) seen as word.",
+        "inverted": "the unsaid word — the mantra swallowed — the virtue gone mute. Compassion inverted toward Hatred."
+      },
+      "visuals": {
+        "detailed_description": "the mantra MU, rendered as a green emblem (the colour of Compassion) on graphite, under the silver weather of first quarter."
+      }
+    },
+    "sacrifice-word": {
+      "name": "Word of Sacrifice",
+      "number": "3",
+      "slug": "sacrifice-word",
+      "arcana": "minor",
+      "suit_slug": "sacrifice",
+      "rank_slug": "word",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Three: prime — Love and Courage fused (yellow), an irreducible giving that no analysis divides."
+      },
+      "meaning": {
+        "upright": "the mantra CAH — the word of power intoned at the Shrine of Sacrifice. The Word of Sacrifice: Sacrifice (yellow) seen as word.",
+        "inverted": "the unsaid word — the mantra swallowed — the virtue gone mute. Sacrifice inverted toward Selfishness."
+      },
+      "visuals": {
+        "detailed_description": "the mantra CAH, rendered as a yellow emblem (the colour of Sacrifice) on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "honesty-word": {
+      "name": "Word of Honesty",
+      "number": "4",
+      "slug": "honesty-word",
+      "arcana": "minor",
+      "suit_slug": "honesty",
+      "rank_slug": "word",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Four = two squared: Truth as built structure (blue) — a single principle that nonetheless reads as an edifice, the framework reason stands inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "the mantra AHM — the word of power intoned at the Shrine of Honesty. The Word of Honesty: Honesty (blue) seen as word.",
+        "inverted": "the unsaid word — the mantra swallowed — the virtue gone mute. Honesty inverted toward Deceit."
+      },
+      "visuals": {
+        "detailed_description": "the mantra AHM, rendered as a blue emblem (the colour of Honesty) on graphite, under the silver weather of new moon."
+      }
+    },
+    "honor-word": {
+      "name": "Word of Honor",
+      "number": "5",
+      "slug": "honor-word",
+      "arcana": "minor",
+      "suit_slug": "honor",
+      "rank_slug": "word",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Five: prime — Truth and Courage (magenta), the stand taken in the open and answered for."
+      },
+      "meaning": {
+        "upright": "the mantra SUMM — the word of power intoned at the Shrine of Honor. The Word of Honor: Honor (magenta) seen as word.",
+        "inverted": "the unsaid word — the mantra swallowed — the virtue gone mute. Honor inverted toward Disgrace."
+      },
+      "visuals": {
+        "detailed_description": "the mantra SUMM, rendered as a magenta emblem (the colour of Honor) on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "justice-word": {
+      "name": "Word of Justice",
+      "number": "6",
+      "slug": "justice-word",
+      "arcana": "minor",
+      "suit_slug": "justice",
+      "rank_slug": "word",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Six = two times three: Truth+Love by the bits (cyan), yet Compassion x Sacrifice by the factors — the card whose binary and prime parents disagree.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "the mantra BEH — the word of power intoned at the Shrine of Justice. The Word of Justice: Justice (cyan) seen as word.",
+        "inverted": "the unsaid word — the mantra swallowed — the virtue gone mute. Justice inverted toward Tyranny."
+      },
+      "visuals": {
+        "detailed_description": "the mantra BEH, rendered as a cyan emblem (the colour of Justice) on graphite, under the silver weather of last quarter."
+      }
+    },
+    "spirituality-word": {
+      "name": "Word of Spirituality",
+      "number": "7",
+      "slug": "spirituality-word",
+      "arcana": "minor",
+      "suit_slug": "spirituality",
+      "rank_slug": "word",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Seven: prime — all three principles together (white), the irreducible union that cannot be assembled from fewer."
+      },
+      "meaning": {
+        "upright": "the mantra OM — the word of power intoned at the Shrine of Spirituality. The Word of Spirituality: Spirituality (white) seen as word.",
+        "inverted": "the unsaid word — the mantra swallowed — the virtue gone mute. Spirituality inverted toward Worldliness."
+      },
+      "visuals": {
+        "detailed_description": "the mantra OM, rendered as a white emblem (the colour of Spirituality) on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "humility-stone": {
+      "name": "Stone of Humility",
+      "number": "0",
+      "slug": "humility-stone",
+      "arcana": "minor",
+      "suit_slug": "humility",
+      "rank_slug": "stone",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Zero: the empty set of principles, the precondition that holds none yet enables all. Pride is the fall from it."
+      },
+      "meaning": {
+        "upright": "the black stone — the Humility stone of the Abyss, raised to pass its barrier. The Stone of Humility: Humility (black) seen as stone.",
+        "inverted": "the black stone misused — the stone turned against the one who carries it. Humility inverted toward Pride."
+      },
+      "visuals": {
+        "detailed_description": "the black stone, rendered as a black emblem (the colour of Humility) on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "valor-stone": {
+      "name": "Stone of Valor",
+      "number": "1",
+      "slug": "valor-stone",
+      "arcana": "minor",
+      "suit_slug": "valor",
+      "rank_slug": "stone",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "identity",
+        "gloss": "One: the unit, the operator — Courage, the single act that must come first for any other virtue to be practised at all."
+      },
+      "meaning": {
+        "upright": "the red stone — the Valor stone of the Abyss, raised to pass its barrier. The Stone of Valor: Valor (red) seen as stone.",
+        "inverted": "the red stone misused — the stone turned against the one who carries it. Valor inverted toward Cowardice."
+      },
+      "visuals": {
+        "detailed_description": "the red stone, rendered as a red emblem (the colour of Valor) on graphite, under the silver weather of new moon."
+      }
+    },
+    "compassion-stone": {
+      "name": "Stone of Compassion",
+      "number": "2",
+      "slug": "compassion-stone",
+      "arcana": "minor",
+      "suit_slug": "compassion",
+      "rank_slug": "stone",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Two: the first prime — Love, irreducible, the first real reach of the self beyond itself."
+      },
+      "meaning": {
+        "upright": "the green stone — the Compassion stone of the Abyss, raised to pass its barrier. The Stone of Compassion: Compassion (green) seen as stone.",
+        "inverted": "the green stone misused — the stone turned against the one who carries it. Compassion inverted toward Hatred."
+      },
+      "visuals": {
+        "detailed_description": "the green stone, rendered as a green emblem (the colour of Compassion) on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "sacrifice-stone": {
+      "name": "Stone of Sacrifice",
+      "number": "3",
+      "slug": "sacrifice-stone",
+      "arcana": "minor",
+      "suit_slug": "sacrifice",
+      "rank_slug": "stone",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Three: prime — Love and Courage fused (yellow), an irreducible giving that no analysis divides."
+      },
+      "meaning": {
+        "upright": "the yellow stone — the Sacrifice stone of the Abyss, raised to pass its barrier. The Stone of Sacrifice: Sacrifice (yellow) seen as stone.",
+        "inverted": "the yellow stone misused — the stone turned against the one who carries it. Sacrifice inverted toward Selfishness."
+      },
+      "visuals": {
+        "detailed_description": "the yellow stone, rendered as a yellow emblem (the colour of Sacrifice) on graphite, under the silver weather of last quarter."
+      }
+    },
+    "honesty-stone": {
+      "name": "Stone of Honesty",
+      "number": "4",
+      "slug": "honesty-stone",
+      "arcana": "minor",
+      "suit_slug": "honesty",
+      "rank_slug": "stone",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Four = two squared: Truth as built structure (blue) — a single principle that nonetheless reads as an edifice, the framework reason stands inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "the blue stone — the Honesty stone of the Abyss, raised to pass its barrier. The Stone of Honesty: Honesty (blue) seen as stone.",
+        "inverted": "the blue stone misused — the stone turned against the one who carries it. Honesty inverted toward Deceit."
+      },
+      "visuals": {
+        "detailed_description": "the blue stone, rendered as a blue emblem (the colour of Honesty) on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "honor-stone": {
+      "name": "Stone of Honor",
+      "number": "5",
+      "slug": "honor-stone",
+      "arcana": "minor",
+      "suit_slug": "honor",
+      "rank_slug": "stone",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Five: prime — Truth and Courage (magenta), the stand taken in the open and answered for."
+      },
+      "meaning": {
+        "upright": "the magenta stone — the Honor stone of the Abyss, raised to pass its barrier. The Stone of Honor: Honor (magenta) seen as stone.",
+        "inverted": "the magenta stone misused — the stone turned against the one who carries it. Honor inverted toward Disgrace."
+      },
+      "visuals": {
+        "detailed_description": "the magenta stone, rendered as a magenta emblem (the colour of Honor) on graphite, under the silver weather of full moon."
+      }
+    },
+    "justice-stone": {
+      "name": "Stone of Justice",
+      "number": "6",
+      "slug": "justice-stone",
+      "arcana": "minor",
+      "suit_slug": "justice",
+      "rank_slug": "stone",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Six = two times three: Truth+Love by the bits (cyan), yet Compassion x Sacrifice by the factors — the card whose binary and prime parents disagree.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "the cyan stone — the Justice stone of the Abyss, raised to pass its barrier. The Stone of Justice: Justice (cyan) seen as stone.",
+        "inverted": "the cyan stone misused — the stone turned against the one who carries it. Justice inverted toward Tyranny."
+      },
+      "visuals": {
+        "detailed_description": "the cyan stone, rendered as a cyan emblem (the colour of Justice) on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "spirituality-stone": {
+      "name": "Stone of Spirituality",
+      "number": "7",
+      "slug": "spirituality-stone",
+      "arcana": "minor",
+      "suit_slug": "spirituality",
+      "rank_slug": "stone",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Seven: prime — all three principles together (white), the irreducible union that cannot be assembled from fewer."
+      },
+      "meaning": {
+        "upright": "the white stone — the Spirituality stone of the Abyss, raised to pass its barrier. The Stone of Spirituality: Spirituality (white) seen as stone.",
+        "inverted": "the white stone misused — the stone turned against the one who carries it. Spirituality inverted toward Worldliness."
+      },
+      "visuals": {
+        "detailed_description": "the white stone, rendered as a white emblem (the colour of Spirituality) on graphite, under the silver weather of first quarter."
+      }
+    },
+    "humility-reagent": {
+      "name": "Reagent of Humility",
+      "number": "0",
+      "slug": "humility-reagent",
+      "arcana": "minor",
+      "suit_slug": "humility",
+      "rank_slug": "reagent",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Zero: the empty set of principles, the precondition that holds none yet enables all. Pride is the fall from it."
+      },
+      "meaning": {
+        "upright": "Nightshade — the reagent of poison and the ego's end. The Reagent of Humility: Humility (black) seen as reagent.",
+        "inverted": "Nightshade in black magic — the humbling draught turned to murder. Humility inverted toward Pride."
+      },
+      "visuals": {
+        "detailed_description": "Nightshade, rendered as a black emblem (the colour of Humility) on graphite, under the silver weather of last quarter."
+      }
+    },
+    "valor-reagent": {
+      "name": "Reagent of Valor",
+      "number": "1",
+      "slug": "valor-reagent",
+      "arcana": "minor",
+      "suit_slug": "valor",
+      "rank_slug": "reagent",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "identity",
+        "gloss": "One: the unit, the operator — Courage, the single act that must come first for any other virtue to be practised at all."
+      },
+      "meaning": {
+        "upright": "Sulfurous Ash — the reagent of fire and energy. The Reagent of Valor: Valor (red) seen as reagent.",
+        "inverted": "Sulfurous Ash in black magic — valor's fire turned only destructive. Valor inverted toward Cowardice."
+      },
+      "visuals": {
+        "detailed_description": "Sulfurous Ash, rendered as a red emblem (the colour of Valor) on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "compassion-reagent": {
+      "name": "Reagent of Compassion",
+      "number": "2",
+      "slug": "compassion-reagent",
+      "arcana": "minor",
+      "suit_slug": "compassion",
+      "rank_slug": "reagent",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Two: the first prime — Love, irreducible, the first real reach of the self beyond itself."
+      },
+      "meaning": {
+        "upright": "Ginseng — the reagent of healing. The Reagent of Compassion: Compassion (green) seen as reagent.",
+        "inverted": "Ginseng in black magic — the healing herb turned to poison. Compassion inverted toward Hatred."
+      },
+      "visuals": {
+        "detailed_description": "Ginseng, rendered as a green emblem (the colour of Compassion) on graphite, under the silver weather of full moon."
+      }
+    },
+    "sacrifice-reagent": {
+      "name": "Reagent of Sacrifice",
+      "number": "3",
+      "slug": "sacrifice-reagent",
+      "arcana": "minor",
+      "suit_slug": "sacrifice",
+      "rank_slug": "reagent",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Three: prime — Love and Courage fused (yellow), an irreducible giving that no analysis divides."
+      },
+      "meaning": {
+        "upright": "Blood Moss — the reagent of movement and blood. The Reagent of Sacrifice: Sacrifice (yellow) seen as reagent.",
+        "inverted": "Blood Moss in black magic — the gift of motion turned to bleeding. Sacrifice inverted toward Selfishness."
+      },
+      "visuals": {
+        "detailed_description": "Blood Moss, rendered as a yellow emblem (the colour of Sacrifice) on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "honesty-reagent": {
+      "name": "Reagent of Honesty",
+      "number": "4",
+      "slug": "honesty-reagent",
+      "arcana": "minor",
+      "suit_slug": "honesty",
+      "rank_slug": "reagent",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Four = two squared: Truth as built structure (blue) — a single principle that nonetheless reads as an edifice, the framework reason stands inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "Black Pearl — the reagent of clarity and direct force. The Reagent of Honesty: Honesty (blue) seen as reagent.",
+        "inverted": "Black Pearl in black magic — truth's reagent bent to harm. Honesty inverted toward Deceit."
+      },
+      "visuals": {
+        "detailed_description": "Black Pearl, rendered as a blue emblem (the colour of Honesty) on graphite, under the silver weather of first quarter."
+      }
+    },
+    "honor-reagent": {
+      "name": "Reagent of Honor",
+      "number": "5",
+      "slug": "honor-reagent",
+      "arcana": "minor",
+      "suit_slug": "honor",
+      "rank_slug": "reagent",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Five: prime — Truth and Courage (magenta), the stand taken in the open and answered for."
+      },
+      "meaning": {
+        "upright": "Garlic — the reagent of warding and protection. The Reagent of Honor: Honor (magenta) seen as reagent.",
+        "inverted": "Garlic in black magic — the ward turned to a curse. Honor inverted toward Disgrace."
+      },
+      "visuals": {
+        "detailed_description": "Garlic, rendered as a magenta emblem (the colour of Honor) on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "justice-reagent": {
+      "name": "Reagent of Justice",
+      "number": "6",
+      "slug": "justice-reagent",
+      "arcana": "minor",
+      "suit_slug": "justice",
+      "rank_slug": "reagent",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Six = two times three: Truth+Love by the bits (cyan), yet Compassion x Sacrifice by the factors — the card whose binary and prime parents disagree.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "Spider Silk — the reagent of binding. The Reagent of Justice: Justice (cyan) seen as reagent.",
+        "inverted": "Spider Silk in black magic — the binding turned to a snare. Justice inverted toward Tyranny."
+      },
+      "visuals": {
+        "detailed_description": "Spider Silk, rendered as a cyan emblem (the colour of Justice) on graphite, under the silver weather of new moon."
+      }
+    },
+    "spirituality-reagent": {
+      "name": "Reagent of Spirituality",
+      "number": "7",
+      "slug": "spirituality-reagent",
+      "arcana": "minor",
+      "suit_slug": "spirituality",
+      "rank_slug": "reagent",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Seven: prime — all three principles together (white), the irreducible union that cannot be assembled from fewer."
+      },
+      "meaning": {
+        "upright": "Mandrake Root — the reagent of deepest power. The Reagent of Spirituality: Spirituality (white) seen as reagent.",
+        "inverted": "Mandrake Root in black magic — the deep power turned to ruin. Spirituality inverted toward Worldliness."
+      },
+      "visuals": {
+        "detailed_description": "Mandrake Root, rendered as a white emblem (the colour of Spirituality) on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "humility-shrine": {
+      "name": "Shrine of Humility",
+      "number": "0",
+      "slug": "humility-shrine",
+      "arcana": "minor",
+      "suit_slug": "humility",
+      "rank_slug": "shrine",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Zero: the empty set of principles, the precondition that holds none yet enables all. Pride is the fall from it."
+      },
+      "meaning": {
+        "upright": "the Shrine of Humility — the wilderness shrine where Humility is meditated and the Codex glimpsed. The Shrine of Humility: Humility (black) seen as shrine.",
+        "inverted": "the shrine desecrated — meditation failed, the vision withheld. Humility inverted toward Pride."
+      },
+      "visuals": {
+        "detailed_description": "the Shrine of Humility, rendered as a black emblem (the colour of Humility) on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "valor-shrine": {
+      "name": "Shrine of Valor",
+      "number": "1",
+      "slug": "valor-shrine",
+      "arcana": "minor",
+      "suit_slug": "valor",
+      "rank_slug": "shrine",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "identity",
+        "gloss": "One: the unit, the operator — Courage, the single act that must come first for any other virtue to be practised at all."
+      },
+      "meaning": {
+        "upright": "the Shrine of Valor — the wilderness shrine where Valor is meditated and the Codex glimpsed. The Shrine of Valor: Valor (red) seen as shrine.",
+        "inverted": "the shrine desecrated — meditation failed, the vision withheld. Valor inverted toward Cowardice."
+      },
+      "visuals": {
+        "detailed_description": "the Shrine of Valor, rendered as a red emblem (the colour of Valor) on graphite, under the silver weather of first quarter."
+      }
+    },
+    "compassion-shrine": {
+      "name": "Shrine of Compassion",
+      "number": "2",
+      "slug": "compassion-shrine",
+      "arcana": "minor",
+      "suit_slug": "compassion",
+      "rank_slug": "shrine",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Two: the first prime — Love, irreducible, the first real reach of the self beyond itself."
+      },
+      "meaning": {
+        "upright": "the Shrine of Compassion — the wilderness shrine where Compassion is meditated and the Codex glimpsed. The Shrine of Compassion: Compassion (green) seen as shrine.",
+        "inverted": "the shrine desecrated — meditation failed, the vision withheld. Compassion inverted toward Hatred."
+      },
+      "visuals": {
+        "detailed_description": "the Shrine of Compassion, rendered as a green emblem (the colour of Compassion) on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "sacrifice-shrine": {
+      "name": "Shrine of Sacrifice",
+      "number": "3",
+      "slug": "sacrifice-shrine",
+      "arcana": "minor",
+      "suit_slug": "sacrifice",
+      "rank_slug": "shrine",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Three: prime — Love and Courage fused (yellow), an irreducible giving that no analysis divides."
+      },
+      "meaning": {
+        "upright": "the Shrine of Sacrifice — the wilderness shrine where Sacrifice is meditated and the Codex glimpsed. The Shrine of Sacrifice: Sacrifice (yellow) seen as shrine.",
+        "inverted": "the shrine desecrated — meditation failed, the vision withheld. Sacrifice inverted toward Selfishness."
+      },
+      "visuals": {
+        "detailed_description": "the Shrine of Sacrifice, rendered as a yellow emblem (the colour of Sacrifice) on graphite, under the silver weather of new moon."
+      }
+    },
+    "honesty-shrine": {
+      "name": "Shrine of Honesty",
+      "number": "4",
+      "slug": "honesty-shrine",
+      "arcana": "minor",
+      "suit_slug": "honesty",
+      "rank_slug": "shrine",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Four = two squared: Truth as built structure (blue) — a single principle that nonetheless reads as an edifice, the framework reason stands inside.",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "the Shrine of Honesty — the wilderness shrine where Honesty is meditated and the Codex glimpsed. The Shrine of Honesty: Honesty (blue) seen as shrine.",
+        "inverted": "the shrine desecrated — meditation failed, the vision withheld. Honesty inverted toward Deceit."
+      },
+      "visuals": {
+        "detailed_description": "the Shrine of Honesty, rendered as a blue emblem (the colour of Honesty) on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "honor-shrine": {
+      "name": "Shrine of Honor",
+      "number": "5",
+      "slug": "honor-shrine",
+      "arcana": "minor",
+      "suit_slug": "honor",
+      "rank_slug": "shrine",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Five: prime — Truth and Courage (magenta), the stand taken in the open and answered for."
+      },
+      "meaning": {
+        "upright": "the Shrine of Honor — the wilderness shrine where Honor is meditated and the Codex glimpsed. The Shrine of Honor: Honor (magenta) seen as shrine.",
+        "inverted": "the shrine desecrated — meditation failed, the vision withheld. Honor inverted toward Disgrace."
+      },
+      "visuals": {
+        "detailed_description": "the Shrine of Honor, rendered as a magenta emblem (the colour of Honor) on graphite, under the silver weather of last quarter."
+      }
+    },
+    "justice-shrine": {
+      "name": "Shrine of Justice",
+      "number": "6",
+      "slug": "justice-shrine",
+      "arcana": "minor",
+      "suit_slug": "justice",
+      "rank_slug": "shrine",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Six = two times three: Truth+Love by the bits (cyan), yet Compassion x Sacrifice by the factors — the card whose binary and prime parents disagree.",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "the Shrine of Justice — the wilderness shrine where Justice is meditated and the Codex glimpsed. The Shrine of Justice: Justice (cyan) seen as shrine.",
+        "inverted": "the shrine desecrated — meditation failed, the vision withheld. Justice inverted toward Tyranny."
+      },
+      "visuals": {
+        "detailed_description": "the Shrine of Justice, rendered as a cyan emblem (the colour of Justice) on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "spirituality-shrine": {
+      "name": "Shrine of Spirituality",
+      "number": "7",
+      "slug": "spirituality-shrine",
+      "arcana": "minor",
+      "suit_slug": "spirituality",
+      "rank_slug": "shrine",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Seven: prime — all three principles together (white), the irreducible union that cannot be assembled from fewer."
+      },
+      "meaning": {
+        "upright": "the Shrine of Spirituality — the wilderness shrine where Spirituality is meditated and the Codex glimpsed. The Shrine of Spirituality: Spirituality (white) seen as shrine.",
+        "inverted": "the shrine desecrated — meditation failed, the vision withheld. Spirituality inverted toward Worldliness."
+      },
+      "visuals": {
+        "detailed_description": "the Shrine of Spirituality, rendered as a white emblem (the colour of Spirituality) on graphite, under the silver weather of full moon."
+      }
+    },
+    "major-0": {
+      "name": "The Avatar",
+      "number": "0",
+      "slug": "major-0",
+      "arcana": "major",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "identity",
+        "gloss": "The Avatar: number 0 (identity)."
+      },
+      "meaning": {
+        "upright": "you — the seeker who takes up the quest of the eight virtues, the one the cards are dealt to",
+        "inverted": "the seeker who quests for power or fame rather than virtue; the false avatar"
+      },
+      "visuals": {
+        "detailed_description": "The Avatar as a single luminous emblem on graphite, under the silver weather of new moon."
+      }
+    },
+    "major-1": {
+      "name": "Lord British",
+      "number": "1",
+      "slug": "major-1",
+      "arcana": "major",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "identity",
+        "gloss": "Lord British: number 1 (identity)."
+      },
+      "meaning": {
+        "upright": "the sovereign who set the quest and keeps the realm; rightful authority in service of virtue",
+        "inverted": "authority clung to; the king who rules for himself"
+      },
+      "visuals": {
+        "detailed_description": "Lord British as a single luminous emblem on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "major-2": {
+      "name": "The Guardian",
+      "number": "2",
+      "slug": "major-2",
+      "arcana": "major",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "prime",
+        "gloss": "The Guardian: number 2 (prime)."
+      },
+      "meaning": {
+        "upright": "the great adversary, the red titan who would master Britannia; domination, the will to control",
+        "inverted": "the adversary within — your own will to power, recognized"
+      },
+      "visuals": {
+        "detailed_description": "The Guardian as a single luminous emblem on graphite, under the silver weather of first quarter."
+      }
+    },
+    "major-3": {
+      "name": "The Codex of Ultimate Wisdom",
+      "number": "3",
+      "slug": "major-3",
+      "arcana": "major",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "The Codex of Ultimate Wisdom: number 3 (prime)."
+      },
+      "meaning": {
+        "upright": "the book at the bottom of the Abyss; truth made whole, the answer to the quest",
+        "inverted": "wisdom sought as possession; the word taken without the journey"
+      },
+      "visuals": {
+        "detailed_description": "The Codex of Ultimate Wisdom as a single luminous emblem on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "major-4": {
+      "name": "The Ankh",
+      "number": "4",
+      "slug": "major-4",
+      "arcana": "major",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "The Ankh: number 4 (composite).",
+        "factors": [
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "the sign of the Avatar; life, virtue made visible, resurrection",
+        "inverted": "the symbol worn without the substance; piety as costume"
+      },
+      "visuals": {
+        "detailed_description": "The Ankh as a single luminous emblem on graphite, under the silver weather of full moon."
+      }
+    },
+    "major-5": {
+      "name": "Trammel",
+      "number": "5",
+      "slug": "major-5",
+      "arcana": "major",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Trammel: number 5 (prime)."
+      },
+      "meaning": {
+        "upright": "the inner moon, the steady one; constancy, law, the fixed light to steer by",
+        "inverted": "rigidity; constancy become inability to change"
+      },
+      "visuals": {
+        "detailed_description": "Trammel as a single luminous emblem on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "major-6": {
+      "name": "Felucca",
+      "number": "6",
+      "slug": "major-6",
+      "arcana": "major",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Felucca: number 6 (composite).",
+        "factors": [
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "the outer moon, the changing one that opens the gates; flux, passage, opportunity",
+        "inverted": "change for its own sake; the gate taken to flee rather than to seek"
+      },
+      "visuals": {
+        "detailed_description": "Felucca as a single luminous emblem on graphite, under the silver weather of last quarter."
+      }
+    },
+    "major-7": {
+      "name": "Mondain",
+      "number": "7",
+      "slug": "major-7",
+      "arcana": "major",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "Mondain: number 7 (prime)."
+      },
+      "meaning": {
+        "upright": "the first foe, the dark wizard and his Gem of Immortality; the refusal of death, power hoarded",
+        "inverted": "the fear of ending that drives one to monstrousness"
+      },
+      "visuals": {
+        "detailed_description": "Mondain as a single luminous emblem on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "major-8": {
+      "name": "Minax",
+      "number": "8",
+      "slug": "major-8",
+      "arcana": "major",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Minax: number 8 (composite).",
+        "factors": [
+          2,
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "the enchantress, Mondain's heir; seduction, the twisting of time and desire",
+        "inverted": "manipulation; the past or future used to escape the present"
+      },
+      "visuals": {
+        "detailed_description": "Minax as a single luminous emblem on graphite, under the silver weather of new moon."
+      }
+    },
+    "major-9": {
+      "name": "Exodus",
+      "number": "9",
+      "slug": "major-9",
+      "arcana": "major",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Exodus: number 9 (composite).",
+        "factors": [
+          3,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "neither human nor machine, the daemon-engine; the rule of pure system without soul",
+        "inverted": "intelligence without conscience; the machine that forgets it serves life"
+      },
+      "visuals": {
+        "detailed_description": "Exodus as a single luminous emblem on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "major-10": {
+      "name": "The Shadowlord of Falsehood",
+      "number": "10",
+      "slug": "major-10",
+      "arcana": "major",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "composite",
+        "gloss": "The Shadowlord of Falsehood: number 10 (composite).",
+        "factors": [
+          2,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "the negation of Truth; the lie that walks, deceit given a body",
+        "inverted": "the small lie you tell yourself; falsehood mistaken for tact"
+      },
+      "visuals": {
+        "detailed_description": "The Shadowlord of Falsehood as a single luminous emblem on graphite, under the silver weather of first quarter."
+      }
+    },
+    "major-11": {
+      "name": "The Shadowlord of Hatred",
+      "number": "11",
+      "slug": "major-11",
+      "arcana": "major",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "The Shadowlord of Hatred: number 11 (prime)."
+      },
+      "meaning": {
+        "upright": "the negation of Love; contempt given a body",
+        "inverted": "the hardening of the heart; hatred dressed as discernment"
+      },
+      "visuals": {
+        "detailed_description": "The Shadowlord of Hatred as a single luminous emblem on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "major-12": {
+      "name": "The Shadowlord of Cowardice",
+      "number": "12",
+      "slug": "major-12",
+      "arcana": "major",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "The Shadowlord of Cowardice: number 12 (composite).",
+        "factors": [
+          2,
+          2,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "the negation of Courage; flight given a body",
+        "inverted": "the retreat that calls itself prudence"
+      },
+      "visuals": {
+        "detailed_description": "The Shadowlord of Cowardice as a single luminous emblem on graphite, under the silver weather of full moon."
+      }
+    },
+    "major-13": {
+      "name": "The Stygian Abyss",
+      "number": "13",
+      "slug": "major-13",
+      "arcana": "major",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "The Stygian Abyss: number 13 (prime)."
+      },
+      "meaning": {
+        "upright": "the final descent; the trial that gathers every virtue at once, the way to the Codex",
+        "inverted": "the descent refused, or made for the prize and not the passage"
+      },
+      "visuals": {
+        "detailed_description": "The Stygian Abyss as a single luminous emblem on graphite, under the silver weather of waning gibbous."
+      }
+    },
+    "major-14": {
+      "name": "The Word of Power",
+      "number": "14",
+      "slug": "major-14",
+      "arcana": "major",
+      "station_slug": "last-quarter",
+      "factorization": {
+        "character": "composite",
+        "gloss": "The Word of Power: number 14 (composite).",
+        "factors": [
+          2,
+          7
+        ]
+      },
+      "meaning": {
+        "upright": "VERAMOCOR — the eight-syllable word that opens the Abyss; the key earned syllable by syllable",
+        "inverted": "the shortcut sought; the door forced without the work"
+      },
+      "visuals": {
+        "detailed_description": "The Word of Power as a single luminous emblem on graphite, under the silver weather of last quarter."
+      }
+    },
+    "major-15": {
+      "name": "The Black Gate",
+      "number": "15",
+      "slug": "major-15",
+      "arcana": "major",
+      "station_slug": "waning-crescent",
+      "factorization": {
+        "character": "composite",
+        "gloss": "The Black Gate: number 15 (composite).",
+        "factors": [
+          3,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "the doorway the Guardian would open into the world; the threshold of ruin disguised as gift",
+        "inverted": "the tempting offer whose true cost is hidden"
+      },
+      "visuals": {
+        "detailed_description": "The Black Gate as a single luminous emblem on graphite, under the silver weather of waning crescent."
+      }
+    },
+    "major-16": {
+      "name": "The Time Lord",
+      "number": "16",
+      "slug": "major-16",
+      "arcana": "major",
+      "station_slug": "new-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "The Time Lord: number 16 (composite).",
+        "factors": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "meaning": {
+        "upright": "the keeper of the streams of time; right timing, the long view",
+        "inverted": "fatalism, or the meddling that breaks what it would mend"
+      },
+      "visuals": {
+        "detailed_description": "The Time Lord as a single luminous emblem on graphite, under the silver weather of new moon."
+      }
+    },
+    "major-17": {
+      "name": "The Bell, Book, and Candle",
+      "number": "17",
+      "slug": "major-17",
+      "arcana": "major",
+      "station_slug": "waxing-crescent",
+      "factorization": {
+        "character": "prime",
+        "gloss": "The Bell, Book, and Candle: number 17 (prime)."
+      },
+      "meaning": {
+        "upright": "the three keys to the Abyss; the gathered means, preparation complete",
+        "inverted": "the keys collected, the quest never begun"
+      },
+      "visuals": {
+        "detailed_description": "The Bell, Book, and Candle as a single luminous emblem on graphite, under the silver weather of waxing crescent."
+      }
+    },
+    "major-18": {
+      "name": "The Fellowship",
+      "number": "18",
+      "slug": "major-18",
+      "arcana": "major",
+      "station_slug": "first-quarter",
+      "factorization": {
+        "character": "composite",
+        "gloss": "The Fellowship: number 18 (composite).",
+        "factors": [
+          2,
+          3,
+          3
+        ]
+      },
+      "meaning": {
+        "upright": "the cult of false virtue (Unity, Trust, Worthiness) that fronts for the Guardian; counterfeit goodness, the captured community",
+        "inverted": "the comfortable lie of belonging; virtue outsourced to a group"
+      },
+      "visuals": {
+        "detailed_description": "The Fellowship as a single luminous emblem on graphite, under the silver weather of first quarter."
+      }
+    },
+    "major-19": {
+      "name": "The Quest of the Avatar",
+      "number": "19",
+      "slug": "major-19",
+      "arcana": "major",
+      "station_slug": "waxing-gibbous",
+      "factorization": {
+        "character": "prime",
+        "gloss": "The Quest of the Avatar: number 19 (prime)."
+      },
+      "meaning": {
+        "upright": "the journey itself — the becoming of a virtuous self, not the reaching of a place",
+        "inverted": "the quest mistaken for a checklist; the path walked for the badge"
+      },
+      "visuals": {
+        "detailed_description": "The Quest of the Avatar as a single luminous emblem on graphite, under the silver weather of waxing gibbous."
+      }
+    },
+    "major-20": {
+      "name": "The Gem of Immortality",
+      "number": "20",
+      "slug": "major-20",
+      "arcana": "major",
+      "station_slug": "full-moon",
+      "factorization": {
+        "character": "composite",
+        "gloss": "The Gem of Immortality: number 20 (composite).",
+        "factors": [
+          2,
+          2,
+          5
+        ]
+      },
+      "meaning": {
+        "upright": "the shattered gem that split Britannia into its mirrored lands; the One refracted into the many",
+        "inverted": "grasping the whole and shattering it; immortality bought with the world"
+      },
+      "visuals": {
+        "detailed_description": "The Gem of Immortality as a single luminous emblem on graphite, under the silver weather of full moon."
+      }
+    },
+    "major-21": {
+      "name": "Britannia",
+      "number": "21",
+      "slug": "major-21",
+      "arcana": "major",
+      "station_slug": "waning-gibbous",
+      "factorization": {
+        "character": "composite",
+        "gloss": "Britannia: number 21 (composite).",
+        "factors": [
+          3,
+          7
+        ]
+      },
+      "meaning": {
+        "upright": "the realm entire — the eight cities, the two moons, the land made of virtue; the world restored and whole",
+        "inverted": "the world taken for granted; wholeness that stops questing"
+      },
+      "visuals": {
+        "detailed_description": "Britannia as a single luminous emblem on graphite, under the silver weather of waning gibbous."
+      }
+    }
+  }
+}
